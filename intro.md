@@ -1,21 +1,21 @@
 ---
-layout: slide
-title: Atelier IA pour les SHS - Introduction aux fondements de l'Intelligence Artificielle
+# layout: slide
+title: Intro 
 date: 2025-09-11
 author: Alexia Schneider `alexia.schneider@umontreal.ca` (UdeM), 
   Marcello Vitali-Rosati `marcello.vitali.rosati@umontreal.ca` (UdeM)
-bibliography: ../phd_udem.bib
+bibliography: phd_udem.bib
 link-citations: true
 colorlinks: true
-# fig-cap-location: top
-# format:
-#     revealjs: 
-#         output-file: "introAtelierIA.html" 
-#         # template: simple
-#         smaller: true
-#         incremental: true
-#         scrollable: true
-#         slide-number: true
+fig-cap-location: top
+format:
+    revealjs: 
+        output-file: "intro.html" 
+        # template: simple
+        smaller: true
+        incremental: true
+        scrollable: true
+        slide-number: true
 ---
 
 ## Plan 

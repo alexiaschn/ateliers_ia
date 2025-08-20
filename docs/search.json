@@ -1,0 +1,121 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Programme des ateliers sur l’IA pour les SHS",
+    "section": "",
+    "text": "Séances de 2 heures, sans inscription, participation libre.\nBibliothèques des Lettres et Sciences Humaines (15h30 - 17h30)\nSéance 1 : jeudi 11 septembre 2025 15:30: Introduction : comment distinguer l’IA de ChatGPT\nQu’est-ce qu’on entend exactement par Intelligence Artificielle aujourd’hui ? Pour ne pas se sentir dépassé par le discours ambiant sur ces nouvelles technologies et leurs grandes promesses, on vous propose une séance de rattrapage sur les fondements de l’IA. Venez apprendre la place des chatbots dans l’histoire de la discipline et comprendre l’intérêt d’étudier l’IA du point de vue des SHS.\n-&gt; Alexia Schneider & Marcello Vitali-Rosati\nSéance 2 : jeudi 09 octobre 2025 15:30 IA et la correction textuelle automatique : quels outils et quelles limites ?\nLes outils d’IA générative se sont désormais immiscés dans tous nos logiciels d’édition, aussi bien pour la rédaction de mail, de documents textuels que pour de l’assistance à la rédaction de fiction ou de dissertation, mais comment faire la différence entre toutes les formes de corrections possibles et mesurer l’intérêt et l’impact de ces outils dans nos pratiques. Cet atelier vise à outiller les chercheur.se.s en SHS sur les outils existants et offrir des pistes pour mesurer leur impact dans leurs pratiques individuelles.\n-&gt; Alexia Schneider & Clara Grometto\nSéance 3 : jeudi 15 janvier 2026 15:30 Synthèse des sources et Recherche d’Information\nOn vous a sûrement déjà dit que pour limiter les erreurs des IA génératives et pour s’assurer qu’une machine rende les bonnes informations, il fallait passer par un RAG. Mais qu’est-ce qu’un RAG et comment est-ce que ça fontionne exactement ? Dans cet atelier vous apprendrez à disséquer un outils de Recherche d’information associé à un outil de synthèse de texte.\n-&gt; Alexia Schneider\nSéance 4 : jeudi 12 mars 2026 15:30 Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS\nVoilà maintenant quelques années que l’IA est devenue monnaie courante et l’heure est désormais à la pérénisation des guides d’utilisation et des limites définies par les institutions de recherche et d’enseignement. Cet atelier présente les lignes directrices adoptées par les institutions en SHS ainsi que les méthodes de documentation existantes de ces nouvelles pratiques de rédaction, de correction et de recherche d’information."
+  },
+  {
+    "objectID": "25-10-09_correctionAtelierIA.html",
+    "href": "25-10-09_correctionAtelierIA.html",
+    "title": "2e séance atelier IA - révision",
+    "section": "",
+    "text": "Date : 9 octobre 2025\n\n\n(format de 2h) 1. Présentation de la série d’atelier 2. Qu’est-ce que l’IA ? 3. Rappel de la 1e séance : histoire, ce qu’il fallait retenir de la 1e séance 4. Place et importance de la correction 5. Outils généralistes 6. Outils spécialisés (été 2025) 7. Pistes pour l’évaluation des outils 8. Conclusions"
+  },
+  {
+    "objectID": "25-10-09_correctionAtelierIA.html#plan",
+    "href": "25-10-09_correctionAtelierIA.html#plan",
+    "title": "2e séance atelier IA - révision",
+    "section": "",
+    "text": "(format de 2h) 1. Présentation de la série d’atelier 2. Qu’est-ce que l’IA ? 3. Rappel de la 1e séance : histoire, ce qu’il fallait retenir de la 1e séance 4. Place et importance de la correction 5. Outils généralistes 6. Outils spécialisés (été 2025) 7. Pistes pour l’évaluation des outils 8. Conclusions"
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "Intro",
+    "section": "",
+    "text": "Présentation de la série d’atelier\nQu’est-ce que l’IA ?\nIntérêt d’étudier l’IA pour les SHS\nRetours historiques\nTypologie des IA\nCas d’usage et modélisation experte (ELIZA)\nCas d’usage et modélisation distributionnelle/vectorielle (vectorisation et prédiction)\nLes LLMs\nUsages des LLMs hors chatbots (demo)\nLLMs et chatbots (Duck.ai + Ollama)\nConclusions"
+  },
+  {
+    "objectID": "intro.html#plan",
+    "href": "intro.html#plan",
+    "title": "Intro",
+    "section": "",
+    "text": "Présentation de la série d’atelier\nQu’est-ce que l’IA ?\nIntérêt d’étudier l’IA pour les SHS\nRetours historiques\nTypologie des IA\nCas d’usage et modélisation experte (ELIZA)\nCas d’usage et modélisation distributionnelle/vectorielle (vectorisation et prédiction)\nLes LLMs\nUsages des LLMs hors chatbots (demo)\nLLMs et chatbots (Duck.ai + Ollama)\nConclusions"
+  },
+  {
+    "objectID": "intro.html#présentation-et-objectif-des-ateliers",
+    "href": "intro.html#présentation-et-objectif-des-ateliers",
+    "title": "Intro",
+    "section": "Présentation et objectif des ateliers",
+    "text": "Présentation et objectif des ateliers\nFormat : 4 séances de 2heures, sans inscription, participation libre (à justifier pour le certificat des Humanités Numériques)\n1h à 1h30 de théorie + 30 minutes à 1h de pratique.\nObjectifs de la série d’atelier :\n\nComprendre les fondamentaux de l’IA et son histoire\nObtenir des notions critiques sur le fonctionnement profond des outils\nTester et s’approprier des outils d’IA\nMaîtriser le vocabulaire de la discipline\n\nObjectifs de cet atelier :\n\nComprendre les différentes formes d’IA\nComprendre les enjeux liés à l’utilisation des LLM\nUtiliser de l’IA en dehors d’une interface de tchat.\nTester les paramètres des chatbots\nInstaller localement des modèles de langue."
+  },
+  {
+    "objectID": "intro.html#quest-ce-que-lia",
+    "href": "intro.html#quest-ce-que-lia",
+    "title": "Intro",
+    "section": "Qu’est ce que l’IA ?",
+    "text": "Qu’est ce que l’IA ?\n\nTout et rien : exemples : chatbot, détection sur des imageries médicales, HTR, DeepBlue.\nle dernier mot à la mode. Le ‘numérique’ des années 2020. (Vitali-Rosati 2025)."
+  },
+  {
+    "objectID": "intro.html#quest-ce-que-lia-1",
+    "href": "intro.html#quest-ce-que-lia-1",
+    "title": "Intro",
+    "section": "Qu’est-ce que l’IA ?",
+    "text": "Qu’est-ce que l’IA ?\nDéfinition pratique : “un programme informatique qui effectue une prédiction.”"
+  },
+  {
+    "objectID": "intro.html#lia-et-les-shs",
+    "href": "intro.html#lia-et-les-shs",
+    "title": "Intro",
+    "section": "L’IA et les SHS",
+    "text": "L’IA et les SHS\nÀ quoi sert d’étudier l’IA pour les chercheur.se.s en SHS ?"
+  },
+  {
+    "objectID": "intro.html#lia-et-les-shs-1",
+    "href": "intro.html#lia-et-les-shs-1",
+    "title": "Intro",
+    "section": "L’IA et les SHS",
+    "text": "L’IA et les SHS\nÀ quoi sert d’étudier l’IA pour les chercheur.se.s en SHS"
+  },
+  {
+    "objectID": "intro.html#lia-et-les-shs-2",
+    "href": "intro.html#lia-et-les-shs-2",
+    "title": "Intro",
+    "section": "L’IA et les SHS",
+    "text": "L’IA et les SHS\nQue peuvent faire les SHS pour l’IA ?\n\nparticiper à la réflexion actuelle sur son utilisation :\n\npositionnements de revues et de conférences sur son utilisation (pose un cadre, parfois un précédent)\n\nproposer une théorie critique de l’IA décentrées de l’effet ‘benchmarking’\nproposer une avis sur l’utilisation de ces outils qui soit propre à sa discipline."
+  },
+  {
+    "objectID": "intro.html#exemples-de-prises-de-position",
+    "href": "intro.html#exemples-de-prises-de-position",
+    "title": "Intro",
+    "section": "Exemples de prises de position",
+    "text": "Exemples de prises de position\n\nBoth SUP and JHUP have increasingly embraced, tested, and deployed some AI tools and policies. Barbara has been clear in her support of responsible uses of AI and the necessity of leveraging these early days to stake a claim within the quickly evolving landscape. Like SUP, JHUP is building and testing its own tools for marketing, accessibility, and analytics, efforts which place our presses in a position to potentially build services that might in the future even benefit other university presses. (Mulliken 2025)\n\n\nwe offer recommendations for citing generative AI, defined as a tool that “can analyze or summarize content from a huge set of information, including web pages, books and other writing available on the internet, and use that data to create original new content” (Weed). (“How Do I Cite Generative AI in MLA Style?” 2023)\n\n\nThe uncomfortable truth for researchers and publishers who oppose AI slowly taking over human review is that they might not be able to prevent it. Should a researcher use AI to write the first pass of peer review and not disclose it — in contravention of publisher guidelines — that might not be detectable, says Hosseini, who is also one of the editors of the journal Accountability in Research. And if AI reviews become widespread, that could change the practice of science, says Priem. “Every researcher can run their own bespoke review service over the preprint/dataset landscape, flagging/extracting only the science they care about (at any “quality” level) they want that day,” he wrote on X earlier this year. That could start to eat into the roles of journals, by taking away the certification that peer review mediated by journals provides, he says. (Naddaf 2025)"
+  },
+  {
+    "objectID": "intro.html#brève-histoire-de-lia-et-des-applications-de-linguistique-computationnelle-pt.-1",
+    "href": "intro.html#brève-histoire-de-lia-et-des-applications-de-linguistique-computationnelle-pt.-1",
+    "title": "Intro",
+    "section": "Brève histoire de l’IA et des applications de linguistique computationnelle (pt. 1)",
+    "text": "Brève histoire de l’IA et des applications de linguistique computationnelle (pt. 1)\n1940s : Science-fiction et roman d’Isaac Asimov Runaround en 1942.\nTuring (1950) : ‘can machines think?’\n‘intelligence artificielle’ : 1956\n\n« The word Artificial Intelligence was then officially coined about six years later, when in 1956 Marvin Minsky and John McCarthy (a computer scientist at Stanford) hosted the approximately eight-week-long Dartmouth Summer Research Project on Artificial Intelligence (DSRPAI) at Dartmouth College in New Hampshire. » (Haenlein and Kaplan 2019, 7)\n\n1966 : ELIZA (Weizenbaum 1966)\n1990-2000s : pic des systèmes experts et des arbres de décision. DeepBlue d’IBM (Campbell, Hoane, and Hsu 2002)."
+  },
+  {
+    "objectID": "intro.html#brève-histoire-de-lia-et-des-applications-de-linguistique-computationnelle-pt.-2",
+    "href": "intro.html#brève-histoire-de-lia-et-des-applications-de-linguistique-computationnelle-pt.-2",
+    "title": "Intro",
+    "section": "Brève histoire de l’IA et des applications de linguistique computationnelle (pt. 2)",
+    "text": "Brève histoire de l’IA et des applications de linguistique computationnelle (pt. 2)\n2010s : pic des systèmes d’IA avec une modélisation distributionnelle du language (vecteur). Word2Vec (Mikolov et al. 2013), GloVE (Pennington, Socher, and Manning 2014). Parmi les avancées majeures de cette modélisation on compte le mécanisme d’attention (Vaswani et al. 2017) et l’encodage bidirectionnel BERT (Devlin et al. 2019) qui permettent des modèles très performants comme le GPT-3 d’OpenAI (Brown et al. 2020).\nActuellement : tendance à l’hybridation (Marcus 2020)"
+  },
+  {
+    "objectID": "intro.html#typologie-de-lia",
+    "href": "intro.html#typologie-de-lia",
+    "title": "Intro",
+    "section": "Typologie de l’IA",
+    "text": "Typologie de l’IA\n\nApproche experte : modélisation d’un programme à partir de règles précises. Les règles doivent être applicables à de nouvelles données pour faire une prédiction.\nApproche distributionnelle : modélisation d’un programme à partir d’un grand volume de données. Ce sont les motifs de répétitions qui permettent à la machine d’émettre une prédiction."
+  },
+  {
+    "objectID": "intro.html#ce-quil-faut-retenir",
+    "href": "intro.html#ce-quil-faut-retenir",
+    "title": "Intro",
+    "section": "Ce qu’il faut retenir",
+    "text": "Ce qu’il faut retenir\n\ndeux modélisations : une approche top-down et une approche sample-based.\n‘des saisons’ en IA càd que certaines approches attirent l’attention à un moment donné, actuellement IA = chatbot voire ChatGPT.\nl’IA réfère à des technologies variées et pas seulement à des programmes de génération textuelle."
+  },
+  {
+    "objectID": "25-07_programme_ateliersIA2526.html",
+    "href": "25-07_programme_ateliersIA2526.html",
+    "title": "Programme Atelier IA certificat",
+    "section": "",
+    "text": "Séance 1 : Introduction aux théories et à l’historique de l’IA et typologie des outils.\nDate : 11 septembre\nPrompt injection, hacker un LLM :\npartir d’une phrase d’exemple simple puis faire son découpage.\ntâche détection de spam :\nDÉCOUVRE TON CADEAU\nDemande de renseignements\n‘hallucination’ -&gt;\n\n\nSéance 2 : Thématique révision et correction automatique.\nDate 9 octobre\nDifférence entre un outil spécialisé et non-spécialisé.\n\nOutils généralistes\nChatGPT, LLM non entrainés.\n\n\nOutils spécialisés (correction, écriture académique)\nhttps://www.editpad.org/ : AI detector, humanize AI text, Plagiarim checker, paraphrasing tool, story generator, text summarizer, AI essay writer etc. Probablement juste ChatGPT hooked à une interface avec un system-prompt. Apparamment mauvais according to @bordalejoScarletCloakForest2025\nhttps://www.writefull.com/\nhttps://www.grammarly.com/\n\n\n\nSéance 3 : Thématique recherche d’information et synthèse des sources.\nDate: 15 janvier\n\n\nSéance 4 : Synthèse des outils et méthodologies pour l’évaluation qualitative et quantitative.\nDate : 12 mars"
+  }
+]
