@@ -1,6 +1,7 @@
 ---
 title: Ateliers IA pour les SHS
 ---
+
 ## Description 
 
 'IA' est le terme qui a envahit nos discours depuis quelques années. Vous saturez ? Nous aussi ! Cette série d'atelier vise à outiller chercheurs et chercheuses en SHS pour comprendre les fondements de cette discipline afin de dépasser à la fois les discours marketing qui imprègnent malgré nous l'espace public et les propos alarmistes des derniers réfractaires. 
