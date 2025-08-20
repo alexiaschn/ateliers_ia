@@ -4,7 +4,7 @@ title: Intro
 date: 2025-09-11
 author: Alexia Schneider `alexia.schneider@umontreal.ca` (UdeM), 
   Marcello Vitali-Rosati `marcello.vitali.rosati@umontreal.ca` (UdeM)
-bibliography: phd_udem.bib
+bibliography: ../phd_udem.bib
 link-citations: true
 colorlinks: true
 fig-cap-location: top
