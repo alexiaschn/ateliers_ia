@@ -31,8 +31,8 @@
     "objectID": "intro.html#plan",
     "href": "intro.html#plan",
     "title": "Intro",
-    "section": "",
-    "text": "Présentation de la série d’atelier\nQu’est-ce que l’IA ?\nIntérêt d’étudier l’IA pour les SHS\nRetours historiques\nTypologie des IA\nCas d’usage et modélisation experte (ELIZA)\nCas d’usage et modélisation distributionnelle/vectorielle (vectorisation et prédiction)\nLes LLMs\nUsages des LLMs hors chatbots (demo)\nLLMs et chatbots (Duck.ai + Ollama)\nConclusions"
+    "section": "Plan",
+    "text": "Plan\n\nPrésentation de la série d’atelier\nQu’est-ce que l’IA ?\nIntérêt d’étudier l’IA pour les SHS\nRetours historiques\nTypologie des IA\nCas d’usage et modélisation experte (ELIZA)\nCas d’usage et modélisation distributionnelle/vectorielle (vectorisation et prédiction)\nLes LLMs\nUsages des LLMs hors chatbots (demo)\nLLMs et chatbots (Duck.ai + Ollama)\nConclusions"
   },
   {
     "objectID": "intro.html#présentation-et-objectif-des-ateliers",
@@ -172,7 +172,7 @@
     "href": "intro.html#ollama",
     "title": "Intro",
     "section": "Ollama",
-    "text": "Ollama\nIl est pourtant possible de faire tourner un SLM (small language model) localement. Pour ce faire : ollama est une bibliothèque qui permet de télécharger et d’utiliser localement un LLMs.\n\ntéléchargement\nhttps://ollama.com/download\ncommand line\nollama run llama3.2\n““” -&gt; pour des instructions longues\nollama list -&gt; liste des modèles téléchargés et utilisables\nollama rm llama3.2 -&gt; supprime un modèle"
+    "text": "Ollama\nIl est pourtant possible de faire tourner un SLM (small language model) localement. Pour ce faire : ollama est une bibliothèque qui permet de télécharger et d’utiliser localement un LLMs.\ntéléchargement\nhttps://ollama.com/download\ncommand line\nollama run llama3.2\n““” -&gt; pour des instructions longues\nollama list -&gt; liste des modèles téléchargés et utilisables\nollama rm llama3.2 -&gt; supprime un modèle"
   },
   {
     "objectID": "intro.html#paramètres-dun-modèle",
