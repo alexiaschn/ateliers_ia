@@ -1,7 +1,20 @@
 ---
-title: Programme des ateliers sur l'IA pour les SHS
+title: Ateliers IA pour les SHS
 ---
+## Description 
 
+'IA' est le terme qui a envahit nos discours depuis quelques années. Vous saturez ? Nous aussi ! Cette série d'atelier vise à outiller chercheurs et chercheuses en SHS pour comprendre les fondements de cette discipline afin de dépasser à la fois les discours marketing qui imprègnent malgré nous l'espace public et les propos alarmistes des derniers réfractaires. 
+
+### Ojectifs 
+
+Introduire à la communauté universitaire en SHS les fondements de l'étude critique des IA avec une stratégie d'apprentissage par la prise en main. Aucun pré-requis en informatique n'est nécessaire : apportez simplement votre ordinateur. 
+
+1. Sensibiliser sur l'impact des nouvelles outils sur les pratiques de recherche et d'édition en contexte universitaire
+2. Orienter les chercheur.se.s vers des outils d'IA adaptés à la recherche et allignés avec les préconisations éthiques actuelles.
+3. Eclaircir les amalgames courants au sujet de l'IA et les chatbots par l'acquisition de connaissances fondamentales en IA.   
+
+
+## Programme
 
 Séances de 2 heures, sans inscription, participation libre. 
 

@@ -180,7 +180,7 @@ Alexia Schneider <code>alexia.schneider@umontreal.ca</code> (UdeM), Marcello Vit
 <section id="présentation-et-objectif-des-ateliers" class="slide level2">
 <h2>Présentation et objectif des ateliers</h2>
 <p>Format : 4 séances de 2heures, sans inscription, participation libre (à justifier pour le certificat des Humanités Numériques)</p>
-<p>1h à 1h30 de théorie + 30 minutes à 1h de pratique.</p>
+<p>Théorie et pratique en alternance au cours des deux heures.</p>
 <p>Objectifs de la série d’atelier :</p>
 <ul>
 <li class="fragment">Comprendre les fondamentaux de l’IA et son histoire</li>
@@ -268,8 +268,155 @@ Alexia Schneider <code>alexia.schneider@umontreal.ca</code> (UdeM), Marcello Vit
 <ul>
 <li class="fragment">deux modélisations : une approche <em>top-down</em> et une approche <em>sample-based</em>.</li>
 <li class="fragment">‘des saisons’ en IA càd que certaines approches attirent l’attention à un moment donné, actuellement IA = chatbot voire ChatGPT.</li>
-<li class="fragment">l’IA réfère à des technologies variées et pas seulement à des programmes de génération textuelle.</li>
+<li class="fragment">l’IA réfère à des algorithmes qui permettent d’automatiser une prise de décision et pas seulement à des programmes de génération textuelle.</li>
 </ul>
+</section>
+<section id="partons-dun-exemple" class="slide level2">
+<h2>Partons d’un exemple</h2>
+<p>Objectif : obtenir un programme capable de classer une phrase selon une thématique prédéfinie.</p>
+<p>Exemple : Classification d’un texte en “parle de fruit” vs.&nbsp;“ne parle pas de fruit”.</p>
+</section>
+<section id="modéliser-une-approche-experte" class="slide level2">
+<h2>Modéliser une approche experte</h2>
+<ul>
+<li class="fragment">faire appel à un expert : un humain pour déterminer les règles qui définissent ce qui est une phrase parlant de fruits.</li>
+<li class="fragment">exemple de règle possible : liste de mots comme ‘pomme, pommes, banane, poire etc.’ ordre des mots ou POS pour distinguer ‘orange’ couleur du fruit par exemple.</li>
+</ul>
+<p>Une approche qui sembler simpliste en apparence mais qui :</p>
+<ul>
+<li class="fragment">peut s’avérer très complexe (ex: traduction)</li>
+<li class="fragment">est la base de systèmes très performants</li>
+<li class="fragment">entre dans une logique de <em>lazy computing</em> <span class="citation" data-cites="fujinagaVirtuesLazyMachines2025">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Fujinaga 2025</a>)</span></li>
+<li class="fragment">révèle les tâches de bas niveau pour passer d’une chaîne de caractères à un ensemble de caractéristiques : tokenisation, POS-tagging.</li>
+</ul>
+<p><a href="https://demo-atelier.streamlit.app/">Programme de démo</a></p>
+</section>
+<section id="exemple-dun-programme-conversationnel-génération-textuelle-avec-une-approche-experte-eliza" class="slide level2">
+<h2>Exemple d’un programme conversationnel /génération textuelle avec une approche experte ELIZA</h2>
+<p>Try it yourself : <a href="https://anthay.github.io/eliza.html">ELIZA</a></p>
+<blockquote>
+<p>Eliza is a pattern-matching automated psychiatrist. Given a set of rules in the form of input/output patterns, Eliza will attempt to recognize user input phrases and generate relevant psychobabble responses. Each rule is specified by an input pattern and a list of output patterns. A pattern is a sentence consisting of space-separated words and variables. <span class="citation" data-cites="connellyElizapy">(<a href="#/bibliographie" role="doc-biblioref" onclick=""><strong>connellyElizapy?</strong></a>)</span></p>
+</blockquote>
+<p>Exemple de <em>literate programming</em> <span class="citation" data-cites="knuthLiterateProgramming1984">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Knuth 1984</a>)</span> :</p>
+<p><a href="https://dhconnelly.com/paip-python/docs/paip/eliza.html">Lire le code d’ELIZA</a></p>
+</section>
+<section id="modélisation-vectorielle-et-machine-learning" class="slide level2">
+<h2>Modélisation vectorielle et machine learning</h2>
+<ul>
+<li class="fragment">partir d’un ensemble important d’exemples</li>
+<li class="fragment">travail d’annotation par un humain/expert: <em>ground truth</em> ou vérité de terrain.</li>
+<li class="fragment">1 token = une caractéristique</li>
+<li class="fragment">comptage des tokens dans l’ensemble du jeu de données et dans chaque phrase/document.</li>
+<li class="fragment">représentation vectorielle = coordonnées dans un espace vectoriel à <em>n</em> dimensions.</li>
+</ul>
+<p>Visualisation de traitement basique (NER, POS et vectorisation)</p>
+<!-- PROGRAMME TOKEN_CLASSIFICATION À DEPLOYER  -->
+<ul>
+<li class="fragment">même traitement est effectué sur de nouvelles données</li>
+<li class="fragment">différentes logiques pour classer la nouvelle donnée :
+<ul>
+<li class="fragment">K-Nearest Neighbor</li>
+<li class="fragment">Regression logistique</li>
+</ul></li>
+</ul>
+<p>Points forts :</p>
+<ul>
+<li class="fragment">adaptable à des nouvelles données, notamment avec une tokenisation fragmentée</li>
+</ul>
+</section>
+<section id="les-llms" class="slide level2">
+<h2>Les LLMs</h2>
+<p>Exemple de LLMs : GPT-4, Mixtral, Gemini, Llama, Qwen, DeepSeek etc.</p>
+<p>Large Language Models : 1. modélisation vectorielle de chaque mot de la langue par rapport à sa fréquence d’apparition en contexte avec chacun des autres mots de la langue, 2. spécialisation sous forme de couche neuronale pour une tâche ou une fonction précise. 3. query et calcul pour chaque donnée en entrée du token le plus probable en sortie</p>
+</section>
+<section id="llms-et-non-chatbot" class="slide level2">
+<h2>LLMs et non chatbot</h2>
+<p>Classification (de token, de texte)</p>
+<!-- démo NER -->
+</section>
+<section id="llms-et-chatbot" class="slide level2">
+<h2>LLMs et chatbot</h2>
+<p>Parce que les LLMs sont lourds (plusieurs Gigas) et parce qu’il est coûteux en énergie d’effectuer les calculs qui permettent de déterminer le prochain token (plusieurs GPU), l’usage le plus courant des LLMs est via un site qui va interroger le modèle sur un serveur distant. C’est la forme ChatGPT, Mistral.ai, etc.</p>
+</section>
+<section id="duck.ai" class="slide level2">
+<h2>Duck.ai</h2>
+<p>duck.ai permet de comparer des modèles en interfaces chat tout en conservant des données privées : https://duck.ai</p>
+<!-- démonstration de duckai et des paramètres -->
+</section>
+<section id="ollama" class="slide level2">
+<h2>Ollama</h2>
+<p>Il est pourtant possible de faire tourner un SLM (small language model) localement. Pour ce faire : <code>ollama</code> est une bibliothèque qui permet de télécharger et d’utiliser localement un LLMs.</p>
+<h3 id="téléchargement">téléchargement</h3>
+<p>https://ollama.com/download</p>
+<p>command line</p>
+<p>ollama run llama3.2</p>
+<p>““” -&gt; pour des instructions longues</p>
+<p>ollama list -&gt; liste des modèles téléchargés et utilisables</p>
+<p>ollama rm llama3.2 -&gt; supprime un modèle</p>
+</section>
+<section id="paramètres-dun-modèle" class="slide level2">
+<h2>Paramètres d’un modèle</h2>
+<p>Plusieurs paramètres importants et contrôlable :</p>
+<ul>
+<li class="fragment">le seed :les LLMs ont une variable aléatoire dans leur paramètre : le seed permet d’utiliser toujours le même ordre aléatoire, càd d’obtenir pour un même prompt toujours la même réponse et ainsi de rendre reproductible une réponse.</li>
+<li class="fragment">la température: détermine le degré d’utilisation de la variable aléatoire (mas o menos)</li>
+<li class="fragment">top_k : Reduces the probability of generating nonsense. A higher value (e.g.&nbsp;100) will give more diverse answers, while a lower value (e.g.&nbsp;10) will be more conservative. (Default: 40)</li>
+<li class="fragment">top_p: Works together with top-k. A higher value (e.g., 0.95) will lead to more diverse text, while a lower value (e.g., 0.5) will generate more focused and conservative text. (Default: 0.9)</li>
+</ul>
+</section>
+<section id="model-steering" class="slide level2">
+<h2>model Steering</h2>
+<p>https://github.com/ollama/ollama/blob/main/docs/modelfile.md</p>
+<p>Créer un nouveau document ‘Modelfile’ sans extension <code>touch Modelfile</code></p>
+<pre><code>FROM llama3.2
+PARAMETER temperature 1
+top_k 100
+top_p 1
+seed 17
+SYSTEM "Tu es un chien"</code></pre>
+<p>ollama create chien -f Modelfile</p>
+<p>ollama run chien</p>
+</section>
+<section id="limites-des-interfaces-de-chat" class="slide level2">
+<h2>Limites des interfaces de chat</h2>
+<ul>
+<li class="fragment">les chatbots ont des limites : on peut ‘hacker un LLM’ avec du <em>prompt injection</em> ou autres techniques de <em>Jailbreaking</em>.</li>
+</ul>
+<p><a href="https://incidentdatabase.ai/">Incitent database</a></p>
+<blockquote>
+<p>Hidden prompts reportedly were discovered in at least 17 academic preprints on arXiv that purportedly instructed AI tools to deliver only positive peer reviews. The lead authors are reportedly affiliated with 14 institutions in eight countries, including Waseda University, KAIST, Peking University, and the University of Washington. The alleged concealed instructions, some of which were reportedly embedded using white text or tiny fonts, were purportedly intended to influence any reviewers who rely on AI tools. (https://incidentdatabase.ai/cite/1135)</p>
+</blockquote>
+<ul>
+<li class="fragment"><p>il n’y a pas d’hallucinations, toutes les générations produites par un LLMs ont la même teneur de vérité du pdv de l’outil : le modèle ne peut pas évaluer sa réponse à l’aune d’une <em>ground truth</em> comme dans sa phase d’entraînement.</p></li>
+<li class="fragment"><p>Problèmes et réflexions pour les SHS :</p>
+<ul>
+<li class="fragment"><p>uniformisation des pratiques, des modes de pensées : l’interface de chat est une façon de formaliser son problème, quid de la recherhce de solution en interrogeant des moteurs de recherche, des bdd ou archives spécialisées ?</p></li>
+<li class="fragment"><p>Derrière l’apparente accessibilité de l’interface de chat, est-ce qu’on ne risque pas de creuser l’écart de la littératie numérique ?</p></li>
+<li class="fragment"><p>Est-ce que ces connaissances spécifiques, comme celles du code, qui impliquent des capacités de raisonnement alternatives, ne risquent pas de se retrouver suelement dans une forme d’élite intellectuelle ?</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="ce-quil-faut-retenir-de-la-séance" class="title-slide slide level1 center">
+<h1>Ce qu’il faut retenir de la séance</h1>
+<ul>
+<li class="fragment">l’IA est un terme ajd employé à tort poru parler des LLMs mais qui recouvre en réalité des processus algorithmiques variés et pas seulement des chatbots type ChatGPT.</li>
+<li class="fragment">l’histoire de l’IA a montré qu’il y a des phases</li>
+<li class="fragment">les autres systèmes ne sont pas plus ni moins ‘intelligent’.</li>
+<li class="fragment">un système expert peut être aussi complexe et énergivore que du machine learning (mais dans les faits plus rarement).</li>
+<li class="fragment">les systèmes d’IA n’ont pas de connaissance du réel (et celleux qui disent le contraire essaient de vendre des choses à l’heure actuelle)</li>
+<li class="fragment">par csq les halllucinations ne sont pas des anomalies, ce sont des erreurs que l’on qualifie a postériori comme telle.</li>
+<li class="fragment">les systèmes inductifs sont appropriés pour des certaines tâches : classification, production de résumé. Leur point fort reste l’adaptation à des contextes de textes ou d’images variés.</li>
+<li class="fragment">les chatbots sont des interfaces qui permettent un échange homme-machine en langue naturelle : l’exploitation des capacités inductives d’un LLMs ne nécessite pas de passer par une telle interface. Ex : classification, processus expérimental plus adapté à une utilisation sans cette interface.</li>
+</ul>
+</section>
+
+<section>
+<section id="ressources-vues-pendant-latelier" class="title-slide slide level1 center">
+<h1>Ressources vues pendant l’atelier</h1>
+<p>https://spacy.io/usage</p>
+<p>https://incidentdatabase.ai/</p>
+<p>https://duck.ai</p>
+<p>Ollama Installation : https://ollama.com/download Documentation : https://github.com/ollama/ollama/blob/main/docs/modelfile.md</p>
 </section>
 <section id="bibliographie" class="slide level2 smaller scrollable">
 <h2>Bibliographie</h2>
@@ -285,11 +432,17 @@ Campbell, Murray, A. Joseph Hoane, and Feng-hsiung Hsu. 2002. <span>“Deep <spa
 <div id="ref-devlinBERTPretrainingDeep2019" class="csl-entry" role="listitem">
 Devlin, Jacob, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. <span>“<span>BERT</span>: <span class="nocase">Pre-training</span> of <span>Deep Bidirectional Transformers</span> for <span>Language Understanding</span>.”</span> In <em>Proceedings of the 2019 <span>Conference</span> of the <span>North American Chapter</span> of the <span>Association</span> for <span>Computational Linguistics</span>: <span>Human Language Technologies</span>, <span>Volume</span> 1 (<span>Long</span> and <span>Short Papers</span>)</em>, edited by Jill Burstein, Christy Doran, and Thamar Solorio, 4171–86. Minneapolis, Minnesota: Association for Computational Linguistics. <a href="https://doi.org/10.18653/v1/N19-1423">https://doi.org/10.18653/v1/N19-1423</a>.
 </div>
+<div id="ref-fujinagaVirtuesLazyMachines2025" class="csl-entry" role="listitem">
+Fujinaga, Ichiro. 2025. <span>“<span>On the virtues of lazy machines</span>.”</span> {Keynote}. Montr<span>é</span>al.
+</div>
 <div id="ref-haenleinBriefHistoryArtificial2019" class="csl-entry" role="listitem">
 Haenlein, Michael, and Andreas Kaplan. 2019. <span>“A <span>Brief History</span> of <span>Artificial Intelligence</span>: <span>On</span> the <span>Past</span>, <span>Present</span>, and <span>Future</span> of <span>Artificial Intelligence</span>.”</span> <em>California Management Review</em> 61 (4): 5–14. <a href="https://doi.org/10.1177/0008125619864925">https://doi.org/10.1177/0008125619864925</a>.
 </div>
 <div id="ref-HowCiteGenerative2023" class="csl-entry" role="listitem">
 <span>“How Do <span>I</span> Cite Generative <span>AI</span> in <span>MLA</span> Style?”</span> 2023. <em>MLA Style Center</em>.
+</div>
+<div id="ref-knuthLiterateProgramming1984" class="csl-entry" role="listitem">
+Knuth, D. E. 1984. <span>“Literate <span>Programming</span>.”</span> <em>The Computer Journal</em> 27 (2): 97–111. <a href="https://doi.org/10.1093/comjnl/27.2.97">https://doi.org/10.1093/comjnl/27.2.97</a>.
 </div>
 <div id="ref-marcusNextDecadeAI2020" class="csl-entry" role="listitem">
 Marcus, Gary. 2020. <span>“The <span>Next Decade</span> in <span>AI</span>: <span>Four Steps Towards Robust Artificial Intelligence</span>.”</span> arXiv. <a href="https://doi.org/10.48550/arXiv.2002.06177">https://doi.org/10.48550/arXiv.2002.06177</a>.
@@ -319,7 +472,7 @@ Vitali-Rosati, Marcello. 2025. <span>“Manifeste Pour Des <span class="nocase">
 Weizenbaum, Joseph. 1966. <span>“<span>ELIZA</span>—a Computer Program for the Study of Natural Language Communication Between Man and Machine.”</span> <em>Communications of the ACM</em> 9 (1): 36–45. <a href="https://doi.org/10.1145/365153.365168">https://doi.org/10.1145/365153.365168</a>.
 </div>
 </div>
-</section>
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
