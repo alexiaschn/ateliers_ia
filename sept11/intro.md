@@ -77,9 +77,9 @@ Définition pratique : "un programme informatique qui effectue une prédiction."
 Que peuvent faire les SHS pour l'IA ? 
 
 - participer à la réflexion actuelle sur son utilisation : 
-    - positionnements de revues et de conférences sur son utilisation (pose un cadre, parfois un précédent)
-- proposer une théorie critique de l'IA décentrées de l'effet 'benchmarking'
-- proposer une avis sur l'utilisation de ces outils qui soit propre à sa discipline.
+    - positionnements de revues et de conférences (pose un cadre, parfois un précédent)
+- proposer une théorie critique de l'IA décentrées de l'effet 'benchmarking' (i.e. comparaison des modèles ou des entreprises qui les mettent à disposition)
+- proposer une avis sur l'utilisation de ces outils qui soit propre à sa discipline (ex: distinguer des usages en fonction des besoins particuliers de son domaine). 
 
 
 ## Exemples de prises de position 
@@ -90,6 +90,8 @@ Que peuvent faire les SHS pour l'IA ?
 
 > The uncomfortable truth for researchers and publishers who oppose AI slowly taking over human review is that they might not be able to prevent it. Should a researcher use AI to write the first pass of peer review and not disclose it — in contravention of publisher guidelines — that might not be detectable, says Hosseini, who is also one of the editors of the journal Accountability in Research. And if AI reviews become widespread, that could change the practice of science, says Priem. “Every researcher can run their own bespoke review service over the preprint/dataset landscape, flagging/extracting only the science they care about (at any “quality” level) they want that day,” he wrote on X earlier this year. That could start to eat into the roles of journals, by taking away the certification that peer review mediated by journals provides, he says.
 [@naddafAITransformingPeer2025]
+
+- Building critical AI literacies is a process of  empowerment that enables students and citizens to exercise independent judgment about whether or if to  use this very new and largely untested commercial technology. [@criticalai@rutgersCriticalAILiteracies2024]
 
 
 ## Brève histoire de l'IA et des applications de linguistique computationnelle (pt. 1)
@@ -111,27 +113,40 @@ Que peuvent faire les SHS pour l'IA ?
 
 2010s : pic des systèmes d'IA avec une modélisation distributionnelle du language (vecteur). Word2Vec [@mikolovEfficientEstimationWord2013], GloVE [@penningtonGloVeGlobalVectors2014]. Parmi les avancées majeures de cette modélisation on compte le mécanisme d'attention [@vaswaniAttentionAllYou2017] et l'encodage bidirectionnel BERT [@devlinBERTPretrainingDeep2019] qui permettent des modèles très performants comme le GPT-3 d'OpenAI [@brownLanguageModelsAre2020]. 
 
-Actuellement : tendance à l'hybridation [@marcusNextDecadeAI2020]
+Actuellement : tendance à l'hybridation de ces modèles : Neuro-Symbolic Integration, Semantic Web Machine Learning [@marcusNextDecadeAI2020; @breitCombiningMachineLearning2023]
 
 ## Typologie de l'IA
 
-- Approche experte : modélisation d'un programme à partir de **règles** précises. Les règles doivent être applicables à de nouvelles données pour faire une prédiction.
+- Approche experte ou modèle symbolique : modélisation d'un programme à partir de **règles** précises. Les règles doivent être applicables à de nouvelles données pour faire une prédiction.
 
-- Approche distributionnelle : modélisation d'un programme à partir d'un grand volume de données. Ce sont les **motifs de répétitions** qui permettent à la machine d'émettre une prédiction. 
+- Approche inductive ou modèle d'apprentissage machine (_machine learning_) : modélisation d'un programme à partir d'un grand volume de données. Ce sont les **motifs de répétitions** qui permettent à la machine d'émettre une prédiction. 
 
 ## Ce qu'il faut retenir
 
-- deux modélisations : une approche _top-down_ et une approche _sample-based_. 
-- 'des saisons' en IA càd que certaines approches attirent l'attention à un moment donné, actuellement IA = chatbot voire ChatGPT. 
-- l'IA réfère à des algorithmes qui permettent d'automatiser une prise de décision et pas seulement à des programmes de génération textuelle. 
-
+- L'IA réfère à plusieurs type de modélisations pour la prédiction : une approche déductive et une approche inductive. 
+- On parle 'des saisons' de l'IA pour évoquer l'attrait public de la discipline et son avancée depuis les années 1950. 
+- Par conséquent, certaines approches attirent l'attention à un moment donné, actuellement IA = chatbot voire ChatGPT. 
+- L'IA réfère à des algorithmes qui permettent d'automatiser une prise de décision et pas seulement à des programmes de génération textuelle. 
 
 ## Partons d'un exemple 
 
 Objectif : obtenir un programme capable de classer une phrase selon une thématique prédéfinie. 
 
-Exemple : Classification d'un texte en "parle de fruit" vs. "ne parle pas de fruit". 
+Exemple : Classification d'un texte soit en "parle de fruit" soit en "ne parle pas de fruit". 
 
+Vocabulaire :
+
+**document** : ici une phrase
+
+**classes** : ensemble thématique de la classification. Ex : "fruit" et "non fruit" pour la classification binaire de notre exemple. 
+
+**jeu de données** : ensemble des documents 
+
+**apprentissage supervisé** : méthode d'apprentissage machine à partir de classes connues.
+
+**apprentissage non-supervisé** : méthode d'apprentissage machine sans connaître les classes à l'avance : a pour objectif de déterminer les caractéristiques discriminantes d'un jeu de données.
+
+**vérité de terrain** ou _ground truth_ : annotation effectuée par un humain sur l'ensemble du jeu de données. 
 
 ## Modéliser une approche experte 
 
@@ -159,159 +174,192 @@ Exemple de _literate programming_ [@knuthLiterateProgramming1984] :
 [Lire le code d'ELIZA](https://dhconnelly.com/paip-python/docs/paip/eliza.html)
 
 
-## Modélisation vectorielle et machine learning
+## Approche inductive : la modélisation vectorielle et le machine learning
 
-- partir d'un ensemble important d'exemples
-- travail d'annotation par un humain/expert: _ground truth_ ou vérité de terrain.
-- 1 token = une caractéristique
-- comptage des tokens dans l'ensemble du jeu de données et dans chaque phrase/document. 
-- représentation vectorielle = coordonnées dans un espace vectoriel à _n_ dimensions.
+### 1e étape Modélisation des données
 
-Visualisation de traitement basique (NER, POS et vectorisation)
+- Constitution d'un corpus : obtenir un ensemble important de documents.
+- Attribution d'une classe à chaque document : annotation par un humain/expert, _ground truth_ ou vérité de terrain. 
+- Encodage : Comptage des tokens dans l'ensemble du jeu de données et dans chaque phrase/document. 
+- On obtient une représentation vectorielle = coordonnées dans un espace vectoriel à _n_ dimensions.
 
-<!-- PROGRAMME TOKEN_CLASSIFICATION À DEPLOYER  -->
+![Représentation vectorielle ou _word embeddings_](img/word_embedding.png)
 
 
-- même traitement est effectué sur de nouvelles données
-- différentes logiques pour classer la nouvelle donnée : 
-    - K-Nearest Neighbor
-    - Regression logistique
+### 2e étape Détermination de la logique de prédiction
 
-Points forts : 
+Différentes logiques permettent de distinguer les données entre elles. Quelques exemples d'apprentissage machine classique : 
 
-- adaptable à des nouvelles données, notamment avec une tokenisation fragmentée
+- K-Nearest Neighbor -> le token apartient à la même classe que ses voisins (au nombre K)
+- Arbre de décision -> on construit un arbre de questions fermées qui dessine le jeu de données.
+- Regression logistique -> une ligne sépare l'espace vectoriel entre les deux classes
+
+
+### 3e étape Apprentissage 
+
+- Division du jeu de données en données d'entrainement et données de test. 
+- Calcul des poids de chaque token (régression logistique ou arbre de décision) sur les données d'entrainement. 
+- Prédiction sur les données de test 
+- Comparaison avec la vérité de terrain 
+- Ajustement des poids : réitération de l'apprentissage si les prédictions sont insatisfaisantes. (Cette étape est très énergivore) 
+
+### 4e étape Evaluation ou utilisation du modèle sur de nouvelles données 
+
+- De nouvelles données (données d'évaluation sur une phase expériementale) qui n'ont jamais été vues par la machine, sont vectorisées aussi.
+- Le programme entraîné effectue ses prédictions sur ces données. 
+
 
 ## Les LLMs 
 
 Exemple de LLMs : GPT-4, Mixtral, Gemini, Llama, Qwen, DeepSeek etc. 
 
 Large Language Models : 
-1. modélisation vectorielle de chaque mot de la langue par rapport à sa fréquence d'apparition en contexte avec chacun des autres mots de la langue, 
-2. spécialisation sous forme de couche neuronale pour une tâche ou une fonction précise. 
-3. query et calcul pour chaque donnée en entrée du token le plus probable en sortie
+1. Encodage : Word embeddings ou plongement de mots obtenu par rapport à sa fréquence d'apparition en contexte avec chacun des autres mots de la langue à partir d'un volume de données textuelle gigantesque. Modèles de type BERT : encodage bilatéral avec méchanisme d'attention. 
+2. Spécialisation du modèle sous forme de couches neuronales pour une tâche ou une fonction précise. 
+3. Query et calcul pour chaque donnée en entrée du token le plus probable en sortie. 
 
+## En résumé 
 
-## LLMs et non chatbot
+Modèle de langue = modélisation de la langue dans son ensemble + capacité de prédiction. 
 
-Classification (de token, de texte)
+Les LLMs font de la prédiction de token : 
 
-
-<!-- démo NER -->
+- la génération de texte n'est pas la première ni la seule utilisation des LLMs. 
+- soliciter un LLM pour générer un texte demande de recalculer le token le plus probable à chaque token -> coût énergétique important. 
 
 
 ## LLMs et chatbot
 
-Parce que les LLMs sont lourds (plusieurs Gigas) et parce qu'il est coûteux en énergie d'effectuer les calculs qui permettent de déterminer le prochain token (plusieurs GPU), l'usage le plus courant des LLMs est via un site qui va interroger le modèle sur un serveur distant. C'est la forme ChatGPT, Mistral.ai, etc. 
+Parce que les LLMs sont lourds (plusieurs Gigas) et parce qu'il est coûteux en énergie d'effectuer les calculs qui permettent de déterminer le prochain token (plusieurs GPU), l'usage le plus courant des IA générative est via un site qui va interroger le modèle sur un serveur distant. C'est la forme ChatGPT, Mistral.ai, etc. 
 
 
 ## Duck.ai
 
-duck.ai permet de comparer des modèles en interfaces chat tout en conservant des données privées : https://duck.ai
-
-<!-- démonstration de duckai et des paramètres -->
+[duck.ai](https://duck.ai) permet de comparer des modèles en interfaces chat tout en conservant des données privées. 
 
 
 ## Ollama
-Il est pourtant possible de faire tourner un SLM (small language model) localement. Pour ce faire : `ollama` est une bibliothèque qui permet de télécharger et d'utiliser localement un LLMs. 
+
+Il est possible de faire tourner un SLM (small language model) localement. Pour ce faire : `ollama` est une bibliothèque qui permet de télécharger et d'utiliser localement un LLMs. 
 
 
-### téléchargement
-https://ollama.com/download
+### Installation et utilisation de Ollama 
 
-command line 
+[Téléchargement de Ollama](https://ollama.com/download)
 
-ollama run llama3.2
+### Utilisation de Ollama en invite de commande
+
+
+Via l'invite de commande 
+
+```ollama run llama3.2``` -> télécharge et lance le modèle.
 
 """ -> pour des instructions longues
 
-ollama list -> liste des modèles téléchargés et utilisables
+`/show info` -> information sur le modèle téléchargé
 
-ollama rm llama3.2 -> supprime un modèle 
+`ollama list` -> liste des modèles téléchargés et utilisables
+
+
+`ollama rm llama3.2` -> supprime un modèle 
 
 
 ## Paramètres d'un modèle 
 
-Plusieurs paramètres importants et contrôlable : 
+- Le **seed** (nombre que l'on peut choisir): les LLMs ont une variable aléatoire au moment de l'encodage des données et au moment du requêtage : le seed permet d'utiliser toujours le même ordre aléatoire, càd d'obtenir pour un même prompt toujours la même réponse. Enjeu de reproductibilité. 
+- La **température** (valeur de 0 à 1): détermine le degré d'utilisation de la variable aléatoire. Une température élevée signifie que le modèle sera plus "créatif" car il donnera plus probablement un token qui a une probabilité absolue moindre dans son contexte.
+- **top_k** (valeur de 0 à 100): variable qui réduit la probabilité de générer des tokens absurdes. Une valeur élevée donne des réponses plus variées et une valeur basse des réponses plus conservatrices. (Défaut 40)
+- **top_p** (valeur de 0 à 1): Fonctionne avec le top_k. Une valeur haute donne un texte varié, une valeur basse, un texte conservateur. (Défaut: 0,9)
 
-- le seed :les LLMs ont une variable aléatoire dans leur paramètre : le seed permet d'utiliser toujours le même ordre aléatoire, càd d'obtenir pour un même prompt toujours la même réponse et ainsi de rendre reproductible une réponse. 
-- la température: détermine le degré d'utilisation de la variable aléatoire (mas o menos)
-- top_k : Reduces the probability of generating nonsense. A higher value (e.g. 100) will give more diverse answers, while a lower value (e.g. 10) will be more conservative. (Default: 40)
-- top_p: Works together with top-k. A higher value (e.g., 0.95) will lead to more diverse text, while a lower value (e.g., 0.5) will generate more focused and conservative text. (Default: 0.9)
+Source : [Documentation Ollama](https://github.com/ollama/ollama/blob/main/docs/modelfile.md#parameter)
 
-## model Steering 
+## Model Steering 
 
-https://github.com/ollama/ollama/blob/main/docs/modelfile.md
+Reconduire un modèle consiste à lui fournir des ordres qui vont modifier son comportement pour toutes les interactions.
 
- Créer un nouveau document 'Modelfile' sans extension
- `touch Modelfile`
+[Tutoriel](https://github.com/ollama/ollama/blob/main/docs/modelfile.md)
 
- ```
-FROM llama3.2
+Créer un nouveau document 'Modelfile' sans extension. 
+
+Linux : `cat > Modelfile` puis CTRL+C : 
+
+>FROM llama3.2
 PARAMETER temperature 1
 top_k 100
 top_p 1
 seed 17
 SYSTEM "Tu es un chien"
-```
 
-ollama create chien -f Modelfile
+puis CTRL+SHIFT+D et CTRL+D
 
-ollama run chien
 
+Windows cmd (Win+R):  ```echo 'FROM llama3.2
+PARAMETER temperature 1
+top_k 100
+top_p 1
+seed 17
+SYSTEM "Tu es un chien"' > Modelfile``` (CTRL+SHIFT+D)
+
+
+Ou c/c manuellement : 
+
+>FROM llama3.2
+PARAMETER temperature 1
+top_k 100
+top_p 1
+seed 17
+SYSTEM "Tu es un chien"
+
+```ollama create chien -f Modelfile```
+
+```ollama run chien```
 
 
 ## Limites des interfaces de chat 
 
-- les chatbots ont des limites : on peut 'hacker un LLM' avec du _prompt injection_ ou autres techniques de _Jailbreaking_. 
+- les chatbots ont des limites : on peut 'hacker un LLM' avec du _prompt injection_ ou autres techniques de _jailbreaking_. 
 
 [Incitent database](https://incidentdatabase.ai/) 
 
 >Hidden prompts reportedly were discovered in at least 17 academic preprints on arXiv that purportedly instructed AI tools to deliver only positive peer reviews. The lead authors are reportedly affiliated with 14 institutions in eight countries, including Waseda University, KAIST, Peking University, and the University of Washington. The alleged concealed instructions, some of which were reportedly embedded using white text or tiny fonts, were purportedly intended to influence any reviewers who rely on AI tools. (https://incidentdatabase.ai/cite/1135)
 
 
-
 - il n'y a pas d'hallucinations, toutes les générations produites par un LLMs ont la même teneur de vérité du pdv de l'outil : le modèle ne peut pas évaluer sa réponse à l'aune d'une _ground truth_ comme dans sa phase d'entraînement.
 
 
-- Problèmes et réflexions pour les SHS : 
-    - uniformisation des pratiques, des modes de pensées : l'interface de chat est une façon de formaliser son problème, quid de la recherhce de solution en interrogeant des moteurs de recherche, des bdd ou archives spécialisées ? 
+## Études critiques de l'IA
 
-    - Derrière l'apparente accessibilité de l'interface de chat, est-ce qu'on ne risque pas de creuser l'écart de la littératie numérique ? 
+Discipline émergeante : [Critical AI revue](https://read.dukeupress.edu/critical-ai/issue/3/1) lancée en 2023.
 
-    - Est-ce que ces connaissances spécifiques, comme celles du code, qui impliquent des capacités de raisonnement alternatives, ne risquent pas de se retrouver suelement dans une forme d'élite intellectuelle ? 
+Pistes de réflexions : 
 
+- Uniformisation des pratiques et des modes de pensées : l'interface de chat est une façon de formaliser son problème, quid de la recherche de solution en interrogeant des moteurs de recherche, des bases de données ou des archives spécialisées ? 
+- Derrière l'apparente accessibilité de l'interface de chat, est-ce qu'on ne risque pas de creuser l'écart de la littératie numérique ? 
+- Est-ce que ces connaissances spécifiques, comme celles du code, qui impliquent des capacités de raisonnement alternatives, ne risquent pas de se retrouver suelement dans une forme d'élite intellectuelle ? 
+- Comment peut-on définir une littéracie propre aux outils d'IA ? 
+- Quelle posture adopter ? Faut-il interdire l'usage dans la recherche ou l'enseignement, obliger une déclaration d'utilisation/citation ou encore laisser faire selon les usages et opter pour une approche pédagogique ?
 
-# Ce qu'il faut retenir de la séance
+## Ce qu'il faut retenir
 
-- l'IA est un terme ajd employé à tort poru parler des LLMs mais qui recouvre en réalité des processus algorithmiques variés et pas seulement des chatbots type ChatGPT.
-- l'histoire de l'IA a montré qu'il y a des phases
-- les autres systèmes ne sont pas plus ni moins 'intelligent'. 
-- un système expert peut être aussi complexe et énergivore que du machine learning (mais dans les faits plus rarement).
-- les systèmes d'IA n'ont pas de connaissance du réel (et celleux qui disent le contraire essaient de vendre des choses à l'heure actuelle)
-- par csq les halllucinations ne sont pas des anomalies, ce sont des erreurs que l'on qualifie a postériori comme telle. 
-- les systèmes inductifs sont appropriés pour des certaines tâches : classification, production de résumé. Leur point fort reste l'adaptation à des contextes de textes ou d'images variés. 
-- les chatbots sont des interfaces qui permettent un échange homme-machine en langue naturelle : l'exploitation des capacités inductives d'un LLMs ne nécessite pas de passer par une telle interface. Ex : classification, processus expérimental plus adapté à une utilisation sans cette interface. 
+- L'IA est amalgamé aux LLMs et en particulier aux interfaces de chatbots mais cela recouvre en réalité des processus algorithmiques variés.
+- L'histoire de l'IA a montré qu'il y a des phases tant dans les approches valorisées que dans l'approbation de l''intelligence artificielle' opposée à l'intelligence humaine.
+- un système expert (symbolique) peut être aussi complexe et 'intelligent' qu'un LLM.
+- Les systèmes d'IA n'ont pas de connaissance du réel et sont des modèles purement probabilistes. 
+- Les 'halllucinations' ne sont pas des anomalies, ce sont des erreurs que l'on qualifie a postériori comme telles. 
+- Les systèmes inductifs sont appropriés pour certaines tâches : classification, production de résumé. Leur point fort reste leur adaptabilité à de nouveaux contextes. 
+- Les chatbots sont des interfaces qui permettent un échange homme-machine en langue naturelle : l'exploitation des capacités inductives d'un LLMs ne nécessite pas de passer par une telle interface. Ex : classification, processus expérimental plus adapté à une utilisation sans cette interface. 
 
-# Ressources vues pendant l'atelier
+## Ressources vues pendant l'atelier
 
-https://spacy.io/usage 
+[Duck.ai](https://duck.ai)
 
-https://incidentdatabase.ai/
+[Ollama](https://ollama.com/download) et [documentation](https://github.com/ollama/ollama/blob/main/docs/modelfile.md)
 
-https://duck.ai
+[spaCy](https://spacy.io/usage)
 
-Ollama
-    Installation : https://ollama.com/download
-    Documentation : 
-    https://github.com/ollama/ollama/blob/main/docs/modelfile.md
+[Incident Database AI](https://incidentdatabase.ai/)
 
-
-
-
-
-
-
-
+[Critical AI journal](https://read.dukeupress.edu/critical-ai)
 
 
 ## Bibliographie

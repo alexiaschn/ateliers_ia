@@ -270,14 +270,14 @@
     "href": "sept11/intro.html#lia-et-les-shs-2",
     "title": "Intro",
     "section": "L’IA et les SHS",
-    "text": "L’IA et les SHS\nQue peuvent faire les SHS pour l’IA ?\n\nparticiper à la réflexion actuelle sur son utilisation :\n\npositionnements de revues et de conférences sur son utilisation (pose un cadre, parfois un précédent)\n\nproposer une théorie critique de l’IA décentrées de l’effet ‘benchmarking’\nproposer une avis sur l’utilisation de ces outils qui soit propre à sa discipline."
+    "text": "L’IA et les SHS\nQue peuvent faire les SHS pour l’IA ?\n\nparticiper à la réflexion actuelle sur son utilisation :\n\npositionnements de revues et de conférences (pose un cadre, parfois un précédent)\n\nproposer une théorie critique de l’IA décentrées de l’effet ‘benchmarking’ (i.e. comparaison des modèles ou des entreprises qui les mettent à disposition)\nproposer une avis sur l’utilisation de ces outils qui soit propre à sa discipline (ex: distinguer des usages en fonction des besoins particuliers de son domaine)."
   },
   {
     "objectID": "sept11/intro.html#exemples-de-prises-de-position",
     "href": "sept11/intro.html#exemples-de-prises-de-position",
     "title": "Intro",
     "section": "Exemples de prises de position",
-    "text": "Exemples de prises de position\n\nBoth SUP and JHUP have increasingly embraced, tested, and deployed some AI tools and policies. Barbara has been clear in her support of responsible uses of AI and the necessity of leveraging these early days to stake a claim within the quickly evolving landscape. Like SUP, JHUP is building and testing its own tools for marketing, accessibility, and analytics, efforts which place our presses in a position to potentially build services that might in the future even benefit other university presses. (Mulliken 2025)\n\n\nwe offer recommendations for citing generative AI, defined as a tool that “can analyze or summarize content from a huge set of information, including web pages, books and other writing available on the internet, and use that data to create original new content” (Weed). (“How Do I Cite Generative AI in MLA Style?” 2023)\n\n\nThe uncomfortable truth for researchers and publishers who oppose AI slowly taking over human review is that they might not be able to prevent it. Should a researcher use AI to write the first pass of peer review and not disclose it — in contravention of publisher guidelines — that might not be detectable, says Hosseini, who is also one of the editors of the journal Accountability in Research. And if AI reviews become widespread, that could change the practice of science, says Priem. “Every researcher can run their own bespoke review service over the preprint/dataset landscape, flagging/extracting only the science they care about (at any “quality” level) they want that day,” he wrote on X earlier this year. That could start to eat into the roles of journals, by taking away the certification that peer review mediated by journals provides, he says. (Naddaf 2025)"
+    "text": "Exemples de prises de position\n\nBoth SUP and JHUP have increasingly embraced, tested, and deployed some AI tools and policies. Barbara has been clear in her support of responsible uses of AI and the necessity of leveraging these early days to stake a claim within the quickly evolving landscape. Like SUP, JHUP is building and testing its own tools for marketing, accessibility, and analytics, efforts which place our presses in a position to potentially build services that might in the future even benefit other university presses. (Mulliken 2025)\n\n\nwe offer recommendations for citing generative AI, defined as a tool that “can analyze or summarize content from a huge set of information, including web pages, books and other writing available on the internet, and use that data to create original new content” (Weed). (“How Do I Cite Generative AI in MLA Style?” 2023)\n\n\nThe uncomfortable truth for researchers and publishers who oppose AI slowly taking over human review is that they might not be able to prevent it. Should a researcher use AI to write the first pass of peer review and not disclose it — in contravention of publisher guidelines — that might not be detectable, says Hosseini, who is also one of the editors of the journal Accountability in Research. And if AI reviews become widespread, that could change the practice of science, says Priem. “Every researcher can run their own bespoke review service over the preprint/dataset landscape, flagging/extracting only the science they care about (at any “quality” level) they want that day,” he wrote on X earlier this year. That could start to eat into the roles of journals, by taking away the certification that peer review mediated by journals provides, he says. (Naddaf 2025)\n\n\nBuilding critical AI literacies is a process of empowerment that enables students and citizens to exercise independent judgment about whether or if to use this very new and largely untested commercial technology. (rutgersCriticalAILiteracies2024?)"
   },
   {
     "objectID": "sept11/intro.html#brève-histoire-de-lia-et-des-applications-de-linguistique-computationnelle-pt.-1",
@@ -291,28 +291,28 @@
     "href": "sept11/intro.html#brève-histoire-de-lia-et-des-applications-de-linguistique-computationnelle-pt.-2",
     "title": "Intro",
     "section": "Brève histoire de l’IA et des applications de linguistique computationnelle (pt. 2)",
-    "text": "Brève histoire de l’IA et des applications de linguistique computationnelle (pt. 2)\n2010s : pic des systèmes d’IA avec une modélisation distributionnelle du language (vecteur). Word2Vec (Mikolov et al. 2013), GloVE (Pennington, Socher, and Manning 2014). Parmi les avancées majeures de cette modélisation on compte le mécanisme d’attention (Vaswani et al. 2017) et l’encodage bidirectionnel BERT (Devlin et al. 2019) qui permettent des modèles très performants comme le GPT-3 d’OpenAI (Brown et al. 2020).\nActuellement : tendance à l’hybridation (Marcus 2020)"
+    "text": "Brève histoire de l’IA et des applications de linguistique computationnelle (pt. 2)\n2010s : pic des systèmes d’IA avec une modélisation distributionnelle du language (vecteur). Word2Vec (Mikolov et al. 2013), GloVE (Pennington, Socher, and Manning 2014). Parmi les avancées majeures de cette modélisation on compte le mécanisme d’attention (Vaswani et al. 2017) et l’encodage bidirectionnel BERT (Devlin et al. 2019) qui permettent des modèles très performants comme le GPT-3 d’OpenAI (Brown et al. 2020).\nActuellement : tendance à l’hybridation de ces modèles : Neuro-Symbolic Integration, Semantic Web Machine Learning (Marcus 2020; Breit et al. 2023)"
   },
   {
     "objectID": "sept11/intro.html#typologie-de-lia",
     "href": "sept11/intro.html#typologie-de-lia",
     "title": "Intro",
     "section": "Typologie de l’IA",
-    "text": "Typologie de l’IA\n\nApproche experte : modélisation d’un programme à partir de règles précises. Les règles doivent être applicables à de nouvelles données pour faire une prédiction.\nApproche distributionnelle : modélisation d’un programme à partir d’un grand volume de données. Ce sont les motifs de répétitions qui permettent à la machine d’émettre une prédiction."
+    "text": "Typologie de l’IA\n\nApproche experte ou modèle symbolique : modélisation d’un programme à partir de règles précises. Les règles doivent être applicables à de nouvelles données pour faire une prédiction.\nApproche inductive ou modèle d’apprentissage machine (machine learning) : modélisation d’un programme à partir d’un grand volume de données. Ce sont les motifs de répétitions qui permettent à la machine d’émettre une prédiction."
   },
   {
     "objectID": "sept11/intro.html#ce-quil-faut-retenir",
     "href": "sept11/intro.html#ce-quil-faut-retenir",
     "title": "Intro",
     "section": "Ce qu’il faut retenir",
-    "text": "Ce qu’il faut retenir\n\ndeux modélisations : une approche top-down et une approche sample-based.\n‘des saisons’ en IA càd que certaines approches attirent l’attention à un moment donné, actuellement IA = chatbot voire ChatGPT.\nl’IA réfère à des algorithmes qui permettent d’automatiser une prise de décision et pas seulement à des programmes de génération textuelle."
+    "text": "Ce qu’il faut retenir\n\nL’IA réfère à plusieurs type de modélisations pour la prédiction : une approche déductive et une approche inductive.\nOn parle ‘des saisons’ de l’IA pour évoquer l’attrait public de la discipline et son avancée depuis les années 1950.\nPar conséquent, certaines approches attirent l’attention à un moment donné, actuellement IA = chatbot voire ChatGPT.\nL’IA réfère à des algorithmes qui permettent d’automatiser une prise de décision et pas seulement à des programmes de génération textuelle."
   },
   {
     "objectID": "sept11/intro.html#partons-dun-exemple",
     "href": "sept11/intro.html#partons-dun-exemple",
     "title": "Intro",
     "section": "Partons d’un exemple",
-    "text": "Partons d’un exemple\nObjectif : obtenir un programme capable de classer une phrase selon une thématique prédéfinie.\nExemple : Classification d’un texte en “parle de fruit” vs. “ne parle pas de fruit”."
+    "text": "Partons d’un exemple\nObjectif : obtenir un programme capable de classer une phrase selon une thématique prédéfinie.\nExemple : Classification d’un texte soit en “parle de fruit” soit en “ne parle pas de fruit”.\nVocabulaire :\ndocument : ici une phrase\nclasses : ensemble thématique de la classification. Ex : “fruit” et “non fruit” pour la classification binaire de notre exemple.\njeu de données : ensemble des documents\napprentissage supervisé : méthode d’apprentissage machine à partir de classes connues.\napprentissage non-supervisé : méthode d’apprentissage machine sans connaître les classes à l’avance : a pour objectif de déterminer les caractéristiques discriminantes d’un jeu de données.\nvérité de terrain ou ground truth : annotation effectuée par un humain sur l’ensemble du jeu de données."
   },
   {
     "objectID": "sept11/intro.html#modéliser-une-approche-experte",
@@ -340,7 +340,7 @@
     "href": "sept11/intro.html#les-llms",
     "title": "Intro",
     "section": "Les LLMs",
-    "text": "Les LLMs\nExemple de LLMs : GPT-4, Mixtral, Gemini, Llama, Qwen, DeepSeek etc.\nLarge Language Models : 1. modélisation vectorielle de chaque mot de la langue par rapport à sa fréquence d’apparition en contexte avec chacun des autres mots de la langue, 2. spécialisation sous forme de couche neuronale pour une tâche ou une fonction précise. 3. query et calcul pour chaque donnée en entrée du token le plus probable en sortie"
+    "text": "Les LLMs\nExemple de LLMs : GPT-4, Mixtral, Gemini, Llama, Qwen, DeepSeek etc.\nLarge Language Models : 1. Encodage : Word embeddings ou plongement de mots obtenu par rapport à sa fréquence d’apparition en contexte avec chacun des autres mots de la langue à partir d’un volume de données textuelle gigantesque. Modèles de type BERT : encodage bilatéral avec méchanisme d’attention. 2. Spécialisation du modèle sous forme de couches neuronales pour une tâche ou une fonction précise. 3. Query et calcul pour chaque donnée en entrée du token le plus probable en sortie."
   },
   {
     "objectID": "sept11/intro.html#llms-et-non-chatbot",
@@ -354,48 +354,125 @@
     "href": "sept11/intro.html#llms-et-chatbot",
     "title": "Intro",
     "section": "LLMs et chatbot",
-    "text": "LLMs et chatbot\nParce que les LLMs sont lourds (plusieurs Gigas) et parce qu’il est coûteux en énergie d’effectuer les calculs qui permettent de déterminer le prochain token (plusieurs GPU), l’usage le plus courant des LLMs est via un site qui va interroger le modèle sur un serveur distant. C’est la forme ChatGPT, Mistral.ai, etc."
+    "text": "LLMs et chatbot\nParce que les LLMs sont lourds (plusieurs Gigas) et parce qu’il est coûteux en énergie d’effectuer les calculs qui permettent de déterminer le prochain token (plusieurs GPU), l’usage le plus courant des IA générative est via un site qui va interroger le modèle sur un serveur distant. C’est la forme ChatGPT, Mistral.ai, etc."
   },
   {
     "objectID": "sept11/intro.html#duck.ai",
     "href": "sept11/intro.html#duck.ai",
     "title": "Intro",
     "section": "Duck.ai",
-    "text": "Duck.ai\nduck.ai permet de comparer des modèles en interfaces chat tout en conservant des données privées : https://duck.ai"
+    "text": "Duck.ai\nduck.ai permet de comparer des modèles en interfaces chat tout en conservant des données privées."
   },
   {
     "objectID": "sept11/intro.html#ollama",
     "href": "sept11/intro.html#ollama",
     "title": "Intro",
     "section": "Ollama",
-    "text": "Ollama\nIl est pourtant possible de faire tourner un SLM (small language model) localement. Pour ce faire : ollama est une bibliothèque qui permet de télécharger et d’utiliser localement un LLMs.\ntéléchargement\nhttps://ollama.com/download\ncommand line\nollama run llama3.2\n““” -&gt; pour des instructions longues\nollama list -&gt; liste des modèles téléchargés et utilisables\nollama rm llama3.2 -&gt; supprime un modèle"
+    "text": "Ollama\nIl est possible de faire tourner un SLM (small language model) localement. Pour ce faire : ollama est une bibliothèque qui permet de télécharger et d’utiliser localement un LLMs.\nInstallation et utilisation de Ollama\nTéléchargement de Ollama\nUtilisation de Ollama en invite de commande\nVia l’invite de commande\nollama run llama3.2 -&gt; télécharge et lance le modèle.\n““” -&gt; pour des instructions longues\n/show info -&gt; information sur le modèle téléchargé\nollama list -&gt; liste des modèles téléchargés et utilisables\nollama rm llama3.2 -&gt; supprime un modèle"
   },
   {
     "objectID": "sept11/intro.html#paramètres-dun-modèle",
     "href": "sept11/intro.html#paramètres-dun-modèle",
     "title": "Intro",
     "section": "Paramètres d’un modèle",
-    "text": "Paramètres d’un modèle\nPlusieurs paramètres importants et contrôlable :\n\nle seed :les LLMs ont une variable aléatoire dans leur paramètre : le seed permet d’utiliser toujours le même ordre aléatoire, càd d’obtenir pour un même prompt toujours la même réponse et ainsi de rendre reproductible une réponse.\nla température: détermine le degré d’utilisation de la variable aléatoire (mas o menos)\ntop_k : Reduces the probability of generating nonsense. A higher value (e.g. 100) will give more diverse answers, while a lower value (e.g. 10) will be more conservative. (Default: 40)\ntop_p: Works together with top-k. A higher value (e.g., 0.95) will lead to more diverse text, while a lower value (e.g., 0.5) will generate more focused and conservative text. (Default: 0.9)"
+    "text": "Paramètres d’un modèle\n\nLe seed (nombre que l’on peut choisir): les LLMs ont une variable aléatoire au moment de l’encodage des données et au moment du requêtage : le seed permet d’utiliser toujours le même ordre aléatoire, càd d’obtenir pour un même prompt toujours la même réponse. Enjeu de reproductibilité.\nLa température (valeur de 0 à 1): détermine le degré d’utilisation de la variable aléatoire. Une température élevée signifie que le modèle sera plus “créatif” car il donnera plus probablement un token qui a une probabilité absolue moindre dans son contexte.\ntop_k (valeur de 0 à 100): variable qui réduit la probabilité de générer des tokens absurdes. Une valeur élevée donne des réponses plus variées et une valeur basse des réponses plus conservatrices. (Défaut 40)\ntop_p (valeur de 0 à 1): Fonctionne avec le top_k. Une valeur haute donne un texte varié, une valeur basse, un texte conservateur. (Défaut: 0,9)\n\nSource : Documentation Ollama"
   },
   {
     "objectID": "sept11/intro.html#model-steering",
     "href": "sept11/intro.html#model-steering",
     "title": "Intro",
-    "section": "model Steering",
-    "text": "model Steering\nhttps://github.com/ollama/ollama/blob/main/docs/modelfile.md\nCréer un nouveau document ‘Modelfile’ sans extension touch Modelfile\nFROM llama3.2\nPARAMETER temperature 1\ntop_k 100\ntop_p 1\nseed 17\nSYSTEM \"Tu es un chien\"\nollama create chien -f Modelfile\nollama run chien"
+    "section": "Model Steering",
+    "text": "Model Steering\nReconduire un modèle consiste à lui fournir des ordres qui vont modifier son comportement pour toutes les interactions.\nTutoriel\nCréer un nouveau document ‘Modelfile’ sans extension.\nLinux : cat &gt; Modelfile puis CTRL+C :\n\nFROM llama3.2 PARAMETER temperature 1 top_k 100 top_p 1 seed 17 SYSTEM “Tu es un chien”\n\npuis CTRL+SHIFT+D et CTRL+D\nWindows cmd (Win+R): echo 'FROM llama3.2 PARAMETER temperature 1 top_k 100 top_p 1 seed 17 SYSTEM \"Tu es un chien\"' &gt; Modelfile (CTRL+SHIFT+D)\nOu c/c manuellement :\n\nFROM llama3.2 PARAMETER temperature 1 top_k 100 top_p 1 seed 17 SYSTEM “Tu es un chien”\n\nollama create chien -f Modelfile\nollama run chien"
   },
   {
     "objectID": "sept11/intro.html#limites-des-interfaces-de-chat",
     "href": "sept11/intro.html#limites-des-interfaces-de-chat",
     "title": "Intro",
     "section": "Limites des interfaces de chat",
-    "text": "Limites des interfaces de chat\n\nles chatbots ont des limites : on peut ‘hacker un LLM’ avec du prompt injection ou autres techniques de Jailbreaking.\n\nIncitent database\n\nHidden prompts reportedly were discovered in at least 17 academic preprints on arXiv that purportedly instructed AI tools to deliver only positive peer reviews. The lead authors are reportedly affiliated with 14 institutions in eight countries, including Waseda University, KAIST, Peking University, and the University of Washington. The alleged concealed instructions, some of which were reportedly embedded using white text or tiny fonts, were purportedly intended to influence any reviewers who rely on AI tools. (https://incidentdatabase.ai/cite/1135)\n\n\nil n’y a pas d’hallucinations, toutes les générations produites par un LLMs ont la même teneur de vérité du pdv de l’outil : le modèle ne peut pas évaluer sa réponse à l’aune d’une ground truth comme dans sa phase d’entraînement.\nProblèmes et réflexions pour les SHS :\n\nuniformisation des pratiques, des modes de pensées : l’interface de chat est une façon de formaliser son problème, quid de la recherhce de solution en interrogeant des moteurs de recherche, des bdd ou archives spécialisées ?\nDerrière l’apparente accessibilité de l’interface de chat, est-ce qu’on ne risque pas de creuser l’écart de la littératie numérique ?\nEst-ce que ces connaissances spécifiques, comme celles du code, qui impliquent des capacités de raisonnement alternatives, ne risquent pas de se retrouver suelement dans une forme d’élite intellectuelle ?"
+    "text": "Limites des interfaces de chat\n\nles chatbots ont des limites : on peut ‘hacker un LLM’ avec du prompt injection ou autres techniques de jailbreaking.\n\nIncitent database\n\nHidden prompts reportedly were discovered in at least 17 academic preprints on arXiv that purportedly instructed AI tools to deliver only positive peer reviews. The lead authors are reportedly affiliated with 14 institutions in eight countries, including Waseda University, KAIST, Peking University, and the University of Washington. The alleged concealed instructions, some of which were reportedly embedded using white text or tiny fonts, were purportedly intended to influence any reviewers who rely on AI tools. (https://incidentdatabase.ai/cite/1135)\n\n\nil n’y a pas d’hallucinations, toutes les générations produites par un LLMs ont la même teneur de vérité du pdv de l’outil : le modèle ne peut pas évaluer sa réponse à l’aune d’une ground truth comme dans sa phase d’entraînement."
   },
   {
     "objectID": "sept11/intro.html#bibliographie",
     "href": "sept11/intro.html#bibliographie",
     "title": "Intro",
     "section": "Bibliographie",
-    "text": "Bibliographie\n\n\n\n\nBrown, Tom B., Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, et al. 2020. “Language Models Are Few-Shot Learners.” arXiv. https://doi.org/10.48550/arXiv.2005.14165.\n\n\nCampbell, Murray, A. Joseph Hoane, and Feng-hsiung Hsu. 2002. “Deep Blue.” Artificial Intelligence 134 (1): 57–83. https://doi.org/10.1016/S0004-3702(01)00129-1.\n\n\nConnelly, Daniel. n.d. “Eliza.py.” Eliza Emulation Python. https://dhconnelly.com/paip-python/docs/paip/eliza.html. Accessed August 20, 2025.\n\n\nDevlin, Jacob, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. “BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding.” In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers), edited by Jill Burstein, Christy Doran, and Thamar Solorio, 4171–86. Minneapolis, Minnesota: Association for Computational Linguistics. https://doi.org/10.18653/v1/N19-1423.\n\n\nFujinaga, Ichiro. 2025. “On the virtues of lazy machines.” {Keynote}. Montréal.\n\n\nHaenlein, Michael, and Andreas Kaplan. 2019. “A Brief History of Artificial Intelligence: On the Past, Present, and Future of Artificial Intelligence.” California Management Review 61 (4): 5–14. https://doi.org/10.1177/0008125619864925.\n\n\n“How Do I Cite Generative AI in MLA Style?” 2023. MLA Style Center.\n\n\nKnuth, D. E. 1984. “Literate Programming.” The Computer Journal 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.\n\n\nMarcus, Gary. 2020. “The Next Decade in AI: Four Steps Towards Robust Artificial Intelligence.” arXiv. https://doi.org/10.48550/arXiv.2002.06177.\n\n\nMikolov, Tomas, Kai Chen, Greg Corrado, and Jeffrey Dean. 2013. “Efficient Estimation of Word Representations in Vector Space.” arXiv. https://doi.org/10.48550/arXiv.1301.3781.\n\n\nMulliken, Jasmine. 2025. “2025 AUPresses Week-in-Residence Report.”\n\n\nNaddaf, Miryam. 2025. “AI Is Transforming Peer Review — and Many Scientists Are Worried.” Nature 639 (8056): 852–54. https://doi.org/10.1038/d41586-025-00894-7.\n\n\nPennington, Jeffrey, Richard Socher, and Christopher Manning. 2014. “GloVe: Global Vectors for Word Representation.” In Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP), edited by Alessandro Moschitti, Bo Pang, and Walter Daelemans, 1532–43. Doha, Qatar: Association for Computational Linguistics. https://doi.org/10.3115/v1/D14-1162.\n\n\nTuring, A. M. 1950. “Computing Machinery and Intelligence.” Mind LIX (236): 433–60. https://doi.org/10.1093/mind/LIX.236.433.\n\n\nVaswani, Ashish, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin. 2017. “Attention Is All You Need.” arXiv. https://doi.org/10.48550/arXiv.1706.03762.\n\n\nVitali-Rosati, Marcello. 2025. “Manifeste Pour Des Études Critiques de l’Intelligence Artificielle.” Culture Numérique. Pour Une Philosophie Du Numérique.\n\n\nWeizenbaum, Joseph. 1966. “ELIZA—a Computer Program for the Study of Natural Language Communication Between Man and Machine.” Communications of the ACM 9 (1): 36–45. https://doi.org/10.1145/365153.365168."
+    "text": "Bibliographie\n\n\n\n\nBreit, Anna, Laura Waltersdorfer, Fajar J. Ekaputra, Marta Sabou, Andreas Ekelhart, Andreea Iana, Heiko Paulheim, et al. 2023. “Combining Machine Learning and Semantic Web: A Systematic Mapping Study.” ACM Computing Surveys 55 (14s): 313:1–41. https://doi.org/10.1145/3586163.\n\n\nBrown, Tom B., Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, et al. 2020. “Language Models Are Few-Shot Learners.” arXiv. https://doi.org/10.48550/arXiv.2005.14165.\n\n\nCampbell, Murray, A. Joseph Hoane, and Feng-hsiung Hsu. 2002. “Deep Blue.” Artificial Intelligence 134 (1): 57–83. https://doi.org/10.1016/S0004-3702(01)00129-1.\n\n\nConnelly, Daniel. n.d. “Eliza.py.” Eliza Emulation Python. https://dhconnelly.com/paip-python/docs/paip/eliza.html. Accessed August 20, 2025.\n\n\nDevlin, Jacob, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. “BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding.” In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers), edited by Jill Burstein, Christy Doran, and Thamar Solorio, 4171–86. Minneapolis, Minnesota: Association for Computational Linguistics. https://doi.org/10.18653/v1/N19-1423.\n\n\nFujinaga, Ichiro. 2025. “On the virtues of lazy machines.” {Keynote}. Montréal.\n\n\nHaenlein, Michael, and Andreas Kaplan. 2019. “A Brief History of Artificial Intelligence: On the Past, Present, and Future of Artificial Intelligence.” California Management Review 61 (4): 5–14. https://doi.org/10.1177/0008125619864925.\n\n\n“How Do I Cite Generative AI in MLA Style?” 2023. MLA Style Center.\n\n\nKnuth, D. E. 1984. “Literate Programming.” The Computer Journal 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.\n\n\nMarcus, Gary. 2020. “The Next Decade in AI: Four Steps Towards Robust Artificial Intelligence.” arXiv. https://doi.org/10.48550/arXiv.2002.06177.\n\n\nMikolov, Tomas, Kai Chen, Greg Corrado, and Jeffrey Dean. 2013. “Efficient Estimation of Word Representations in Vector Space.” arXiv. https://doi.org/10.48550/arXiv.1301.3781.\n\n\nMulliken, Jasmine. 2025. “2025 AUPresses Week-in-Residence Report.”\n\n\nNaddaf, Miryam. 2025. “AI Is Transforming Peer Review — and Many Scientists Are Worried.” Nature 639 (8056): 852–54. https://doi.org/10.1038/d41586-025-00894-7.\n\n\nPennington, Jeffrey, Richard Socher, and Christopher Manning. 2014. “GloVe: Global Vectors for Word Representation.” In Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP), edited by Alessandro Moschitti, Bo Pang, and Walter Daelemans, 1532–43. Doha, Qatar: Association for Computational Linguistics. https://doi.org/10.3115/v1/D14-1162.\n\n\nTuring, A. M. 1950. “Computing Machinery and Intelligence.” Mind LIX (236): 433–60. https://doi.org/10.1093/mind/LIX.236.433.\n\n\nVaswani, Ashish, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin. 2017. “Attention Is All You Need.” arXiv. https://doi.org/10.48550/arXiv.1706.03762.\n\n\nVitali-Rosati, Marcello. 2025. “Manifeste Pour Des Études Critiques de l’Intelligence Artificielle.” Culture Numérique. Pour Une Philosophie Du Numérique.\n\n\nWeizenbaum, Joseph. 1966. “ELIZA—a Computer Program for the Study of Natural Language Communication Between Man and Machine.” Communications of the ACM 9 (1): 36–45. https://doi.org/10.1145/365153.365168."
+  },
+  {
+    "objectID": "sept11/intro.html#approche-inductive-la-modélisation-vectorielle-et-le-machine-learning",
+    "href": "sept11/intro.html#approche-inductive-la-modélisation-vectorielle-et-le-machine-learning",
+    "title": "Intro",
+    "section": "Approche inductive : la modélisation vectorielle et le machine learning",
+    "text": "Approche inductive : la modélisation vectorielle et le machine learning\n1e étape Modélisation des données\n\nConstitution d’un corpus : obtenir un ensemble important de documents.\nAttribution d’une classe à chaque document : annotation par un humain/expert, ground truth ou vérité de terrain.\nEncodage : Comptage des tokens dans l’ensemble du jeu de données et dans chaque phrase/document.\nOn obtient une représentation vectorielle = coordonnées dans un espace vectoriel à n dimensions.\n\n\nReprésentation vectorielle ou word embeddings2e étape Détermination de la logique de prédiction\nDifférentes logiques permettent de distinguer les données entre elles. Quelques exemples d’apprentissage machine classique :\n\nK-Nearest Neighbor -&gt; le token apartient à la même classe que ses voisins (au nombre K)\nArbre de décision -&gt; on construit un arbre de questions fermées qui dessine le jeu de données.\nRegression logistique -&gt; une ligne sépare l’espace vectoriel entre les deux classes\n\n3e étape Apprentissage\n\nDivision du jeu de données en données d’entrainement et données de test.\nCalcul des poids de chaque token (régression logistique ou arbre de décision) sur les données d’entrainement.\nPrédiction sur les données de test\nComparaison avec la vérité de terrain\nAjustement des poids : réitération de l’apprentissage si les prédictions sont insatisfaisantes. (Cette étape est très énergivore)\n\n4e étape Evaluation ou utilisation du modèle sur de nouvelles données\n\nDe nouvelles données (données d’évaluation sur une phase expériementale) qui n’ont jamais été vues par la machine, sont vectorisées aussi.\nLe programme entraîné effectue ses prédictions sur ces données."
+  },
+  {
+    "objectID": "sept11/intro.html#en-résumé",
+    "href": "sept11/intro.html#en-résumé",
+    "title": "Intro",
+    "section": "En résumé",
+    "text": "En résumé\nModèle de langue = modélisation de la langue dans son ensemble + capacité de prédiction.\nLes LLMs font de la prédiction de token :\n\nla génération de texte n’est pas la première ni la seule utilisation des LLMs.\nsoliciter un LLM pour générer un texte demande de recalculer le token le plus probable à chaque token -&gt; coût énergétique important."
+  },
+  {
+    "objectID": "sept11/intro.html#études-critiques-de-lia",
+    "href": "sept11/intro.html#études-critiques-de-lia",
+    "title": "Intro",
+    "section": "Études critiques de l’IA",
+    "text": "Études critiques de l’IA\nDiscipline émergeante : Critical AI revue lancée en 2023.\nPistes de réflexions :\n\nUniformisation des pratiques et des modes de pensées : l’interface de chat est une façon de formaliser son problème, quid de la recherche de solution en interrogeant des moteurs de recherche, des bases de données ou des archives spécialisées ?\nDerrière l’apparente accessibilité de l’interface de chat, est-ce qu’on ne risque pas de creuser l’écart de la littératie numérique ?\nEst-ce que ces connaissances spécifiques, comme celles du code, qui impliquent des capacités de raisonnement alternatives, ne risquent pas de se retrouver suelement dans une forme d’élite intellectuelle ?\nComment peut-on définir une littéracie propre aux outils d’IA ?\nQuelle posture adopter ? Faut-il interdire l’usage dans la recherche ou l’enseignement, obliger une déclaration d’utilisation/citation ou encore laisser faire selon les usages et opter pour une approche pédagogique ?"
+  },
+  {
+    "objectID": "sept11/intro.html#ce-quil-faut-retenir-1",
+    "href": "sept11/intro.html#ce-quil-faut-retenir-1",
+    "title": "Intro",
+    "section": "Ce qu’il faut retenir",
+    "text": "Ce qu’il faut retenir\n\nL’IA est amalgamé aux LLMs et en particulier aux interfaces de chatbots mais cela recouvre en réalité des processus algorithmiques variés.\nL’histoire de l’IA a montré qu’il y a des phases tant dans les approches valorisées que dans l’approbation de l’‘intelligence artificielle’ opposée à l’intelligence humaine.\nun système expert (symbolique) peut être aussi complexe et ‘intelligent’ qu’un LLM.\nLes systèmes d’IA n’ont pas de connaissance du réel et sont des modèles purement probabilistes.\nLes ‘halllucinations’ ne sont pas des anomalies, ce sont des erreurs que l’on qualifie a postériori comme telles.\nLes systèmes inductifs sont appropriés pour certaines tâches : classification, production de résumé. Leur point fort reste leur adaptabilité à de nouveaux contextes.\nLes chatbots sont des interfaces qui permettent un échange homme-machine en langue naturelle : l’exploitation des capacités inductives d’un LLMs ne nécessite pas de passer par une telle interface. Ex : classification, processus expérimental plus adapté à une utilisation sans cette interface."
+  },
+  {
+    "objectID": "sept11/intro.html#ressources-vues-pendant-latelier",
+    "href": "sept11/intro.html#ressources-vues-pendant-latelier",
+    "title": "Intro",
+    "section": "Ressources vues pendant l’atelier",
+    "text": "Ressources vues pendant l’atelier\nDuck.ai\nOllama et documentation\nspaCy\nIncident Database AI\nCritical AI journal"
+  },
+  {
+    "objectID": "ressources.html",
+    "href": "ressources.html",
+    "title": "Ressources des ateliers",
+    "section": "",
+    "text": "Programme de démo\n\n\n\nDuck.ai\nOllama et documentation\n\n\n\nspaCy\nnltk"
+  },
+  {
+    "objectID": "ressources.html#démonstration-pour-les-ateliers",
+    "href": "ressources.html#démonstration-pour-les-ateliers",
+    "title": "Ressources des ateliers",
+    "section": "",
+    "text": "Programme de démo"
+  },
+  {
+    "objectID": "ressources.html#chatbots",
+    "href": "ressources.html#chatbots",
+    "title": "Ressources des ateliers",
+    "section": "",
+    "text": "Duck.ai\nOllama et documentation"
+  },
+  {
+    "objectID": "ressources.html#librairies-python-pour-le-traitement-automatique-des-langues",
+    "href": "ressources.html#librairies-python-pour-le-traitement-automatique-des-langues",
+    "title": "Ressources des ateliers",
+    "section": "",
+    "text": "spaCy\nnltk"
+  },
+  {
+    "objectID": "oct09/25-10-09_correctionAtelierIA.html",
+    "href": "oct09/25-10-09_correctionAtelierIA.html",
+    "title": "2e séance atelier IA - révision",
+    "section": "",
+    "text": "Date : 9 octobre 2025\n\n\n(format de 2h) 1. Présentation de la série d’atelier 2. Qu’est-ce que l’IA ? 3. Rappel de la 1e séance : histoire, ce qu’il fallait retenir de la 1e séance 4. Place et importance de la correction 5. Outils généralistes 6. Outils spécialisés (été 2025) 7. Pistes pour l’évaluation des outils 8. Conclusions"
+  },
+  {
+    "objectID": "oct09/25-10-09_correctionAtelierIA.html#plan",
+    "href": "oct09/25-10-09_correctionAtelierIA.html#plan",
+    "title": "2e séance atelier IA - révision",
+    "section": "",
+    "text": "(format de 2h) 1. Présentation de la série d’atelier 2. Qu’est-ce que l’IA ? 3. Rappel de la 1e séance : histoire, ce qu’il fallait retenir de la 1e séance 4. Place et importance de la correction 5. Outils généralistes 6. Outils spécialisés (été 2025) 7. Pistes pour l’évaluation des outils 8. Conclusions"
   }
 ]
