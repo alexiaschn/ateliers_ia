@@ -3,3 +3,4 @@ https://github.com/explosion/spacy-models/releases/download/fr_core_news_md-3.8.
 numpy
 scikit-learn
 plotly
+ollama

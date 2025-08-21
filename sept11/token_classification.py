@@ -5,6 +5,7 @@ from sklearn.decomposition import PCA
 import plotly.express as px
 import re
 import pandas as pd
+from ollama import chat, ChatResponse, create
 
 # Configuration
 nlp = spacy.load("fr_core_news_md")
@@ -25,7 +26,7 @@ st.title("Démonstration pour les ateliers IA pour SHS")
 phrase = st.text_input("Entrez une phrase")
 doc = nlp(phrase)
 
-tab1, tab2 = st.tabs(['Modélisation experte', 'Vectorisation'])
+tab1, tab2, tab3 = st.tabs(['Approche symbolique', 'Vectorisation', 'Ollama'])
 
 # Fonctions de modélisation
 
@@ -43,10 +44,54 @@ def expert_class(doc):
                 return True
     return False
 
+def visualisation_2d(doc, doc2=None):
+    tokens, vectors, sources = [], [], []
+
+    # First doc
+    for token in doc:
+        if token.has_vector:
+            tokens.append(token.text)
+            vectors.append(token.vector)
+            sources.append("Doc1")
+
+    # Second doc (optional)
+    if doc2 is not None:
+        for token in doc2:
+            if token.has_vector:
+                tokens.append(token.text)
+                vectors.append(token.vector)
+                sources.append("Doc2")
+
+    # Not enough tokens?
+    if len(vectors) < 2:
+        st.warning("Pas assez de tokens avec vecteurs pour faire une projection.")
+        return
+
+    # PCA to 2D
+    vectors = np.array(vectors)
+    pca = PCA(n_components=2)
+    reduced = pca.fit_transform(vectors)
+
+    # DataFrame for visualization
+    df = pd.DataFrame({
+        "token": tokens,
+        "x": reduced[:, 0],
+        "y": reduced[:, 1],
+        "source": sources
+    })
+
+    # Interactive scatter plot
+    fig = px.scatter(
+        df, x="x", y="y", text="token", color="source",
+        title="Projection PCA des vecteurs de tokens",
+        width=700, height=500
+    )
+    fig.update_traces(textposition="top center")
+
+    st.plotly_chart(fig)
 
 # Premier type de modélisation
 with tab1:
-    st.markdown('### Modélisation experte')
     col1, col2 = st.columns(2)
     with col1:
         classification_fruit = st.button('Classification fruit')
@@ -96,6 +141,9 @@ with tab2:
     with col1:
         vecteurs = st.button('Vecteurs')
         visualisation = st.button("Visualiser l'espace vectoriel") 
+        with st.form("compare_form"):
+            phrase2 = st.text_input("Deuxième phrase à comparer")
+            submitted = st.form_submit_button("Comparer")
         
     with col2: 
         if vecteurs:
@@ -106,30 +154,48 @@ with tab2:
             st.table(data)
 
         if visualisation:
-            # Récupérer les vecteurs des tokens (seulement ceux qui ont un vecteur non nul)
-            tokens = [token.text for token in doc if token.has_vector]
-            vectors = np.array([token.vector for token in doc if token.has_vector])
+            visualisation_2d(doc)
+        if submitted and phrase2.strip():
+            st.write(f"""Comparaison des vecteurs des phrases : "{phrase}" et "{phrase2}" """)
+            doc2 = nlp(phrase2)
+            visualisation_2d(doc, doc2)
+with tab3:
+    # --- initialize the list of models once ---
+    if "models" not in st.session_state:
+        st.session_state.models = ["llama3.2", "Steer un model"]
 
-            if len(tokens) < 2:
-                st.warning("Pas assez de tokens avec vecteurs pour faire une projection.")
-            else:
-                # Réduction en 2D avec PCA
-                pca = PCA(n_components=2)
-                reduced = pca.fit_transform(vectors)
+    # let user pick
+    model = st.selectbox(
+        "Quel LLM utiliser ?",
+        st.session_state.models,
+        index=None,
+        placeholder="Choisir un modèle"
+    )
 
-                # Création du DataFrame pour visualisation
-                import pandas as pd
-                df = pd.DataFrame({
-                    "token": tokens,
-                    "x": reduced[:, 0],
-                    "y": reduced[:, 1]
-                })
+    # if user wants to steer/create a new model
+    if model == "Steer un model":
+        with st.form("system_instruction_form"):
+            instruction = st.text_input("Entrez l'instruction système")
+            new_model = st.text_input("Donner un nom au nouveau modèle")
+            instruction_submitted = st.form_submit_button("Créer nouveau modèle")
 
-                # Visualisation interactive
-                fig = px.scatter(
-                    df, x="x", y="y", text="token",
-                    title="Projection PCA des vecteurs de tokens",
-                    width=700, height=500
-                )
-                fig.update_traces(textposition='top center')
-                st.plotly_chart(fig)
+            if instruction_submitted and new_model:
+                # create the model
+                create(model=new_model, from_="llama3.2", system=instruction)
+                # add it to the list if not already there
+                if new_model not in st.session_state.models:
+                    st.session_state.models.insert(0, new_model)  # insert at top
+                st.success(f"Modèle '{new_model}' créé et ajouté à la liste.")
+                st.rerun()
+
+    # if a real model is selected (existing or new) and phrase exists
+    if model and model != "Steer un model" and phrase is not None:
+        stream = chat(model=model, messages=[{"role": "user", "content": phrase}], stream=True)
+
+        placeholder = st.empty()
+        full_text = ""
+
+        for chunk in stream:
+            if "message" in chunk and "content" in chunk["message"]:
+                full_text += chunk["message"]["content"]
+                placeholder.markdown(full_text)
