@@ -5,7 +5,7 @@ from sklearn.decomposition import PCA
 import plotly.express as px
 import re
 import pandas as pd
-# from ollama import chat, ChatResponse, create
+from ollama import chat, ChatResponse, create
 
 # Configuration
 nlp = spacy.load("fr_core_news_md")
@@ -26,7 +26,7 @@ st.title("Démonstration pour les ateliers IA pour SHS")
 phrase = st.text_input("Entrez une phrase")
 doc = nlp(phrase)
 
-tab1, tab2 = st.tabs(['Approche symbolique', 'Vectorisation'])
+tab1, tab2, tab3 = st.tabs(['Approche symbolique', 'Vectorisation', 'Ollama'])
 
 # Fonctions de modélisation
 
@@ -160,43 +160,43 @@ with tab2:
             doc2 = nlp(phrase2)
             visualisation_2d(doc, doc2)
 # not for public deployment
-# with tab3:
-#     # --- initialize the list of models once ---
-#     if "models" not in st.session_state:
-#         st.session_state.models = ["llama3.2", "Steer un model"]
+with tab3:
+    # --- initialize the list of models once ---
+    if "models" not in st.session_state:
+        st.session_state.models = ["llama3.2", "Steer un model"]
 
-#     # let user pick
-#     model = st.selectbox(
-#         "Quel LLM utiliser ?",
-#         st.session_state.models,
-#         index=None,
-#         placeholder="Choisir un modèle"
-#     )
+    # let user pick
+    model = st.selectbox(
+        "Quel LLM utiliser ?",
+        st.session_state.models,
+        index=None,
+        placeholder="Choisir un modèle"
+    )
 
-#     # if user wants to steer/create a new model
-#     if model == "Steer un model":
-#         with st.form("system_instruction_form"):
-#             instruction = st.text_input("Entrez l'instruction système")
-#             new_model = st.text_input("Donner un nom au nouveau modèle")
-#             instruction_submitted = st.form_submit_button("Créer nouveau modèle")
+    # if user wants to steer/create a new model
+    if model == "Steer un model":
+        with st.form("system_instruction_form"):
+            instruction = st.text_input("Entrez l'instruction système")
+            new_model = st.text_input("Donner un nom au nouveau modèle")
+            instruction_submitted = st.form_submit_button("Créer nouveau modèle")
 
-#             if instruction_submitted and new_model:
-#                 # create the model
-#                 create(model=new_model, from_="llama3.2", system=instruction)
-#                 # add it to the list if not already there
-#                 if new_model not in st.session_state.models:
-#                     st.session_state.models.insert(0, new_model)  # insert at top
-#                 st.success(f"Modèle '{new_model}' créé et ajouté à la liste.")
-#                 st.rerun()
+            if instruction_submitted and new_model:
+                # create the model
+                create(model=new_model, from_="llama3.2", system=instruction)
+                # add it to the list if not already there
+                if new_model not in st.session_state.models:
+                    st.session_state.models.insert(0, new_model)  # insert at top
+                st.success(f"Modèle '{new_model}' créé et ajouté à la liste.")
+                st.rerun()
 
-#     # if a real model is selected (existing or new) and phrase exists
-#     if model and model != "Steer un model" and phrase is not None:
-#         stream = chat(model=model, messages=[{"role": "user", "content": phrase}], stream=True)
+    # if a real model is selected (existing or new) and phrase exists
+    if model and model != "Steer un model" and phrase is not None:
+        stream = chat(model=model, messages=[{"role": "user", "content": phrase}], stream=True)
 
-#         placeholder = st.empty()
-#         full_text = ""
+        placeholder = st.empty()
+        full_text = ""
 
-#         for chunk in stream:
-#             if "message" in chunk and "content" in chunk["message"]:
-#                 full_text += chunk["message"]["content"]
-#                 placeholder.markdown(full_text)
+        for chunk in stream:
+            if "message" in chunk and "content" in chunk["message"]:
+                full_text += chunk["message"]["content"]
+                placeholder.markdown(full_text)
