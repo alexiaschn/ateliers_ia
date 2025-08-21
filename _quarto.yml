@@ -13,7 +13,7 @@ website:
         - text: 'Programme'
           href: index.md
         - text: 'Ressources'
-          href: ressources.md
+          href: ressources.html
         - text: 'Séance 1'
-          href: https://alexiaschn.github.io/ateliers_ia/sept11/intro.html#/title-slide
+          href: https://alexiaschn.github.io/ateliers_ia/seances/intro.html#/title-slide
 
