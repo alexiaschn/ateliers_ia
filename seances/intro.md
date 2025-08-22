@@ -237,6 +237,13 @@ Parce que les LLMs sont lourds (plusieurs Gigas) et parce qu'il est coûteux en 
 
 [duck.ai](https://duck.ai) permet de comparer des modèles en interfaces chat tout en conservant des données privées. 
 
+## _Circuit Tracing_
+
+Interprétation du méchanisme par lequel un modèle effectue la prédiction d'un modèle à partir d'un prompt. 
+
+[Neuronpedia 'circuit tracing' demo](https://www.neuronpedia.org/gemma-2-2b/graph?slug=gemma-basket&pruningThreshold=0.6&densityThreshold=1) : Explication du processus interne d'un LLM pour la prédiction d'un token à partir d'un prompt.
+
+[@ameisenCircuitTracingRevealing2025]
 
 ## Ollama
 
@@ -276,6 +283,8 @@ Source : [Documentation Ollama](https://github.com/ollama/ollama/blob/main/docs/
 ## Model Steering 
 
 Reconduire un modèle consiste à lui fournir des ordres qui vont modifier son comportement pour toutes les interactions.
+
+[Steer model interactively on Neuronpedia](https://www.neuronpedia.org/gemma-2-9b-it/steer)
 
 [Tutoriel](https://github.com/ollama/ollama/blob/main/docs/modelfile.md)
 
@@ -351,15 +360,20 @@ Pistes de réflexions :
 
 ## Ressources vues pendant l'atelier
 
-[Duck.ai](https://duck.ai)
+[Duck.ai](https://duck.ai) : Comparaison de modèles sous forme de chatbot et paramétrage. 
 
-[Ollama](https://ollama.com/download) et [documentation](https://github.com/ollama/ollama/blob/main/docs/modelfile.md)
+[Ollama](https://ollama.com/download) et [documentation](https://github.com/ollama/ollama/blob/main/docs/modelfile.md) : Téléchargement de LLM localement. Possibilité de _steer_ un modèle.
 
-[spaCy](https://spacy.io/usage)
+[Neuronpedia 'steer' demo](https://www.neuronpedia.org/gemma-2-9b-it/steer) : Comparaison d'un modèle qui a été 'redirigé' ou non.
 
-[Incident Database AI](https://incidentdatabase.ai/)
+[Neuronpedia 'circuit tracing' demo](https://www.neuronpedia.org/gemma-2-2b/graph?slug=gemma-basket&pruningThreshold=0.6&densityThreshold=1) : Explication du processus interne d'un LLM pour la prédiction d'un token à partir d'un prompt.
 
-[Critical AI journal](https://read.dukeupress.edu/critical-ai)
+
+[spaCy](https://spacy.io/usage) : Librairie Python spécialisée dans le Traitement Automatique des Langues : implémentation dans un programme de LLM (modèles en français disponibles).
+
+[Incident Database AI](https://incidentdatabase.ai/) : Résumé des incidents et controverses relevées dans la presse lié aux IA (en anglais).
+
+[Critical AI journal](https://read.dukeupress.edu/critical-ai) : Revue
 
 
 ## Bibliographie

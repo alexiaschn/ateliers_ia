@@ -364,6 +364,12 @@ Alexia Schneider <code>alexia.schneider@umontreal.ca</code> (UdeM), Marcello Vit
 <h2>Duck.ai</h2>
 <p><a href="https://duck.ai">duck.ai</a> permet de comparer des modèles en interfaces chat tout en conservant des données privées.</p>
 </section>
+<section id="circuit-tracing" class="slide level2">
+<h2><em>Circuit Tracing</em></h2>
+<p>Interprétation du méchanisme par lequel un modèle effectue la prédiction d’un modèle à partir d’un prompt.</p>
+<p><a href="https://www.neuronpedia.org/gemma-2-2b/graph?slug=gemma-basket&amp;pruningThreshold=0.6&amp;densityThreshold=1">Neuronpedia ‘circuit tracing’ demo</a> : Explication du processus interne d’un LLM pour la prédiction d’un token à partir d’un prompt.</p>
+<p><span class="citation" data-cites="ameisenCircuitTracingRevealing2025">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Ameisen et al. 2025</a>)</span></p>
+</section>
 <section id="ollama" class="slide level2">
 <h2>Ollama</h2>
 <p>Il est possible de faire tourner un SLM (small language model) localement. Pour ce faire : <code>ollama</code> est une bibliothèque qui permet de télécharger et d’utiliser localement un LLMs.</p>
@@ -390,6 +396,7 @@ Alexia Schneider <code>alexia.schneider@umontreal.ca</code> (UdeM), Marcello Vit
 <section id="model-steering" class="slide level2">
 <h2>Model Steering</h2>
 <p>Reconduire un modèle consiste à lui fournir des ordres qui vont modifier son comportement pour toutes les interactions.</p>
+<p><a href="https://www.neuronpedia.org/gemma-2-9b-it/steer">Steer model interactively on Neuronpedia</a></p>
 <p><a href="https://github.com/ollama/ollama/blob/main/docs/modelfile.md">Tutoriel</a></p>
 <p>Créer un nouveau document ‘Modelfile’ sans extension.</p>
 <p>Linux : <code>cat &gt; Modelfile</code> puis CTRL+C :</p>
@@ -444,17 +451,22 @@ Alexia Schneider <code>alexia.schneider@umontreal.ca</code> (UdeM), Marcello Vit
 </section>
 <section id="ressources-vues-pendant-latelier" class="slide level2">
 <h2>Ressources vues pendant l’atelier</h2>
-<p><a href="https://duck.ai">Duck.ai</a></p>
-<p><a href="https://ollama.com/download">Ollama</a> et <a href="https://github.com/ollama/ollama/blob/main/docs/modelfile.md">documentation</a></p>
-<p><a href="https://spacy.io/usage">spaCy</a></p>
-<p><a href="https://incidentdatabase.ai/">Incident Database AI</a></p>
-<p><a href="https://read.dukeupress.edu/critical-ai">Critical AI journal</a></p>
+<p><a href="https://duck.ai">Duck.ai</a> : Comparaison de modèles sous forme de chatbot et paramétrage.</p>
+<p><a href="https://ollama.com/download">Ollama</a> et <a href="https://github.com/ollama/ollama/blob/main/docs/modelfile.md">documentation</a> : Téléchargement de LLM localement. Possibilité de <em>steer</em> un modèle.</p>
+<p><a href="https://www.neuronpedia.org/gemma-2-9b-it/steer">Neuronpedia ‘steer’ demo</a> : Comparaison d’un modèle qui a été ‘redirigé’ ou non.</p>
+<p><a href="https://www.neuronpedia.org/gemma-2-2b/graph?slug=gemma-basket&amp;pruningThreshold=0.6&amp;densityThreshold=1">Neuronpedia ‘circuit tracing’ demo</a> : Explication du processus interne d’un LLM pour la prédiction d’un token à partir d’un prompt.</p>
+<p><a href="https://spacy.io/usage">spaCy</a> : Librairie Python spécialisée dans le Traitement Automatique des Langues : implémentation dans un programme de LLM (modèles en français disponibles).</p>
+<p><a href="https://incidentdatabase.ai/">Incident Database AI</a> : Résumé des incidents et controverses relevées dans la presse lié aux IA (en anglais).</p>
+<p><a href="https://read.dukeupress.edu/critical-ai">Critical AI journal</a> : Revue</p>
 </section>
 <section id="bibliographie" class="slide level2 smaller scrollable">
 <h2>Bibliographie</h2>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-ameisenCircuitTracingRevealing2025" class="csl-entry" role="listitem">
+Ameisen, AUTHORS Emmanuel, Jack Lindsey, Adam Pearce, Wes Gurnee, Nicholas L. Turner, Brian Chen, Craig Citro, et al. 2025. <span>“Circuit <span>Tracing</span>: <span>Revealing Computational Graphs</span> in <span>Language Models</span>.”</span> <em>Transformer Circuits</em>. https://transformer-circuits.pub/2025/attribution-graphs/methods.html.
+</div>
 <div id="ref-breitCombiningMachineLearning2023" class="csl-entry" role="listitem">
 Breit, Anna, Laura Waltersdorfer, Fajar J. Ekaputra, Marta Sabou, Andreas Ekelhart, Andreea Iana, Heiko Paulheim, et al. 2023. <span>“Combining <span>Machine Learning</span> and <span>Semantic Web</span>: <span>A Systematic Mapping Study</span>.”</span> <em>ACM Computing Surveys</em> 55 (14s): 313:1–41. <a href="https://doi.org/10.1145/3586163">https://doi.org/10.1145/3586163</a>.
 </div>
