@@ -77,6 +77,10 @@ et rien.
     - à la fin de la rédaction ? -> si modifications majeures : un cycle de correction et de rédaction
 
 
+C'est une question d'alignement avec ses valeurs (value alignment problem [@russellArtificialIntelligenceModern2022a, p. 23])
+
+>« The problem of achieving agreement between our true preferences and the objective we put into the machine is called the value alignment problem: the values or objectives put into Value alignment problem the machine must be aligned with those of the human. » ([Russell et Norvig, 2022, p. 23](zotero://select/library/items/HRC25ZLL)) ([pdf](zotero://open-pdf/library/items/LYXSWEM6?page=24&annotation=SL7MF5JL))
+
 # Outils généralistes
 
 LLMs non entraînés : ChatGPT, modèles téléchargés localement (ollama). 
