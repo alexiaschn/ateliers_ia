@@ -2,6 +2,7 @@ import streamlit as st
 import spacy
 import numpy as np
 from sklearn.decomposition import PCA
+
 import plotly.express as px
 import re
 import pandas as pd
@@ -102,20 +103,20 @@ with tab1:
         if classification_fruit:
             st.write(f'La phrase "{phrase}" parle de fruit : **{expert_class(doc)}**')
             with st.expander('Ouvrir pour voir le code'):
-                st.markdown(f"""```
+                st.code(f"""
         def expert_class(doc): 
-        # motif qui ignore la casse et inclus le pluriel
-        fruit_pattern = re.compile('(pomme|poire|banane|orange|clémentine|raisin|bleuet)s?', flags=re.IGNORECASE)
-        # on regarde chaque token dans la phrase
-        for token in doc: 
-            # est-ce que l'un des tokens est dans la liste de fruit
-            if fruit_pattern.match(token.text.lower()): 
-                # si le fruit est un adjectif alors c'est la couleur orange.
-                if token.pos_ == 'ADJ': 
-                    return False
-                else:
-                    return True
-        return False```""")
+            # motif qui ignore la casse et inclus le pluriel
+            fruit_pattern = re.compile('(pomme|poire|banane|orange|clémentine|raisin|bleuet)s?', flags=re.IGNORECASE)
+            # on regarde chaque token dans la phrase
+            for token in doc: 
+                # est-ce que l'un des tokens est dans la liste de fruit
+                if fruit_pattern.match(token.text.lower()): 
+                    # si le fruit est un adjectif alors c'est la couleur orange.
+                    if token.pos_ == 'ADJ': 
+                        return False
+                    else:
+                        return True
+            return False""")
         if tokenisation:
             data = pd.DataFrame({'basic tokenisation': pd.Series(phrase.split()), 
                 'spaCy tokenisation': pd.Series([token.text for token in doc])
@@ -155,10 +156,46 @@ with tab2:
 
         if visualisation:
             visualisation_2d(doc)
+
         if submitted and phrase2.strip():
             st.write(f"""Comparaison des vecteurs des phrases : "{phrase}" et "{phrase2}" """)
             doc2 = nlp(phrase2)
             visualisation_2d(doc, doc2)
+
+            # --- train classifier ---
+            from sklearn.neighbors import KNeighborsClassifier
+            from sklearn.ensemble import RandomForestClassifier
+
+            vec1 = doc.vector
+            vec2 = doc2.vector
+            X = np.vstack([vec1, vec2])
+            y = [0, 1]
+
+            algo = st.radio("Choisir un algorithme :", ["KNN", "Random Forest"], key="algo_radio")
+
+            if algo == "KNN":
+                clf = KNeighborsClassifier(n_neighbors=1)
+            else:
+                clf = RandomForestClassifier(n_estimators=10, random_state=42)
+
+            clf.fit(X, y)
+            st.session_state["clf"] = clf
+            st.session_state["phrase2"] = phrase2
+            st.success(f"Modèle {algo} entraîné !")
+
+        # --- use classifier if it exists ---
+        if "clf" in st.session_state:
+            with st.form("classify_form"):
+                new_phrase = st.text_input("Entrer une nouvelle phrase à classer", key="classify_input")
+                classify_submitted = st.form_submit_button("Classer")
+
+            if classify_submitted and new_phrase.strip():
+                new_doc = nlp(new_phrase)
+                new_vec = new_doc.vector.reshape(1, -1)
+                pred = st.session_state["clf"].predict(new_vec)[0]
+                label = phrase if pred == 0 else st.session_state["phrase2"]
+                st.success(f"Le modèle prédit que cette phrase est plus proche de : **{label}**")
+
 # not for public deployment
 # with tab3:
 #     # --- initialize the list of models once ---
