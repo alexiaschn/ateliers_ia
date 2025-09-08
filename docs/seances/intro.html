@@ -163,6 +163,7 @@ Alexia Schneider <code>alexia.schneider@umontreal.ca</code> (UdeM), Marcello Vit
 </section>
 <section id="plan" class="slide level2 scrollable">
 <h2>Plan</h2>
+<p>Théorie :</p>
 <ol type="1">
 <li class="fragment">Présentation de la série d’atelier</li>
 <li class="fragment">Qu’est-ce que l’IA ?</li>
@@ -170,11 +171,17 @@ Alexia Schneider <code>alexia.schneider@umontreal.ca</code> (UdeM), Marcello Vit
 <li class="fragment">Retours historiques</li>
 <li class="fragment">Typologie des IA</li>
 <li class="fragment">Cas d’usage et modélisation experte (ELIZA)</li>
-<li class="fragment">Cas d’usage et modélisation distributionnelle/vectorielle (vectorisation et prédiction)</li>
-<li class="fragment">Les LLMs</li>
-<li class="fragment">Usages des LLMs hors chatbots (demo)</li>
-<li class="fragment">LLMs et chatbots (Duck.ai + Ollama)</li>
-<li class="fragment">Conclusions</li>
+<li class="fragment">Principe fondamentaux de l’apprentissage machine (modèles spécialisés)</li>
+<li class="fragment">Les LLMs : les modèles généralistes</li>
+</ol>
+<p>Pratique :</p>
+<ol type="1">
+<li class="fragment">visualisation et manipulation d’une approche experte</li>
+<li class="fragment">visualisation du principe de vectorisation</li>
+<li class="fragment">Paramètres de chatbots (duck.ai)</li>
+<li class="fragment">Interprétabilité des chatbots (Neuronpédia)</li>
+<li class="fragment">Prompt Engineering (ChainForge)</li>
+<li class="fragment">Intégration de chatbot localement (Ollama)</li>
 </ol>
 </section>
 <section id="présentation-et-objectif-des-ateliers" class="slide level2">
@@ -408,6 +415,11 @@ Alexia Schneider <code>alexia.schneider@umontreal.ca</code> (UdeM), Marcello Vit
 </blockquote>
 <p>Les hallucinations : <strong>il n’y a pas d’hallucinations</strong>, toutes les générations produites par un LLMs ont la même teneur de vérité du point de vue de l’outil : le modèle ne peut pas évaluer sa réponse à l’aune d’un référentiel extérieur.</p>
 </section>
+<section id="le-prompt-engineering" class="slide level2">
+<h2>Le prompt engineering</h2>
+<p>Rendre un prompt robuste et surtout permettre l’évaluation systématique d’une stratégie de prompt. Réintégrer une forme de modélisation de son problème pour optimiser un prompt : le template.</p>
+<p><a href="https://chainforge.ai/play/">ChainForge</a> : outil de comparaison de prompt : comparaison de modèle, comparaison de template (un texte qui inclut des variables) visualisation côte à côte des sorties.</p>
+</section>
 <section id="études-critiques-de-lia" class="slide level2">
 <h2>Études critiques de l’IA</h2>
 <p>Discipline émergente : <a href="https://read.dukeupress.edu/critical-ai/issue/3/1">Critical AI revue</a> lancée en 2023.</p>
@@ -436,6 +448,7 @@ Alexia Schneider <code>alexia.schneider@umontreal.ca</code> (UdeM), Marcello Vit
 <h2>Ressources vues pendant l’atelier</h2>
 <p><a href="https://demo-atelier.streamlit.app/">Démo IA symbolique/IA connexioniste pour les ateliers</a></p>
 <p><a href="https://duck.ai">Duck.ai</a> : Comparaison de modèles sous forme de chatbot et paramétrage.</p>
+<p><a href="https://chainforge.ai/play/">ChainForge</a> : comparaison de prompts</p>
 <p><a href="https://ollama.com/download">Ollama</a> et <a href="https://github.com/ollama/ollama/blob/main/docs/modelfile.md">documentation</a> : Téléchargement de LLM localement. Possibilité de <em>steer</em> un modèle.</p>
 <p><a href="https://www.neuronpedia.org/gemma-2-9b-it/steer">Neuronpedia ‘steer’ demo</a> : Comparaison d’un modèle qui a été ‘redirigé’ ou non.</p>
 <p><a href="https://www.neuronpedia.org/gemma-2-2b/graph?slug=gemma-basket&amp;pruningThreshold=0.6&amp;densityThreshold=1">Neuronpedia ‘circuit tracing’ demo</a> : Explication du processus interne d’un LLM pour la prédiction d’un token à partir d’un prompt.</p>

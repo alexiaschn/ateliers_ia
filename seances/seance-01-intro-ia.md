@@ -22,17 +22,26 @@ format:
 
 ## Plan 
 
+Théorie : 
+
 1. Présentation de la série d'atelier 
 2. Qu'est-ce que l'IA ? 
 3. Intérêt d'étudier l'IA pour les SHS
 4. Retours historiques
 5. Typologie des IA
 6. Cas d'usage et modélisation experte (ELIZA)
-7. Cas d'usage et modélisation distributionnelle/vectorielle (vectorisation et prédiction)
-8. Les LLMs
-9. Usages des LLMs hors chatbots (demo)
-10. LLMs et chatbots (Duck.ai + Ollama)
-11. Conclusions
+7. Principe fondamentaux de l'apprentissage machine (modèles spécialisés)
+8. Les LLMs : les modèles généralistes
+
+Pratique : 
+
+1. visualisation et manipulation d'une approche experte
+2. visualisation du principe de vectorisation
+3. Paramètres de chatbots (duck.ai)
+4. Interprétabilité des chatbots (Neuronpédia)
+5. Prompt Engineering (ChainForge)
+6. Intégration de chatbot localement (Ollama)
+
 
 ## Présentation et objectif des ateliers 
 
@@ -326,6 +335,12 @@ SYSTEM "Tu es un chien"
 
 Les hallucinations : **il n'y a pas d'hallucinations**, toutes les générations produites par un LLMs ont la même teneur de vérité du point de vue de l'outil : le modèle ne peut pas évaluer sa réponse à l'aune d'un référentiel extérieur. 
 
+## Le prompt engineering
+
+Rendre un prompt robuste et surtout permettre l'évaluation systématique d'une stratégie de prompt. Réintégrer une forme de modélisation de son problème pour optimiser un prompt : le template. 
+
+[ChainForge](https://chainforge.ai/play/) : outil de comparaison de prompt : comparaison de modèle, comparaison de template (un texte qui inclut des variables) visualisation côte à côte des sorties. 
+
 
 ## Études critiques de l'IA
 
@@ -354,6 +369,9 @@ Pistes de réflexions :
 [Démo IA symbolique/IA connexioniste pour les ateliers](https://demo-atelier.streamlit.app/)
 
 [Duck.ai](https://duck.ai) : Comparaison de modèles sous forme de chatbot et paramétrage. 
+
+[ChainForge](https://chainforge.ai/play/) : comparaison de prompts 
+
 
 [Ollama](https://ollama.com/download) et [documentation](https://github.com/ollama/ollama/blob/main/docs/modelfile.md) : Téléchargement de LLM localement. Possibilité de _steer_ un modèle.
 

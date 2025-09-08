@@ -438,7 +438,7 @@
     "href": "ressources.html",
     "title": "Ressources des ateliers",
     "section": "",
-    "text": "Programme de démo\n\n\n\nDuck.ai\nNeuronpedia\nOllama et documentation\n\n\n\nspaCy\nnltk"
+    "text": "Programme de démo\n\n\n\nDuck.ai\nNeuronpedia\nOllama et documentation\nChainForge\n\n\n\nspaCy\nnltk"
   },
   {
     "objectID": "ressources.html#démonstration-pour-les-ateliers",
@@ -452,7 +452,7 @@
     "href": "ressources.html#chatbots",
     "title": "Ressources des ateliers",
     "section": "",
-    "text": "Duck.ai\nNeuronpedia\nOllama et documentation"
+    "text": "Duck.ai\nNeuronpedia\nOllama et documentation\nChainForge"
   },
   {
     "objectID": "ressources.html#librairies-python-pour-le-traitement-automatique-des-langues",
@@ -480,7 +480,7 @@
     "href": "seances/intro.html#plan",
     "title": "Intro",
     "section": "Plan",
-    "text": "Plan\n\nPrésentation de la série d’atelier\nQu’est-ce que l’IA ?\nIntérêt d’étudier l’IA pour les SHS\nRetours historiques\nTypologie des IA\nCas d’usage et modélisation experte (ELIZA)\nCas d’usage et modélisation distributionnelle/vectorielle (vectorisation et prédiction)\nLes LLMs\nUsages des LLMs hors chatbots (demo)\nLLMs et chatbots (Duck.ai + Ollama)\nConclusions"
+    "text": "Plan\nThéorie :\n\nPrésentation de la série d’atelier\nQu’est-ce que l’IA ?\nIntérêt d’étudier l’IA pour les SHS\nRetours historiques\nTypologie des IA\nCas d’usage et modélisation experte (ELIZA)\nPrincipe fondamentaux de l’apprentissage machine (modèles spécialisés)\nLes LLMs : les modèles généralistes\n\nPratique :\n\nvisualisation et manipulation d’une approche experte\nvisualisation du principe de vectorisation\nParamètres de chatbots (duck.ai)\nInterprétabilité des chatbots (Neuronpédia)\nPrompt Engineering (ChainForge)\nIntégration de chatbot localement (Ollama)"
   },
   {
     "objectID": "seances/intro.html#présentation-et-objectif-des-ateliers",
@@ -662,7 +662,7 @@
     "href": "seances/intro.html#ressources-vues-pendant-latelier",
     "title": "Intro",
     "section": "Ressources vues pendant l’atelier",
-    "text": "Ressources vues pendant l’atelier\nDémo IA symbolique/IA connexioniste pour les ateliers\nDuck.ai : Comparaison de modèles sous forme de chatbot et paramétrage.\nOllama et documentation : Téléchargement de LLM localement. Possibilité de steer un modèle.\nNeuronpedia ‘steer’ demo : Comparaison d’un modèle qui a été ‘redirigé’ ou non.\nNeuronpedia ‘circuit tracing’ demo : Explication du processus interne d’un LLM pour la prédiction d’un token à partir d’un prompt.\nIncident Database AI : Résumé des incidents et controverses relevées dans la presse lié aux IA (en anglais).\nCritical AI journal : Revue"
+    "text": "Ressources vues pendant l’atelier\nDémo IA symbolique/IA connexioniste pour les ateliers\nDuck.ai : Comparaison de modèles sous forme de chatbot et paramétrage.\nChainForge : comparaison de prompts\nOllama et documentation : Téléchargement de LLM localement. Possibilité de steer un modèle.\nNeuronpedia ‘steer’ demo : Comparaison d’un modèle qui a été ‘redirigé’ ou non.\nNeuronpedia ‘circuit tracing’ demo : Explication du processus interne d’un LLM pour la prédiction d’un token à partir d’un prompt.\nIncident Database AI : Résumé des incidents et controverses relevées dans la presse lié aux IA (en anglais).\nCritical AI journal : Revue"
   },
   {
     "objectID": "seances/intro.html#bibliographie",
@@ -929,5 +929,12 @@
     "title": "Intro",
     "section": "Model Steering ou System message",
     "text": "Model Steering ou System message\nReconduire un modèle consiste à lui fournir des ordres qui vont modifier son comportement pour toutes les interactions suivantes : cette instruction initiale est le “System message”.\nSteer model interactively on Neuronpedia\nTutoriel\nCréer un nouveau document ‘Modelfile’ sans extension.\nLinux : cat &gt; Modelfile puis CTRL+C :\n\nFROM llama3.2 PARAMETER temperature 1 top_k 100 top_p 1 seed 17 SYSTEM “Tu es un chien”\n\npuis CTRL+SHIFT+D et CTRL+D\nWindows cmd (Win+R): echo 'FROM llama3.2 PARAMETER temperature 1 top_k 100 top_p 1 seed 17 SYSTEM \"Tu es un chien\"' &gt; Modelfile (CTRL+SHIFT+D)\nOu c/c manuellement :\n\nFROM llama3.2 PARAMETER temperature 1 top_k 100 top_p 1 seed 17 SYSTEM “Tu es un chien”\n\nollama create chien -f Modelfile\nollama run chien"
+  },
+  {
+    "objectID": "seances/intro.html#le-prompt-engineering",
+    "href": "seances/intro.html#le-prompt-engineering",
+    "title": "Intro",
+    "section": "Le prompt engineering",
+    "text": "Le prompt engineering\nRendre un prompt robuste et surtout permettre l’évaluation systématique d’une stratégie de prompt. Réintégrer une forme de modélisation de son problème pour optimiser un prompt : le template.\nChainForge : outil de comparaison de prompt : comparaison de modèle, comparaison de template (un texte qui inclut des variables) visualisation côte à côte des sorties."
   }
 ]

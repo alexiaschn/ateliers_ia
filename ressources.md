@@ -15,6 +15,9 @@ title: Ressources des ateliers
 
 [Ollama](https://ollama.com/download) et [documentation](https://github.com/ollama/ollama/blob/main/docs/modelfile.md)
 
+[ChainForge](https://chainforge.ai/play/)
+
+
 ## Librairies Python pour le Traitement automatique des langues 
 
 [spaCy](https://spacy.io/usage)
