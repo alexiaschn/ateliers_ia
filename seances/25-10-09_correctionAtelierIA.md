@@ -1,102 +1,262 @@
 ---
-title: 2e séance atelier IA  - révision 
-prof: Alexia Schneider + Clara Gmt ? 
+title: 2e séance atelier IA  - révision et correction automatique
+prof: Alexia Schneider + Clara Grometto
 date: 9 octobre 2025
+bibliography: ../phd_udem.bib
+link-citations: true
+colorlinks: true
+fig-cap-location: top
+format:
+    revealjs: 
+        output-file: "atelier2-correction-auto.html" 
+        # template: simple
+        smaller: true
+        incremental: true
+        scrollable: true
+        slide-number: true
 ---
-# Séance 2 : IA et correction automatique
 
-**Date : 9 octobre 2025**
+## Plan de l'atelier
 
-## Plan 
+Théorie :
 
-(format de 2h)
-1. Présentation de la série d'atelier 
-2. Qu'est-ce que l'IA ? 
-3. Rappel de la 1e séance : histoire, ce qu'il fallait retenir de la 1e séance
-4. Place et importance de la correction 
-5. Outils généralistes 
-6. Outils spécialisés (été 2025)
-7. Pistes pour l'évaluation des outils
-8. Conclusions
+1. Rappels sur les fondements de l'IA (30-40min)
+2. Correction/révision/relecture un problème de définition ou un problème de valeur symbolique ? (20min)
+3. outils de GEC (20 min)
+4. 
 
-# Présentation et objectif des ateliers 
+Pratique : 
+1. Comparaisons d'outils : Grammarly, ChatGPT,  
+
+## Présentation et objectif des ateliers 
 
 Format : 4 séances de 2heures, sans inscription, participation libre (à justifier pour le certificat des Humanités Numériques)
 
-1h à 1h30 de théorie + 30 minutes à 1h de pratique.
+Théorie et pratique. 
 
 Objectifs de la série d'atelier : 
 
-- Comprendre les fondamentaux de l'IA et de son histoire
+- Comprendre les fondamentaux de l'IA et son histoire
 - Obtenir des notions critiques sur le fonctionnement profond des outils
-- Tester des outils d'IA variés 
+- Tester et s'approprier des outils d'IA 
 - Maîtriser le vocabulaire de la discipline
 
+Objectifs de cet atelier : 
 
-# Qu'est ce que l'IA ? 
-
-Tout 
-
-et rien. 
-
--> collage : chatbot, classifications d'imageries médicales, HTR, DeepBlue. 
-
-- le dernier mot à la mode. Le 'numérique' des années 2020. [@vitali-rosatiManifestePourEtudes2025]. 
-
-**- un programme informatique qui effectue une prédiction.**
+- Cerner un cas d'usage courant des IA générative : la correction ortho-typographique.
+- S'interroger l'impact de ces nouvelles pratiques dans le travail de recherche. 
+- Tester et comparer des outils courants. 
+- Définir des critères pour effectuer un choix éclairé vis-à-vis des outils disponibles
 
 
-# Rappel de la 1e séance
+## Certificat canadien en Humanités Numériques
 
-- l'IA est un terme ajd employé à tort poru parler des LLMs mais qui recouvre en réalité des processus algorithmiques variés et pas seulement des chatbots type ChatGPT.
-- l'histoire de l'IA a montré qu'il y a des phases
-- les autres systèmes ne sont pas plus ni moins 'intelligent'. 
-- 2 grandes approches en IA : une approche top-down vs. sample based. 
-- un système expert peut être aussi complexe et énergivore que du machine learning (mais dans les faits plus rarement).
-- les systèmes d'IA n'ont pas de connaissance du réel (et celleux qui disent le contraire essaient de vendre des choses à l'heure actuelle)
-- par csq les hallucinations ne sont pas des anomalies, ce sont des erreurs que l'on qualifie a postériori comme telle. 
-- les systèmes inductifs sont appropriés pour des certaines tâches : classification, production de résumé. Leur point fort reste l'adaptation à des contextes de textes ou d'images variés. 
-- les chatbots sont des interfaces qui permettent un échange homme-machine en langue naturelle : l'exploitation des capacités inductives d'un LLMs ne nécessite pas de passer par une telle interface. Ex : classification, processus expérimental plus adapté à une utilisation sans cette interface. 
+![Certificat canadien en HN](/seances/img/ccdhn1.png)
 
-# La correction 
+![Certificat canadien en HN](/seances/img/ccdhn2.png)
+![Certificat canadien en HN](/seances/img/ccdhn3.png)
 
-- une étape négligée ou dévaluée ? quelle place dans notre système de valeur ? 
-- qu'est-ce qui rentre réellement dans cette étape ? 
+[Information sur le certificat](https://ccdhhn.ca/)
+
+## Qu'est ce que l'IA ? 
+ 
+Des programmes informatiques qui nous semblent dignes d'être comparé aux humains : une définition qui évolue avec les technologies. 
+
+Peut-être depuis 2020, le dernier mot à la mode après 'numérique' dans les années 2010, et cyberespace dans les années 1990 et 2000.[@vitali-rosatiManifestePourEtudes2025]. 
+
+- Définition pratique pour ces ateliers: un programme informatique qui effectue une prédiction.
+
+## Rappels de l'introduction
+
+- Les programmes d'IA réfèrent à des processus algorithmiques variés et pas seulement à des chatbots type ChatGPT.
+<!-- ici expliquer Turing :  l'article Computing machinery intelligence a orienté la discipline vers une définition étroite de l'intelligence humaine comme intelligence sociale, ou capacité à feindre un échange social comme preuve d'humanité -->
+- L'histoire de l'IA montre qu'il y a des phases d'approbation publique et de désintérêt pour le terme et les technologies qu'il désigne.
+- Ce qu'on fait entrer dans la catégorie d'"intelligent" a changé. 
+<!-- pourquoi le calcul savant, précis n'est plus considéré comme intelligent ? -->
+- Deux grandes approches en IA : une approche déductive (IA symbolique, système expert) vs. déductive (IA connexionniste, modèle de langue). 
+- un système expert peut être aussi complexe et énergivore qu'un LLM. 
+- Concernant les LLMs : systèmes d'IA n'ont pas de connaissance du réel ou de 'compréhension' : les réponses sont probabilistes. 
+- Les hallucinations ne sont pas des anomalies, ce sont des erreurs que l'on qualifie a postériori comme telle. 
+- Chatbots  = interfaces en langue naturelle : l'exploitation des capacités inductives d'un LLMs ne nécessite pas de passer par une telle interface. Ex : classification.
+- Les modèles propriétaires (pas en libre accès) ont des intérêts économiques : nature 'sycophantique' avérée. 
+
+## La correction 
+
+<!-- peut-être proposer des exemples, prendre son temps ? -->
+- une étape négligée ou dévaluée ? quelle place dans notre système de valeurs ? 
+- qu'est-ce qui entre réellement dans cette étape ? 
     - corrections orthographiques, 
     - corrections typographiques,
-    - vérification de la mise en page (veuve et orphelin)
-    - traduction ? 
-    - vérification des sources ?
-    - amélioration du style ? très vaste : répétition, niveau de langue, terminologie, alléger les phrases
-    - suggestion de réorganisation de paragraphes ?
+    - vérification de la mise en page,
+    <!-- (veuve et orphelin) -->
+    - traduction, 
+    - vérification des sources, 
+    - amélioration du style, 
+    <!-- répétition, niveau de langue, terminologie, alléger les phrases -->
+    - amélioration du contenu. 
     
-'la barrière du dernier kilomètre' (Monjour et Sauret, 2025) (au sujet de la correction bibliographique)
+La correction bibliographique : 'la barrière du dernier kilomètre' [@monjourBarriereDernierKilometre2025] 
 
-À quel moment est-ce que cette étape intervient ?
-    - au cours de la rédaction ? -> perte d'informations intermédiaires ?
-    - à la fin de la rédaction ? -> si modifications majeures : un cycle de correction et de rédaction
+À quel moment est-ce que cette étape intervient ? Et quelle est la conséquence d'automatiser cette étape ? 
+- au cours de la rédaction ? 
+    - évanouissement des versions intermédiaires (suppression vs. versioning) ?
+- à la fin de la rédaction ? 
 
 
-C'est une question d'alignement avec ses valeurs (value alignment problem [@russellArtificialIntelligenceModern2022a, p. 23])
 
->« The problem of achieving agreement between our true preferences and the objective we put into the machine is called the value alignment problem: the values or objectives put into Value alignment problem the machine must be aligned with those of the human. » ([Russell et Norvig, 2022, p. 23](zotero://select/library/items/HRC25ZLL)) ([pdf](zotero://open-pdf/library/items/LYXSWEM6?page=24&annotation=SL7MF5JL))
 
-# Outils généralistes
+## L'alignement des valeurs
+
+>« The problem of achieving agreement between our true preferences and the objective we put into the machine is called the value alignment problem: the values or objectives put into Value alignment problem the machine must be aligned with those of the human. » [@russellArtificialIntelligenceModern2022a, p. 23]
+
+Autrement dit, si on laisse à la machine cette tâche c'est qu'on tend à l'estimer comme peu valorisante dans notre système de valeur actuel. Quelles conséquences est-ce que déléguer cette partie du travail a sur notre travail ? 
+
+## Des 'petites corrections' ?
+
+>Currently, academic publishers only allow the use of ChatGPT and similar tools to improve the readability and language of research articles. However, the ethical boundaries and acceptable usage of AI in academic writing are still undefined, and neither humans nor AI detection tools can reliably identify text generated by AI [@homolakExploringAdoptionChatGPT2023]
+
+<!-- pas de définition claire de la correction sur le plan académique = pas de limite non plus. 
+Est-ce que refaire une table en utilisant un LLM càd en prenant le risque qu'il hallucine sur des données demande un usage cité de ChatGPT ? 
+Si le contenu dépend du style, est-ce que la réécriture ne modifie pas le contenu original intellectuel ? 
+Est-ce que faire un état de l'art (càd pas de production de nouveau contenu) avec chatGPT n'influence pas le travail de recherche ?  -->
+
+>It is being increasingly observed that content generated by ChatGPT is going undeclared and undetected, resulting in its appearance in articles published in scholarly journals. 
+[...] The general policy among publishers states that AI tools must not be used to create, alter or manipulate original research data and results (Elsevier., 2023; Roche, 2024).[@strzeleckiMyLastKnowledge2025]
+
+![Articles contenant des réponses de prompts](img/chatgptresponses.png)
+
+![Articles contenant des réponses explicites de ChatGPT](img/chatgptresponses2.png)
+
+<!-- ici l'argumentaire c'est que comme on a laissé à ChatGPT la taĉhe de rédaction et possiblement de relecture finale on s'embête pas à relire la version de l'article soumise, donc on laisse des dingueries.  -->
+
+
+
+## Qu'est-ce que la relecture-correction ?
+
+- correction ortho-typo
+- des énoncés grammaticalement justes ⇒ la grammaire c’est que des règles de combinaison, purement syntaxique, combinatoire sans sémantique. Règles systématiques et productives. Computation de séquences.
+- des énoncés qui font sens ⇒ sémantiquement correctes
+- adéquation avec une situation d’énonciation ⇒ implique la pragmatique
+- le style qui flirt avec les limites du correct
+- la reformulation c’est encore autre chose
+
+<!-- en résumé : pour cet atelier, quand on parle de correction on parle de : correction ortho-typographique ? -->
+
+## Les étapes de la correction
+
+<!-- à valider avec Clara -->
+
+1. la lecture 
+2. établir des critères de corrections : orthographes = règles de la langue, mais style etc.
+3. l'annotation = proposition
+4. la réécriture
+
+## De l'importance du versionage 
+
+Le LLM et l'interaction avec le LLM réduit les étapes de la correction au delà de son automatisation. Le LLM réécrit, il n'annote pas[^note], ne demande pas de clarifications ur les instructions données même si elles sont floues ('améliore le texte' est une instruction valide).
+
+Un processus de suppression  qui est similaire aux logiques des éditeurs de texte WYSIWYG vs. le versionage qui rend compte du processus, entre dans une dimension de traçabilité et d'interprétabilité des choix effectués.
+
+[^note]: on peut cependant prompter un modèle pour qu'il le fasse.
+
+<!-- ici une illustration sur le versionage ? -->
+
+## SOTA GEC = Grammar Error correction
+
+Tâche de NLP voisine de la **traduction automatique**. 
+
+Système expert : très limités pour cette tâche. Grammaire = beaucoup de règles, parfois des règles d'idiomaticité pure (des colocations fortes). 
+
+Systèmes inductifs  ou approches _data-driven_  :
+
+D'abord des classifieurs pour prédire le mots le plus probable dans une classe (préposition), puis statistical machine learning (STM) dans les années 2010 et particulièrement Neural machine translation (NMT). [@wangComprehensiveSurveyGrammar2020; @bryantGrammaticalErrorCorrection2023]
+
+NMT : Correspondance entre des phrases ou portions de phrases en entrée et des portions de phrases attestées en grand nombre (seq2seq) à partir de corpus parallèle. Le modèle algorithmique est entraîné sur une paire de langue (français->anglais). 
+
+
+## Traduction automatique et LLMs
+
+Un grand modèle de langue positionne chaque mot dans un espace vectoriel lors de sa phase d'apprentissage initiale à partir d'un grand volume de données en langue naturelle. 
+
+Afin de retrouver donner une réponse le LLM généraliste comme GPT, Mistral, Qwen, Llama, situe la requête utilisateur dans son espace vectoriel et sélectionne les tokens les plus probables à partir du contexte donné (la requête utilisateur ou _prompt_ **et** les tokens qu'il a déjà généré). 
+
+Les LLMs sont donc généralistes, ils ne sont pas destinés à la traduction plus qu'à la correction d'erreurs grammaticales ou l'écriture créative.
+
+
+
+Such divergences are well-documented in human translations (HT), where translators often make structural choices that vary significantly from the text originally written in the target language (Deng and Xue, 2017; Nikolaev et al., 2020). In contrast, traditional NMT outputs typically exhibit less diversity and more literal translations, lacking significant structural variation
+
+
+## LLM vs NMT qualitativement
+
+NMT + littéral, + spécialisé
+LLM + verbeux (confabulation) mais plus proche de la traduction humaine pour ça. 
+
+« We find that while LLMs often exhibit translation patterns more similar to human translations compared to traditional NMT models, they still diverge from originally authored text in the same language. Overall, we find that automatically translated sentences from both NMTs and LLMs are consistently identified with higher accuracy in O/T classification tasks than human-translated ones » [@sizovAnalysingTranslationArtifacts2024]
+
+« Furthermore, our frequency analysis of PoS tags reveals that LLMs align more closely with HT in their usage, especially in terms of adverbs, and auxiliary verbs, while NMT models tend to overproduce specific tags in shorter sentences. This suggests that LLMs, although not perfect, are making strides in mimicking human translation patterns. » (idem)
+
+« indicate that LLMs tend to produce translations that are less literal compared to NMT models » 
+
+« What’s more, IBM announced the deprecation of Watson Language Translator, its NMT service, encouraging users to migrate to — guess what? — WatsonX LLMs. This move establishes IBM as one of the first tech giants to sunset its NMT efforts and focus on LLMs for automated translation purposes. » [@ciesielskiNeuralMachineTranslation2024]
+
+
+## Le futur de la traduction automatique
+
+We anticipate that, soon, LLMs will become a viable enterprise solution for translation. This will likely come when we move towards task-specific LLMs trained specifically for translation. These models will be smaller and more practical to deploy and maintain than today’s massive foundational models. [@ciesielskiNeuralMachineTranslation2024]
+
+## Back to GEC 
+
+Lectures à faire : 
+
+@kobayashiLargeLanguageModels2024; @maityHowReadyAre2024
+
+Kobayashi, M., Mita, M., & Komachi, M. (2024). Large Language Models Are State-of-the-Art Evaluator for Grammatical Error Correction (No. arXiv:2403.17540). arXiv. https://doi.org/10.48550/arXiv.2403.17540
+
+
+Maity, S., Deroy, A., & Sarkar, S. (2024). How Ready Are Generative Pre-trained Large Language Models for Explaining Bengali Grammatical Errors? (No. arXiv:2406.00039). arXiv. https://doi.org/10.48550/arXiv.2406.00039
+
+
+
+## Outils généralistes
 
 LLMs non entraînés : ChatGPT, modèles téléchargés localement (ollama). 
 
-# Outils spécialisés (correction, écriture académique)
+## Outils spécialisés (correction, écriture académique)
 
 https://www.editpad.org/ : AI detector, humanize AI text, Plagiarim checker, paraphrasing tool, story generator, text summarizer, AI essay writer etc. Probablement juste ChatGPT hooked à une interface avec un system-prompt. Apparamment mauvais according to @bordalejoScarletCloakForest2025
 
 https://www.writefull.com/
 
-https://www.grammarly.com/
+[Grammarly](https://www.grammarly.com/) donne une note à partir des critères de formalité, 4 niveaux : correctness (corrige erreurs grammaticales), clarity (reformulation) engagement(option payante), delivery (payant), plagiarism detection (payant). Avec un 'generative AI' avec des prompts pre-écrit.
+-> un browser plugin qui permet de s'en servir avec tous les sites google (docs, gmail, youtube comments). 
 
-![grammarly plagiarism and AI detection ](img/grammarly_signup.png)
+'improve' is an option of Generative AI. As is, just 'improve'.
+
+"Grammarly is the AI communication partner trusted by over 40 million people, 50,000 organizations, and people at 96% of the Fortune 500."
+
+[quillbot](https://quillbot.com/)
 
 
-<!-- pratique -->
+Is QuillBot considered AI writing?
+
+    2 years ago Updated 
+
+Everyone’s talking about AI writing these days, and debate over its use — and misuse — rages. QuillBot has helped you grow and improve as a writer, but you may wonder if using it is considered AI writing. Good question. The short answer is “no.” QuillBot’s tools have specific uses, such as correcting grammar or paraphrasing sentences. It’s up to you to use the feedback and suggestions to create content that is solely your own. ChatGPT and similar AI writers, on the other hand, can generate essay-length text from a few prompts. That writing can then be presented with no changes. Since QuillBot is not considered AI writing, most plagiarism checkers will not flag its use.
+
+That said, we make no guarantees if someone uses QuillBot on text generated by a tool like ChatGPT. Why not play it safe and craft the content yourself? (With QuillBot’s help, of course!)
+
+## Interrogation 
+
+Est-ce que ces outils sont vraiment spécialisés ? Et comment le sont-ils ? il semble que les options de 'generative AI' sont simplement des prompts envoyés à un LLM via une API, ces outils ne possèdent pas 'leur modèle', sinon ils ont fait du fine-tuning. 
+
+Les avantages possibles qu'il pourrait y avoir : la sécurité des données (prompts cryptés) mais ce n'est mêmepas amené. 
+
+On voit que les outils se dirigent vers la 'détection du plagiat' et de la détection du l''utilisation d'IA' : est-ce que on est dans unelogique de correction ou pas plut^to une logique de maquillage d'usages considérés par les maison d'édition et les universités comme illégitimes ?
+
+
+
+<!-- en fait toutes les applications de texte ajd propose de l'IA : Evernote, Notion, ont des options de générative AI pour la correction et parfois pour la génération de texte. Avec par exemple Evernote qui ajoute du RAG -->
 
 # Quelle évaluation des corrections ou des modèles ? 
 
@@ -106,3 +266,4 @@ critères :
 
 - évaluation quantitative 
 - évaluation qualitative 
+

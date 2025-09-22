@@ -936,5 +936,138 @@
     "title": "Intro",
     "section": "Le prompt engineering",
     "text": "Le prompt engineering\nRendre un prompt robuste et surtout permettre l’évaluation systématique d’une stratégie de prompt. Réintégrer une forme de modélisation de son problème pour optimiser un prompt : le template.\nChainForge : outil de comparaison de prompt : comparaison de modèle, comparaison de template (un texte qui inclut des variables) visualisation côte à côte des sorties."
+  },
+  {
+    "objectID": "seances/atelier2-correction-auto.html#plan-de-latelier",
+    "href": "seances/atelier2-correction-auto.html#plan-de-latelier",
+    "title": "2e séance atelier IA - révision et correction automatique",
+    "section": "Plan de l’atelier",
+    "text": "Plan de l’atelier\nThéorie :\n\nRappels sur les fondements de l’IA (30-40min)\nCorrection/révision/relecture un problème de définition ou un problème de valeur symbolique ? (20min)\noutils de GEC (20 min)\n\n\nPratique : 1. Comparaisons d’outils : Grammarly, ChatGPT,"
+  },
+  {
+    "objectID": "seances/atelier2-correction-auto.html#présentation-et-objectif-des-ateliers",
+    "href": "seances/atelier2-correction-auto.html#présentation-et-objectif-des-ateliers",
+    "title": "2e séance atelier IA - révision et correction automatique",
+    "section": "Présentation et objectif des ateliers",
+    "text": "Présentation et objectif des ateliers\nFormat : 4 séances de 2heures, sans inscription, participation libre (à justifier pour le certificat des Humanités Numériques)\nThéorie et pratique.\nObjectifs de la série d’atelier :\n\nComprendre les fondamentaux de l’IA et son histoire\nObtenir des notions critiques sur le fonctionnement profond des outils\nTester et s’approprier des outils d’IA\nMaîtriser le vocabulaire de la discipline\n\nObjectifs de cet atelier :\n\nCerner un cas d’usage courant des IA générative : la correction ortho-typographique.\nS’interroger l’impact de ces nouvelles pratiques dans le travail de recherche.\nTester et comparer des outils courants.\nDéfinir des critères pour effectuer un choix éclairé vis-à-vis des outils disponibles"
+  },
+  {
+    "objectID": "seances/atelier2-correction-auto.html#certificat-canadien-en-humanités-numériques",
+    "href": "seances/atelier2-correction-auto.html#certificat-canadien-en-humanités-numériques",
+    "title": "2e séance atelier IA - révision et correction automatique",
+    "section": "Certificat canadien en Humanités Numériques",
+    "text": "Certificat canadien en Humanités Numériques\n\n\nCertificat canadien en HN\n\n\n\n \nInformation sur le certificat"
+  },
+  {
+    "objectID": "seances/atelier2-correction-auto.html#quest-ce-que-lia",
+    "href": "seances/atelier2-correction-auto.html#quest-ce-que-lia",
+    "title": "2e séance atelier IA - révision et correction automatique",
+    "section": "Qu’est ce que l’IA ?",
+    "text": "Qu’est ce que l’IA ?\nDes programmes informatiques qui nous semblent dignes d’être comparé aux humains : une définition qui évolue avec les technologies.\nPeut-être depuis 2020, le dernier mot à la mode après ‘numérique’ dans les années 2010, et cyberespace dans les années 1990 et 2000.(Vitali-Rosati 2025).\n\nDéfinition pratique pour ces ateliers: un programme informatique qui effectue une prédiction."
+  },
+  {
+    "objectID": "seances/atelier2-correction-auto.html#rappels-de-lintroduction",
+    "href": "seances/atelier2-correction-auto.html#rappels-de-lintroduction",
+    "title": "2e séance atelier IA - révision et correction automatique",
+    "section": "Rappels de l’introduction",
+    "text": "Rappels de l’introduction\n\nLes programmes d’IA réfèrent à des processus algorithmiques variés et pas seulement à des chatbots type ChatGPT. \nL’histoire de l’IA montre qu’il y a des phases d’approbation publique et de désintérêt pour le terme et les technologies qu’il désigne.\nCe qu’on fait entrer dans la catégorie d’“intelligent” a changé. \nDeux grandes approches en IA : une approche déductive (IA symbolique, système expert) vs. déductive (IA connexionniste, modèle de langue).\nun système expert peut être aussi complexe et énergivore qu’un LLM.\nConcernant les LLMs : systèmes d’IA n’ont pas de connaissance du réel ou de ‘compréhension’ : les réponses sont probabilistes.\nLes hallucinations ne sont pas des anomalies, ce sont des erreurs que l’on qualifie a postériori comme telle.\nChatbots = interfaces en langue naturelle : l’exploitation des capacités inductives d’un LLMs ne nécessite pas de passer par une telle interface. Ex : classification.\nLes modèles propriétaires (pas en libre accès) ont des intérêts économiques : nature ‘sycophantique’ avérée."
+  },
+  {
+    "objectID": "seances/atelier2-correction-auto.html#la-correction",
+    "href": "seances/atelier2-correction-auto.html#la-correction",
+    "title": "2e séance atelier IA - révision et correction automatique",
+    "section": "La correction",
+    "text": "La correction\n\n\nune étape négligée ou dévaluée ? quelle place dans notre système de valeurs ?\nqu’est-ce qui entre réellement dans cette étape ?\n\ncorrections orthographiques,\ncorrections typographiques,\nvérification de la mise en page, \ntraduction,\nvérification des sources,\namélioration du style, \namélioration du contenu.\n\n\nLa correction bibliographique : ‘la barrière du dernier kilomètre’ (monjourBarriereDernierKilometre2025?)\nÀ quel moment est-ce que cette étape intervient ? Et quelle est la conséquence d’automatiser cette étape ? - au cours de la rédaction ? - évanouissement des versions intermédiaires (suppression vs. versioning) ? - à la fin de la rédaction ?"
+  },
+  {
+    "objectID": "seances/atelier2-correction-auto.html#lalignement-des-valeurs",
+    "href": "seances/atelier2-correction-auto.html#lalignement-des-valeurs",
+    "title": "2e séance atelier IA - révision et correction automatique",
+    "section": "L’alignement des valeurs",
+    "text": "L’alignement des valeurs\n\n« The problem of achieving agreement between our true preferences and the objective we put into the machine is called the value alignment problem: the values or objectives put into Value alignment problem the machine must be aligned with those of the human. » (Russell and Norvig 2022, 23)\n\nAutrement dit, si on laisse à la machine cette tâche c’est qu’on tend à l’estimer comme peu valorisante dans notre système de valeur actuel. Quelles conséquences est-ce que déléguer cette partie du travail a sur notre travail ?"
+  },
+  {
+    "objectID": "seances/atelier2-correction-auto.html#des-petites-corrections",
+    "href": "seances/atelier2-correction-auto.html#des-petites-corrections",
+    "title": "2e séance atelier IA - révision et correction automatique",
+    "section": "Des ‘petites corrections’ ?",
+    "text": "Des ‘petites corrections’ ?\n\nCurrently, academic publishers only allow the use of ChatGPT and similar tools to improve the readability and language of research articles. However, the ethical boundaries and acceptable usage of AI in academic writing are still undefined, and neither humans nor AI detection tools can reliably identify text generated by AI (homolakExploringAdoptionChatGPT2023?)\n\n\n\nIt is being increasingly observed that content generated by ChatGPT is going undeclared and undetected, resulting in its appearance in articles published in scholarly journals. […] The general policy among publishers states that AI tools must not be used to create, alter or manipulate original research data and results (Elsevier., 2023; Roche, 2024).(strzeleckiMyLastKnowledge2025?)\n\n\n\nArticles contenant des réponses de prompts\n\n\n\n\n\nArticles contenant des réponses explicites de ChatGPT"
+  },
+  {
+    "objectID": "seances/atelier2-correction-auto.html#quest-ce-que-la-relecture-correction",
+    "href": "seances/atelier2-correction-auto.html#quest-ce-que-la-relecture-correction",
+    "title": "2e séance atelier IA - révision et correction automatique",
+    "section": "Qu’est-ce que la relecture-correction ?",
+    "text": "Qu’est-ce que la relecture-correction ?\n\ncorrection ortho-typo\ndes énoncés grammaticalement justes ⇒ la grammaire c’est que des règles de combinaison, purement syntaxique, combinatoire sans sémantique. Règles systématiques et productives. Computation de séquences.\ndes énoncés qui font sens ⇒ sémantiquement correctes\nadéquation avec une situation d’énonciation ⇒ implique la pragmatique\nle style qui flirt avec les limites du correct\nla reformulation c’est encore autre chose"
+  },
+  {
+    "objectID": "seances/atelier2-correction-auto.html#les-étapes-de-la-correction",
+    "href": "seances/atelier2-correction-auto.html#les-étapes-de-la-correction",
+    "title": "2e séance atelier IA - révision et correction automatique",
+    "section": "Les étapes de la correction",
+    "text": "Les étapes de la correction\n\n\nla lecture\nétablir des critères de corrections : orthographes = règles de la langue, mais style etc.\nl’annotation = proposition\nla réécriture"
+  },
+  {
+    "objectID": "seances/atelier2-correction-auto.html#de-limportance-du-versionage",
+    "href": "seances/atelier2-correction-auto.html#de-limportance-du-versionage",
+    "title": "2e séance atelier IA - révision et correction automatique",
+    "section": "De l’importance du versionage",
+    "text": "De l’importance du versionage\nLe LLM et l’interaction avec le LLM réduit les étapes de la correction au delà de son automatisation. Le LLM réécrit, il n’annote pas1, ne demande pas de clarifications ur les instructions données même si elles sont floues (‘améliore le texte’ est une instruction valide).\nUn processus de suppression qui est similaire aux logiques des éditeurs de texte WYSIWYG vs. le versionage qui rend compte du processus, entre dans une dimension de traçabilité et d’interprétabilité des choix effectués.\n\non peut cependant prompter un modèle pour qu’il le fasse."
+  },
+  {
+    "objectID": "seances/atelier2-correction-auto.html#sota-gec-grammar-error-correction",
+    "href": "seances/atelier2-correction-auto.html#sota-gec-grammar-error-correction",
+    "title": "2e séance atelier IA - révision et correction automatique",
+    "section": "SOTA GEC = Grammar Error correction",
+    "text": "SOTA GEC = Grammar Error correction\nTâche de NLP voisine de la traduction automatique.\nSystème expert : très limités pour cette tâche. Grammaire = beaucoup de règles, parfois des règles d’idiomaticité pure (des colocations fortes).\nSystèmes inductifs ou approches data-driven :\nD’abord des classifieurs pour prédire le mots le plus probable dans une classe (préposition), puis statistical machine learning (STM) dans les années 2010 et particulièrement Neural machine translation (NMT). (wangComprehensiveSurveyGrammar2020?; bryantGrammaticalErrorCorrection2023?)\nNMT : Correspondance entre des phrases ou portions de phrases en entrée et des portions de phrases attestées en grand nombre (seq2seq) à partir de corpus parallèle. Le modèle algorithmique est entraîné sur une paire de langue (français-&gt;anglais)."
+  },
+  {
+    "objectID": "seances/atelier2-correction-auto.html#traduction-automatique-et-llms",
+    "href": "seances/atelier2-correction-auto.html#traduction-automatique-et-llms",
+    "title": "2e séance atelier IA - révision et correction automatique",
+    "section": "Traduction automatique et LLMs",
+    "text": "Traduction automatique et LLMs\nUn grand modèle de langue positionne chaque mot dans un espace vectoriel lors de sa phase d’apprentissage initiale à partir d’un grand volume de données en langue naturelle.\nAfin de retrouver donner une réponse le LLM généraliste comme GPT, Mistral, Qwen, Llama, situe la requête utilisateur dans son espace vectoriel et sélectionne les tokens les plus probables à partir du contexte donné (la requête utilisateur ou prompt et les tokens qu’il a déjà généré).\nLes LLMs sont donc généralistes, ils ne sont pas destinés à la traduction plus qu’à la correction d’erreurs grammaticales ou l’écriture créative.\nSuch divergences are well-documented in human translations (HT), where translators often make structural choices that vary significantly from the text originally written in the target language (Deng and Xue, 2017; Nikolaev et al., 2020). In contrast, traditional NMT outputs typically exhibit less diversity and more literal translations, lacking significant structural variation"
+  },
+  {
+    "objectID": "seances/atelier2-correction-auto.html#llm-vs-nmt-qualitativement",
+    "href": "seances/atelier2-correction-auto.html#llm-vs-nmt-qualitativement",
+    "title": "2e séance atelier IA - révision et correction automatique",
+    "section": "LLM vs NMT qualitativement",
+    "text": "LLM vs NMT qualitativement\nNMT + littéral, + spécialisé LLM + verbeux (confabulation) mais plus proche de la traduction humaine pour ça.\n« We find that while LLMs often exhibit translation patterns more similar to human translations compared to traditional NMT models, they still diverge from originally authored text in the same language. Overall, we find that automatically translated sentences from both NMTs and LLMs are consistently identified with higher accuracy in O/T classification tasks than human-translated ones » (sizovAnalysingTranslationArtifacts2024?)\n« Furthermore, our frequency analysis of PoS tags reveals that LLMs align more closely with HT in their usage, especially in terms of adverbs, and auxiliary verbs, while NMT models tend to overproduce specific tags in shorter sentences. This suggests that LLMs, although not perfect, are making strides in mimicking human translation patterns. » (idem)\n« indicate that LLMs tend to produce translations that are less literal compared to NMT models »\n« What’s more, IBM announced the deprecation of Watson Language Translator, its NMT service, encouraging users to migrate to — guess what? — WatsonX LLMs. This move establishes IBM as one of the first tech giants to sunset its NMT efforts and focus on LLMs for automated translation purposes. » (ciesielskiNeuralMachineTranslation2024?)"
+  },
+  {
+    "objectID": "seances/atelier2-correction-auto.html#le-futur-de-la-traduction-automatique",
+    "href": "seances/atelier2-correction-auto.html#le-futur-de-la-traduction-automatique",
+    "title": "2e séance atelier IA - révision et correction automatique",
+    "section": "Le futur de la traduction automatique",
+    "text": "Le futur de la traduction automatique\nWe anticipate that, soon, LLMs will become a viable enterprise solution for translation. This will likely come when we move towards task-specific LLMs trained specifically for translation. These models will be smaller and more practical to deploy and maintain than today’s massive foundational models. (ciesielskiNeuralMachineTranslation2024?)"
+  },
+  {
+    "objectID": "seances/atelier2-correction-auto.html#back-to-gec",
+    "href": "seances/atelier2-correction-auto.html#back-to-gec",
+    "title": "2e séance atelier IA - révision et correction automatique",
+    "section": "Back to GEC",
+    "text": "Back to GEC\nLectures à faire :\n(kobayashiLargeLanguageModels2024?); (maityHowReadyAre2024?)\nKobayashi, M., Mita, M., & Komachi, M. (2024). Large Language Models Are State-of-the-Art Evaluator for Grammatical Error Correction (No. arXiv:2403.17540). arXiv. https://doi.org/10.48550/arXiv.2403.17540\nMaity, S., Deroy, A., & Sarkar, S. (2024). How Ready Are Generative Pre-trained Large Language Models for Explaining Bengali Grammatical Errors? (No. arXiv:2406.00039). arXiv. https://doi.org/10.48550/arXiv.2406.00039"
+  },
+  {
+    "objectID": "seances/atelier2-correction-auto.html#outils-généralistes",
+    "href": "seances/atelier2-correction-auto.html#outils-généralistes",
+    "title": "2e séance atelier IA - révision et correction automatique",
+    "section": "Outils généralistes",
+    "text": "Outils généralistes\nLLMs non entraînés : ChatGPT, modèles téléchargés localement (ollama)."
+  },
+  {
+    "objectID": "seances/atelier2-correction-auto.html#outils-spécialisés-correction-écriture-académique",
+    "href": "seances/atelier2-correction-auto.html#outils-spécialisés-correction-écriture-académique",
+    "title": "2e séance atelier IA - révision et correction automatique",
+    "section": "Outils spécialisés (correction, écriture académique)",
+    "text": "Outils spécialisés (correction, écriture académique)\nhttps://www.editpad.org/ : AI detector, humanize AI text, Plagiarim checker, paraphrasing tool, story generator, text summarizer, AI essay writer etc. Probablement juste ChatGPT hooked à une interface avec un system-prompt. Apparamment mauvais according to Bordalejo et al. (2025)\nhttps://www.writefull.com/\nGrammarly donne une note à partir des critères de formalité, 4 niveaux : correctness (corrige erreurs grammaticales), clarity (reformulation) engagement(option payante), delivery (payant), plagiarism detection (payant). Avec un ‘generative AI’ avec des prompts pre-écrit. -&gt; un browser plugin qui permet de s’en servir avec tous les sites google (docs, gmail, youtube comments).\n‘improve’ is an option of Generative AI. As is, just ‘improve’.\n“Grammarly is the AI communication partner trusted by over 40 million people, 50,000 organizations, and people at 96% of the Fortune 500.”\nquillbot\nIs QuillBot considered AI writing?\n2 years ago Updated \nEveryone’s talking about AI writing these days, and debate over its use — and misuse — rages. QuillBot has helped you grow and improve as a writer, but you may wonder if using it is considered AI writing. Good question. The short answer is “no.” QuillBot’s tools have specific uses, such as correcting grammar or paraphrasing sentences. It’s up to you to use the feedback and suggestions to create content that is solely your own. ChatGPT and similar AI writers, on the other hand, can generate essay-length text from a few prompts. That writing can then be presented with no changes. Since QuillBot is not considered AI writing, most plagiarism checkers will not flag its use.\nThat said, we make no guarantees if someone uses QuillBot on text generated by a tool like ChatGPT. Why not play it safe and craft the content yourself? (With QuillBot’s help, of course!)"
+  },
+  {
+    "objectID": "seances/atelier2-correction-auto.html#interrogation",
+    "href": "seances/atelier2-correction-auto.html#interrogation",
+    "title": "2e séance atelier IA - révision et correction automatique",
+    "section": "Interrogation",
+    "text": "Interrogation\nEst-ce que ces outils sont vraiment spécialisés ? Et comment le sont-ils ? il semble que les options de ‘generative AI’ sont simplement des prompts envoyés à un LLM via une API, ces outils ne possèdent pas ‘leur modèle’, sinon ils ont fait du fine-tuning.\nLes avantages possibles qu’il pourrait y avoir : la sécurité des données (prompts cryptés) mais ce n’est mêmepas amené.\nOn voit que les outils se dirigent vers la ‘détection du plagiat’ et de la détection du l’‘utilisation d’IA’ : est-ce que on est dans unelogique de correction ou pas plut^to une logique de maquillage d’usages considérés par les maison d’édition et les universités comme illégitimes ?"
   }
 ]
