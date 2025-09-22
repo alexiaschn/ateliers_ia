@@ -8,7 +8,7 @@ colorlinks: true
 fig-cap-location: top
 format:
     revealjs: 
-        output-file: "atelier2-correction-auto.html" 
+        output-file: "correction.html" 
         # template: simple
         smaller: true
         incremental: true
@@ -16,17 +16,22 @@ format:
         slide-number: true
 ---
 
+<!-- Antidote : creuser modèle -->
+<!-- vérif les modèles utilisés chez Grammarly, antidote, quillbot -->
+
 ## Plan de l'atelier
 
 Théorie :
 
-1. Rappels sur les fondements de l'IA (30-40min)
-2. Correction/révision/relecture un problème de définition ou un problème de valeur symbolique ? (20min)
-3. outils de GEC (20 min)
-4. 
+1. Rappels sur les fondements de l'IA (30min) (AS)
+2. Présentation historico-technique des systèmes de GEC (15min) (AS) 
+3. Changement de paradigme : de l'ortho-typo à la reformulation voire la génération de contenu (10min) (CG + AS) 
+4. Problématique : quel csq sur le travail de recherche ? (CG)
+5. Changement de système de valeur : négligence dans cette étape de relecture et correction qui a des csq épistémologiques (CG) (30min avec discussion)
+6. Langue = norme et normalisation politique (CG) (10min)
+7. Présentation des outils (AS) (25min avec discussion)
+8. conclusion/ce qu'il faut retenir (5min)
 
-Pratique : 
-1. Comparaisons d'outils : Grammarly, ChatGPT,  
 
 ## Présentation et objectif des ateliers 
 
@@ -80,6 +85,26 @@ Peut-être depuis 2020, le dernier mot à la mode après 'numérique' dans les a
 - Chatbots  = interfaces en langue naturelle : l'exploitation des capacités inductives d'un LLMs ne nécessite pas de passer par une telle interface. Ex : classification.
 - Les modèles propriétaires (pas en libre accès) ont des intérêts économiques : nature 'sycophantique' avérée. 
 
+## Historique 
+
+
+- élément historiques : 
+passage de système experts exemples (MT)
+à modèles data-driven (SMT puis NMT sur corpus parallèle en MT) -> des modèles spécialisés dans la classification.
+-> depuis 20 ans, des approches statistiques à la correction càd mise en parallèle d'une phrase en entrée et d'une phrase ou séquence présente dans le jeu de donnée. 
+
+- LLM généraliste : même modèle que NMT donc prédiction mais pas de spécialisation sur la tâche de correction ou traduction. 
+
+
+**Avant les LLM les outils de 'corrections' sont seuleemnt sur la correction ortho-typographique (on y reviendra) Maintenant les outils qui promettent de la correction dépassent les limites de la simple correction grammaticale.**
+
+## Pourquoi est-ce que les outils incorporent ajd du 'AI powered' et quel impact sur nos pratqieus de recherches et d'enseignement
+
+- les Systèmes existaient avant ChatGPT et opéraient de la même façon mais il fallait 
+- Des nouveaux usages, un ancrage
+- intérêt économique à maintenir l'utilisateur sur la même plateforme donc intégration de LLM dans l'outil. (mais probablement juste une requête). 
+
+
 ## La correction 
 
 <!-- peut-être proposer des exemples, prendre son temps ? -->
@@ -91,27 +116,43 @@ Peut-être depuis 2020, le dernier mot à la mode après 'numérique' dans les a
     <!-- (veuve et orphelin) -->
     - traduction, 
     - vérification des sources, 
-    - amélioration du style, 
+    - amélioration du style, ton. 
+    - reformulation selon le lectorat pressenti (prise en compte de la situation d'énonciation)
+
     <!-- répétition, niveau de langue, terminologie, alléger les phrases -->
     - amélioration du contenu. 
     
 La correction bibliographique : 'la barrière du dernier kilomètre' [@monjourBarriereDernierKilometre2025] 
 
+
+## Quelle conséquence concrétement ?
+
+deux points de vue : 
+- La correction a un impact sur la manière dont le texte est reçu. Le pdv des outils : peaufiner pour 'convey at best' tes idées, respecter les idées de l'auteurice.
+- "Écrire c'est réécrire." donc laisser la correction à la machine c'est laisser une partie importante du travail intellectuel. 
+    - surtout si on considère les pratiques réelles où l'écriture est faite d'itération avec des étapes de corrections et des relectures. 
+    - ce qui était rationalisé dans le monde de l'imprimé avec le système ddes 'épreuves' à al soumission d'un manuscrit. 
+
 À quel moment est-ce que cette étape intervient ? Et quelle est la conséquence d'automatiser cette étape ? 
+
 - au cours de la rédaction ? 
     - évanouissement des versions intermédiaires (suppression vs. versioning) ?
 - à la fin de la rédaction ? 
 
 
+## Changement de paradigme
 
+de la correction ortho-typo à la reformulation au fait de masquer le fait que le texte ait été écrit par une IA. 
 
-## L'alignement des valeurs
+## L'alignement des valeurs et le système de valeurs
 
 >« The problem of achieving agreement between our true preferences and the objective we put into the machine is called the value alignment problem: the values or objectives put into Value alignment problem the machine must be aligned with those of the human. » [@russellArtificialIntelligenceModern2022a, p. 23]
 
+L'intelligence humaine commence là où celle de la machine s'arrête. Si on découvre de nouvelles capacités à la machine alors on enlève cette capicité de la définition de l'intelligence humaine.
+
 Autrement dit, si on laisse à la machine cette tâche c'est qu'on tend à l'estimer comme peu valorisante dans notre système de valeur actuel. Quelles conséquences est-ce que déléguer cette partie du travail a sur notre travail ? 
 
-## Des 'petites corrections' ?
+## Des 'petites corrections finales' ?
 
 >Currently, academic publishers only allow the use of ChatGPT and similar tools to improve the readability and language of research articles. However, the ethical boundaries and acceptable usage of AI in academic writing are still undefined, and neither humans nor AI detection tools can reliably identify text generated by AI [@homolakExploringAdoptionChatGPT2023]
 
@@ -140,7 +181,6 @@ Est-ce que faire un état de l'art (càd pas de production de nouveau contenu) a
 - le style qui flirt avec les limites du correct
 - la reformulation c’est encore autre chose
 
-<!-- en résumé : pour cet atelier, quand on parle de correction on parle de : correction ortho-typographique ? -->
 
 ## Les étapes de la correction
 
@@ -200,6 +240,11 @@ LLM + verbeux (confabulation) mais plus proche de la traduction humaine pour ça
 
 « What’s more, IBM announced the deprecation of Watson Language Translator, its NMT service, encouraging users to migrate to — guess what? — WatsonX LLMs. This move establishes IBM as one of the first tech giants to sunset its NMT efforts and focus on LLMs for automated translation purposes. » [@ciesielskiNeuralMachineTranslation2024]
 
+## Limites exposées
+
+- avec la MT on a 50 ans d'évaluation et de mesure statistiquues pour évaluer (score BLEU etc) mais pas avec la correction parcequ'on néglige ĉa.
+
+- si on transpos eles ccl de l'article [@sizovAnalysingTranslationArtifacts2024 on voit que LLM = conversationnel, + idiomatique mais pas + expert ! Et surtout, les traducteurs apprécient travailler avec des NMT (!! syst neuronaux spécialisés) parce que erreurs prévisibles ! Output convainquant au premier abrood car ressemble au langue naturelle mais erreurs plus subtiles plus difficile à détecter. 
 
 ## Le futur de la traduction automatique
 
@@ -218,15 +263,36 @@ Maity, S., Deroy, A., & Sarkar, S. (2024). How Ready Are Generative Pre-trained 
 
 
 
+
+## Avant présentation outils 
+
+6. Langue = norme et normalisation politique (Clara)
+
+
+
 ## Outils généralistes
 
 LLMs non entraînés : ChatGPT, modèles téléchargés localement (ollama). 
+
+- trad auto : comparaison montre que les llm généraliste sosnt conversationnels mais pas experts. Influence du prompt (à base d'exemple, description de la tâche). 
+
+<!-- interprétation donnée ChainForge -->
+
+- des modèles 'généraliste' avec une forte préférence pour l'anglais : quelle place pour les formes dialectales, pour les langues minoritaires. ?
+
+Càd qu'un LLM est toujours orienté. 
 
 ## Outils spécialisés (correction, écriture académique)
 
 https://www.editpad.org/ : AI detector, humanize AI text, Plagiarim checker, paraphrasing tool, story generator, text summarizer, AI essay writer etc. Probablement juste ChatGPT hooked à une interface avec un system-prompt. Apparamment mauvais according to @bordalejoScarletCloakForest2025
 
-https://www.writefull.com/
+![screenshot editpad](img/editpad.png) 
+
+maintenant corriger = masquer que le texte ne vient pas d'un humain, ou chercher à le détecter
+
+[https://www.writefull.com/](https://www.writefull.com/)
+
+Effet de mode = disparition et apparition de solutions miracles 
 
 [Grammarly](https://www.grammarly.com/) donne une note à partir des critères de formalité, 4 niveaux : correctness (corrige erreurs grammaticales), clarity (reformulation) engagement(option payante), delivery (payant), plagiarism detection (payant). Avec un 'generative AI' avec des prompts pre-écrit.
 -> un browser plugin qui permet de s'en servir avec tous les sites google (docs, gmail, youtube comments). 
@@ -242,15 +308,24 @@ Is QuillBot considered AI writing?
 
     2 years ago Updated 
 
-Everyone’s talking about AI writing these days, and debate over its use — and misuse — rages. QuillBot has helped you grow and improve as a writer, but you may wonder if using it is considered AI writing. Good question. The short answer is “no.” QuillBot’s tools have specific uses, such as correcting grammar or paraphrasing sentences. It’s up to you to use the feedback and suggestions to create content that is solely your own. ChatGPT and similar AI writers, on the other hand, can generate essay-length text from a few prompts. That writing can then be presented with no changes. Since QuillBot is not considered AI writing, most plagiarism checkers will not flag its use.
+Everyone’s talking about AI writing these days, and debate over its use — and misuse — rages. QuillBot has helped you grow and improve as a writer, but you may wonder if using it is considered AI writing. Good question. **The short answer is “no.” QuillBot’s tools have specific uses, such as correcting grammar or paraphrasing sentences. It’s up to you to use the feedback and suggestions to create content that is solely your own.** ChatGPT and similar AI writers, on the other hand, can generate essay-length text from a few prompts. That writing can then be presented with no changes. Since QuillBot is not considered AI writing, most plagiarism checkers will not flag its use.
 
 That said, we make no guarantees if someone uses QuillBot on text generated by a tool like ChatGPT. Why not play it safe and craft the content yourself? (With QuillBot’s help, of course!)
 
+
+Antidote : https://www.antidote.info/fr/blogue/nouvelles/reformulation-et-intelligence-artificielle-antidote
+
+Des choix 
+
+ProLexis 
+
 ## Interrogation 
 
-Est-ce que ces outils sont vraiment spécialisés ? Et comment le sont-ils ? il semble que les options de 'generative AI' sont simplement des prompts envoyés à un LLM via une API, ces outils ne possèdent pas 'leur modèle', sinon ils ont fait du fine-tuning. 
+Est-ce que ces outils sont vraiment spécialisés ? Et comment le sont-ils ? 
 
-Les avantages possibles qu'il pourrait y avoir : la sécurité des données (prompts cryptés) mais ce n'est mêmepas amené. 
+il semble que les options de 'generative AI' sont simplement des prompts envoyés à un LLM via une API, ces outils ne possèdent pas forcément 'leur modèle', sinon ils ont fait du fine-tuning. Si l'utilisation du LLM est orientée par les dev du logiciel, il s'agit bien du même processus (l'utilisateurice peut seulement choisir une 'reformulation' du ton par exemple).
+
+Les avantages possibles qu'il pourrait y avoir : la sécurité des données (prompts cryptés) mais ce n'est même pas amené. 
 
 On voit que les outils se dirigent vers la 'détection du plagiat' et de la détection du l''utilisation d'IA' : est-ce que on est dans unelogique de correction ou pas plut^to une logique de maquillage d'usages considérés par les maison d'édition et les universités comme illégitimes ?
 
