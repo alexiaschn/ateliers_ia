@@ -31,19 +31,12 @@ tab1, tab2 = st.tabs(['Approche symbolique', 'Vectorisation'])
 
 # Fonctions de modélisation
 
-def expert_class(doc): 
-    # motif qui ignore la casse et inclus le pluriel
+def talks_about_fruit(phrase): 
+    res = False
     fruit_pattern = re.compile('(pomme|poire|banane|orange|clémentine|raisin|bleuet)s?', flags=re.IGNORECASE)
-    # on regarde chaque token dans la phrase
-    for token in doc: 
-        # est-ce que l'un des tokens est dans la liste de fruit
-        if fruit_pattern.match(token.text.lower()): 
-            # si le fruit est un adjectif alors c'est la couleur orange.
-            if token.pos_ == 'ADJ': 
-                return False
-            else:
-                return True
-    return False
+    if any(fruit_pattern.match(token.text.lower()) and token.pos_ != 'ADJ' for token in phrase):
+        res = True
+    return res
 
 def visualisation_2d(doc, doc2=None):
     tokens, vectors, sources = [], [], []
@@ -101,22 +94,15 @@ with tab1:
         pos = st.button('POS-tagging')
     with col2:
         if classification_fruit:
-            st.write(f'La phrase "{phrase}" parle de fruit : **{expert_class(doc)}**')
+            st.write(f'La phrase "{phrase}" parle de fruit : **{talks_about_fruit(doc)}**')
             with st.expander('Ouvrir pour voir le code'):
                 st.code(f"""
-        def expert_class(doc): 
-            # motif qui ignore la casse et inclus le pluriel
-            fruit_pattern = re.compile('(pomme|poire|banane|orange|clémentine|raisin|bleuet)s?', flags=re.IGNORECASE)
-            # on regarde chaque token dans la phrase
-            for token in doc: 
-                # est-ce que l'un des tokens est dans la liste de fruit
-                if fruit_pattern.match(token.text.lower()): 
-                    # si le fruit est un adjectif alors c'est la couleur orange.
-                    if token.pos_ == 'ADJ': 
-                        return False
-                    else:
-                        return True
-            return False""")
+def talks_about_fruit(phrase): 
+    res = False
+    fruit_pattern = re.compile('(pomme|poire|banane|orange|clémentine|raisin|bleuet)s?', flags=re.IGNORECASE)
+    if any(fruit_pattern.match(token.text.lower()) and token.pos_ != 'ADJ' for token in phrase):
+        res = True
+    return res""")
         if tokenisation:
             data = pd.DataFrame({'basic tokenisation': pd.Series(phrase.split()), 
                 'spaCy tokenisation': pd.Series([token.text for token in doc])
