@@ -48,10 +48,10 @@ Objectifs de la série d'atelier :
 
 Objectifs de cet atelier : 
 
-- Cerner un cas d'usage courant des IA générative : la correction ortho-typographique.
-- S'interroger l'impact de ces nouvelles pratiques dans le travail de recherche. 
+- Cerner un cas d'usage courant des IA génératives : la correction ortho-typographique.
+- S'interroger sur l'impact de ces nouvelles pratiques dans le travail de recherche.  
 - Tester et comparer des outils courants. 
-- Définir des critères pour effectuer un choix éclairé vis-à-vis des outils disponibles
+- Définir des critères pour effectuer un choix éclairé vis-à-vis des outils disponibles. 
 
 
 ## Certificat canadien en Humanités Numériques
@@ -65,27 +65,46 @@ Objectifs de cet atelier :
 
 ## Qu'est ce que l'IA ? 
  
-Des programmes informatiques qui nous semblent dignes d'être comparé aux humains : une définition qui évolue avec les technologies. 
+Des programmes informatiques que nous estimons à la hauteur de l'intelligence humaine ? Le développement des technologies fait évoluer cette définition de l'_intelligence_ non seulement _artificielle_ mais aussi _humaine_.
 
-Peut-être depuis 2020, le dernier mot à la mode après 'numérique' dans les années 2010, et cyberespace dans les années 1990 et 2000.[@vitali-rosatiManifestePourEtudes2025]. 
+'IA' depuis 5 ans, a remplacé le 'numérique' des années 2010, et le 'cyberespace' des années 1990 et 2000.[@vitali-rosatiManifestePourEtudes2025]. 
 
-- Définition pratique pour ces ateliers: un programme informatique qui effectue une prédiction.
+Définition pratique pour ces ateliers: "un programme informatique qui effectue une prédiction."
 
 ## Rappels de l'introduction
 
 - Les programmes d'IA réfèrent à des processus algorithmiques variés et pas seulement à des chatbots type ChatGPT.
+- L'IA est une discipline qui a plus de 75 ans (terme de 1956). 
+- [@turingComputingMachineryIntelligence1950] a orienté la discipline vers un modèle 'chatbot'.
 <!-- ici expliquer Turing :  l'article Computing machinery intelligence a orienté la discipline vers une définition étroite de l'intelligence humaine comme intelligence sociale, ou capacité à feindre un échange social comme preuve d'humanité -->
-- L'histoire de l'IA montre qu'il y a des phases d'approbation publique et de désintérêt pour le terme et les technologies qu'il désigne.
-- Ce qu'on fait entrer dans la catégorie d'"intelligent" a changé. 
-<!-- pourquoi le calcul savant, précis n'est plus considéré comme intelligent ? -->
+- Les 'saisons de l'IA' suivent des phases d'approbation publique et de désintérêt pour le terme et les technologies qu'on place sous ce terme.
+- Ce qu'on fait entrer dans la catégorie d'"intelligent" a changé : le calcul savant est-il moins intelligent que le bavardage ? 
+
+
+## Rappels historiques sur l'IA
+
 - Deux grandes approches en IA : une approche déductive (IA symbolique, système expert) vs. déductive (IA connexionniste, modèle de langue). 
-- un système expert peut être aussi complexe et énergivore qu'un LLM. 
+- Un système expert peut être aussi complexe et énergivore qu'un LLM.
+- Un LLM (_large language model_) est la modélisation sous forme de vecteurs de chaque élément d'un grand corpus (_token_ ~mot) par rapport à cet ensemble. 
+
+[Démo visuelle](https://demo-atelier.streamlit.app/)
+
+## Les LLMs en contexte
+
 - Concernant les LLMs : systèmes d'IA n'ont pas de connaissance du réel ou de 'compréhension' : les réponses sont probabilistes. 
 - Les hallucinations ne sont pas des anomalies, ce sont des erreurs que l'on qualifie a postériori comme telle. 
-- Chatbots  = interfaces en langue naturelle : l'exploitation des capacités inductives d'un LLMs ne nécessite pas de passer par une telle interface. Ex : classification.
-- Les modèles propriétaires (pas en libre accès) ont des intérêts économiques : nature 'sycophantique' avérée. 
+- Chatbots  = interfaces en langue naturelle : l'exploitation des capacités inductives d'un LLMs ne nécessite pas de passer par une telle interface. Ex : classification avec de l'apprentissage machine (_machine learning_). 
+- Les modèles propriétaires (les vecteurs ne sont pas en libre accès) ont des intérêts économiques : nature 'sycophantique' avérée. 
 
-## Historique 
+## Correction automatique 
+
+
+<!-- Je reste délibérément floue sur ma définition de la correction automatique pour vous amener  -->
+
+
+
+
+## Présentation historico-technique des systèmes de 
 
 
 - élément historiques : 
