@@ -2,7 +2,7 @@
 title: 2e séance atelier IA  - révision et correction automatique
 prof: Alexia Schneider + Clara Grometto
 date: 9 octobre 2025
-bibliography: ../phd_udem.bib
+bibliography: ../correction.bib
 link-citations: true
 colorlinks: true
 fig-cap-location: top
