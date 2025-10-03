@@ -15,23 +15,24 @@ format:
         scrollable: true
         slide-number: true
 ---
-
-<!-- 2 sujets pour Clara : 
-1. intégrer la question du correcteur automatique intégré dans le téléphone ? iirc le discours était que le correcteur automatique rendait flemmard, ajd il faut souvent lutter contre son téléphone pour dire des choses correctes
-2. est-ce que cette question de la délégation cognitive, de l'effet nivelant est pertinente pour cet atelier ? -->
-
 ## Plan de l'atelier
 
 Théorie :
 
-1. Rappels sur les fondements de l'IA (30min) (AS)
-2. Présentation historico-technique des systèmes de GEC (15min) (AS) 
-3. Changement de paradigme : de l'ortho-typo à la reformulation voire la génération de contenu (10min) (CG + AS) 
-4. Problématique : quel csq sur le travail de recherche ? (CG)
-5. Changement de système de valeur : négligence dans cette étape de relecture et correction qui a des csq épistémologiques (CG) (30min avec discussion)
-6. Langue = norme et normalisation politique (CG) (10min)
-7. Présentation des outils (AS) (25min avec discussion)
-8. conclusion/ce qu'il faut retenir (5min)
+
+1. Rappels sur les fondements de l'IA 
+2. Problématique et annonce du plan (CG)
+3. Mise en perspective
+4. Définition 
+5. Présentation historico-technique des systèmes de GEC (AS) 
+6. Changement de paradigme : de l'ortho-typo à la reformulation voire la génération de contenu 
+7. Enjeux/conséquence (questions) 
+    - gain de temps 
+    - uniformisation de la langue
+    - système de valeurs 
+    - influence de la machine
+8. Présentation des outils
+9. conclusion/ce qu'il faut retenir (5min)
 
 # Introduction
 
@@ -103,6 +104,74 @@ Définition pratique pour ces ateliers: "un programme informatique qui effectue 
 - On peut influencer le calcul de probabilité d'un modèle (température, top-k, seed)
 - On peut aussi 'orienter' le comportement d'un modèle avec un _system prompt_.  
 - Chatbots  = interfaces en langue naturelle : l'exploitation des capacités inductives d'un LLMs ne nécessite pas de passer par une telle interface. Ex : classification avec de l'apprentissage machine (_machine learning_). 
+
+
+# La correction à l'heure de l'IA générative
+
+## Changement de paradigme
+
+Avant les LLM, les outils de 'corrections' sont spécialisés pour la correction ortho-typographique.   Maintenant les outils de correction dépassent les limites de la simple correction grammaticale.
+
+- Reformulation.
+- Génération de texte. 
+- Masquer l'utilisation d'une IA. 
+
+
+## Quelle définition de la correction ?
+
+<!-- peut-être proposer des exemples, prendre son temps ? -->
+- une étape négligée ou dévaluée ? quelle place dans notre système de valeurs ? 
+- qu'est-ce qui entre réellement dans cette étape ? 
+    - corrections orthographiques, 
+    - corrections typographiques,
+    - vérification de la mise en page,
+    - traduction, 
+    - vérification des sources, 
+    - amélioration du style, ton. 
+    - reformulation selon le lectorat pressenti (prise en compte de la situation d'énonciation)
+
+    <!-- répétition, niveau de langue, terminologie, alléger les phrases -->
+    - amélioration du contenu. 
+    
+La correction bibliographique : 'la barrière du dernier kilomètre' [@monjourBarriereDernierKilometre2025] 
+
+
+
+
+## Qu'est-ce que la relecture-correction ?
+
+- correction ortho-typo
+- des énoncés grammaticalement justes ⇒ la grammaire c’est que des règles de combinaison, purement syntaxique, combinatoire sans sémantique. Règles systématiques et productives. Computation de séquences.
+- des énoncés qui font sens ⇒ sémantiquement correctes
+- adéquation avec une situation d’énonciation ⇒ implique la pragmatique
+- le style qui flirt avec les limites du correct
+- la reformulation c’est encore autre chose
+
+
+## Les étapes de la correction
+
+
+1. la lecture 
+2. établir des critères de corrections : orthographe = règles de la langue, mais style etc.
+3. l'annotation = proposition
+4. la réécriture
+
+
+**La correction est un processus itératif : c'est déjà une forme d'évaluation**
+
+
+<!-- ## De l'importance du versionage 
+
+Le LLM et l'interaction avec le LLM réduit les étapes de la correction au delà de son automatisation. Le LLM réécrit, il n'annote pas[^note], ne demande pas de clarifications ur les instructions données même si elles sont floues ('améliore le texte' est une instruction valide).
+
+Un processus de suppression  qui est similaire aux logiques des éditeurs de texte WYSIWYG vs. le versionage qui rend compte du processus, entre dans une dimension de traçabilité et d'interprétabilité des choix effectués.
+
+[^note]: on peut cependant prompter un modèle pour qu'il le fasse.
+
+<!-- ici une illustration sur le versionage ? -->
+ -->
+
+# Langue, norme et normalisation politique 
 
 
 # Histoire de la GEC 
@@ -196,34 +265,15 @@ perplexité : inverse de la probabilité moyenne par mot, basse perplexité = LM
 
 <!-- on entre dans une boucle où en pensant déléguer à un LLM la tâche de correction, on se retrouve à devoir itérativement penser la correction et l'évaluation proposée : finalement est-ce que notre capacité de correction n'est déplacée sur un nouvel outil mais toujours aussi nécessaire.  -->
 
-# La correction à l'heure de l'IA générative
+# Enjeux et conséquences
 
-## Changement de paradigme
+## Est-ce que ces outils offrent un gain de temps selon vous ?
 
-Avant les LLM, les outils de 'corrections' sont spécialisés pour la correction ortho-typographique.   Maintenant les outils de correction dépassent les limites de la simple correction grammaticale.
+## Uniformisation de la langue 
 
-- Reformulation.
-- Génération de texte. 
-- Masquer l'utilisation d'une IA. 
+model collapse 
 
-
-## Quelle définition de la correction ?
-
-<!-- peut-être proposer des exemples, prendre son temps ? -->
-- une étape négligée ou dévaluée ? quelle place dans notre système de valeurs ? 
-- qu'est-ce qui entre réellement dans cette étape ? 
-    - corrections orthographiques, 
-    - corrections typographiques,
-    - vérification de la mise en page,
-    - traduction, 
-    - vérification des sources, 
-    - amélioration du style, ton. 
-    - reformulation selon le lectorat pressenti (prise en compte de la situation d'énonciation)
-
-    <!-- répétition, niveau de langue, terminologie, alléger les phrases -->
-    - amélioration du contenu. 
-    
-La correction bibliographique : 'la barrière du dernier kilomètre' [@monjourBarriereDernierKilometre2025] 
+linguistic uniformisation
 
 
 ## L'alignement des valeurs et le système de valeurs
@@ -252,8 +302,7 @@ Est-ce que faire un état de l'art (càd pas de production de nouveau contenu) a
 ![Articles contenant des réponses explicites de ChatGPT](img/chatgptresponses2.png)
 
 <!-- ici l'argumentaire c'est que comme on a laissé à ChatGPT la taĉhe de rédaction et possiblement de relecture finale on s'embête pas à relire la version de l'article soumise, donc on laisse des dingueries.  -->
-
-
+<!-- 
 ## Quelle conséquence concrétement ?
 
 deux points de vue : 
@@ -266,7 +315,7 @@ deux points de vue :
 
 - au cours de la rédaction ? 
     - évanouissement des versions intermédiaires (suppression vs. versioning) ?
-- à la fin de la rédaction ? 
+- à la fin de la rédaction ?  -->
 
 ## Effet nivelant et influence de la machine
 
@@ -276,41 +325,7 @@ Les moins bons traducteurs sont aidés par la TA mais les meilleurs traducteurs 
 Une influence pas négligeable : même quand un participant n'a plus les recommandations de la machine, iel reproduit les erreurs des recommandations [@vicenteHumansInheritArtificial2023] : délégation cognitive ou _cognitive offloading_ 
 
 
-## Qu'est-ce que la relecture-correction ?
-
-- correction ortho-typo
-- des énoncés grammaticalement justes ⇒ la grammaire c’est que des règles de combinaison, purement syntaxique, combinatoire sans sémantique. Règles systématiques et productives. Computation de séquences.
-- des énoncés qui font sens ⇒ sémantiquement correctes
-- adéquation avec une situation d’énonciation ⇒ implique la pragmatique
-- le style qui flirt avec les limites du correct
-- la reformulation c’est encore autre chose
-
-
-## Les étapes de la correction
-
-
-1. la lecture 
-2. établir des critères de corrections : orthographe = règles de la langue, mais style etc.
-3. l'annotation = proposition
-4. la réécriture
-
-
-**La correction est un processus itératif : c'est déjà une forme d'évaluation**
-
-
-## De l'importance du versionage 
-
-Le LLM et l'interaction avec le LLM réduit les étapes de la correction au delà de son automatisation. Le LLM réécrit, il n'annote pas[^note], ne demande pas de clarifications ur les instructions données même si elles sont floues ('améliore le texte' est une instruction valide).
-
-Un processus de suppression  qui est similaire aux logiques des éditeurs de texte WYSIWYG vs. le versionage qui rend compte du processus, entre dans une dimension de traçabilité et d'interprétabilité des choix effectués.
-
-[^note]: on peut cependant prompter un modèle pour qu'il le fasse.
-
-<!-- ici une illustration sur le versionage ? -->
-
-
-# Langue, norme et normalisation politique 
-
+<!-- 1. intégrer la question du correcteur automatique intégré dans le téléphone ? iirc le discours était que le correcteur automatique rendait flemmard, ajd il faut souvent lutter contre son téléphone pour dire des choses correctes -->
 
 # Quelques outils
 
