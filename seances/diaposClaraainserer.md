@@ -1,23 +1,3 @@
----
-# layout: slide
-title: Intro 
-date: 2025-09-11
-author: Alexia Schneider `alexia.schneider@umontreal.ca` (UdeM), 
-  Marcello Vitali-Rosati `marcello.vitali.rosati@umontreal.ca` (UdeM)
-bibliography: ./biblio_clara.bib
-link-citations: true
-colorlinks: true
-fig-cap-location: top
-format:
-    revealjs: 
-        output-file: "intro.html" 
-        # template: simple
-        smaller: true
-        scrollable: true
-        slide-number: true
----
-
-
 ## IA et révision <!--slide d'intro générale-->
 
 En quoi les outils d'aide à la rédaction basés sur l'IA transforme-t-ils le rapport des chercheur·euses à leur texte, au processus d’écriture et aux  ?

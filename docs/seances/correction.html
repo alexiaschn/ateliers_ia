@@ -9,8 +9,9 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.42">
 
+  <meta name="author" content="Alexia Schneider alexia.schneider@umontreal.ca (UdeM), Clara Grometto clara.grometto@umontreal.ca (UdeM)">
   <meta name="dcterms.date" content="2025-10-09">
-  <title>2e séance atelier IA - révision et correction automatique</title>
+  <title>Atelier IA - La Correction automatique</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -148,9 +149,14 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">2e séance atelier IA - révision et correction automatique</h1>
+  <h1 class="title">Atelier IA - La Correction automatique</h1>
 
 <div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Alexia Schneider <code>alexia.schneider@umontreal.ca</code> (UdeM), Clara Grometto <code>clara.grometto@umontreal.ca</code> (UdeM) 
+</div>
+</div>
 </div>
 
   <p class="date">2025-10-09</p>
@@ -208,6 +214,17 @@
 </div>
 <p><img data-src="../seances/img/ccdhn2.png" alt="Certificat canadien en HN"> <img data-src="../seances/img/ccdhn3.png" alt="Certificat canadien en HN"></p>
 <p><a href="https://ccdhhn.ca/">Information sur le certificat</a></p>
+</section>
+<section id="ia-et-révision" class="slide level2">
+<h2>IA et révision <!--slide d'intro générale--></h2>
+<p>En quoi les outils d’aide à la rédaction basés sur l’IA transforme-t-ils le rapport des chercheur·euses à leur texte, au processus d’écriture et aux ?</p>
+<p>Nous aborderons :</p>
+<ul>
+<li>l’histoire et la pratique de la correction éditoriale,</li>
+<li>le basculement technique (du savoir-faire de l’ortho-typo à la reformulation automatisée),</li>
+<li>les enjeux épistémologiques (déprise du texte),</li>
+<li>et les enjeux sociolinguistiques/politiques (normalisation implicite, effacement des variations, standardisation de la langue académique).</li>
+</ul>
 </section></section>
 <section>
 <section id="les-fondamentaux-rappels-de-lintroduction" class="title-slide slide level1 center">
@@ -251,18 +268,139 @@
 </li>
 <li>Chatbots = interfaces en langue naturelle : l’exploitation des capacités inductives d’un LLMs ne nécessite pas de passer par une telle interface. Ex : classification avec de l’apprentissage machine (<em>machine learning</em>).</li>
 </ul>
-</section>
-<section id="clara" class="slide level2">
-<h2>Annonce du plan spécifique à cette séance</h2>
 </section></section>
 <section>
 <section id="mise-en-perspective" class="title-slide slide level1 center">
-<h1>Mise en perspective</h1>
-
+<h1>Mise en perspective <!--slide d'intro partie 1--></h1>
+<div style="color: green;">
+<p><em>C’est quoi la correction / révision ?</em></p>
+<p><em>Historique technique des outils</em> <!--titre à changer--></p>
+</div>
 </section>
-<section id="clara" class="slide level2">
-<h2>Contextualisation et définition de la correction-révision</h2>
-<p>De la correction ortho-typographique à la reformulation : un premier changement de paradigme.</p>
+<section id="essayons-de-définir" class="slide level2">
+<h2>Essayons de définir…</h2>
+<p><strong>D’après le TLFi → CORRECTEUR, TRICE, subst. et adj.</strong></p>
+<blockquote>
+<p>Homme, femme qui s’arroge ou à qui est dévolu le rôle de corriger des défauts, de rectifier des erreurs sans pour autant infliger de punition corporelle.</p>
+</blockquote>
+<blockquote>
+<p>TYPOGR. Ouvrier spécialisé qui, dans une imprimerie, est chargé de lire et de corriger les épreuves. <em>Les correcteurs ont deux maladies, les majuscules et les virgules, deux détails qui défigurent ou coupent le vers</em> (HUGO, Corresp., 1859, p.&nbsp;298).</p>
+</blockquote>
+<blockquote>
+<p>Rem. 1. a) D’après la fonction, on distingue du correcteur qui révise les épreuves d’un journal le correcteur de labeur qui révise celles d’un ouvrage. b) D’après la hiérarchie on distingue les correcteurs en première (première épreuve), les correcteurs en second (ou en bon à tirer), les correcteurs en tierce (après la mise sous presse). 2. “Le correcteur femme existe aussi; mais <strong>cette espèce</strong>, du reste très rare”, travaille non pas dans l’atelier typographique, mais “au bureau du patron ou du prote” (d’apr. BOUTMY, Typogr. paris., 1874, p.&nbsp;29). <em>Sainte-Beuve dans la salle à manger, en famille, avec son secrétaire Troubat, sa correctrice d’épreuves, sa maîtresse</em> (GONCOURT, Journal, 1867, p.&nbsp;365).</p>
+</blockquote>
+<blockquote>
+<p>TECHNOL. [Désigne un <strong>dispositif</strong>]</p>
+</blockquote>
+<blockquote>
+<p>B. [<strong>L’instrument (matériel) de la correction</strong> dans diverses techniques]</p>
+</blockquote>
+<blockquote>
+<p>C. [<strong>Le résultat</strong> lui-même]</p>
+</blockquote>
+</section>
+<section id="on-peut-relever-un-certain-nombre-de-tensions" class="slide level2">
+<h2>On peut relever un certain nombre de tensions</h2>
+<ul>
+<li>Entre l’homme et l’outil</li>
+<li>Entre l’outil et le résultat</li>
+</ul>
+<p>J’en rajoute une autre : entre deux espace-temps différents :</p>
+<ul>
+<li>les protocoles éditoriaux établis au sein d’institutions</li>
+<li>les pratiques de brouillonnages individuelles</li>
+</ul>
+</section>
+<section id="la-révision-comme-protocole-éditorial" class="slide level2">
+<h2>1. La révision comme protocole éditorial</h2>
+<p>Définition donnée par le <em>Correcteur typographe</em> de Brossard de 1924 :</p>
+<blockquote>
+<p>La rectification, sur le plomb, des erreurs commises par le compositeur, ainsi que l’exécution des changements apportés par l’auteur à la composition du texte primitif sont connus sous la dénomination de correction. De, manière générale, ce mot s’emploie pour désigner toute modification, quelle, qu’elle soit : ajoutés, suppressions, transpositions, changements de texte, rectifications orthographiques, rappels de règles typographiques, etc. <span class="citation" data-cites="brossardCorrecteurTypographeRegles1924">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Brossard 1924-1934</a>)</span></p>
+</blockquote>
+<ul>
+<li>Un savoir-faire qui nous vient du monde de l’imprimé</li>
+<li>Passer de la copie à l’ouvrage</li>
+<li>application des règles typographiques + reproduction fidèle et entière du manuscrit</li>
+<li>un processus séquentiel (lecture → annotation → recomposition)</li>
+<li>un processus itératif (premières, secondes épreuves, tierces)</li>
+<li>un processus collectif (auteur.ice → correcteur.ice → auteur.ice → compositeur.ice)</li>
+</ul>
+<blockquote>
+<p>Les auteurs ne se font point faute d’ailleurs de se prévaloir en ces circonstances de la liberté que leur accordent les usages, et l’on peut dire qu’en pratique le nombre des épreuves en placards ou en pages à fournir est illimité : suivant ses besoins, et sur sa demande, l’auteur peut recevoir successivement une première d’auteur, une deuxième, une troisième, et même plus si, d’après les corrections ou les modifications qu’il apporte au texte, il l’estime nécessaire : il est seul juge en cette matière, et généralement il ne remet le bon à mettre en pages ou, le cas échéant, le bon à tirer, que s’il répute le texte « amené à son état à peu près définitif ». <span class="citation" data-cites="brossardCorrecteurTypographeRegles1924">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Brossard 1924-1934</a>)</span></p>
+</blockquote>
+</section>
+<section id="le-correcteur-est-le-chef-dorchestre-de-la-fabrique-du-livre" class="slide level2">
+<h2>Le correcteur est le chef d’orchestre de la fabrique du livre</h2>
+
+<img data-src="./img/signes.png" class="r-stretch quarto-figure-center"><p class="caption">Signes de correction ortho-typo</p></section>
+<section id="les-acteurs-travaillent-lun-après-lautre-faute-après-faute" class="slide level2">
+<h2>Les acteurs travaillent l’un après l’autre, faute après faute</h2>
+<p>La composition est un processus terriblement laborieux</p>
+
+<img data-src="./img/galee.jpg" class="r-stretch quarto-figure-center"><p class="caption">La casse et la galée</p></section>
+<section id="science-ou-artisanat" class="slide level2">
+<h2>Science ou artisanat ?</h2>
+<h3 id="une-science">Une science ?</h3>
+<p>Recommandation de <span class="citation" data-cites="ramatRamatTypographie2008">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Ramat 2008</a>)</span> :</p>
+<blockquote>
+<p>Nombre de lecture en correction</p>
+<ul>
+<li>une lecture très rapprochée pour découvrir les fautes d’orthographe et de typographie.</li>
+<li>relire le texte sans s’occuper des fautes déjà mentionnées, s’attacher au fond et non plus à la forme.</li>
+</ul>
+</blockquote>
+<ul>
+<li>Vérification des pages et des notes</li>
+<li>Figures et tableaux</li>
+<li>Vérification des énumérations</li>
+<li>Dates</li>
+<li>Veiller à l’homogénéité de l’écriture inclusive</li>
+<li>S’assurer que le système international d’unité est bien utilisé</li>
+<li>Uniformité des abbréviations et des noms propres</li>
+<li>Les capitales, les faces, la casse</li>
+<li>Emploi normé de la ponctuation</li>
+<li>Révision bibliographique</li>
+<li>La composition et la mise en page (qu’on laisse de côté aujourd’hui)</li>
+</ul>
+<h3 id="un-travail-qui-relève-de-lartisanat-voire-un-art">Un travail qui relève de l’artisanat ? voire un art ?</h3>
+<blockquote>
+<p>L’inobservation des règles typographiques est, après la coquille, l’une des causes les plus fréquentes de correction : ce fait tient à l’ignorance dans laquelle trop d’ouvriers se trouvent des principes les plus élémentaires de leur art, au dédain même qu’ils affectent à leur égard, à la volonté et au désir de certains auteurs de s’affranchir des prescriptions d’un métier dont ils ne connaissent que des « bribes », à la <strong>multiplicité</strong> et aussi à <strong>un défaut de précision et de, fixité de ces prescriptions</strong> : celles-ci semblent en effet varier presque à l’infini, avec chaque région, avec chaque ville, avec chaque maison, avec chaque correcteur et, hélas! presque avec chaque labeur ; chacun ou chacune, a une marche particulière, ou un ensemble de règles typographiques qui leur est propre : dédale sans fin où se perdent même les meilleures volontés et où s’égarent les esprits les plus avertis. <span class="citation" data-cites="brossardCorrecteurTypographeRegles1924">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Brossard 1924-1934</a>)</span></p>
+</blockquote>
+</section>
+<section id="la-correction-au-cœur-de-lécriture" class="slide level2" data-background-image="./img/brouillonproust.png" data-background-opacity="0.3">
+<h2>2. La correction au cœur de l’écriture</h2>
+<p>On peut aussi entendre révision au sens psycholinguistique =&gt; désigne une étape dans le processus scripturaire, étape liée à celle de la planification et de la textualisation.</p>
+<ul>
+<li>la linguistique génétique ou philologie préfère le mot « variante »</li>
+<li>la didactique dira « correction »</li>
+<li>« retouche », « remords »</li>
+<li>individuelle et multiple</li>
+</ul>
+<p><strong>La continuité révision / écriture s’incarne dans les outils</strong>.</p>
+<div style="color: green;">
+<p>Les outils ne se contentent plus de pointer, on est dans le paradigme de la génération de texte.</p>
+</div>
+</section>
+<section id="lécriture-et-le-numérique" class="slide level2" data-background-image="./img/delete.svg" data-background-opacity="0.2">
+<h2>L’écriture et le numérique</h2>
+<h3 id="rapidité">Rapidité</h3>
+<p><span class="citation" data-cites="derridaPaperMachine2005">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Derrida 2005, 24</a>)</span></p>
+<blockquote>
+<p>It’s a different kind of timing, a different rythm. First of all you correct faster and in a more or less indefinite way. Previously, after a certain number of versions (corrections, reasures, cutting and pasting, Tippex), everything came to a halt – that was enough. Not that you thought the text was perfect, but, after a certain period of metamorphosis, the process was interrupted. With the computer, everything is rapid and so easy; you get to thinking that you can go on revising forever. An interminable revision, an infinite analysis is already on the horizon […]. During this same time you no longer retain the slightest visible or objective trace of corrections made the day before.</p>
+</blockquote>
+<blockquote>
+<p>There was a temporal resistance, a thickness in the duration of erasure.</p>
+</blockquote>
+<h3 id="correcteurs-orthographiques-et-grammaticaux">Correcteurs orthographiques et grammaticaux</h3>
+<ul>
+<li>Facilité et rapidité de la correction ou révision</li>
+<li>Développement des outils de correction // développement des traitements de texte</li>
+<li>Logique de productivité</li>
+</ul>
+<div style="color: green;">
+<p><strong>Les outils incarnent une vision du monde centrée sur la productivité et la rapidité</strong></p>
+</div>
+<!--break-->
 </section></section>
 <section>
 <section id="histoire-de-la-gec" class="title-slide slide level1 center">
@@ -362,18 +500,48 @@ perplexité : inverse de la probabilité moyenne par mot, basse perplexité = LM
 </div>
 </section></section>
 <section>
-<section id="enjeux-et-conséquences" class="title-slide slide level1 center">
-<h1>Enjeux et conséquences</h1>
-
+<section id="quels-enjeux" class="title-slide slide level1 center">
+<h1>Quels enjeux ? <!--trouver un meilleur titre--></h1>
+<div style="color: green;">
+<p><em>Quelle valeur on accorde au travail de relecture et correction ?</em></p>
+<p><em>Si écrire c’est avant tout réécrire : que signifie déléguer la (re)formulation à un LLM ?</em></p>
+<p><em>Un gain de temps ?</em></p>
+<p><em>Une déprise du texte ?</em></p>
+</div>
 </section>
-<section id="la-promesse-du-gain-de-temps" class="slide level2">
-<h2>La promesse du gain de temps</h2>
-<p>► Est-ce que ces outils offrent un gain de temps selon vous ?</p>
+<section id="homgénéisation-de-la-langue" class="slide level2">
+<h2>Homgénéisation de la langue</h2>
+<p>Mouvement de standardisation de la langue reposant sur une sur-norme « légitimée et maintenue par tout un édifice de croyances sur la nature de la langue et sur ce qui est correct ou incorrect, croyances qui sont dictées inévitablement par les valeurs sociales et esthétiques de la société concernée. » <span class="citation" data-cites="lodgeFrenchDialectStandard1993">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Lodge 1993</a>)</span></p>
+<ul>
+<li>Prépondérance des données standardisées voire générées par des LLMs dans le golden standard <span class="citation" data-cites="shumailovAIModelsCollapse2024">Guo et al. (<a href="#/bibliographie" role="doc-biblioref" onclick="">2024a</a>)</span></li>
+<li>Problématique de l’« approche par défaut »<span class="citation" data-cites="paschalidisVersLangageSans2025">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Paschalidis 2025</a>)</span></li>
+<li>Un idéal de clarté qui finit par s’auto-parodier (le fameux <em>style chatgpt</em>)</li>
+</ul>
+<blockquote>
+<p>We show that while the core content of texts is retained when LLMs polish and rewrite texts, <strong>not only do they homogenize writing styles, but they also alter stylistic elements in a way that selectively amplifies certain dominant characteristics or biases while suppressing others - emphasizing conformity over individuality</strong>. By varying LLMs, prompts, classifiers, and contexts, we show that these trends are robust and consistent. <span class="citation" data-cites="sourati2025shrinkinglandscapelinguisticdiversity">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Sourati et al. 2025</a>)</span></p>
+</blockquote>
+<blockquote>
+<p>Des compétences poussées en ingénierie de prompts sont nécessaires pour contourner les effets liés aux approches par défaut. Cependant, même avec l’expertise requise, les LLMs ont tendance à générer des réponses inexactes ou inventées, à <strong>revenir à leurs réglages par défaut</strong>, rendant les reformulations successives presque inévitables, parfois jusqu’à provoquer un effondrement du modèle. Par conséquent, cette <strong>« attraction par défaut »</strong> devient un paramètre dont il faut systématiquement tenir compte. <span class="citation" data-cites="paschalidisVersLangageSans2025">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Paschalidis 2025</a>)</span></p>
+</blockquote>
+<div style="color: green;">
+<p><em>Si une formulation est fortement présente dans le corpus d’entraînement est-ce que c’est nécessairement la meilleure ? L’approche par défaut vaut-elle pour tous les contextes ?</em></p>
+</div>
+</section>
+<section id="la-rédaction-académique-déprise-du-texte-déprise-du-sens" class="slide level2">
+<h2>La rédaction académique : déprise du texte, déprise du sens ?</h2>
+<ul>
+<li>Tension entre rapidité et standards exigeants</li>
+<li>Pouvoir rédiger dans un style “natif” même dans une langue étrangère</li>
+</ul>
+<div style="color: green;">
+<p><em>Existe-t-il un seuil, une limite, au-delà de laquelle le recours aux LLMs constitue une perte de maîtrise du texte ?</em></p>
+<p><em>Dire la même chose avec des mots différents change-t-il le sens ?</em></p>
+</div>
 </section>
 <section id="clara" class="slide level2">
 <h2>Uniformisation de la langue</h2>
 <p>model collapse : <span class="citation" data-cites="shumailovAIModelsCollapse2024">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Shumailov et al. 2024</a>)</span></p>
-<p>linguistic uniformisation : <span class="citation" data-cites="guoCuriousDeclineLinguistic2024">Guo et al. (<a href="#/bibliographie" role="doc-biblioref" onclick="">2024</a>)</span></p>
+<p>linguistic uniformisation : <span class="citation" data-cites="guoCuriousDeclineLinguistic2024">Guo et al. (<a href="#/bibliographie" role="doc-biblioref" onclick="">2024b</a>)</span></p>
 <p>► est-ce qu’il y a un “style ChatGPT” ?</p>
 </section>
 <section id="lalignement-des-valeurs-et-le-système-de-valeurs" class="slide level2">
@@ -383,7 +551,9 @@ perplexité : inverse de la probabilité moyenne par mot, basse perplexité = LM
 </blockquote>
 <p>L’intelligence humaine commence là où celle de la machine s’arrête. Si on découvre de nouvelles capacités à la machine alors on enlève cette capicité de la définition de l’intelligence humaine. « More than fifteen years ago Hilary Putnam identified the old problem we face to this day: ‘The question that won’t go away is how much what we call intelligence presupposes the rest of human nature’ (1988: LET} » <span class="citation" data-cites="mccartyHumanitiesComputing2005">(<a href="#/bibliographie" role="doc-biblioref" onclick="">McCarty 2005, 41</a>)</span></p>
 <p>Autrement dit, si on laisse à la machine cette tâche c’est qu’on tend à l’estimer comme peu valorisante dans notre système de valeur actuel.</p>
-<p>► Quelles conséquences est-ce que déléguer cette partie du travail a sur notre travail ? Et sur notre définition de l’humain ?</p>
+<div style="color: green;">
+<p><em>Quelles conséquences est-ce que déléguer cette partie du travail a sur notre travail ? Et sur notre définition de l’humain ?</em></p>
+</div>
 </section>
 <section id="des-petites-corrections-finales" class="slide level2">
 <h2>Des ‘petites’ corrections finales ?</h2>
@@ -409,7 +579,9 @@ Est-ce que faire un état de l'art (càd pas de production de nouveau contenu) a
 <p><img data-src="img/chatgptresponses2.png"></p>
 </figure>
 </div>
-<p>► Est-ce que négliger l’écriture revient à négliger la lecture ?</p>
+<div style="color: green;">
+<p><em>Est-ce que négliger la correction revient à négliger la lecture et l’écriture ?</em></p>
+</div>
 <!-- ici l'argumentaire c'est que comme on a laissé à ChatGPT la taĉhe de rédaction et possiblement de relecture finale on s'embête pas à relire la version de l'article soumise, donc on laisse des dingueries.  -->
 <!-- 
 
@@ -432,7 +604,9 @@ deux points de vue :
 <h2>Effet nivelant et influence de la machine</h2>
 <p>Les moins bons traducteurs sont aidés par la TA mais les meilleurs traducteurs sont désavantagés par la TA. Effet limitant car tendance à se laisser influencer : réduction des intuitions de traduction et de la créativité traductionnelle.<span class="citation" data-cites="schumacherPosteditionTraductionAutomatique2023">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Schumacher 2023</a>)</span></p>
 <p>Une influence pas négligeable : même quand un.e participant.e n’a plus les recommandations de la machine, iel reproduit les erreurs des recommandations <span class="citation" data-cites="vicenteHumansInheritArtificial2023">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Vicente and Matute 2023</a>)</span> : délégation cognitive ou <em>cognitive offloading</em></p>
-<p>► Comment est-ce qu’on peut prendre conscience de ces biais (inconscients) ?</p>
+<div style="color: green;">
+<p><em>Comment est-ce qu’on peut prendre conscience de ces biais (inconscients) ?</em></p>
+</div>
 </section></section>
 <section>
 <section id="quelques-outils" class="title-slide slide level1 center">
@@ -517,20 +691,32 @@ deux points de vue :
 <div id="ref-bordalejoScarletCloakForest2025" class="csl-entry" role="listitem">
 Bordalejo, Barbara, Davide Pafumi, Frank Onuh, A. K. M. Iftekhar Khalid, Morgan Slayde Pearce, and Daniel Paul O’Donnell. 2025. <span>“<span>‘<span>Scarlet Cloak</span> and the <span>Forest Adventure</span>’</span>: A Preliminary Study of the Impact of <span>AI</span> on Commonly Used Writing Tools.”</span> <em>International Journal of Educational Technology in Higher Education</em> 22 (1). <a href="https://doi.org/10.1186/s41239-025-00505-5">https://doi.org/10.1186/s41239-025-00505-5</a>.
 </div>
+<div id="ref-brossardCorrecteurTypographeRegles1924" class="csl-entry" role="listitem">
+Brossard, L. E. du texte. 1924-1934. <em><span>Correcteur typographe. Les r<span>è</span>gles typographiques / L. -E. Brossard</span></em>.
+</div>
 <div id="ref-bryantGrammaticalErrorCorrection2023" class="csl-entry" role="listitem">
 Bryant, Christopher, Zheng Yuan, Muhammad Reza Qorib, Hannan Cao, Hwee Tou Ng, and Ted Briscoe. 2023. <span>“Grammatical <span>Error Correction</span>: <span>A Survey</span> of the <span>State</span> of the <span>Art</span>.”</span> <em>Computational Linguistics</em>, September, 643–701. <a href="https://doi.org/10.1162/coli_a_00478">https://doi.org/10.1162/coli_a_00478</a>.
 </div>
 <div id="ref-ciesielskiNeuralMachineTranslation2024" class="csl-entry" role="listitem">
 Ciesielski, Jourik. 2024. <span>“Neural <span>Machine Translation Versus Large Language Models</span>.”</span> https://multilingual.com/magazine/june-2024/neural-machine-translation-versus-large-language-models/.
 </div>
+<div id="ref-derridaPaperMachine2005" class="csl-entry" role="listitem">
+Derrida, Jacques. 2005. <em>Paper <span>Machine</span></em>. Stanford University Press.
+</div>
+<div id="ref-guo2024curiousdeclinelinguisticdiversity" class="csl-entry" role="listitem">
+Guo, Yanzhu, Guokan Shang, Michalis Vazirgiannis, and Chloé Clavel. 2024a. <span>“The Curious Decline of Linguistic Diversity: Training Language Models on Synthetic Text.”</span> <a href="https://arxiv.org/abs/2311.09807">https://arxiv.org/abs/2311.09807</a>.
+</div>
 <div id="ref-guoCuriousDeclineLinguistic2024" class="csl-entry" role="listitem">
-Guo, Yanzhu, Guokan Shang, Michalis Vazirgiannis, and Chloé Clavel. 2024. <span>“The <span>Curious Decline</span> of <span>Linguistic Diversity</span>: <span>Training Language Models</span> on <span>Synthetic Text</span>.”</span> arXiv. <a href="https://doi.org/10.48550/arXiv.2311.09807">https://doi.org/10.48550/arXiv.2311.09807</a>.
+———. 2024b. <span>“The <span>Curious Decline</span> of <span>Linguistic Diversity</span>: <span>Training Language Models</span> on <span>Synthetic Text</span>.”</span> arXiv. <a href="https://doi.org/10.48550/arXiv.2311.09807">https://doi.org/10.48550/arXiv.2311.09807</a>.
 </div>
 <div id="ref-homolakExploringAdoptionChatGPT2023" class="csl-entry" role="listitem">
 Homolak, Jan. 2023. <span>“Exploring the Adoption of <span>ChatGPT</span> in Academic Publishing: Insights and Lessons for Scientific Writing.”</span> <em>Croatian Medical Journal</em> 64 (3): 205–7. <a href="https://doi.org/10.3325/cmj.2023.64.205">https://doi.org/10.3325/cmj.2023.64.205</a>.
 </div>
 <div id="ref-kobayashiLargeLanguageModels2024" class="csl-entry" role="listitem">
 Kobayashi, Masamune, Masato Mita, and Mamoru Komachi. 2024. <span>“Large <span class="nocase">Language Models Are State-of-the-Art Evaluator</span> for <span>Grammatical Error Correction</span>.”</span> arXiv. <a href="https://doi.org/10.48550/arXiv.2403.17540">https://doi.org/10.48550/arXiv.2403.17540</a>.
+</div>
+<div id="ref-lodgeFrenchDialectStandard1993" class="csl-entry" role="listitem">
+Lodge, R. Anthony. 1993. <em>French, from Dialect to Standard</em>. London ; New York : Routledge.
 </div>
 <div id="ref-maityHowReadyAre2024" class="csl-entry" role="listitem">
 Maity, Subhankar, Aniket Deroy, and Sudeshna Sarkar. 2024. <span>“How <span class="nocase">Ready Are Generative Pre-trained Large Language Models</span> for <span>Explaining Bengali Grammatical Errors</span>?”</span> arXiv. <a href="https://doi.org/10.48550/arXiv.2406.00039">https://doi.org/10.48550/arXiv.2406.00039</a>.
@@ -540,6 +726,12 @@ McCarty, Willard. 2005. <em>Humanities <span>Computing</span></em>. Paperback ed
 </div>
 <div id="ref-napolesTheresNoComparison2016" class="csl-entry" role="listitem">
 Napoles, Courtney, Keisuke Sakaguchi, and Joel Tetreault. 2016. <span>“There’s <span>No Comparison</span>: <span class="nocase">Reference-less Evaluation Metrics</span> in <span>Grammatical Error Correction</span>.”</span> In <em>Proceedings of the 2016 <span>Conference</span> on <span>Empirical Methods</span> in <span>Natural</span> <span>Language Processing</span></em>, 2109–15. Austin, Texas: Association for Computational Linguistics. <a href="https://doi.org/10.18653/v1/D16-1228">https://doi.org/10.18653/v1/D16-1228</a>.
+</div>
+<div id="ref-paschalidisVersLangageSans2025" class="csl-entry" role="listitem">
+Paschalidis, Aristotelis Ioannis. 2025. <span>“<span>Vers un langage sans relief ? L’impact de l’IA sur nos mots</span>.”</span> {UNESCO}. <em>222e session du Conseil ex<span>é</span>cutif, 1-16 octobre 2025</em>.
+</div>
+<div id="ref-ramatRamatTypographie2008" class="csl-entry" role="listitem">
+Ramat, Aurel. 2008. <em><span>Ramat de la typographie</span></em>. Montr<span>é</span>al: Aurel Ramat, <span>é</span>diteur *.
 </div>
 <div id="ref-russellArtificialIntelligenceModern2022" class="csl-entry" role="listitem">
 Russell, Stuart J., and Peter Norvig. 2022. <em>Artificial Intelligence: A Modern Approach</em>. Fourth edition, global edition. Prentice <span>Hall</span> Series in Artificial Intelligence. Boston: Pearson.
@@ -555,6 +747,9 @@ Shumailov, Ilia, Zakhar Shumaylov, Yiren Zhao, Nicolas Papernot, Ross Anderson, 
 </div>
 <div id="ref-sizovAnalysingTranslationArtifacts2024" class="csl-entry" role="listitem">
 Sizov, Fedor, Cristina España-Bonet, Josef Van Genabith, Roy Xie, and Koel Dutta Chowdhury. 2024. <span>“Analysing <span>Translation Artifacts</span>: <span>A Comparative Study</span> of <span>LLMs</span>, <span>NMTs</span>, and <span>Human Translations</span>.”</span> In <em>Proceedings of the <span>Ninth Conference</span> on <span>Machine Translation</span></em>, 1183–99. Miami, Florida, USA: Association for Computational Linguistics. <a href="https://doi.org/10.18653/v1/2024.wmt-1.116">https://doi.org/10.18653/v1/2024.wmt-1.116</a>.
+</div>
+<div id="ref-sourati2025shrinkinglandscapelinguisticdiversity" class="csl-entry" role="listitem">
+Sourati, Zhivar, Farzan Karimi-Malekabadi, Meltem Ozcan, Colin McDaniel, Alireza Ziabari, Jackson Trager, Ala Tak, Meng Chen, Fred Morstatter, and Morteza Dehghani. 2025. <span>“The Shrinking Landscape of Linguistic Diversity in the Age of Large Language Models.”</span> <a href="https://arxiv.org/abs/2502.11266">https://arxiv.org/abs/2502.11266</a>.
 </div>
 <div id="ref-strzeleckiMyLastKnowledge2025" class="csl-entry" role="listitem">
 Strzelecki, Artur. 2025. <span>“<span>‘<span>As</span> of My Last Knowledge Update’</span>: <span>How</span> Is Content Generated by <span><span class="smallcaps">ChatGPT</span></span> Infiltrating Scientific Papers Published in Premier Journals?”</span> <em>Learned Publishing</em> 38 (1): e1650. <a href="https://doi.org/10.1002/leap.1650">https://doi.org/10.1002/leap.1650</a>.

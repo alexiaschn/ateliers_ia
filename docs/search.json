@@ -1136,35 +1136,35 @@
   {
     "objectID": "seances/correction.html#plan-de-latelier",
     "href": "seances/correction.html#plan-de-latelier",
-    "title": "2e séance atelier IA - révision et correction automatique",
+    "title": "Atelier IA - La Correction automatique",
     "section": "Plan de l’atelier",
     "text": "Plan de l’atelier\nThéorie :\n\nRappels sur les fondements de l’IA\nProblématique et annonce du plan\nMise en perspective\nDéfinition\nPrésentation historico-technique des systèmes de GEC\nChangement de paradigme : de l’ortho-typo à la reformulation voire la génération de contenu\nEnjeux/conséquence (questions) \nPrésentation des outils\nconclusion/ce qu’il faut retenir (5min)"
   },
   {
     "objectID": "seances/correction.html#présentation-et-objectif-des-ateliers",
     "href": "seances/correction.html#présentation-et-objectif-des-ateliers",
-    "title": "2e séance atelier IA - révision et correction automatique",
+    "title": "Atelier IA - La Correction automatique",
     "section": "Présentation et objectif des ateliers",
     "text": "Présentation et objectif des ateliers\nFormat : 4 séances de 2 heures, sans inscription, participation libre (à justifier pour le certificat des Humanités Numériques)\nThéorie et pratique.\nObjectifs de la série d’atelier :\n\nComprendre les fondamentaux de l’IA et son histoire\nObtenir des notions critiques sur le fonctionnement profond des outils\nTester et s’approprier des outils d’IA\nMaîtriser le vocabulaire de la discipline\n\nObjectifs de cet atelier :\n\nCerner un cas d’usage courant des IA génératives : la correction ortho-typographique.\nContextualiser la correction (automatique)\nS’interroger sur l’impact de ces nouvelles pratiques dans le travail de recherche.\n\nDéfinir des critères pour effectuer un choix éclairé vis-à-vis des outils disponibles."
   },
   {
     "objectID": "seances/correction.html#certificat-canadien-en-humanités-numériques",
     "href": "seances/correction.html#certificat-canadien-en-humanités-numériques",
-    "title": "2e séance atelier IA - révision et correction automatique",
+    "title": "Atelier IA - La Correction automatique",
     "section": "Certificat canadien en Humanités Numériques",
     "text": "Certificat canadien en Humanités Numériques\n\n\nCertificat canadien en HN\n\n\n\n \nInformation sur le certificat"
   },
   {
     "objectID": "seances/correction.html#quest-ce-que-lia",
     "href": "seances/correction.html#quest-ce-que-lia",
-    "title": "2e séance atelier IA - révision et correction automatique",
+    "title": "Atelier IA - La Correction automatique",
     "section": "Qu’est ce que l’IA ?",
     "text": "Qu’est ce que l’IA ?\nDes programmes informatiques que nous estimons à la hauteur de l’intelligence humaine ? Le développement des technologies fait évoluer cette définition de l’intelligence non seulement artificielle mais aussi humaine.\n‘IA’ depuis 5 ans, a remplacé le ‘numérique’ des années 2010, et le ‘cyberespace’ des années 1990 et 2000.(Vitali-Rosati 2025).\nDéfinition pratique pour ces ateliers: “un programme informatique qui effectue une prédiction.”"
   },
   {
     "objectID": "seances/correction.html#rappels-de-lintroduction",
     "href": "seances/correction.html#rappels-de-lintroduction",
-    "title": "2e séance atelier IA - révision et correction automatique",
+    "title": "Atelier IA - La Correction automatique",
     "section": "Rappels de l’introduction",
     "text": "Rappels de l’introduction\n\nLes programmes d’IA réfèrent à des processus algorithmiques variés et pas seulement à des chatbots type ChatGPT.\nL’IA est une discipline qui a plus de 75 ans (terme de 1956).\n(Turing 1950) a orienté la discipline vers un modèle ‘chatbot’. \nLes ‘saisons de l’IA’ suivent des phases d’approbation publique et de désintérêt pour le terme et les technologies qu’on place sous ce terme.\nCe qu’on fait entrer dans la catégorie d’“intelligent” a changé : le calcul savant est-il moins intelligent que le bavardage ?"
   },
@@ -1199,23 +1199,23 @@
   {
     "objectID": "seances/correction.html#changement-de-paradigme",
     "href": "seances/correction.html#changement-de-paradigme",
-    "title": "2e séance atelier IA - révision et correction automatique",
+    "title": "Atelier IA - La Correction automatique",
     "section": "Changement de paradigme",
     "text": "Changement de paradigme\n\nAvant les LLM, les outils de ‘corrections’ sont spécialisés pour la correction ortho-typographique. Maintenant les outils de correction dépassent les limites de la simple correction grammaticale.\n\nReformulation.\nGénération de texte.\nMasquer l’utilisation d’une IA."
   },
   {
     "objectID": "seances/correction.html#lalignement-des-valeurs-et-le-système-de-valeurs",
     "href": "seances/correction.html#lalignement-des-valeurs-et-le-système-de-valeurs",
-    "title": "2e séance atelier IA - révision et correction automatique",
+    "title": "Atelier IA - La Correction automatique",
     "section": "L’alignement des valeurs et le système de valeurs",
-    "text": "L’alignement des valeurs et le système de valeurs\n\n« The problem of achieving agreement between our true preferences and the objective we put into the machine is called the value alignment problem: the values or objectives put into Value alignment problem the machine must be aligned with those of the human. » (Russell and Norvig 2022, 23)\n\nL’intelligence humaine commence là où celle de la machine s’arrête. Si on découvre de nouvelles capacités à la machine alors on enlève cette capicité de la définition de l’intelligence humaine. « More than fifteen years ago Hilary Putnam identified the old problem we face to this day: ‘The question that won’t go away is how much what we call intelligence presupposes the rest of human nature’ (1988: LET} » (McCarty 2005, 41)\nAutrement dit, si on laisse à la machine cette tâche c’est qu’on tend à l’estimer comme peu valorisante dans notre système de valeur actuel.\n► Quelles conséquences est-ce que déléguer cette partie du travail a sur notre travail ? Et sur notre définition de l’humain ?"
+    "text": "L’alignement des valeurs et le système de valeurs\n\n« The problem of achieving agreement between our true preferences and the objective we put into the machine is called the value alignment problem: the values or objectives put into Value alignment problem the machine must be aligned with those of the human. » (Russell and Norvig 2022, 23)\n\nL’intelligence humaine commence là où celle de la machine s’arrête. Si on découvre de nouvelles capacités à la machine alors on enlève cette capicité de la définition de l’intelligence humaine. « More than fifteen years ago Hilary Putnam identified the old problem we face to this day: ‘The question that won’t go away is how much what we call intelligence presupposes the rest of human nature’ (1988: LET} » (McCarty 2005, 41)\nAutrement dit, si on laisse à la machine cette tâche c’est qu’on tend à l’estimer comme peu valorisante dans notre système de valeur actuel.\n\nQuelles conséquences est-ce que déléguer cette partie du travail a sur notre travail ? Et sur notre définition de l’humain ?"
   },
   {
     "objectID": "seances/correction.html#des-petites-corrections-finales",
     "href": "seances/correction.html#des-petites-corrections-finales",
-    "title": "2e séance atelier IA - révision et correction automatique",
+    "title": "Atelier IA - La Correction automatique",
     "section": "Des ‘petites’ corrections finales ?",
-    "text": "Des ‘petites’ corrections finales ?\n\nCurrently, academic publishers only allow the use of ChatGPT and similar tools to improve the readability and language of research articles. However, the ethical boundaries and acceptable usage of AI in academic writing are still undefined, and neither humans nor AI detection tools can reliably identify text generated by AI (Homolak 2023)\n\n\n\nIt is being increasingly observed that content generated by ChatGPT is going undeclared and undetected, resulting in its appearance in articles published in scholarly journals. […] The general policy among publishers states that AI tools must not be used to create, alter or manipulate original research data and results (Elsevier., 2023; Roche, 2024).(Strzelecki 2025)\n\n\n\nArticles contenant des réponses de prompts\n\n\n\n\n\nArticles contenant des réponses explicites de ChatGPT\n\n\n\n► Est-ce que négliger l’écriture revient à négliger la lecture ?"
+    "text": "Des ‘petites’ corrections finales ?\n\nCurrently, academic publishers only allow the use of ChatGPT and similar tools to improve the readability and language of research articles. However, the ethical boundaries and acceptable usage of AI in academic writing are still undefined, and neither humans nor AI detection tools can reliably identify text generated by AI (Homolak 2023)\n\n\n\nIt is being increasingly observed that content generated by ChatGPT is going undeclared and undetected, resulting in its appearance in articles published in scholarly journals. […] The general policy among publishers states that AI tools must not be used to create, alter or manipulate original research data and results (Elsevier., 2023; Roche, 2024).(Strzelecki 2025)\n\n\n\nArticles contenant des réponses de prompts\n\n\n\n\n\nArticles contenant des réponses explicites de ChatGPT\n\n\n\n\nEst-ce que négliger la correction revient à négliger la lecture et l’écriture ?"
   },
   {
     "objectID": "seances/correction.html#quest-ce-que-la-relecture-correction",
@@ -1248,7 +1248,7 @@
   {
     "objectID": "seances/correction.html#traduction-automatique-et-llms",
     "href": "seances/correction.html#traduction-automatique-et-llms",
-    "title": "2e séance atelier IA - révision et correction automatique",
+    "title": "Atelier IA - La Correction automatique",
     "section": "Traduction automatique et LLMs",
     "text": "Traduction automatique et LLMs\nUn grand modèle de langue positionne chaque mot dans un espace vectoriel lors de sa phase d’apprentissage initiale à partir d’un grand volume de données en langue naturelle.\nAfin de donner une réponse le LLM (GPT, Mistral, Qwen, Llama etc.) situe la requête utilisateur dans son espace vectoriel et sélectionne les tokens les plus probables à partir du contexte donné (la requête utilisateur ou prompt et les tokens qu’il a déjà généré).\nLes LLMs sont donc généralistes, ils ne sont pas destinés à la traduction plus qu’à la correction d’erreurs grammaticales ou à l’écriture créative."
   },
@@ -1269,7 +1269,7 @@
   {
     "objectID": "seances/correction.html#le-futur-de-la-traduction-automatique",
     "href": "seances/correction.html#le-futur-de-la-traduction-automatique",
-    "title": "2e séance atelier IA - révision et correction automatique",
+    "title": "Atelier IA - La Correction automatique",
     "section": "Le futur de la traduction automatique",
     "text": "Le futur de la traduction automatique\n\nWe anticipate that, soon, LLMs will become a viable enterprise solution for translation. This will likely come when we move towards task-specific LLMs trained specifically for translation. These models will be smaller and more practical to deploy and maintain than today’s massive foundational models. (Ciesielski 2024)\n\nLes LLMs font la traduction et l’évaluation de la traduction."
   },
@@ -1290,7 +1290,7 @@
   {
     "objectID": "seances/correction.html#outils-généralistes",
     "href": "seances/correction.html#outils-généralistes",
-    "title": "2e séance atelier IA - révision et correction automatique",
+    "title": "Atelier IA - La Correction automatique",
     "section": "Outils généralistes",
     "text": "Outils généralistes\nLLMs non spécialisé : ChatGPT, Mistral, Llama, Claude etc., modèles téléchargés localement (ollama).\nTenir compte des biais du modèle et de son interaction avec lui."
   },
@@ -1311,56 +1311,56 @@
   {
     "objectID": "seances/correction.html#rappels-historiques-sur-lia",
     "href": "seances/correction.html#rappels-historiques-sur-lia",
-    "title": "2e séance atelier IA - révision et correction automatique",
+    "title": "Atelier IA - La Correction automatique",
     "section": "Rappels historiques sur l’IA",
     "text": "Rappels historiques sur l’IA\n\nDeux grandes approches en IA : une approche déductive (IA symbolique, système expert) vs. approche inductive (IA connexionniste, modèle de langue).\nUn système expert peut être aussi complexe et énergivore qu’un LLM.\nUn LLM (large language model) est la modélisation sous forme de vecteurs de chaque élément d’un grand corpus (token ~mot) par rapport à cet ensemble.\n\nDémo visuelle"
   },
   {
     "objectID": "seances/correction.html#les-llms-en-contexte",
     "href": "seances/correction.html#les-llms-en-contexte",
-    "title": "2e séance atelier IA - révision et correction automatique",
+    "title": "Atelier IA - La Correction automatique",
     "section": "Les LLMs en contexte",
     "text": "Les LLMs en contexte\n\nPour les LLMs, la ‘compréhension’ du monde n’est basée sur aucun référent ou aucune règle définie : les réponses sont probabilistes.\nLes hallucinations ne sont pas des anomalies, ce sont des erreurs que l’on qualifie a posteriori comme telle.\nAprès l’apprentissage de son corpus d’entrainement, une étape de reinforcement learning donne une saveur ou personnalité à un modèle.\nLes LLMs reflètent les intérêts économiques de leurs concepteurices: nature ‘sycophantique’ avérée.\nOn peut influencer le calcul de probabilité d’un modèle (température, top-k, seed) et donc sa personnalité (déterministe vs. créatif).\nOn peut aussi ‘orienter’ le comportement d’un modèle avec un system prompt.\n\nChatbots = interfaces en langue naturelle : l’exploitation des capacités inductives d’un LLMs ne nécessite pas de passer par une telle interface. Ex : classification avec de l’apprentissage machine (machine learning)."
   },
   {
     "objectID": "seances/correction.html#la-correction-derreur-grammaticales-automatique-grammar-error-correction",
     "href": "seances/correction.html#la-correction-derreur-grammaticales-automatique-grammar-error-correction",
-    "title": "2e séance atelier IA - révision et correction automatique",
+    "title": "Atelier IA - La Correction automatique",
     "section": "La correction d’erreur grammaticales automatique Grammar Error correction",
     "text": "La correction d’erreur grammaticales automatique Grammar Error correction\nTâche de Traitement Automatique des Langues (TAL ou Natural Language Processing, NLP) voisine de la traduction automatique (TA ou machine translation, MT)\nSystème expert : limité par des grammaires complexes, questions de pragmatique et d’idiomaticité.\nSystèmes inductifs ou approches data-driven : D’abord des classifieurs pour prédire le mots le plus probable dans une classe (préposition), puis statistical machine learning (SMT) dans les années 2010 et particulièrement Neural machine translation (NMT). (Wang et al. 2020; Bryant et al. 2023)\nNMT : Correspondance entre des phrases ou portions de phrases en entrée et des portions de phrases attestées en grand nombre (seq2seq) à partir de corpus parallèle. Le modèle algorithmique est entraîné sur une paire de langue (ex : français-&gt;anglais)."
   },
   {
     "objectID": "seances/correction.html#llm-vs-nmt-pour-la-traduction-automatique",
     "href": "seances/correction.html#llm-vs-nmt-pour-la-traduction-automatique",
-    "title": "2e séance atelier IA - révision et correction automatique",
+    "title": "Atelier IA - La Correction automatique",
     "section": "LLM vs NMT pour la Traduction automatique",
     "text": "LLM vs NMT pour la Traduction automatique\n\n\nNMT : traduction littérale , modèle spécialisé\nLLM : traduction plus idiomatique, tendance à la confabulation.\n\n\n« Furthermore, our frequency analysis of PoS tags reveals that LLMs align more closely with HT in their usage, especially in terms of adverbs, and auxiliary verbs, while NMT models tend to overproduce specific tags in shorter sentences. This suggests that LLMs, although not perfect, are making strides in mimicking human translation patterns. » (Sizov et al. 2024)\n\n\nLa fin de la NMT?\n\n« What’s more, IBM announced the deprecation of Watson Language Translator, its NMT service, encouraging users to migrate to — guess what? — WatsonX LLMs. This move establishes IBM as one of the first tech giants to sunset its NMT efforts and focus on LLMs for automated translation purposes. » (Ciesielski 2024)"
   },
   {
     "objectID": "seances/correction.html#question-dévaluation",
     "href": "seances/correction.html#question-dévaluation",
-    "title": "2e séance atelier IA - révision et correction automatique",
+    "title": "Atelier IA - La Correction automatique",
     "section": "Question d’évaluation",
     "text": "Question d’évaluation\nLa traduction automatique : score BLEU (comparaison de la phrase traduite avec un référentiel de phrases bien traduites, score de proximité), WER (calcul du nombre de mot mal ou non traduit), METEOR etc.\nLa Grammar Error Correction (GEC) compare la phrase source (avec erreurs), la phrase corrigée et une phrase de référence (la ground truth donnée par un humain). Cette approche demande un corpus annoté en reference."
   },
   {
     "objectID": "seances/correction.html#métriques-traditionnelles-de-gec",
     "href": "seances/correction.html#métriques-traditionnelles-de-gec",
-    "title": "2e séance atelier IA - révision et correction automatique",
+    "title": "Atelier IA - La Correction automatique",
     "section": "Métriques traditionnelles de GEC",
     "text": "Métriques traditionnelles de GEC\n\nEdit-Based Metrics :\n\nM² (MaxMatch) : On aligne les phrases corrigées par le système avec celles de référence (gold standard), puis on extrait les “edits” (opérations de correction : insertion, suppression, remplacement). On calcule précision, rappel, F0.5(donc précision pondérée deux fois plus que rappel).\nERRANT (Error Annotation Toolkit): alignement de l’hypothèse avec la phrase source et la phrase cible et classification du type d’erreur (morphologie, orthographe, syntaxe).\n\nSentence-Based metrics:\n\nGLEU (grammar-aware BLEU) : comparaison de n-grammes.\n\n\nCes mesures repose sur l’alignement entre une hypothèse et une référence figée."
   },
   {
     "objectID": "seances/correction.html#mesure-de-la-correction-sans-référence",
     "href": "seances/correction.html#mesure-de-la-correction-sans-référence",
-    "title": "2e séance atelier IA - révision et correction automatique",
+    "title": "Atelier IA - La Correction automatique",
     "section": "Mesure de la correction sans référence",
     "text": "Mesure de la correction sans référence\nLes métriques basées sur un corpus de référence limitent la correction a une forme seulement.\nMesure sans référence (Napoles, Sakaguchi, and Tetreault 2016): comparaison directe de la phrase source (avec erreurs) et de la phrase corrigée avec un LLM.\nMéthodes d’évaluation avec un LLM:\n\nProximité/distance : Comparaison des vecteurs de la phrase source et celles de la phrase corrigée.\nPerplexité/log-probabilité : plus une phrase est fluide plus elle est probable (donc correcte). \nSpécialisation d’un LLM pour l’évaluation : Machine learning sur un corpus annoté avec des scores attribué ex: SOME (Yoshimura et al. 2020)\nLLM as judges : instruction en langues naturelles.\n\n\n« The decrease in correlation as the LLM scale decreases, such as with Llama 2 and GPT-3.5, suggests the importance of the LLM scale. Especially, the decrease in correlation when adding fluent corrected sentences (“+ Fluent corr.”) compared to “Base” implies that smaller-scale LLMs may not adequately consider the fluency of sentences. Possible reasons for this include issues such as LLM’s tendency to produce the same scores (Appendix C) and the inability to interpret the context of prompts as expected by users. However, GPT-4 consistently demonstrated a high correlation and provided more stable evaluations compared to traditional metrics. » (Kobayashi, Mita, and Komachi 2024)"
   },
   {
     "objectID": "seances/correction.html#les-limites-des-llms-as-judge-pour-la-gec",
     "href": "seances/correction.html#les-limites-des-llms-as-judge-pour-la-gec",
-    "title": "2e séance atelier IA - révision et correction automatique",
+    "title": "Atelier IA - La Correction automatique",
     "section": "Les limites des LLMs-as-judge pour la GEC",
     "text": "Les limites des LLMs-as-judge pour la GEC\n\nPas toujours reproductible\nFavorise les langues bien dotées. Ex Bengali (Maity, Deroy, and Sarkar 2024)\nShankar et al. (2024) et le criteria drift : on ne sait pas avant de l’avoir expérimenté ce que le LLM est capable de faire correctement. Autrement dit : l’évaluation est un processus itératif."
   },
@@ -1374,14 +1374,14 @@
   {
     "objectID": "seances/correction.html#effet-nivelant-et-influence-de-la-machine",
     "href": "seances/correction.html#effet-nivelant-et-influence-de-la-machine",
-    "title": "2e séance atelier IA - révision et correction automatique",
+    "title": "Atelier IA - La Correction automatique",
     "section": "Effet nivelant et influence de la machine",
-    "text": "Effet nivelant et influence de la machine\nLes moins bons traducteurs sont aidés par la TA mais les meilleurs traducteurs sont désavantagés par la TA. Effet limitant car tendance à se laisser influencer : réduction des intuitions de traduction et de la créativité traductionnelle.(Schumacher 2023)\nUne influence pas négligeable : même quand un.e participant.e n’a plus les recommandations de la machine, iel reproduit les erreurs des recommandations (Vicente and Matute 2023) : délégation cognitive ou cognitive offloading\n► Comment est-ce qu’on peut prendre conscience de ces biais (inconscients) ?"
+    "text": "Effet nivelant et influence de la machine\nLes moins bons traducteurs sont aidés par la TA mais les meilleurs traducteurs sont désavantagés par la TA. Effet limitant car tendance à se laisser influencer : réduction des intuitions de traduction et de la créativité traductionnelle.(Schumacher 2023)\nUne influence pas négligeable : même quand un.e participant.e n’a plus les recommandations de la machine, iel reproduit les erreurs des recommandations (Vicente and Matute 2023) : délégation cognitive ou cognitive offloading\n\nComment est-ce qu’on peut prendre conscience de ces biais (inconscients) ?"
   },
   {
     "objectID": "seances/correction.html#leffet-ai-powered",
     "href": "seances/correction.html#leffet-ai-powered",
-    "title": "2e séance atelier IA - révision et correction automatique",
+    "title": "Atelier IA - La Correction automatique",
     "section": "L’effet ‘AI-powered’",
     "text": "L’effet ‘AI-powered’\nLa correction automatique existe avant ChatGPT et les LLM offraient des techniques poussées de GEC mais il fallait encore que de nouveaux usages s’ancrent et qu’il y ait un intérêt économique à maintenir l’utilisateur sur la même plateforme d’où l’intégration de LLM dans l’outil."
   },
@@ -1402,9 +1402,9 @@
   {
     "objectID": "seances/correction.html#bibliographie",
     "href": "seances/correction.html#bibliographie",
-    "title": "2e séance atelier IA - révision et correction automatique",
+    "title": "Atelier IA - La Correction automatique",
     "section": "Bibliographie",
-    "text": "Bibliographie\n\n\nBordalejo, Barbara, Davide Pafumi, Frank Onuh, A. K. M. Iftekhar Khalid, Morgan Slayde Pearce, and Daniel Paul O’Donnell. 2025. “‘Scarlet Cloak and the Forest Adventure’: A Preliminary Study of the Impact of AI on Commonly Used Writing Tools.” International Journal of Educational Technology in Higher Education 22 (1). https://doi.org/10.1186/s41239-025-00505-5.\n\n\nBryant, Christopher, Zheng Yuan, Muhammad Reza Qorib, Hannan Cao, Hwee Tou Ng, and Ted Briscoe. 2023. “Grammatical Error Correction: A Survey of the State of the Art.” Computational Linguistics, September, 643–701. https://doi.org/10.1162/coli_a_00478.\n\n\nCiesielski, Jourik. 2024. “Neural Machine Translation Versus Large Language Models.” https://multilingual.com/magazine/june-2024/neural-machine-translation-versus-large-language-models/.\n\n\nGuo, Yanzhu, Guokan Shang, Michalis Vazirgiannis, and Chloé Clavel. 2024. “The Curious Decline of Linguistic Diversity: Training Language Models on Synthetic Text.” arXiv. https://doi.org/10.48550/arXiv.2311.09807.\n\n\nHomolak, Jan. 2023. “Exploring the Adoption of ChatGPT in Academic Publishing: Insights and Lessons for Scientific Writing.” Croatian Medical Journal 64 (3): 205–7. https://doi.org/10.3325/cmj.2023.64.205.\n\n\nKobayashi, Masamune, Masato Mita, and Mamoru Komachi. 2024. “Large Language Models Are State-of-the-Art Evaluator for Grammatical Error Correction.” arXiv. https://doi.org/10.48550/arXiv.2403.17540.\n\n\nMaity, Subhankar, Aniket Deroy, and Sudeshna Sarkar. 2024. “How Ready Are Generative Pre-trained Large Language Models for Explaining Bengali Grammatical Errors?” arXiv. https://doi.org/10.48550/arXiv.2406.00039.\n\n\nMcCarty, Willard. 2005. Humanities Computing. Paperback edition. Basingstoke, Hampshire: Palgrave Macmillan.\n\n\nNapoles, Courtney, Keisuke Sakaguchi, and Joel Tetreault. 2016. “There’s No Comparison: Reference-less Evaluation Metrics in Grammatical Error Correction.” In Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing, 2109–15. Austin, Texas: Association for Computational Linguistics. https://doi.org/10.18653/v1/D16-1228.\n\n\nRussell, Stuart J., and Peter Norvig. 2022. Artificial Intelligence: A Modern Approach. Fourth edition, global edition. Prentice Hall Series in Artificial Intelligence. Boston: Pearson.\n\n\nSchumacher, Perrine. 2023. “La post-édition de traduction automatique en contexte d’apprentissage.” PhD thesis, Liège: Universite de Liege.\n\n\nShankar, Shreya, J. D. Zamfirescu-Pereira, Björn Hartmann, Aditya G. Parameswaran, and Ian Arawjo. 2024. “Who Validates the Validators? Aligning LLM-Assisted Evaluation of LLM Outputs with Human Preferences.” arXiv. https://doi.org/10.48550/arXiv.2404.12272.\n\n\nShumailov, Ilia, Zakhar Shumaylov, Yiren Zhao, Nicolas Papernot, Ross Anderson, and Yarin Gal. 2024. “AI Models Collapse When Trained on Recursively Generated Data.” Nature 631 (8022): 755–59. https://doi.org/10.1038/s41586-024-07566-y.\n\n\nSizov, Fedor, Cristina España-Bonet, Josef Van Genabith, Roy Xie, and Koel Dutta Chowdhury. 2024. “Analysing Translation Artifacts: A Comparative Study of LLMs, NMTs, and Human Translations.” In Proceedings of the Ninth Conference on Machine Translation, 1183–99. Miami, Florida, USA: Association for Computational Linguistics. https://doi.org/10.18653/v1/2024.wmt-1.116.\n\n\nStrzelecki, Artur. 2025. “‘As of My Last Knowledge Update’: How Is Content Generated by ChatGPT Infiltrating Scientific Papers Published in Premier Journals?” Learned Publishing 38 (1): e1650. https://doi.org/10.1002/leap.1650.\n\n\nTuring, A. M. 1950. “Computing Machinery and Intelligence.” Mind LIX (236): 433–60. https://doi.org/10.1093/mind/LIX.236.433.\n\n\nVicente, Lucía, and Helena Matute. 2023. “Humans Inherit Artificial Intelligence Biases.” Scientific Reports 13 (1): 15737. https://doi.org/10.1038/s41598-023-42384-8.\n\n\nVitali-Rosati, Marcello. 2025. “Manifeste Pour Des Études Critiques de l’Intelligence Artificielle.” Culture Numérique. Pour Une Philosophie Du Numérique.\n\n\nWang, Yu, Yuelin Wang, Jie Liu, and Zhuo Liu. 2020. “A Comprehensive Survey of Grammar Error Correction.” arXiv. https://doi.org/10.48550/arXiv.2005.06600.\n\n\nYoshimura, Ryoma, Masahiro Kaneko, Tomoyuki Kajiwara, and Mamoru Komachi. 2020. “SOME: Reference-less Sub-Metrics Optimized for Manual Evaluations of Grammatical Error Correction.” In Proceedings of the 28th International Conference on Computational Linguistics, edited by Donia Scott, Nuria Bel, and Chengqing Zong, 6516–22. Barcelona, Spain (Online): International Committee on Computational Linguistics. https://doi.org/10.18653/v1/2020.coling-main.573."
+    "text": "Bibliographie\n\n\nBordalejo, Barbara, Davide Pafumi, Frank Onuh, A. K. M. Iftekhar Khalid, Morgan Slayde Pearce, and Daniel Paul O’Donnell. 2025. “‘Scarlet Cloak and the Forest Adventure’: A Preliminary Study of the Impact of AI on Commonly Used Writing Tools.” International Journal of Educational Technology in Higher Education 22 (1). https://doi.org/10.1186/s41239-025-00505-5.\n\n\nBrossard, L. E. du texte. 1924-1934. Correcteur typographe. Les règles typographiques / L. -E. Brossard.\n\n\nBryant, Christopher, Zheng Yuan, Muhammad Reza Qorib, Hannan Cao, Hwee Tou Ng, and Ted Briscoe. 2023. “Grammatical Error Correction: A Survey of the State of the Art.” Computational Linguistics, September, 643–701. https://doi.org/10.1162/coli_a_00478.\n\n\nCiesielski, Jourik. 2024. “Neural Machine Translation Versus Large Language Models.” https://multilingual.com/magazine/june-2024/neural-machine-translation-versus-large-language-models/.\n\n\nDerrida, Jacques. 2005. Paper Machine. Stanford University Press.\n\n\nGuo, Yanzhu, Guokan Shang, Michalis Vazirgiannis, and Chloé Clavel. 2024a. “The Curious Decline of Linguistic Diversity: Training Language Models on Synthetic Text.” https://arxiv.org/abs/2311.09807.\n\n\n———. 2024b. “The Curious Decline of Linguistic Diversity: Training Language Models on Synthetic Text.” arXiv. https://doi.org/10.48550/arXiv.2311.09807.\n\n\nHomolak, Jan. 2023. “Exploring the Adoption of ChatGPT in Academic Publishing: Insights and Lessons for Scientific Writing.” Croatian Medical Journal 64 (3): 205–7. https://doi.org/10.3325/cmj.2023.64.205.\n\n\nKobayashi, Masamune, Masato Mita, and Mamoru Komachi. 2024. “Large Language Models Are State-of-the-Art Evaluator for Grammatical Error Correction.” arXiv. https://doi.org/10.48550/arXiv.2403.17540.\n\n\nLodge, R. Anthony. 1993. French, from Dialect to Standard. London ; New York : Routledge.\n\n\nMaity, Subhankar, Aniket Deroy, and Sudeshna Sarkar. 2024. “How Ready Are Generative Pre-trained Large Language Models for Explaining Bengali Grammatical Errors?” arXiv. https://doi.org/10.48550/arXiv.2406.00039.\n\n\nMcCarty, Willard. 2005. Humanities Computing. Paperback edition. Basingstoke, Hampshire: Palgrave Macmillan.\n\n\nNapoles, Courtney, Keisuke Sakaguchi, and Joel Tetreault. 2016. “There’s No Comparison: Reference-less Evaluation Metrics in Grammatical Error Correction.” In Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing, 2109–15. Austin, Texas: Association for Computational Linguistics. https://doi.org/10.18653/v1/D16-1228.\n\n\nPaschalidis, Aristotelis Ioannis. 2025. “Vers un langage sans relief ? L’impact de l’IA sur nos mots.” {UNESCO}. 222e session du Conseil exécutif, 1-16 octobre 2025.\n\n\nRamat, Aurel. 2008. Ramat de la typographie. Montréal: Aurel Ramat, éditeur *.\n\n\nRussell, Stuart J., and Peter Norvig. 2022. Artificial Intelligence: A Modern Approach. Fourth edition, global edition. Prentice Hall Series in Artificial Intelligence. Boston: Pearson.\n\n\nSchumacher, Perrine. 2023. “La post-édition de traduction automatique en contexte d’apprentissage.” PhD thesis, Liège: Universite de Liege.\n\n\nShankar, Shreya, J. D. Zamfirescu-Pereira, Björn Hartmann, Aditya G. Parameswaran, and Ian Arawjo. 2024. “Who Validates the Validators? Aligning LLM-Assisted Evaluation of LLM Outputs with Human Preferences.” arXiv. https://doi.org/10.48550/arXiv.2404.12272.\n\n\nShumailov, Ilia, Zakhar Shumaylov, Yiren Zhao, Nicolas Papernot, Ross Anderson, and Yarin Gal. 2024. “AI Models Collapse When Trained on Recursively Generated Data.” Nature 631 (8022): 755–59. https://doi.org/10.1038/s41586-024-07566-y.\n\n\nSizov, Fedor, Cristina España-Bonet, Josef Van Genabith, Roy Xie, and Koel Dutta Chowdhury. 2024. “Analysing Translation Artifacts: A Comparative Study of LLMs, NMTs, and Human Translations.” In Proceedings of the Ninth Conference on Machine Translation, 1183–99. Miami, Florida, USA: Association for Computational Linguistics. https://doi.org/10.18653/v1/2024.wmt-1.116.\n\n\nSourati, Zhivar, Farzan Karimi-Malekabadi, Meltem Ozcan, Colin McDaniel, Alireza Ziabari, Jackson Trager, Ala Tak, Meng Chen, Fred Morstatter, and Morteza Dehghani. 2025. “The Shrinking Landscape of Linguistic Diversity in the Age of Large Language Models.” https://arxiv.org/abs/2502.11266.\n\n\nStrzelecki, Artur. 2025. “‘As of My Last Knowledge Update’: How Is Content Generated by ChatGPT Infiltrating Scientific Papers Published in Premier Journals?” Learned Publishing 38 (1): e1650. https://doi.org/10.1002/leap.1650.\n\n\nTuring, A. M. 1950. “Computing Machinery and Intelligence.” Mind LIX (236): 433–60. https://doi.org/10.1093/mind/LIX.236.433.\n\n\nVicente, Lucía, and Helena Matute. 2023. “Humans Inherit Artificial Intelligence Biases.” Scientific Reports 13 (1): 15737. https://doi.org/10.1038/s41598-023-42384-8.\n\n\nVitali-Rosati, Marcello. 2025. “Manifeste Pour Des Études Critiques de l’Intelligence Artificielle.” Culture Numérique. Pour Une Philosophie Du Numérique.\n\n\nWang, Yu, Yuelin Wang, Jie Liu, and Zhuo Liu. 2020. “A Comprehensive Survey of Grammar Error Correction.” arXiv. https://doi.org/10.48550/arXiv.2005.06600.\n\n\nYoshimura, Ryoma, Masahiro Kaneko, Tomoyuki Kajiwara, and Mamoru Komachi. 2020. “SOME: Reference-less Sub-Metrics Optimized for Manual Evaluations of Grammatical Error Correction.” In Proceedings of the 28th International Conference on Computational Linguistics, edited by Donia Scott, Nuria Bel, and Chengqing Zong, 6516–22. Barcelona, Spain (Online): International Committee on Computational Linguistics. https://doi.org/10.18653/v1/2020.coling-main.573."
   },
   {
     "objectID": "seances/correction.html#est-ce-que-ces-outils-offrent-un-gain-de-temps-selon-vous",
@@ -1423,9 +1423,9 @@
   {
     "objectID": "seances/correction.html#clara",
     "href": "seances/correction.html#clara",
-    "title": "2e séance atelier IA - révision et correction automatique",
+    "title": "Atelier IA - La Correction automatique",
     "section": "Uniformisation de la langue",
-    "text": "Uniformisation de la langue\nmodel collapse : (Shumailov et al. 2024)\nlinguistic uniformisation : Guo et al. (2024)\n► est-ce qu’il y a un “style ChatGPT” ?"
+    "text": "Uniformisation de la langue\nmodel collapse : (Shumailov et al. 2024)\nlinguistic uniformisation : Guo et al. (2024b)\n► est-ce qu’il y a un “style ChatGPT” ?"
   },
   {
     "objectID": "seances/correction.html#la-promesse-du-gain-de-temps",
@@ -1437,22 +1437,99 @@
   {
     "objectID": "seances/correction.html#intégration-dans-tous-les-autres-outils",
     "href": "seances/correction.html#intégration-dans-tous-les-autres-outils",
-    "title": "2e séance atelier IA - révision et correction automatique",
+    "title": "Atelier IA - La Correction automatique",
     "section": "Intégration dans tous les autres outils",
     "text": "Intégration dans tous les autres outils\nPrise de note :\nNotion : génération de texte.\nEvernote: RAG\nRédaction de mail etc."
   },
   {
     "objectID": "seances/correction.html#à-retenir",
     "href": "seances/correction.html#à-retenir",
-    "title": "2e séance atelier IA - révision et correction automatique",
+    "title": "Atelier IA - La Correction automatique",
     "section": "À retenir",
     "text": "À retenir\n\nLa correction est un processus itératif qui implique une phase d’écriture, de lecture, d’annotation et de réécriture : l’IA a transformé ce paradigme à toutes les étapes.\nLes premiers correcteurs automatiques se sont concentrés sur la correction ortho-typographiques, avec les systèmes de GEC complexes depuis les années 2000 ces outils traitent de reformulation\nLa Grammar Error Correction est une tâche voisine de la Traduction automatique : les technologies sous jacentes sont partagées\nL’évaluation de la GEC et de la TA fait écho aux processus d’évaluation propre à la correction par un humain.\nAvec l’ancrage de nouvelles pratiques discrètes de l’IA, on assiste à une nouvelle phase : la correction comme écriture et comme masquage de l’utilisation d’IA générative. Et l’intégration d’outils dit d’IA dans toutes les applications de traitement de texte etc.\nLes promesses de gain de temps et de productivité cachent des enjeux économiques forts : on ne peut que rester méfiants face aux biais de ces outils tout en prennant conscience de ses propres influences."
   },
   {
     "objectID": "seances/correction.html#prochaines-séances",
     "href": "seances/correction.html#prochaines-séances",
-    "title": "2e séance atelier IA - révision et correction automatique",
+    "title": "Atelier IA - La Correction automatique",
     "section": "Prochaines séances",
     "text": "Prochaines séances\n\nLes systèmes d’exploitation le 6 novembre avec Louis-Olivier\nLa Synthèse des sources et la recherche d’information le 15 janvier 2026."
+  },
+  {
+    "objectID": "seances/correction.html#ia-et-révision",
+    "href": "seances/correction.html#ia-et-révision",
+    "title": "Atelier IA - La Correction automatique",
+    "section": "IA et révision ",
+    "text": "IA et révision \nEn quoi les outils d’aide à la rédaction basés sur l’IA transforme-t-ils le rapport des chercheur·euses à leur texte, au processus d’écriture et aux ?\nNous aborderons :\n\nl’histoire et la pratique de la correction éditoriale,\nle basculement technique (du savoir-faire de l’ortho-typo à la reformulation automatisée),\nles enjeux épistémologiques (déprise du texte),\net les enjeux sociolinguistiques/politiques (normalisation implicite, effacement des variations, standardisation de la langue académique)."
+  },
+  {
+    "objectID": "seances/correction.html#essayons-de-définir",
+    "href": "seances/correction.html#essayons-de-définir",
+    "title": "Atelier IA - La Correction automatique",
+    "section": "Essayons de définir…",
+    "text": "Essayons de définir…\nD’après le TLFi → CORRECTEUR, TRICE, subst. et adj.\n\nHomme, femme qui s’arroge ou à qui est dévolu le rôle de corriger des défauts, de rectifier des erreurs sans pour autant infliger de punition corporelle.\n\n\nTYPOGR. Ouvrier spécialisé qui, dans une imprimerie, est chargé de lire et de corriger les épreuves. Les correcteurs ont deux maladies, les majuscules et les virgules, deux détails qui défigurent ou coupent le vers (HUGO, Corresp., 1859, p. 298).\n\n\nRem. 1. a) D’après la fonction, on distingue du correcteur qui révise les épreuves d’un journal le correcteur de labeur qui révise celles d’un ouvrage. b) D’après la hiérarchie on distingue les correcteurs en première (première épreuve), les correcteurs en second (ou en bon à tirer), les correcteurs en tierce (après la mise sous presse). 2. “Le correcteur femme existe aussi; mais cette espèce, du reste très rare”, travaille non pas dans l’atelier typographique, mais “au bureau du patron ou du prote” (d’apr. BOUTMY, Typogr. paris., 1874, p. 29). Sainte-Beuve dans la salle à manger, en famille, avec son secrétaire Troubat, sa correctrice d’épreuves, sa maîtresse (GONCOURT, Journal, 1867, p. 365).\n\n\nTECHNOL. [Désigne un dispositif]\n\n\nB. [L’instrument (matériel) de la correction dans diverses techniques]\n\n\nC. [Le résultat lui-même]"
+  },
+  {
+    "objectID": "seances/correction.html#on-peut-relever-un-certain-nombre-de-tensions",
+    "href": "seances/correction.html#on-peut-relever-un-certain-nombre-de-tensions",
+    "title": "Atelier IA - La Correction automatique",
+    "section": "On peut relever un certain nombre de tensions",
+    "text": "On peut relever un certain nombre de tensions\n\nEntre l’homme et l’outil\nEntre l’outil et le résultat\n\nJ’en rajoute une autre : entre deux espace-temps différents :\n\nles protocoles éditoriaux établis au sein d’institutions\nles pratiques de brouillonnages individuelles"
+  },
+  {
+    "objectID": "seances/correction.html#la-révision-comme-protocole-éditorial",
+    "href": "seances/correction.html#la-révision-comme-protocole-éditorial",
+    "title": "Atelier IA - La Correction automatique",
+    "section": "1. La révision comme protocole éditorial",
+    "text": "1. La révision comme protocole éditorial\nDéfinition donnée par le Correcteur typographe de Brossard de 1924 :\n\nLa rectification, sur le plomb, des erreurs commises par le compositeur, ainsi que l’exécution des changements apportés par l’auteur à la composition du texte primitif sont connus sous la dénomination de correction. De, manière générale, ce mot s’emploie pour désigner toute modification, quelle, qu’elle soit : ajoutés, suppressions, transpositions, changements de texte, rectifications orthographiques, rappels de règles typographiques, etc. (Brossard 1924-1934)\n\n\nUn savoir-faire qui nous vient du monde de l’imprimé\nPasser de la copie à l’ouvrage\napplication des règles typographiques + reproduction fidèle et entière du manuscrit\nun processus séquentiel (lecture → annotation → recomposition)\nun processus itératif (premières, secondes épreuves, tierces)\nun processus collectif (auteur.ice → correcteur.ice → auteur.ice → compositeur.ice)\n\n\nLes auteurs ne se font point faute d’ailleurs de se prévaloir en ces circonstances de la liberté que leur accordent les usages, et l’on peut dire qu’en pratique le nombre des épreuves en placards ou en pages à fournir est illimité : suivant ses besoins, et sur sa demande, l’auteur peut recevoir successivement une première d’auteur, une deuxième, une troisième, et même plus si, d’après les corrections ou les modifications qu’il apporte au texte, il l’estime nécessaire : il est seul juge en cette matière, et généralement il ne remet le bon à mettre en pages ou, le cas échéant, le bon à tirer, que s’il répute le texte « amené à son état à peu près définitif ». (Brossard 1924-1934)"
+  },
+  {
+    "objectID": "seances/correction.html#le-correcteur-est-le-chef-dorchestre-de-la-fabrique-du-livre",
+    "href": "seances/correction.html#le-correcteur-est-le-chef-dorchestre-de-la-fabrique-du-livre",
+    "title": "Atelier IA - La Correction automatique",
+    "section": "Le correcteur est le chef d’orchestre de la fabrique du livre",
+    "text": "Le correcteur est le chef d’orchestre de la fabrique du livre\n\nSignes de correction ortho-typo"
+  },
+  {
+    "objectID": "seances/correction.html#les-acteurs-travaillent-lun-après-lautre-faute-après-faute",
+    "href": "seances/correction.html#les-acteurs-travaillent-lun-après-lautre-faute-après-faute",
+    "title": "Atelier IA - La Correction automatique",
+    "section": "Les acteurs travaillent l’un après l’autre, faute après faute",
+    "text": "Les acteurs travaillent l’un après l’autre, faute après faute\nLa composition est un processus terriblement laborieux\n\nLa casse et la galée"
+  },
+  {
+    "objectID": "seances/correction.html#science-ou-artisanat",
+    "href": "seances/correction.html#science-ou-artisanat",
+    "title": "Atelier IA - La Correction automatique",
+    "section": "Science ou artisanat ?",
+    "text": "Science ou artisanat ?\nUne science ?\nRecommandation de (Ramat 2008) :\n\nNombre de lecture en correction\n\nune lecture très rapprochée pour découvrir les fautes d’orthographe et de typographie.\nrelire le texte sans s’occuper des fautes déjà mentionnées, s’attacher au fond et non plus à la forme.\n\n\n\nVérification des pages et des notes\nFigures et tableaux\nVérification des énumérations\nDates\nVeiller à l’homogénéité de l’écriture inclusive\nS’assurer que le système international d’unité est bien utilisé\nUniformité des abbréviations et des noms propres\nLes capitales, les faces, la casse\nEmploi normé de la ponctuation\nRévision bibliographique\nLa composition et la mise en page (qu’on laisse de côté aujourd’hui)\n\nUn travail qui relève de l’artisanat ? voire un art ?\n\nL’inobservation des règles typographiques est, après la coquille, l’une des causes les plus fréquentes de correction : ce fait tient à l’ignorance dans laquelle trop d’ouvriers se trouvent des principes les plus élémentaires de leur art, au dédain même qu’ils affectent à leur égard, à la volonté et au désir de certains auteurs de s’affranchir des prescriptions d’un métier dont ils ne connaissent que des « bribes », à la multiplicité et aussi à un défaut de précision et de, fixité de ces prescriptions : celles-ci semblent en effet varier presque à l’infini, avec chaque région, avec chaque ville, avec chaque maison, avec chaque correcteur et, hélas! presque avec chaque labeur ; chacun ou chacune, a une marche particulière, ou un ensemble de règles typographiques qui leur est propre : dédale sans fin où se perdent même les meilleures volontés et où s’égarent les esprits les plus avertis. (Brossard 1924-1934)"
+  },
+  {
+    "objectID": "seances/correction.html#la-correction-au-cœur-de-lécriture",
+    "href": "seances/correction.html#la-correction-au-cœur-de-lécriture",
+    "title": "Atelier IA - La Correction automatique",
+    "section": "2. La correction au cœur de l’écriture",
+    "text": "2. La correction au cœur de l’écriture\nOn peut aussi entendre révision au sens psycholinguistique =&gt; désigne une étape dans le processus scripturaire, étape liée à celle de la planification et de la textualisation.\n\nla linguistique génétique ou philologie préfère le mot « variante »\nla didactique dira « correction »\n« retouche », « remords »\nindividuelle et multiple\n\nLa continuité révision / écriture s’incarne dans les outils.\n\nLes outils ne se contentent plus de pointer, on est dans le paradigme de la génération de texte."
+  },
+  {
+    "objectID": "seances/correction.html#lécriture-et-le-numérique",
+    "href": "seances/correction.html#lécriture-et-le-numérique",
+    "title": "Atelier IA - La Correction automatique",
+    "section": "L’écriture et le numérique",
+    "text": "L’écriture et le numérique\nRapidité\n(Derrida 2005, 24)\n\nIt’s a different kind of timing, a different rythm. First of all you correct faster and in a more or less indefinite way. Previously, after a certain number of versions (corrections, reasures, cutting and pasting, Tippex), everything came to a halt – that was enough. Not that you thought the text was perfect, but, after a certain period of metamorphosis, the process was interrupted. With the computer, everything is rapid and so easy; you get to thinking that you can go on revising forever. An interminable revision, an infinite analysis is already on the horizon […]. During this same time you no longer retain the slightest visible or objective trace of corrections made the day before.\n\n\nThere was a temporal resistance, a thickness in the duration of erasure.\n\nCorrecteurs orthographiques et grammaticaux\n\nFacilité et rapidité de la correction ou révision\nDéveloppement des outils de correction // développement des traitements de texte\nLogique de productivité\n\n\nLes outils incarnent une vision du monde centrée sur la productivité et la rapidité"
+  },
+  {
+    "objectID": "seances/correction.html#homgénéisation-de-la-langue",
+    "href": "seances/correction.html#homgénéisation-de-la-langue",
+    "title": "Atelier IA - La Correction automatique",
+    "section": "Homgénéisation de la langue",
+    "text": "Homgénéisation de la langue\nMouvement de standardisation de la langue reposant sur une sur-norme « légitimée et maintenue par tout un édifice de croyances sur la nature de la langue et sur ce qui est correct ou incorrect, croyances qui sont dictées inévitablement par les valeurs sociales et esthétiques de la société concernée. » (Lodge 1993)\n\nPrépondérance des données standardisées voire générées par des LLMs dans le golden standard Guo et al. (2024a)\nProblématique de l’« approche par défaut »(Paschalidis 2025)\nUn idéal de clarté qui finit par s’auto-parodier (le fameux style chatgpt)\n\n\nWe show that while the core content of texts is retained when LLMs polish and rewrite texts, not only do they homogenize writing styles, but they also alter stylistic elements in a way that selectively amplifies certain dominant characteristics or biases while suppressing others - emphasizing conformity over individuality. By varying LLMs, prompts, classifiers, and contexts, we show that these trends are robust and consistent. (Sourati et al. 2025)\n\n\nDes compétences poussées en ingénierie de prompts sont nécessaires pour contourner les effets liés aux approches par défaut. Cependant, même avec l’expertise requise, les LLMs ont tendance à générer des réponses inexactes ou inventées, à revenir à leurs réglages par défaut, rendant les reformulations successives presque inévitables, parfois jusqu’à provoquer un effondrement du modèle. Par conséquent, cette « attraction par défaut » devient un paramètre dont il faut systématiquement tenir compte. (Paschalidis 2025)\n\n\nSi une formulation est fortement présente dans le corpus d’entraînement est-ce que c’est nécessairement la meilleure ? L’approche par défaut vaut-elle pour tous les contextes ?"
+  },
+  {
+    "objectID": "seances/correction.html#la-rédaction-académique-déprise-du-texte-déprise-du-sens",
+    "href": "seances/correction.html#la-rédaction-académique-déprise-du-texte-déprise-du-sens",
+    "title": "Atelier IA - La Correction automatique",
+    "section": "La rédaction académique : déprise du texte, déprise du sens ?",
+    "text": "La rédaction académique : déprise du texte, déprise du sens ?\n\nTension entre rapidité et standards exigeants\nPouvoir rédiger dans un style “natif” même dans une langue étrangère\n\n\nExiste-t-il un seuil, une limite, au-delà de laquelle le recours aux LLMs constitue une perte de maîtrise du texte ?\nDire la même chose avec des mots différents change-t-il le sens ?"
   }
 ]
