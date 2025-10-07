@@ -72,7 +72,7 @@ Objectifs de cet atelier :
  
 Des programmes informatiques que nous estimons à la hauteur de l'intelligence humaine ? Le développement des technologies fait évoluer cette définition de l'_intelligence_ non seulement _artificielle_ mais aussi _humaine_.
 
-'IA' depuis 5 ans, a remplacé le 'numérique' des années 2010, et le 'cyberespace' des années 1990 et 2000.[@vitali-rosatiManifestePourEtudes2025]. 
+'IA' depuis 5 ans, a remplacé le 'numérique' des années 2010, et le 'cyberespace' des années 1990 et 2000.[@vitali-rosatiManifestePourEtudes2025a]. 
 
 Définition pratique pour ces ateliers: "un programme informatique qui effectue une prédiction."
 
@@ -235,7 +235,7 @@ linguistic uniformisation : @guoCuriousDeclineLinguistic2024
 
 ## L'alignement des valeurs et le système de valeurs
 
->« The problem of achieving agreement between our true preferences and the objective we put into the machine is called the value alignment problem: the values or objectives put into Value alignment problem the machine must be aligned with those of the human. » [@russellArtificialIntelligenceModern2022a, p. 23]
+>« The problem of achieving agreement between our true preferences and the objective we put into the machine is called the value alignment problem: the values or objectives put into Value alignment problem the machine must be aligned with those of the human. » [@russellArtificialIntelligenceModern2022, p. 23]
 
 L'intelligence humaine commence là où celle de la machine s'arrête. Si on découvre de nouvelles capacités à la machine alors on enlève cette capicité de la définition de l'intelligence humaine. « More than fifteen years ago Hilary Putnam identified the old problem we face to this day: ‘The question that won’t go away is how much what we call intelligence presupposes the rest of human nature’ (1988: LET} » [@mccartyHumanitiesComputing2005, p. 41]
 
@@ -287,7 +287,7 @@ Les moins bons traducteurs sont aidés par la TA mais les meilleurs traducteurs 
 
 Une influence pas négligeable : même quand un.e participant.e n'a plus les recommandations de la machine, iel reproduit les erreurs des recommandations [@vicenteHumansInheritArtificial2023] : délégation cognitive ou _cognitive offloading_ 
 
-► Comment est-ce qu'on peut prendre conscience de ces biais (inconscient) ?
+► Comment est-ce qu'on peut prendre conscience de ces biais (inconscients) ?
 
 # Quelques outils
 
@@ -373,5 +373,6 @@ Rédaction de mail etc.
 - _La Synthèse des sources et la recherche d'information_ le 15 janvier 2026. 
 
 ## Bibliographie
-
+::: {#refs}
+:::
 # Merci à vous ! 
