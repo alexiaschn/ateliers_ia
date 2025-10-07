@@ -11,7 +11,7 @@ format:
         output-file: "correction.html" 
         # template: simple
         smaller: true
-        incremental: true
+        # incremental: true
         scrollable: true
         slide-number: true
 ---
@@ -19,18 +19,17 @@ format:
 
 Théorie :
 
-
 1. Rappels sur les fondements de l'IA 
-2. Problématique et annonce du plan (CG)
+2. Problématique et annonce du plan 
 3. Mise en perspective
 4. Définition 
-5. Présentation historico-technique des systèmes de GEC (AS) 
+5. Présentation historico-technique des systèmes de GEC 
 6. Changement de paradigme : de l'ortho-typo à la reformulation voire la génération de contenu 
 7. Enjeux/conséquence (questions) 
-    - gain de temps 
+    <!-- - gain de temps 
     - uniformisation de la langue
     - système de valeurs 
-    - influence de la machine
+    - influence de la machine -->
 8. Présentation des outils
 9. conclusion/ce qu'il faut retenir (5min)
 
@@ -38,7 +37,7 @@ Théorie :
 
 ## Présentation et objectif des ateliers 
 
-Format : 4 séances de 2heures, sans inscription, participation libre (à justifier pour le certificat des Humanités Numériques)
+Format : 4 séances de 2 heures, sans inscription, participation libre (à justifier pour le certificat des Humanités Numériques)
 
 Théorie et pratique. 
 
@@ -52,8 +51,8 @@ Objectifs de la série d'atelier :
 Objectifs de cet atelier : 
 
 - Cerner un cas d'usage courant des IA génératives : la correction ortho-typographique.
+- Contextualiser la correction (automatique)
 - S'interroger sur l'impact de ces nouvelles pratiques dans le travail de recherche.  
-- Tester et comparer des outils courants. 
 - Définir des critères pour effectuer un choix éclairé vis-à-vis des outils disponibles. 
 
 
@@ -73,7 +72,7 @@ Objectifs de cet atelier :
  
 Des programmes informatiques que nous estimons à la hauteur de l'intelligence humaine ? Le développement des technologies fait évoluer cette définition de l'_intelligence_ non seulement _artificielle_ mais aussi _humaine_.
 
-'IA' depuis 5 ans, a remplacé le 'numérique' des années 2010, et le 'cyberespace' des années 1990 et 2000.[@vitali-rosatiManifestePourEtudes2025]. 
+'IA' depuis 5 ans, a remplacé le 'numérique' des années 2010, et le 'cyberespace' des années 1990 et 2000.[@vitali-rosatiManifestePourEtudes2025a]. 
 
 Définition pratique pour ces ateliers: "un programme informatique qui effectue une prédiction."
 
@@ -86,7 +85,6 @@ Définition pratique pour ces ateliers: "un programme informatique qui effectue 
 - Les 'saisons de l'IA' suivent des phases d'approbation publique et de désintérêt pour le terme et les technologies qu'on place sous ce terme.
 - Ce qu'on fait entrer dans la catégorie d'"intelligent" a changé : le calcul savant est-il moins intelligent que le bavardage ? 
 
-
 ## Rappels historiques sur l'IA
 
 - Deux grandes approches en IA : une approche déductive (IA symbolique, système expert) vs. approche inductive (IA connexionniste, modèle de langue). 
@@ -97,81 +95,22 @@ Définition pratique pour ces ateliers: "un programme informatique qui effectue 
 
 ## Les LLMs en contexte
 
-- Concernant les LLMs : systèmes d'IA n'ont pas de connaissance du réel ou de 'compréhension' : les réponses sont probabilistes. 
-- Les hallucinations ne sont pas des anomalies, ce sont des erreurs que l'on qualifie a postériori comme telle. 
+- Pour les LLMs, la 'compréhension' du monde n'est basée sur aucun référent ou aucune règle définie : les réponses sont probabilistes. 
+- Les hallucinations ne sont pas des anomalies, ce sont des erreurs que l'on qualifie a posteriori comme telle. 
 - Après l'apprentissage de son corpus d'entrainement, une étape de _reinforcement learning_ donne une saveur ou personnalité à un modèle.
 - Les LLMs reflètent les intérêts économiques de leurs concepteurices: nature 'sycophantique' avérée. 
-- On peut influencer le calcul de probabilité d'un modèle (température, top-k, seed)
+- On peut influencer le calcul de probabilité d'un modèle (température, top-k, seed) et donc sa personnalité (déterministe vs. créatif).
 - On peut aussi 'orienter' le comportement d'un modèle avec un _system prompt_.  
 - Chatbots  = interfaces en langue naturelle : l'exploitation des capacités inductives d'un LLMs ne nécessite pas de passer par une telle interface. Ex : classification avec de l'apprentissage machine (_machine learning_). 
 
-
-# La correction à l'heure de l'IA générative
-
-## Changement de paradigme
-
-Avant les LLM, les outils de 'corrections' sont spécialisés pour la correction ortho-typographique.   Maintenant les outils de correction dépassent les limites de la simple correction grammaticale.
-
-- Reformulation.
-- Génération de texte. 
-- Masquer l'utilisation d'une IA. 
+## Annonce du plan spécifique à cette séance {#clara}
 
 
-## Quelle définition de la correction ?
+# Mise en perspective
 
-<!-- peut-être proposer des exemples, prendre son temps ? -->
-- une étape négligée ou dévaluée ? quelle place dans notre système de valeurs ? 
-- qu'est-ce qui entre réellement dans cette étape ? 
-    - corrections orthographiques, 
-    - corrections typographiques,
-    - vérification de la mise en page,
-    - traduction, 
-    - vérification des sources, 
-    - amélioration du style, ton. 
-    - reformulation selon le lectorat pressenti (prise en compte de la situation d'énonciation)
+## Contextualisation et définition de la correction-révision {#clara}
 
-    <!-- répétition, niveau de langue, terminologie, alléger les phrases -->
-    - amélioration du contenu. 
-    
-La correction bibliographique : 'la barrière du dernier kilomètre' [@monjourBarriereDernierKilometre2025] 
-
-
-
-
-## Qu'est-ce que la relecture-correction ?
-
-- correction ortho-typo
-- des énoncés grammaticalement justes ⇒ la grammaire c’est que des règles de combinaison, purement syntaxique, combinatoire sans sémantique. Règles systématiques et productives. Computation de séquences.
-- des énoncés qui font sens ⇒ sémantiquement correctes
-- adéquation avec une situation d’énonciation ⇒ implique la pragmatique
-- le style qui flirt avec les limites du correct
-- la reformulation c’est encore autre chose
-
-
-## Les étapes de la correction
-
-
-1. la lecture 
-2. établir des critères de corrections : orthographe = règles de la langue, mais style etc.
-3. l'annotation = proposition
-4. la réécriture
-
-
-**La correction est un processus itératif : c'est déjà une forme d'évaluation**
-
-
-<!-- ## De l'importance du versionage 
-
-Le LLM et l'interaction avec le LLM réduit les étapes de la correction au delà de son automatisation. Le LLM réécrit, il n'annote pas[^note], ne demande pas de clarifications ur les instructions données même si elles sont floues ('améliore le texte' est une instruction valide).
-
-Un processus de suppression  qui est similaire aux logiques des éditeurs de texte WYSIWYG vs. le versionage qui rend compte du processus, entre dans une dimension de traçabilité et d'interprétabilité des choix effectués.
-
-[^note]: on peut cependant prompter un modèle pour qu'il le fasse.
-
-<!-- ici une illustration sur le versionage ? -->
- -->
-
-# Langue, norme et normalisation politique 
+De la correction ortho-typographique à la reformulation : un premier changement de paradigme. 
 
 
 # Histoire de la GEC 
@@ -265,25 +204,45 @@ perplexité : inverse de la probabilité moyenne par mot, basse perplexité = LM
 
 <!-- on entre dans une boucle où en pensant déléguer à un LLM la tâche de correction, on se retrouve à devoir itérativement penser la correction et l'évaluation proposée : finalement est-ce que notre capacité de correction n'est déplacée sur un nouvel outil mais toujours aussi nécessaire.  -->
 
+
+## Changement de paradigme 
+
+::: {.incremental}
+
+Avant les LLM, les outils de 'corrections' sont spécialisés pour la correction ortho-typographique.   Maintenant les outils de correction dépassent les limites de la simple correction grammaticale.
+
+- Reformulation.
+- Génération de texte. 
+- Masquer l'utilisation d'une IA. 
+
+:::
+
 # Enjeux et conséquences
 
-## Est-ce que ces outils offrent un gain de temps selon vous ?
+## La promesse du gain de temps
 
-## Uniformisation de la langue 
+► Est-ce que ces outils offrent un gain de temps selon vous ?
 
-model collapse 
+## Uniformisation de la langue {#clara}
 
-linguistic uniformisation
+model collapse  : [@shumailovAIModelsCollapse2024]
+
+
+linguistic uniformisation : @guoCuriousDeclineLinguistic2024 
+
+► est-ce qu'il y a un "style ChatGPT" ?
 
 
 ## L'alignement des valeurs et le système de valeurs
 
->« The problem of achieving agreement between our true preferences and the objective we put into the machine is called the value alignment problem: the values or objectives put into Value alignment problem the machine must be aligned with those of the human. » [@russellArtificialIntelligenceModern2022a, p. 23]
+>« The problem of achieving agreement between our true preferences and the objective we put into the machine is called the value alignment problem: the values or objectives put into Value alignment problem the machine must be aligned with those of the human. » [@russellArtificialIntelligenceModern2022, p. 23]
 
 L'intelligence humaine commence là où celle de la machine s'arrête. Si on découvre de nouvelles capacités à la machine alors on enlève cette capicité de la définition de l'intelligence humaine. « More than fifteen years ago Hilary Putnam identified the old problem we face to this day: ‘The question that won’t go away is how much what we call intelligence presupposes the rest of human nature’ (1988: LET} » [@mccartyHumanitiesComputing2005, p. 41]
 
 
-Autrement dit, si on laisse à la machine cette tâche c'est qu'on tend à l'estimer comme peu valorisante dans notre système de valeur actuel. Quelles conséquences est-ce que déléguer cette partie du travail a sur notre travail ? 
+Autrement dit, si on laisse à la machine cette tâche c'est qu'on tend à l'estimer comme peu valorisante dans notre système de valeur actuel. 
+
+► Quelles conséquences est-ce que déléguer cette partie du travail a sur notre travail ? Et sur notre définition de l'humain ?
 
 ## Des 'petites' corrections finales ?
 
@@ -301,8 +260,12 @@ Est-ce que faire un état de l'art (càd pas de production de nouveau contenu) a
 
 ![Articles contenant des réponses explicites de ChatGPT](img/chatgptresponses2.png)
 
+► Est-ce que négliger l'écriture revient à négliger la lecture ? 
+
 <!-- ici l'argumentaire c'est que comme on a laissé à ChatGPT la taĉhe de rédaction et possiblement de relecture finale on s'embête pas à relire la version de l'article soumise, donc on laisse des dingueries.  -->
 <!-- 
+
+
 ## Quelle conséquence concrétement ?
 
 deux points de vue : 
@@ -317,31 +280,28 @@ deux points de vue :
     - évanouissement des versions intermédiaires (suppression vs. versioning) ?
 - à la fin de la rédaction ?  -->
 
-## Effet nivelant et influence de la machine
 
+## Effet nivelant et influence de la machine
 
 Les moins bons traducteurs sont aidés par la TA mais les meilleurs traducteurs sont désavantagés par la TA. Effet limitant car tendance à se laisser influencer : réduction des intuitions de traduction et de la créativité traductionnelle.[@schumacherPosteditionTraductionAutomatique2023]
 
-Une influence pas négligeable : même quand un participant n'a plus les recommandations de la machine, iel reproduit les erreurs des recommandations [@vicenteHumansInheritArtificial2023] : délégation cognitive ou _cognitive offloading_ 
+Une influence pas négligeable : même quand un.e participant.e n'a plus les recommandations de la machine, iel reproduit les erreurs des recommandations [@vicenteHumansInheritArtificial2023] : délégation cognitive ou _cognitive offloading_ 
 
-
-<!-- 1. intégrer la question du correcteur automatique intégré dans le téléphone ? iirc le discours était que le correcteur automatique rendait flemmard, ajd il faut souvent lutter contre son téléphone pour dire des choses correctes -->
+► Comment est-ce qu'on peut prendre conscience de ces biais (inconscients) ?
 
 # Quelques outils
 
-
 ## Outils généralistes
 
-LLMs non spécialisé : ChatGPT, modèles téléchargés localement (ollama), Mistral, Llama, Claude etc.
+LLMs non spécialisé : ChatGPT, Mistral, Llama, Claude etc., modèles téléchargés localement (ollama). 
 
-Il faut tenir compte des biais du modèle et du _prompt_ : interprétation. 
+Tenir compte des biais du modèle et de son interaction avec lui.  
 
 ## L'effet 'AI-powered'
 
 La correction automatique existe avant ChatGPT et les LLM offraient des techniques poussées de GEC mais il fallait encore que de **nouveaux usages s'ancrent** et qu'il y ait un **intérêt économique à maintenir l'utilisateur sur la même plateforme** d'où l'intégration de LLM dans l'outil. 
 
-## Outils spécialisés 
-
+# Outils spécialisés 
 
 ### Les outils historiques (francophones)
 
@@ -386,8 +346,7 @@ _improve_ est une option liée à "Generative AI" juste 'améliorer'.
 >That said, we make no guarantees if someone uses QuillBot on text generated by a tool like ChatGPT. Why not play it safe and craft the content yourself? (With QuillBot’s help, of course!)
 
 
-
-## Tous les autres outils 
+## Intégration dans tous les autres outils
 
 Prise de note :
 
@@ -395,10 +354,25 @@ Prise de note :
 
 [Evernote](https://evernote.com/fr-fr): RAG 
 
-Rédaction de mail etc
+Rédaction de mail etc. 
 
+# Conclusion 
 
+## À retenir 
 
+- La correction est un processus itératif qui implique une phase d'écriture, de lecture, d'annotation et de réécriture : l'IA a transformé ce paradigme à toutes les étapes. 
+- Les premiers correcteurs automatiques se sont concentrés sur la correction ortho-typographiques, avec les systèmes de GEC complexes depuis les années 2000 ces outils traitent de reformulation
+- La Grammar Error Correction est une tâche voisine de la Traduction automatique : les technologies sous jacentes sont partagées
+- L'évaluation de la GEC et de la TA fait écho aux processus d'évaluation propre à la correction par un humain. 
+- Avec l'ancrage de nouvelles pratiques discrètes de l'IA, on assiste à une nouvelle phase : la correction comme écriture et comme masquage de l'utilisation d'IA générative. Et l'intégration d'outils dit d'IA dans toutes les applications de traitement de texte etc. 
+- Les promesses de gain de temps et de productivité cachent des enjeux économiques forts : on ne peut que rester méfiants face aux biais de ces outils tout en prennant conscience de ses propres influences. 
+
+## Prochaines séances 
+
+- _Les systèmes d'exploitation_ le 6 novembre avec Louis-Olivier 
+- _La Synthèse des sources et la recherche d'information_ le 15 janvier 2026. 
 
 ## Bibliographie
-
+::: {#refs}
+:::
+# Merci à vous ! 
