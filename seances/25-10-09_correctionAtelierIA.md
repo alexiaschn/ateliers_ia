@@ -7,7 +7,7 @@ date: 9 octobre 2025
 bibliography: ../correction.bib
 link-citations: true
 colorlinks: true
-fig-cap-location: top
+fig-cap-location: bottom
 format:
     revealjs: 
         output-file: "correction.html" 
@@ -22,18 +22,11 @@ format:
 Théorie :
 
 1. Rappels sur les fondements de l'IA 
-2. Problématique et annonce du plan 
-3. Mise en perspective
-4. Définition 
-5. Présentation historico-technique des systèmes de GEC 
-6. Changement de paradigme : de l'ortho-typo à la reformulation voire la génération de contenu 
-7. Enjeux/conséquence (questions) 
-    <!-- - gain de temps 
-    - uniformisation de la langue
-    - système de valeurs 
-    - influence de la machine -->
-8. Présentation des outils
-9. conclusion/ce qu'il faut retenir (5min)
+2. Mise en perspective
+3. Définition et présentation historico-technique des systèmes de GEC 
+4. Enjeux/conséquence  
+5. Présentation de certains outils
+9. Conclusion/ce qu'il faut retenir 
 
 # Introduction
 
@@ -75,10 +68,10 @@ En quoi les outils d'aide à la rédaction basés sur l'IA transforme-t-ils le r
 
 Nous aborderons :
 
-- l’histoire et la pratique de la correction éditoriale,
+- l’histoire et la pratique de la correction,
 - le basculement technique (du savoir-faire de l’ortho-typo à la reformulation automatisée),
 - les enjeux épistémologiques (déprise du texte),
-- et les enjeux sociolinguistiques/politiques (normalisation implicite, effacement des variations, standardisation de la langue académique).
+- et les enjeux sociolinguistiques.
 
 
 # Les fondamentaux : rappels de l'introduction
@@ -185,7 +178,7 @@ La composition est un processus terriblement laborieux
 
 ### Une science ? 
 
-Recommandation de [@ramatRamatTypographie2008] : 
+Recommandation de @ramatRamatTypographie2008 : 
 
 > Nombre de lecture en correction
 >
@@ -263,7 +256,7 @@ Système expert : limité par des grammaires complexes, questions de pragmatique
 - Traduction interlangue : arbre syntaxique, paire de langue. Ex : [Apertium](https://www.apertium.org/index.eng.html#?dir=fra-spa&q=Les%20chats%20sont%20sur%20le%20toit.%20) [@corbi05]
 
 Systèmes inductifs ou approches _data-driven_  :
-D'abord des classifieurs pour prédire le mots le plus probable dans une classe (préposition), puis _statistical machine learning_ (SMT) dans les années 2010. 
+D'abord des classifieurs pour prédire le mots le plus probable dans une classe (préposition), puis _statistical machine translation_ (SMT) dans les années 2010. 
 
 Alignement d'un corpus parallèle (fonctionne sur une paire de langue) : cooccurrences et tables de phrases. Exemple : [Moses](https://www2.statmt.org/moses/?n=Moses.Overview)
 
@@ -346,10 +339,11 @@ Les _LLM-as-judge_ signifie que non seulement la correction est effectuée par l
 
 ## Les limites des LLMs pour la GEC
 
-- Les LLMs sont probabilistes : question de reproductibilité et d'interprétabilitéé 
+- Les LLMs sont probabilistes : question de reproductibilité et d'interprétabilité
+- Fluidité et grande probabilité = grammaticalité ?
 - Favorise les langues bien dotées. Ex Bengali [@maityHowReadyAre2024]
 
-(et limites de l'utilisation de LLM pour évaluer d'autres LLMs : biais favorable du LLM pour ses propres productions [@wataokaSelfPreferenceBiasLLMasaJudge2025a])
+(et limites de l'utilisation de LLM pour évaluer d'autres LLMs : biais favorable du LLM pour ses propres productions [@wataokaSelfPreferenceBiasLLMasaJudge2025])
 
 <!-- @shankarWhoValidatesValidators2024a et le _criteria drift_ : on ne sait pas avant de l'avoir expérimenté ce que le LLM est capable de faire correctement.  Autrement dit : l'évaluation est un processus itératif.  -->
 
@@ -381,12 +375,21 @@ Avant les LLM, les outils de 'corrections' sont spécialisés pour la correction
 *Une déprise du texte ?*
 :::
 
-## Homgénéisation de la langue
+## Homogénéisation de la langue
 
 Mouvement de standardisation de la langue reposant sur une sur-norme « légitimée et maintenue par tout un édifice de croyances sur la nature de la langue et sur ce qui est correct ou incorrect, croyances qui sont dictées inévitablement par les valeurs sociales et esthétiques de la société concernée. » [@lodgeFrenchDialectStandard1993]
 
-- Prépondérance des données standardisées voire générées par des LLMs dans le golden standard [@shumailovAIModelsCollapse2024, @guo2024curiousdeclinelinguisticdiversity]
-- Problématique de l'« approche par défaut »[@paschalidisVersLangageSans2025] 
+- Problématique de l'« approche par défaut » [@paschalidisVersLangageSans2025] 
+- Prépondérance des données standardisées voire générées par des LLMs dans les données d'entraînement [@shumailovAIModelsCollapse2024; @guoCuriousDeclineLinguistic2024]. 
+
+::: {layout-ncol=2}
+
+![Effondrement du modèle après entrainement sur ses propres sorties](img/modelcollapse.png)
+
+![Perte de diversité après entraînement sur des données synthétiques](img/dropdiversity.png)
+
+:::
+
 - Un idéal de clarté qui finit par s’auto-parodier (le fameux *style chatgpt*)
 
 > We show that while the core content of texts is retained when LLMs polish and rewrite texts, **not only do they homogenize writing styles, but they also alter stylistic elements in a way that selectively amplifies certain dominant characteristics or biases while suppressing others - emphasizing conformity over individuality**. By varying LLMs, prompts, classifiers, and contexts, we show that these trends are robust and consistent. 
@@ -423,7 +426,7 @@ Autrement dit, si on laisse à la machine cette tâche c'est qu'on tend à l'est
 
 
 ::: {style="color: green;"}
-*Quelles conséquences est-ce que déléguer cette partie du travail a sur notre travail ? Et sur notre définition de l'humain ?*
+*Alors que éviter les fautes d'orthographes devient de plus en plus facile, est-ce qu'on devient plus indulgents ?* 
 :::
 
 ## Des 'petites' corrections finales ?
@@ -467,12 +470,15 @@ deux points de vue :
 
 ## Effet nivelant et influence de la machine
 
-Les moins bons traducteurs sont aidés par la TA mais les meilleurs traducteurs sont désavantagés par la TA. Effet limitant car tendance à se laisser influencer : réduction des intuitions de traduction et de la créativité traductionnelle.[@schumacherPosteditionTraductionAutomatique2023]
+Les moins bons traducteurs sont aidés par la TA mais les meilleurs traducteurs sont désavantagés par la TA. Effet limitant car tendance à se laisser influencer : réduction des intuitions de traduction et de la créativité traductionnelle. [@schumacherPosteditionTraductionAutomatique2023]
 
 Une influence pas négligeable : même quand un.e participant.e n'a plus les recommandations de la machine, iel reproduit les erreurs des recommandations [@vicenteHumansInheritArtificial2023] : délégation cognitive ou _cognitive offloading_ 
 
 ::: {style="color: green;"}
-*Comment est-ce qu'on peut prendre conscience de ces biais (inconscients) ?*
+*Est-ce que vous avez l'impression, quand vous utilisez un LLM, que sa production est meilleure que la vôtre ? Est-ce que vous avez l'impression que même dans les cas où vous ne vous en servez pas/plus vous continuez à utiliser son vocabulaire ?*
+
+*Quelle est l'autorité de la machine ?*
+
 :::
 
 # Quelques outils
@@ -487,9 +493,10 @@ Tenir compte des biais du modèle et de son interaction avec lui.
 
 La correction automatique existe avant ChatGPT et les LLM offraient des techniques poussées de GEC mais il fallait encore que de **nouveaux usages s'ancrent** et qu'il y ait un **intérêt économique à maintenir l'utilisateur sur la même plateforme** d'où l'intégration de LLM dans l'outil. 
 
+
 # Outils spécialisés 
 
-### Les outils historiques (francophones)
+## Les outils historiques (francophones)
 
 **[Antidote](https://www.antidote.info)**
 
