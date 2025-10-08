@@ -256,12 +256,22 @@ Les outils ne se contentent plus de pointer, on est dans le paradigme de la gén
 
 Tâche de Traitement Automatique des Langues (TAL ou _Natural Language Processing_, NLP) voisine de la **traduction automatique** (TA ou _machine translation_, MT) 
 
-Système expert : limité par des grammaires complexes, questions de pragmatique et d'idiomaticité.
+Système expert : limité par des grammaires complexes, questions de pragmatique et d'idiomaticité. 
+
+- Traduction directe "mot à mot"
+- Par transfert : correspondance syntaxique
+- Traduction interlangue : arbre syntaxique, paire de langue. Ex : [Apertium](https://www.apertium.org/index.eng.html#?dir=fra-spa&q=Les%20chats%20sont%20sur%20le%20toit.%20) [@corbi05]
 
 Systèmes inductifs ou approches _data-driven_  :
-D'abord des classifieurs pour prédire le mots le plus probable dans une classe (préposition), puis _statistical machine learning_ (SMT) dans les années 2010 et particulièrement _Neural machine translation_ (NMT). [@wangComprehensiveSurveyGrammar2020; @bryantGrammaticalErrorCorrection2023]
+D'abord des classifieurs pour prédire le mots le plus probable dans une classe (préposition), puis _statistical machine learning_ (SMT) dans les années 2010. 
 
-NMT : Correspondance entre des phrases ou portions de phrases en entrée et des portions de phrases attestées en grand nombre (seq2seq) à partir de corpus parallèle. Le modèle algorithmique est entraîné sur une paire de langue (ex : français->anglais). 
+Alignement d'un corpus parallèle (fonctionne sur une paire de langue) : cooccurrences et tables de phrases. Exemple : [Moses](https://www2.statmt.org/moses/?n=Moses.Overview)
+
+Puis particulièrement _Neural machine translation_ (NMT) depuis 2014 `seq2seq` puis `Transformers` [@vaswaniAttentionAllYou2017]
+
+La NMT : encodage d'un corpus dans les deux langues dans un espace vectoriel continu. Entraînement d'un modèle spécialisé pour la traduction sur des paires de phrases. Puis encodage de la phrase source et décodage dans la langue cible. Exemple : Google Traduction, DeepL.
+
+Source : @wangComprehensiveSurveyGrammar2020; @bryantGrammaticalErrorCorrection2023
 
 
 ## Traduction automatique et LLMs
@@ -279,7 +289,7 @@ Les LLMs sont donc **généralistes**, ils ne sont pas destinés à la traductio
 
 <!-- Such divergences are well-documented in human translations (HT), where translators often make structural choices that vary significantly from the text originally written in the target language (Deng and Xue, 2017; Nikolaev et al., 2020). In contrast, traditional NMT outputs typically exhibit less diversity and more literal translations, lacking significant structural variation -->
 
-NMT : traduction littérale , modèle spécialisé
+NMT : traduction plus littérale, modèle spécialisé. 
 
 LLM : traduction plus idiomatique, tendance à la confabulation. 
 
@@ -303,17 +313,17 @@ Les LLMs font la traduction et l'évaluation de la traduction.
 
 La traduction automatique : score BLEU (comparaison de la phrase traduite avec un référentiel de phrases bien traduites, score de proximité), WER (calcul du nombre de mot mal ou non traduit), METEOR etc. 
 
-La Grammar Error Correction (GEC) compare la phrase source (avec erreurs), la phrase corrigée et une phrase de référence (la _ground truth_ donnée par un humain). Cette approche demande un corpus annoté en reference. 
+La Grammar Error Correction (GEC) compare la phrase source (avec erreurs), la phrase corrigée et une phrase de référence (la _ground truth_ ou le _gold standard_ donnée par un humain). Cette approche demande un corpus annoté en reference. 
 
 ## Métriques traditionnelles de GEC 
 
 - Edit-Based Metrics :
-    - M² (MaxMatch) : On aligne les phrases corrigées par le système avec celles de référence (gold standard), puis on extrait les "edits" (opérations de correction : insertion, suppression, remplacement). On calcule précision, rappel, F0.5(donc précision pondérée deux fois plus que rappel).
+    - M² (MaxMatch) : On aligne les phrases corrigées par le système avec celles de référence, puis on extrait les "edits" (opérations de correction : insertion, suppression, remplacement). On calcule précision, rappel, F0.5(donc précision pondérée deux fois plus que rappel).
     - ERRANT (Error Annotation Toolkit): alignement de l'hypothèse avec la phrase source et la phrase cible et classification du type d'erreur (morphologie, orthographe, syntaxe). 
 - Sentence-Based metrics:
     - GLEU (grammar-aware BLEU) : comparaison de n-grammes. 
 
-Ces mesures repose sur l'alignement entre une hypothèse et une référence figée. 
+Ces mesures reposent sur l'alignement entre une hypothèse et une référence figée. 
 
 ## Mesure de la correction sans référence
 
@@ -332,12 +342,16 @@ perplexité : inverse de la probabilité moyenne par mot, basse perplexité = LM
 
 > « The decrease in correlation as the LLM scale decreases, such as with Llama 2 and GPT-3.5, suggests the importance of the LLM scale. Especially, the decrease in correlation when adding fluent corrected sentences (“+ Fluent corr.”) compared to “Base” implies that smaller-scale LLMs may not adequately consider the fluency of sentences. Possible reasons for this include issues such as LLM’s tendency to produce the same scores (Appendix C) and the inability to interpret the context of prompts as expected by users. However, GPT-4 consistently demonstrated a high correlation and provided more stable evaluations compared to traditional metrics. » [@kobayashiLargeLanguageModels2024]
 
+Les _LLM-as-judge_ signifie que non seulement la correction est effectuée par le LLM mais cette correction est aussi évaluée par le LLM lui-même. 
 
-## Les limites des LLMs-as-judge pour la GEC
+## Les limites des LLMs pour la GEC
 
-- Pas toujours reproductible
+- Les LLMs sont probabilistes : question de reproductibilité et d'interprétabilitéé 
 - Favorise les langues bien dotées. Ex Bengali [@maityHowReadyAre2024]
-- @shankarWhoValidatesValidators2024a et le _criteria drift_ : on ne sait pas avant de l'avoir expérimenté ce que le LLM est capable de faire correctement.  Autrement dit : l'évaluation est un processus itératif. 
+
+(et limites de l'utilisation de LLM pour évaluer d'autres LLMs : biais favorable du LLM pour ses propres productions [@wataokaSelfPreferenceBiasLLMasaJudge2025a])
+
+<!-- @shankarWhoValidatesValidators2024a et le _criteria drift_ : on ne sait pas avant de l'avoir expérimenté ce que le LLM est capable de faire correctement.  Autrement dit : l'évaluation est un processus itératif.  -->
 
 <!-- on entre dans une boucle où en pensant déléguer à un LLM la tâche de correction, on se retrouve à devoir itérativement penser la correction et l'évaluation proposée : finalement est-ce que notre capacité de correction n'est déplacée sur un nouvel outil mais toujours aussi nécessaire.  -->
 
@@ -354,7 +368,7 @@ Avant les LLM, les outils de 'corrections' sont spécialisés pour la correction
 
 :::
 
-# Quels enjeux ? <!--trouver un meilleur titre-->
+# Quels enjeux ? 
 
 ::: {style="color: green;"}
 
@@ -398,16 +412,6 @@ Mouvement de standardisation de la langue reposant sur une sur-norme « légitim
 *Dire la même chose avec des mots différents change-t-il le sens ?*
 
 :::
-## Uniformisation de la langue {#clara}
-
-model collapse  : [@shumailovAIModelsCollapse2024]
-
-
-linguistic uniformisation : @guoCuriousDeclineLinguistic2024 
-
-► est-ce qu'il y a un "style ChatGPT" ?
-
-
 ## L'alignement des valeurs et le système de valeurs
 
 >« The problem of achieving agreement between our true preferences and the objective we put into the machine is called the value alignment problem: the values or objectives put into Value alignment problem the machine must be aligned with those of the human. » [@russellArtificialIntelligenceModern2022, p. 23]
