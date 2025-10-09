@@ -1,13 +1,14 @@
 ---
 title: Atelier IA - La Correction automatique
-author: Alexia Schneider `alexia.schneider@umontreal.ca` (UdeM), 
-  Clara Grometto `clara.grometto@umontreal.ca` (UdeM)
+author: 
+    name: Alexia Schneider et Clara Grometto 
 prof: Alexia Schneider + Clara Grometto
 date: 9 octobre 2025
 bibliography: ../correction.bib
 link-citations: true
 colorlinks: true
 fig-cap-location: bottom
+logo: "stickerAvecTexte.png"
 format:
     revealjs: 
         output-file: "correction.html" 
@@ -88,15 +89,15 @@ Définition pratique pour ces ateliers: "un programme informatique qui effectue 
 ## Rappels de l'introduction
 
 - Les programmes d'IA réfèrent à des processus algorithmiques variés et pas seulement à des chatbots type ChatGPT.
-- L'IA est une discipline qui a plus de 75 ans (terme de 1956). 
-- [@turingComputingMachineryIntelligence1950] a orienté la discipline vers un modèle 'chatbot'.
+- L'IA n'est pas une nouvelle discipline (terme de 1956 lors de la Dartmouth Summer Research Project on Artificial Intelligence par Marvin Minsky et John McCarthy). 
+- L'article _Computing Machinery and Intelligence_ de @turingComputingMachineryIntelligence1950 a orienté la discipline vers un modèle 'chatbot'.
 <!-- ici expliquer Turing :  l'article Computing machinery intelligence a orienté la discipline vers une définition étroite de l'intelligence humaine comme intelligence sociale, ou capacité à feindre un échange social comme preuve d'humanité -->
-- Les 'saisons de l'IA' suivent des phases d'approbation publique et de désintérêt pour le terme et les technologies qu'on place sous ce terme.
+- Les 'saisons de l'IA' suivent des phases d'approbation publique et de désintérêt pour le terme et les technologies associées.
 - Ce qu'on fait entrer dans la catégorie d'"intelligent" a changé : le calcul savant est-il moins intelligent que le bavardage ? 
 
 ## Rappels historiques sur l'IA
 
-- Deux grandes approches en IA : une approche déductive (IA symbolique, système expert) vs. approche inductive (IA connexionniste, modèle de langue). 
+- Deux grandes approches en IA : une approche déductive (IA symbolique, système expert) vs. approche inductive (IA connexionniste, modèle de langue basé sur des plongements de mots ou _embeddings_ = vecteurs). 
 - Un système expert peut être aussi complexe et énergivore qu'un LLM.
 - Un LLM (_large language model_) est la modélisation sous forme de vecteurs de chaque élément d'un grand corpus (_token_ ~mot) par rapport à cet ensemble. 
 
@@ -104,14 +105,13 @@ Définition pratique pour ces ateliers: "un programme informatique qui effectue 
 
 ## Les LLMs en contexte
 
-- Pour les LLMs, la 'compréhension' du monde n'est basée sur aucun référent ou aucune règle définie : les réponses sont probabilistes. 
+- Pour les LLMs, la 'compréhension' du monde n'est basée sur aucun référent ou aucune règle définie : **les réponses sont probabilistes**, elles sont donc plausibles et convaincantes parce qu'elles donnent plus de chance à des tournures de phrases courantes dans leur jeu d'entraînement.
 - Les hallucinations ne sont pas des anomalies, ce sont des erreurs que l'on qualifie a posteriori comme telle. 
 - Après l'apprentissage de son corpus d'entrainement, une étape de _reinforcement learning_ donne une saveur ou personnalité à un modèle.
-- Les LLMs reflètent les intérêts économiques de leurs concepteurices: nature 'sycophantique' avérée. 
-- On peut influencer le calcul de probabilité d'un modèle (température, top-k, seed) et donc sa personnalité (déterministe vs. créatif).
-- On peut aussi 'orienter' le comportement d'un modèle avec un _system prompt_.  
+- Les LLMs reflètent les intérêts économiques des  concepteurices des applications qui les intègrent : nature 'sycophantique' avérée. 
+- On peut influencer le calcul de probabilité d'un modèle (température, top-k, seed) et donc sa personnalité (déterministe vs. créatif). 
+- On peut aussi 'orienter' le comportement d'un modèle avec un _system prompt_ sans modifier les embeddings ou l'algorithme de prédiction.
 - Chatbots  = interfaces en langue naturelle : l'exploitation des capacités inductives d'un LLMs ne nécessite pas de passer par une telle interface. Ex : classification avec de l'apprentissage machine (_machine learning_). 
-
 
 # Mise en perspective <!--slide d'intro partie 1-->
 
@@ -247,22 +247,23 @@ Les outils ne se contentent plus de pointer, on est dans le paradigme de la gén
 
 ## La correction d'erreur grammaticales automatique _Grammar Error correction_
 
-Tâche de Traitement Automatique des Langues (TAL ou _Natural Language Processing_, NLP) voisine de la **traduction automatique** (TA ou _machine translation_, MT) 
+Tâche de Traitement Automatique des Langues (TAL ou _Natural Language Processing_, NLP) voisine de la **traduction automatique** (TA ou _machine translation_, MT). 
 
-Système expert : limité par des grammaires complexes, questions de pragmatique et d'idiomaticité. 
-
+1. Système expert : 
 - Traduction directe "mot à mot"
 - Par transfert : correspondance syntaxique
 - Traduction interlangue : arbre syntaxique, paire de langue. Ex : [Apertium](https://www.apertium.org/index.eng.html#?dir=fra-spa&q=Les%20chats%20sont%20sur%20le%20toit.%20) [@corbi05]
 
-Systèmes inductifs ou approches _data-driven_  :
+-> Mais limités par des grammaires complexes et des questions de pragmatique et d'idiomaticité. 
+
+2. Systèmes inductifs ou approches _data-driven_  :
 D'abord des classifieurs pour prédire le mots le plus probable dans une classe (préposition), puis _statistical machine translation_ (SMT) dans les années 2010. 
 
 Alignement d'un corpus parallèle (fonctionne sur une paire de langue) : cooccurrences et tables de phrases. Exemple : [Moses](https://www2.statmt.org/moses/?n=Moses.Overview)
 
 Puis particulièrement _Neural machine translation_ (NMT) depuis 2014 `seq2seq` puis `Transformers` [@vaswaniAttentionAllYou2017]
 
-La NMT : encodage d'un corpus dans les deux langues dans un espace vectoriel continu. Entraînement d'un modèle spécialisé pour la traduction sur des paires de phrases. Puis encodage de la phrase source et décodage dans la langue cible. Exemple : Google Traduction, DeepL.
+La NMT : encodage d'un corpus dans les deux langues dans un espace vectoriel continu. Entraînement d'un modèle spécialisé pour la traduction sur des paires de phrases. Puis encodage de la phrase source et décodage dans la langue cible. Exemple : Google Traduction 2016, DeepL 2017.
 
 Source : @wangComprehensiveSurveyGrammar2020; @bryantGrammaticalErrorCorrection2023
 
@@ -273,7 +274,7 @@ Un grand modèle de langue positionne chaque mot dans un espace vectoriel lors d
 
 Afin de donner une réponse le LLM (GPT, Mistral, Qwen, Llama etc.) situe la requête utilisateur dans son espace vectoriel et sélectionne les tokens les plus probables à partir du contexte donné (la requête utilisateur ou _prompt_ **et** les tokens qu'il a déjà généré). 
 
-Les LLMs sont donc **généralistes**, ils ne sont pas destinés à la traduction plus qu'à la correction d'erreurs grammaticales ou à l'écriture créative.
+Les LLMs sont donc **généralistes**, ils ne sont pas plus destinés à la traduction qu'à la correction d'erreurs grammaticales, à l'écriture créative ou à l'écriture de code. 
 
 
 ## LLM vs NMT pour la Traduction automatique
@@ -300,15 +301,17 @@ La fin de la NMT?
 
 >We anticipate that, soon, LLMs will become a viable enterprise solution for translation. This will likely come when we move towards task-specific LLMs trained specifically for translation. These models will be smaller and more practical to deploy and maintain than today’s massive foundational models. [@ciesielskiNeuralMachineTranslation2024]
 
-Les LLMs font la traduction et l'évaluation de la traduction. 
+Les LLMs pour traduire/corriger, **et** pour évaluer la traduction/correction ?
 
 ## Question d'évaluation 
 
 La traduction automatique : score BLEU (comparaison de la phrase traduite avec un référentiel de phrases bien traduites, score de proximité), WER (calcul du nombre de mot mal ou non traduit), METEOR etc. 
 
-La Grammar Error Correction (GEC) compare la phrase source (avec erreurs), la phrase corrigée et une phrase de référence (la _ground truth_ ou le _gold standard_ donnée par un humain). Cette approche demande un corpus annoté en reference. 
+En Grammar Error Correction (GEC) l'évaluation repose sur une comparaison entre la phrase source (avec erreurs) et la phrase corrigée par rapport à  une phrase de référence (la _ground truth_ ou le _gold standard_ donnée par un humain). Cette approche demande un corpus annoté en reference. 
 
 ## Métriques traditionnelles de GEC 
+
+Ces mesures reposent sur l'alignement entre une hypothèse et une référence figée. 
 
 - Edit-Based Metrics :
     - M² (MaxMatch) : On aligne les phrases corrigées par le système avec celles de référence, puis on extrait les "edits" (opérations de correction : insertion, suppression, remplacement). On calcule précision, rappel, F0.5(donc précision pondérée deux fois plus que rappel).
@@ -316,34 +319,34 @@ La Grammar Error Correction (GEC) compare la phrase source (avec erreurs), la ph
 - Sentence-Based metrics:
     - GLEU (grammar-aware BLEU) : comparaison de n-grammes. 
 
-Ces mesures reposent sur l'alignement entre une hypothèse et une référence figée. 
-
 ## Mesure de la correction sans référence
 
 Les métriques basées sur un corpus de référence limitent la correction a une forme seulement. 
 
-Mesure sans référence [@napolesTheresNoComparison2016]: comparaison directe de la phrase source (avec erreurs) et de la phrase corrigée avec un LLM. 
+Mesure sans référence [@napolesTheresNoComparison2016]: comparaison directe de la phrase source (avec erreurs) et de la phrase proposée en correction directement. 
 
-Méthodes d'évaluation avec un LLM: 
+Évaluer la correction effectuée par le LLM avec un LLM c'est possible : 
 
 - Proximité/distance : Comparaison des vecteurs de la phrase source et celles de la phrase corrigée. 
 - Perplexité/log-probabilité : plus une phrase est fluide plus elle est probable (donc correcte). 
 <!-- log-probabilité : probabilité d'une phrase dans un modèle, le logarithme est utilisé car les proba sont très faibles
 perplexité : inverse de la probabilité moyenne par mot, basse perplexité = LM trouve la phrase prévisible, fluide, naturelle. comparaison des scores de perplexité sur source puis hypothèse -->
 - Spécialisation d'un LLM pour l'évaluation : _Machine learning_ sur un corpus annoté avec des scores attribué ex: SOME [@yoshimuraReferencelessSubMetricsOptimized2020]
-- LLM as judges : instruction en langues naturelles.
+- LLM as judges : _Large Language Models Are State-of-the-Art Evaluator for Grammatical Error Correction_ [@kobayashiLargeLanguageModels2024]
 
-> « The decrease in correlation as the LLM scale decreases, such as with Llama 2 and GPT-3.5, suggests the importance of the LLM scale. Especially, the decrease in correlation when adding fluent corrected sentences (“+ Fluent corr.”) compared to “Base” implies that smaller-scale LLMs may not adequately consider the fluency of sentences. Possible reasons for this include issues such as LLM’s tendency to produce the same scores (Appendix C) and the inability to interpret the context of prompts as expected by users. However, GPT-4 consistently demonstrated a high correlation and provided more stable evaluations compared to traditional metrics. » [@kobayashiLargeLanguageModels2024]
+<!-- > « The decrease in correlation as the LLM scale decreases, such as with Llama 2 and GPT-3.5, suggests the importance of the LLM scale. Especially, the decrease in correlation when adding fluent corrected sentences (“+ Fluent corr.”) compared to “Base” implies that smaller-scale LLMs may not adequately consider the fluency of sentences. Possible reasons for this include issues such as LLM’s tendency to produce the same scores (Appendix C) and the inability to interpret the context of prompts as expected by users. However, GPT-4 consistently demonstrated a high correlation and provided more stable evaluations compared to traditional metrics. »  -->
 
-Les _LLM-as-judge_ signifie que non seulement la correction est effectuée par le LLM mais cette correction est aussi évaluée par le LLM lui-même. 
+<!-- Les _LLM-as-judge_ signifie que non seulement la correction est effectuée par le LLM mais cette correction est aussi évaluée par le LLM lui-même.  -->
 
 ## Les limites des LLMs pour la GEC
 
-- Les LLMs sont probabilistes : question de reproductibilité et d'interprétabilité
+- Les LLMs sont probabilistes : question de reproductibilité et d'interprétabilité "effet boîte noire". 
 - Fluidité et grande probabilité = grammaticalité ?
 - Favorise les langues bien dotées. Ex Bengali [@maityHowReadyAre2024]
 
-(et limites de l'utilisation de LLM pour évaluer d'autres LLMs : biais favorable du LLM pour ses propres productions [@wataokaSelfPreferenceBiasLLMasaJudge2025])
+Limites de l'utilisation de LLM pour évaluer d'autres LLMs : 
+- Biais favorable du LLM pour ses propres productions [@wataokaSelfPreferenceBiasLLMasaJudge2025]
+- Comment valider l'évaluateur ? L'évaluation comme la révision est un processus itératif (notion de criteria drift développé en HCI @shankarWhoValidatesValidators2024)
 
 <!-- @shankarWhoValidatesValidators2024a et le _criteria drift_ : on ne sait pas avant de l'avoir expérimenté ce que le LLM est capable de faire correctement.  Autrement dit : l'évaluation est un processus itératif.  -->
 
@@ -354,7 +357,7 @@ Les _LLM-as-judge_ signifie que non seulement la correction est effectuée par l
 
 ::: {.incremental}
 
-Avant les LLM, les outils de 'corrections' sont spécialisés pour la correction ortho-typographique.   Maintenant les outils de correction dépassent les limites de la simple correction grammaticale.
+Avant les LLMs, les outils de 'corrections' sont spécialisés pour la correction ortho-typographique. Maintenant les outils de correction proposent aussi :
 
 - Reformulation.
 - Génération de texte. 
@@ -419,19 +422,17 @@ Mouvement de standardisation de la langue reposant sur une sur-norme « légitim
 
 >« The problem of achieving agreement between our true preferences and the objective we put into the machine is called the value alignment problem: the values or objectives put into Value alignment problem the machine must be aligned with those of the human. » [@russellArtificialIntelligenceModern2022, p. 23]
 
-L'intelligence humaine commence là où celle de la machine s'arrête. Si on découvre de nouvelles capacités à la machine alors on enlève cette capicité de la définition de l'intelligence humaine. « More than fifteen years ago Hilary Putnam identified the old problem we face to this day: ‘The question that won’t go away is how much what we call intelligence presupposes the rest of human nature’ (1988: LET} » [@mccartyHumanitiesComputing2005, p. 41]
-
+L'intelligence humaine commence là où celle de la machine s'arrête. Si on découvre de nouvelles capacités à la machine alors on enlève cette capicité de la définition de l'intelligence humaine. « More than fifteen years ago Hilary Putnam identified the old problem we face to this day: ‘The question that won’t go away is how much what we call intelligence presupposes the rest of human nature’ (1988: LET) » [@mccartyHumanitiesComputing2005, p. 41]
 
 Autrement dit, si on laisse à la machine cette tâche c'est qu'on tend à l'estimer comme peu valorisante dans notre système de valeur actuel. 
 
-
 ::: {style="color: green;"}
-*Alors que éviter les fautes d'orthographes devient de plus en plus facile, est-ce qu'on devient plus indulgents ?* 
+*Si éviter les fautes d'orthographes devient de plus en plus facile, est-ce qu'on devient plus indulgents sur l'orthographe?* 
 :::
 
 ## Des 'petites' corrections finales ?
 
->Currently, academic publishers only allow the use of ChatGPT and similar tools to improve the readability and language of research articles. However, the ethical boundaries and acceptable usage of AI in academic writing are still undefined, and neither humans nor AI detection tools can reliably identify text generated by AI [@homolakExploringAdoptionChatGPT2023]
+>Currently, academic publishers only allow the use of ChatGPT and similar tools to improve the readability and language of research articles. However, **the ethical boundaries and acceptable usage of AI in academic writing are still undefined, and neither humans nor AI detection tools can reliably identify text generated by AI**. [@homolakExploringAdoptionChatGPT2023]
 
 <!-- pas de définition claire de la correction sur le plan académique = pas de limite non plus. 
 Est-ce que refaire une table en utilisant un LLM càd en prenant le risque qu'il hallucine sur des données demande un usage cité de ChatGPT ? 
@@ -557,7 +558,7 @@ Rédaction de mail etc.
 - Les premiers correcteurs automatiques se sont concentrés sur la correction ortho-typographiques, avec les systèmes de GEC complexes depuis les années 2000 ces outils traitent de reformulation
 - La Grammar Error Correction est une tâche voisine de la Traduction automatique : les technologies sous jacentes sont partagées
 - L'évaluation de la GEC et de la TA fait écho aux processus d'évaluation propre à la correction par un humain. 
-- Avec l'ancrage de nouvelles pratiques discrètes de l'IA, on assiste à une nouvelle phase : la correction comme écriture et comme masquage de l'utilisation d'IA générative. Et l'intégration d'outils dit d'IA dans toutes les applications de traitement de texte etc. 
+- Avec l'ancrage de nouvelles "pratiques discrètes" [@mullerPoussiereLumiereBleue2021] de l'IA , on assiste à une nouvelle phase : la correction comme écriture mais aussi comme masquage de l'utilisation d'IA générative. 
 - Les promesses de gain de temps et de productivité cachent des enjeux économiques forts : on ne peut que rester méfiants face aux biais de ces outils tout en prennant conscience de ses propres influences. 
 
 ## Prochaines séances 

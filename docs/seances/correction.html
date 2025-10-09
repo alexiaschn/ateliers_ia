@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.42">
 
-  <meta name="author" content="Alexia Schneider alexia.schneider@umontreal.ca (UdeM), Clara Grometto clara.grometto@umontreal.ca (UdeM)">
+  <meta name="author" content="Alexia Schneider et Clara Grometto">
   <meta name="dcterms.date" content="2025-10-09">
   <title>Atelier IA - La Correction automatique</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -154,7 +154,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Alexia Schneider <code>alexia.schneider@umontreal.ca</code> (UdeM), Clara Grometto <code>clara.grometto@umontreal.ca</code> (UdeM) 
+Alexia Schneider et Clara Grometto 
 </div>
 </div>
 </div>
@@ -236,16 +236,16 @@ Alexia Schneider <code>alexia.schneider@umontreal.ca</code> (UdeM), Clara Gromet
 <h2>Rappels de l’introduction</h2>
 <ul>
 <li>Les programmes d’IA réfèrent à des processus algorithmiques variés et pas seulement à des chatbots type ChatGPT.</li>
-<li>L’IA est une discipline qui a plus de 75 ans (terme de 1956).</li>
-<li><span class="citation" data-cites="turingComputingMachineryIntelligence1950">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Turing 1950</a>)</span> a orienté la discipline vers un modèle ‘chatbot’. <!-- ici expliquer Turing :  l'article Computing machinery intelligence a orienté la discipline vers une définition étroite de l'intelligence humaine comme intelligence sociale, ou capacité à feindre un échange social comme preuve d'humanité --></li>
-<li>Les ‘saisons de l’IA’ suivent des phases d’approbation publique et de désintérêt pour le terme et les technologies qu’on place sous ce terme.</li>
+<li>L’IA n’est pas une nouvelle discipline (terme de 1956 lors de la Dartmouth Summer Research Project on Artificial Intelligence par Marvin Minsky et John McCarthy).</li>
+<li>L’article <em>Computing Machinery and Intelligence</em> de <span class="citation" data-cites="turingComputingMachineryIntelligence1950">Turing (<a href="#/bibliographie" role="doc-biblioref" onclick="">1950</a>)</span> a orienté la discipline vers un modèle ‘chatbot’. <!-- ici expliquer Turing :  l'article Computing machinery intelligence a orienté la discipline vers une définition étroite de l'intelligence humaine comme intelligence sociale, ou capacité à feindre un échange social comme preuve d'humanité --></li>
+<li>Les ‘saisons de l’IA’ suivent des phases d’approbation publique et de désintérêt pour le terme et les technologies associées.</li>
 <li>Ce qu’on fait entrer dans la catégorie d’“intelligent” a changé : le calcul savant est-il moins intelligent que le bavardage ?</li>
 </ul>
 </section>
 <section id="rappels-historiques-sur-lia" class="slide level2">
 <h2>Rappels historiques sur l’IA</h2>
 <ul>
-<li>Deux grandes approches en IA : une approche déductive (IA symbolique, système expert) vs.&nbsp;approche inductive (IA connexionniste, modèle de langue).</li>
+<li>Deux grandes approches en IA : une approche déductive (IA symbolique, système expert) vs.&nbsp;approche inductive (IA connexionniste, modèle de langue basé sur des plongements de mots ou <em>embeddings</em> = vecteurs).</li>
 <li>Un système expert peut être aussi complexe et énergivore qu’un LLM.</li>
 <li>Un LLM (<em>large language model</em>) est la modélisation sous forme de vecteurs de chaque élément d’un grand corpus (<em>token</em> ~mot) par rapport à cet ensemble.</li>
 </ul>
@@ -254,13 +254,12 @@ Alexia Schneider <code>alexia.schneider@umontreal.ca</code> (UdeM), Clara Gromet
 <section id="les-llms-en-contexte" class="slide level2">
 <h2>Les LLMs en contexte</h2>
 <ul>
-<li>Pour les LLMs, la ‘compréhension’ du monde n’est basée sur aucun référent ou aucune règle définie : les réponses sont probabilistes.</li>
+<li>Pour les LLMs, la ‘compréhension’ du monde n’est basée sur aucun référent ou aucune règle définie : <strong>les réponses sont probabilistes</strong>, elles sont donc plausibles et convaincantes parce qu’elles donnent plus de chance à des tournures de phrases courantes dans leur jeu d’entraînement.</li>
 <li>Les hallucinations ne sont pas des anomalies, ce sont des erreurs que l’on qualifie a posteriori comme telle.</li>
 <li>Après l’apprentissage de son corpus d’entrainement, une étape de <em>reinforcement learning</em> donne une saveur ou personnalité à un modèle.</li>
-<li>Les LLMs reflètent les intérêts économiques de leurs concepteurices: nature ‘sycophantique’ avérée.</li>
+<li>Les LLMs reflètent les intérêts économiques des concepteurices des applications qui les intègrent : nature ‘sycophantique’ avérée.</li>
 <li>On peut influencer le calcul de probabilité d’un modèle (température, top-k, seed) et donc sa personnalité (déterministe vs.&nbsp;créatif).</li>
-<li>On peut aussi ‘orienter’ le comportement d’un modèle avec un <em>system prompt</em>.<br>
-</li>
+<li>On peut aussi ‘orienter’ le comportement d’un modèle avec un <em>system prompt</em> sans modifier les embeddings ou l’algorithme de prédiction.</li>
 <li>Chatbots = interfaces en langue naturelle : l’exploitation des capacités inductives d’un LLMs ne nécessite pas de passer par une telle interface. Ex : classification avec de l’apprentissage machine (<em>machine learning</em>).</li>
 </ul>
 </section></section>
@@ -402,26 +401,31 @@ Alexia Schneider <code>alexia.schneider@umontreal.ca</code> (UdeM), Clara Gromet
 <h1>Histoire de la GEC</h1>
 
 </section>
-<section id="la-correction-derreur-grammaticales-automatique-grammar-error-correction" class="slide level2">
+<section id="la-correction-derreur-grammaticales-automatique-grammar-error-correction" class="slide level2 scrollable">
 <h2>La correction d’erreur grammaticales automatique <em>Grammar Error correction</em></h2>
-<p>Tâche de Traitement Automatique des Langues (TAL ou <em>Natural Language Processing</em>, NLP) voisine de la <strong>traduction automatique</strong> (TA ou <em>machine translation</em>, MT)</p>
-<p>Système expert : limité par des grammaires complexes, questions de pragmatique et d’idiomaticité.</p>
+<p>Tâche de Traitement Automatique des Langues (TAL ou <em>Natural Language Processing</em>, NLP) voisine de la <strong>traduction automatique</strong> (TA ou <em>machine translation</em>, MT).</p>
+<ol type="1">
+<li>Système expert :</li>
+</ol>
 <ul>
 <li>Traduction directe “mot à mot”</li>
 <li>Par transfert : correspondance syntaxique</li>
 <li>Traduction interlangue : arbre syntaxique, paire de langue. Ex : <a href="https://www.apertium.org/index.eng.html#?dir=fra-spa&amp;q=Les%20chats%20sont%20sur%20le%20toit.%20">Apertium</a> <span class="citation" data-cites="corbi05">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Corbı́-Bellot et al. 2005</a>)</span></li>
 </ul>
-<p>Systèmes inductifs ou approches <em>data-driven</em> : D’abord des classifieurs pour prédire le mots le plus probable dans une classe (préposition), puis <em>statistical machine translation</em> (SMT) dans les années 2010.</p>
+<p>-&gt; Mais limités par des grammaires complexes et des questions de pragmatique et d’idiomaticité.</p>
+<ol start="2" type="1">
+<li>Systèmes inductifs ou approches <em>data-driven</em> : D’abord des classifieurs pour prédire le mots le plus probable dans une classe (préposition), puis <em>statistical machine translation</em> (SMT) dans les années 2010.</li>
+</ol>
 <p>Alignement d’un corpus parallèle (fonctionne sur une paire de langue) : cooccurrences et tables de phrases. Exemple : <a href="https://www2.statmt.org/moses/?n=Moses.Overview">Moses</a></p>
 <p>Puis particulièrement <em>Neural machine translation</em> (NMT) depuis 2014 <code>seq2seq</code> puis <code>Transformers</code> <span class="citation" data-cites="vaswaniAttentionAllYou2017">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Vaswani et al. 2017</a>)</span></p>
-<p>La NMT : encodage d’un corpus dans les deux langues dans un espace vectoriel continu. Entraînement d’un modèle spécialisé pour la traduction sur des paires de phrases. Puis encodage de la phrase source et décodage dans la langue cible. Exemple : Google Traduction, DeepL.</p>
+<p>La NMT : encodage d’un corpus dans les deux langues dans un espace vectoriel continu. Entraînement d’un modèle spécialisé pour la traduction sur des paires de phrases. Puis encodage de la phrase source et décodage dans la langue cible. Exemple : Google Traduction 2016, DeepL 2017.</p>
 <p>Source : <span class="citation" data-cites="wangComprehensiveSurveyGrammar2020">Wang et al. (<a href="#/bibliographie" role="doc-biblioref" onclick="">2020</a>)</span>; <span class="citation" data-cites="bryantGrammaticalErrorCorrection2023">Bryant et al. (<a href="#/bibliographie" role="doc-biblioref" onclick="">2023</a>)</span></p>
 </section>
 <section id="traduction-automatique-et-llms" class="slide level2">
 <h2>Traduction automatique et LLMs</h2>
 <p>Un grand modèle de langue positionne chaque mot dans un espace vectoriel lors de sa phase d’apprentissage initiale à partir d’un grand volume de données en langue naturelle.</p>
 <p>Afin de donner une réponse le LLM (GPT, Mistral, Qwen, Llama etc.) situe la requête utilisateur dans son espace vectoriel et sélectionne les tokens les plus probables à partir du contexte donné (la requête utilisateur ou <em>prompt</em> <strong>et</strong> les tokens qu’il a déjà généré).</p>
-<p>Les LLMs sont donc <strong>généralistes</strong>, ils ne sont pas destinés à la traduction plus qu’à la correction d’erreurs grammaticales ou à l’écriture créative.</p>
+<p>Les LLMs sont donc <strong>généralistes</strong>, ils ne sont pas plus destinés à la traduction qu’à la correction d’erreurs grammaticales, à l’écriture créative ou à l’écriture de code.</p>
 </section>
 <section id="llm-vs-nmt-pour-la-traduction-automatique" class="slide level2">
 <h2>LLM vs NMT pour la Traduction automatique</h2>
@@ -444,15 +448,16 @@ Alexia Schneider <code>alexia.schneider@umontreal.ca</code> (UdeM), Clara Gromet
 <blockquote>
 <p>We anticipate that, soon, LLMs will become a viable enterprise solution for translation. This will likely come when we move towards task-specific LLMs trained specifically for translation. These models will be smaller and more practical to deploy and maintain than today’s massive foundational models. <span class="citation" data-cites="ciesielskiNeuralMachineTranslation2024">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Ciesielski 2024</a>)</span></p>
 </blockquote>
-<p>Les LLMs font la traduction et l’évaluation de la traduction.</p>
+<p>Les LLMs pour traduire/corriger, <strong>et</strong> pour évaluer la traduction/correction ?</p>
 </section>
 <section id="question-dévaluation" class="slide level2">
 <h2>Question d’évaluation</h2>
 <p>La traduction automatique : score BLEU (comparaison de la phrase traduite avec un référentiel de phrases bien traduites, score de proximité), WER (calcul du nombre de mot mal ou non traduit), METEOR etc.</p>
-<p>La Grammar Error Correction (GEC) compare la phrase source (avec erreurs), la phrase corrigée et une phrase de référence (la <em>ground truth</em> ou le <em>gold standard</em> donnée par un humain). Cette approche demande un corpus annoté en reference.</p>
+<p>En Grammar Error Correction (GEC) l’évaluation repose sur une comparaison entre la phrase source (avec erreurs) et la phrase corrigée par rapport à une phrase de référence (la <em>ground truth</em> ou le <em>gold standard</em> donnée par un humain). Cette approche demande un corpus annoté en reference.</p>
 </section>
 <section id="métriques-traditionnelles-de-gec" class="slide level2">
 <h2>Métriques traditionnelles de GEC</h2>
+<p>Ces mesures reposent sur l’alignement entre une hypothèse et une référence figée.</p>
 <ul>
 <li>Edit-Based Metrics :
 <ul>
@@ -464,40 +469,37 @@ Alexia Schneider <code>alexia.schneider@umontreal.ca</code> (UdeM), Clara Gromet
 <li>GLEU (grammar-aware BLEU) : comparaison de n-grammes.</li>
 </ul></li>
 </ul>
-<p>Ces mesures reposent sur l’alignement entre une hypothèse et une référence figée.</p>
 </section>
 <section id="mesure-de-la-correction-sans-référence" class="slide level2">
 <h2>Mesure de la correction sans référence</h2>
 <p>Les métriques basées sur un corpus de référence limitent la correction a une forme seulement.</p>
-<p>Mesure sans référence <span class="citation" data-cites="napolesTheresNoComparison2016">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Napoles, Sakaguchi, and Tetreault 2016</a>)</span>: comparaison directe de la phrase source (avec erreurs) et de la phrase corrigée avec un LLM.</p>
-<p>Méthodes d’évaluation avec un LLM:</p>
+<p>Mesure sans référence <span class="citation" data-cites="napolesTheresNoComparison2016">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Napoles, Sakaguchi, and Tetreault 2016</a>)</span>: comparaison directe de la phrase source (avec erreurs) et de la phrase proposée en correction directement.</p>
+<p>Évaluer la correction effectuée par le LLM avec un LLM c’est possible :</p>
 <ul>
 <li>Proximité/distance : Comparaison des vecteurs de la phrase source et celles de la phrase corrigée.</li>
 <li>Perplexité/log-probabilité : plus une phrase est fluide plus elle est probable (donc correcte). <!-- log-probabilité : probabilité d'une phrase dans un modèle, le logarithme est utilisé car les proba sont très faibles
 perplexité : inverse de la probabilité moyenne par mot, basse perplexité = LM trouve la phrase prévisible, fluide, naturelle. comparaison des scores de perplexité sur source puis hypothèse --></li>
 <li>Spécialisation d’un LLM pour l’évaluation : <em>Machine learning</em> sur un corpus annoté avec des scores attribué ex: SOME <span class="citation" data-cites="yoshimuraReferencelessSubMetricsOptimized2020">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Yoshimura et al. 2020</a>)</span></li>
-<li>LLM as judges : instruction en langues naturelles.</li>
+<li>LLM as judges : <em>Large Language Models Are State-of-the-Art Evaluator for Grammatical Error Correction</em> <span class="citation" data-cites="kobayashiLargeLanguageModels2024">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Kobayashi, Mita, and Komachi 2024</a>)</span></li>
 </ul>
-<blockquote>
-<p>« The decrease in correlation as the LLM scale decreases, such as with Llama 2 and GPT-3.5, suggests the importance of the LLM scale. Especially, the decrease in correlation when adding fluent corrected sentences (“+ Fluent corr.”) compared to “Base” implies that smaller-scale LLMs may not adequately consider the fluency of sentences. Possible reasons for this include issues such as LLM’s tendency to produce the same scores (Appendix C) and the inability to interpret the context of prompts as expected by users. However, GPT-4 consistently demonstrated a high correlation and provided more stable evaluations compared to traditional metrics. » <span class="citation" data-cites="kobayashiLargeLanguageModels2024">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Kobayashi, Mita, and Komachi 2024</a>)</span></p>
-</blockquote>
-<p>Les <em>LLM-as-judge</em> signifie que non seulement la correction est effectuée par le LLM mais cette correction est aussi évaluée par le LLM lui-même.</p>
+<!-- > « The decrease in correlation as the LLM scale decreases, such as with Llama 2 and GPT-3.5, suggests the importance of the LLM scale. Especially, the decrease in correlation when adding fluent corrected sentences (“+ Fluent corr.”) compared to “Base” implies that smaller-scale LLMs may not adequately consider the fluency of sentences. Possible reasons for this include issues such as LLM’s tendency to produce the same scores (Appendix C) and the inability to interpret the context of prompts as expected by users. However, GPT-4 consistently demonstrated a high correlation and provided more stable evaluations compared to traditional metrics. »  -->
+<!-- Les _LLM-as-judge_ signifie que non seulement la correction est effectuée par le LLM mais cette correction est aussi évaluée par le LLM lui-même.  -->
 </section>
 <section id="les-limites-des-llms-pour-la-gec" class="slide level2">
 <h2>Les limites des LLMs pour la GEC</h2>
 <ul>
-<li>Les LLMs sont probabilistes : question de reproductibilité et d’interprétabilité</li>
+<li>Les LLMs sont probabilistes : question de reproductibilité et d’interprétabilité “effet boîte noire”.</li>
 <li>Fluidité et grande probabilité = grammaticalité ?</li>
 <li>Favorise les langues bien dotées. Ex Bengali <span class="citation" data-cites="maityHowReadyAre2024">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Maity, Deroy, and Sarkar 2024</a>)</span></li>
 </ul>
-<p>(et limites de l’utilisation de LLM pour évaluer d’autres LLMs : biais favorable du LLM pour ses propres productions <span class="citation" data-cites="wataokaSelfPreferenceBiasLLMasaJudge2025">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Wataoka, Takahashi, and Ri 2025</a>)</span>)</p>
+<p>Limites de l’utilisation de LLM pour évaluer d’autres LLMs : - Biais favorable du LLM pour ses propres productions <span class="citation" data-cites="wataokaSelfPreferenceBiasLLMasaJudge2025">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Wataoka, Takahashi, and Ri 2025</a>)</span> - Comment valider l’évaluateur ? L’évaluation comme la révision est un processus itératif (notion de criteria drift développé en HCI <span class="citation" data-cites="shankarWhoValidatesValidators2024">Shankar et al. (<a href="#/bibliographie" role="doc-biblioref" onclick="">2024</a>)</span>)</p>
 <!-- @shankarWhoValidatesValidators2024a et le _criteria drift_ : on ne sait pas avant de l'avoir expérimenté ce que le LLM est capable de faire correctement.  Autrement dit : l'évaluation est un processus itératif.  -->
 <!-- on entre dans une boucle où en pensant déléguer à un LLM la tâche de correction, on se retrouve à devoir itérativement penser la correction et l'évaluation proposée : finalement est-ce que notre capacité de correction n'est déplacée sur un nouvel outil mais toujours aussi nécessaire.  -->
 </section>
 <section id="changement-de-paradigme" class="slide level2">
 <h2>Changement de paradigme</h2>
 <div>
-<p>Avant les LLM, les outils de ‘corrections’ sont spécialisés pour la correction ortho-typographique. Maintenant les outils de correction dépassent les limites de la simple correction grammaticale.</p>
+<p>Avant les LLMs, les outils de ‘corrections’ sont spécialisés pour la correction ortho-typographique. Maintenant les outils de correction proposent aussi :</p>
 <ul>
 <li class="fragment">Reformulation.</li>
 <li class="fragment">Génération de texte.</li>
@@ -574,16 +576,16 @@ perplexité : inverse de la probabilité moyenne par mot, basse perplexité = LM
 <blockquote>
 <p>« The problem of achieving agreement between our true preferences and the objective we put into the machine is called the value alignment problem: the values or objectives put into Value alignment problem the machine must be aligned with those of the human. » <span class="citation" data-cites="russellArtificialIntelligenceModern2022">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Russell and Norvig 2022, 23</a>)</span></p>
 </blockquote>
-<p>L’intelligence humaine commence là où celle de la machine s’arrête. Si on découvre de nouvelles capacités à la machine alors on enlève cette capicité de la définition de l’intelligence humaine. « More than fifteen years ago Hilary Putnam identified the old problem we face to this day: ‘The question that won’t go away is how much what we call intelligence presupposes the rest of human nature’ (1988: LET} » <span class="citation" data-cites="mccartyHumanitiesComputing2005">(<a href="#/bibliographie" role="doc-biblioref" onclick="">McCarty 2005, 41</a>)</span></p>
+<p>L’intelligence humaine commence là où celle de la machine s’arrête. Si on découvre de nouvelles capacités à la machine alors on enlève cette capicité de la définition de l’intelligence humaine. « More than fifteen years ago Hilary Putnam identified the old problem we face to this day: ‘The question that won’t go away is how much what we call intelligence presupposes the rest of human nature’ (1988: LET) » <span class="citation" data-cites="mccartyHumanitiesComputing2005">(<a href="#/bibliographie" role="doc-biblioref" onclick="">McCarty 2005, 41</a>)</span></p>
 <p>Autrement dit, si on laisse à la machine cette tâche c’est qu’on tend à l’estimer comme peu valorisante dans notre système de valeur actuel.</p>
 <div style="color: green;">
-<p><em>Alors que éviter les fautes d’orthographes devient de plus en plus facile, est-ce qu’on devient plus indulgents ?</em></p>
+<p><em>Si éviter les fautes d’orthographes devient de plus en plus facile, est-ce qu’on devient plus indulgents sur l’orthographe?</em></p>
 </div>
 </section>
 <section id="des-petites-corrections-finales" class="slide level2">
 <h2>Des ‘petites’ corrections finales ?</h2>
 <blockquote>
-<p>Currently, academic publishers only allow the use of ChatGPT and similar tools to improve the readability and language of research articles. However, the ethical boundaries and acceptable usage of AI in academic writing are still undefined, and neither humans nor AI detection tools can reliably identify text generated by AI <span class="citation" data-cites="homolakExploringAdoptionChatGPT2023">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Homolak 2023</a>)</span></p>
+<p>Currently, academic publishers only allow the use of ChatGPT and similar tools to improve the readability and language of research articles. However, <strong>the ethical boundaries and acceptable usage of AI in academic writing are still undefined, and neither humans nor AI detection tools can reliably identify text generated by AI</strong>. <span class="citation" data-cites="homolakExploringAdoptionChatGPT2023">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Homolak 2023</a>)</span></p>
 </blockquote>
 <!-- pas de définition claire de la correction sur le plan académique = pas de limite non plus. 
 Est-ce que refaire une table en utilisant un LLM càd en prenant le risque qu'il hallucine sur des données demande un usage cité de ChatGPT ? 
@@ -697,7 +699,7 @@ deux points de vue :
 <li>Les premiers correcteurs automatiques se sont concentrés sur la correction ortho-typographiques, avec les systèmes de GEC complexes depuis les années 2000 ces outils traitent de reformulation</li>
 <li>La Grammar Error Correction est une tâche voisine de la Traduction automatique : les technologies sous jacentes sont partagées</li>
 <li>L’évaluation de la GEC et de la TA fait écho aux processus d’évaluation propre à la correction par un humain.</li>
-<li>Avec l’ancrage de nouvelles pratiques discrètes de l’IA, on assiste à une nouvelle phase : la correction comme écriture et comme masquage de l’utilisation d’IA générative. Et l’intégration d’outils dit d’IA dans toutes les applications de traitement de texte etc.</li>
+<li>Avec l’ancrage de nouvelles “pratiques discrètes” <span class="citation" data-cites="mullerPoussiereLumiereBleue2021">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Muller and Clavert 2021</a>)</span> de l’IA , on assiste à une nouvelle phase : la correction comme écriture mais aussi comme masquage de l’utilisation d’IA générative.</li>
 <li>Les promesses de gain de temps et de productivité cachent des enjeux économiques forts : on ne peut que rester méfiants face aux biais de ces outils tout en prennant conscience de ses propres influences.</li>
 </ul>
 </section>
@@ -747,6 +749,9 @@ Maity, Subhankar, Aniket Deroy, and Sudeshna Sarkar. 2024. <span>“How <span cl
 <div id="ref-mccartyHumanitiesComputing2005" class="csl-entry" role="listitem">
 McCarty, Willard. 2005. <em>Humanities <span>Computing</span></em>. Paperback edition. Basingstoke, Hampshire: Palgrave Macmillan.
 </div>
+<div id="ref-mullerPoussiereLumiereBleue2021" class="csl-entry" role="listitem">
+Muller, Caroline, and Frédéric Clavert. 2021. <span>“De La Poussi<span>è</span>re <span class="nocase">à</span> La Lumi<span>è</span>re Bleue: <span class="nocase"><span>É</span>motions</span>, r<span>é</span>cits, Gestes de l’archive <span class="nocase">à</span> l’<span>è</span>re Num<span>é</span>rique.”</span> <em>Signata</em>, no. 12 (May). <a href="https://doi.org/10.4000/signata.3136">https://doi.org/10.4000/signata.3136</a>.
+</div>
 <div id="ref-napolesTheresNoComparison2016" class="csl-entry" role="listitem">
 Napoles, Courtney, Keisuke Sakaguchi, and Joel Tetreault. 2016. <span>“There’s <span>No Comparison</span>: <span class="nocase">Reference-less Evaluation Metrics</span> in <span>Grammatical Error Correction</span>.”</span> In <em>Proceedings of the 2016 <span>Conference</span> on <span>Empirical Methods</span> in <span>Natural</span> <span>Language Processing</span></em>, 2109–15. Austin, Texas: Association for Computational Linguistics. <a href="https://doi.org/10.18653/v1/D16-1228">https://doi.org/10.18653/v1/D16-1228</a>.
 </div>
@@ -761,6 +766,9 @@ Russell, Stuart J., and Peter Norvig. 2022. <em>Artificial Intelligence: A Moder
 </div>
 <div id="ref-schumacherPosteditionTraductionAutomatique2023" class="csl-entry" role="listitem">
 Schumacher, Perrine. 2023. <span>“<span>La post-<span>é</span>dition de traduction automatique en contexte d’apprentissage</span>.”</span> PhD thesis, Li<span>è</span>ge: Universite de Liege.
+</div>
+<div id="ref-shankarWhoValidatesValidators2024" class="csl-entry" role="listitem">
+Shankar, Shreya, J. D. Zamfirescu-Pereira, Bjoern Hartmann, Aditya Parameswaran, and Ian Arawjo. 2024. <span>“Who <span>Validates</span> the <span>Validators</span>? <span>Aligning LLM-Assisted Evaluation</span> of <span>LLM Outputs</span> with <span>Human Preferences</span>.”</span> <span>UIST</span> ’24. New York, NY, USA: Association for Computing Machinery. <a href="https://doi.org/10.1145/3654777.3676450">https://doi.org/10.1145/3654777.3676450</a>.
 </div>
 <div id="ref-shumailovAIModelsCollapse2024" class="csl-entry" role="listitem">
 Shumailov, Ilia, Zakhar Shumaylov, Yiren Zhao, Nicolas Papernot, Ross Anderson, and Yarin Gal. 2024. <span>“<span>AI</span> Models Collapse When Trained on Recursively Generated Data.”</span> <em>Nature</em> 631 (8022): 755–59. <a href="https://doi.org/10.1038/s41586-024-07566-y">https://doi.org/10.1038/s41586-024-07566-y</a>.
@@ -804,6 +812,7 @@ Yoshimura, Ryoma, Masahiro Kaneko, Tomoyuki Kajiwara, and Mamoru Komachi. 2020. 
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="stickerAvecTexte.png" class="slide-logo"></p>
 <div class="footer footer-default">
 
 </div>
