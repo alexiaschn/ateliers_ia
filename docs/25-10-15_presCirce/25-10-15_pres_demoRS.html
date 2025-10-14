@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Alexia Schneider alexia.schneider@umontreal.ca (UdeM)">
+<meta name="dcterms.date" content="2025-10-15">
+
+<title>IA et sérendipité - comparer différentes stratégies de recherche d’information exploratoire</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-7504fb6c014d9d4fd213538c81d38504.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Programme</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../ressources.html"> 
+<span class="menu-text">Ressources</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://alexiaschn.github.io/ateliers_ia/seances/intro.html#/title-slide"> 
+<span class="menu-text">Séance 1</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://alexiaschn.github.io/ateliers_ia/seances/correction.html"> 
+<span class="menu-text">Séance 2</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="presentationCirce.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">IA et sérendipité - comparer différentes stratégies de recherche d’information exploratoire</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Alexia Schneider <code>alexia.schneider@umontreal.ca</code> (UdeM) </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 15, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="plan" class="level2">
+<h2 class="anchored" data-anchor-id="plan">Plan</h2>
+<!-- vérifier si bill readings -> algorithme de re-ranking (h-index)
+faire visualisation et programme démo -->
+<ol type="1">
+<li><p>Contexte et présentation de l’outil (20min) <!-- - état actuel des systèmes de RI et les RS : 
+    - problème de l'explicabilité 
+    - limite de la représentation sémantique de l'hypothèse distributionnelle
+- angle : la sérendipité
+    - la découvrabilité 
+    - définition de la sérendipité
+    - importance de la sérendipité en science 
+    - sérendipité et numérique 
+- Solution proposée
+    - un RS hybride pour l'explicabilité 
+    - cadre théorique --></p></li>
+<li><p>Démonstration du système de recommandation (10min)</p></li>
+</ol>
+</section>
+<section id="état-actuel-des-systèmes-de-ri-et-de-rs" class="level1">
+<h1>État actuel des systèmes de RI et de RS</h1>
+<section id="contexte" class="level2">
+<h2 class="anchored" data-anchor-id="contexte">Contexte</h2>
+<p>Les moteurs de recherche et bases de données scientifiques :</p>
+<ul>
+<li>proposent des articles « similaires » sans expliquer les critères de rapprochement.</li>
+<li>s’appuient sur :
+<ul>
+<li>le nombre de citations (Matthew’s effect) <span class="citation" data-cites="desollapriceLittleScienceBig1963 mertonMatthewEffectScience1968">(<a href="#ref-desollapriceLittleScienceBig1963" role="doc-biblioref">de Solla Price 1963</a>; <a href="#ref-mertonMatthewEffectScience1968" role="doc-biblioref">Merton 1968</a>)</span>,</li>
+<li>des algorithmes de classement favorisant les articles déjà populaires (ranking) et les auteurs les plus cités <span class="citation" data-cites="cardonDansLespritPageRank2013">(<a href="#ref-cardonDansLespritPageRank2013" role="doc-biblioref">Cardon 2013</a>)</span>.</li>
+<li>les intéractions précédentes des utilisateur.ice.s. <span class="citation" data-cites="kosterSerendipitousRecommendationBased2014">(<a href="#ref-kosterSerendipitousRecommendationBased2014" role="doc-biblioref">Koster, Koch, and Kim 2014</a>)</span></li>
+</ul></li>
+</ul>
+<p><a href="https://isidore.science/document/20.500.13089/k0dm">Page d’exemple sur Isidore</a></p>
+</section>
+<section id="problématique" class="level2">
+<h2 class="anchored" data-anchor-id="problématique">Problématique</h2>
+<p>Ces logiques entraînent :</p>
+<p>Une concentration des citations et une perte de diversité scientifique.</p>
+<p>Des <strong>bulles de filtres</strong> <span class="citation" data-cites="pariserFilterBubbleWhat2011">(<a href="#ref-pariserFilterBubbleWhat2011" role="doc-biblioref">Pariser 2011</a>)</span> et un <strong>biais de confirmation</strong> dans la recherche <span class="citation" data-cites="underwoodTheorizingResearchPractices2014">(<a href="#ref-underwoodTheorizingResearchPractices2014" role="doc-biblioref">Underwood 2014</a>)</span>.</p>
+</section>
+<section id="les-ai-research-assistant" class="level2">
+<h2 class="anchored" data-anchor-id="les-ai-research-assistant">Les AI research assistant</h2>
+<p>Les moteurs de recherche académiques développent des méthodes de RI basées sur l’IA :</p>
+<ul>
+<li><em>Query augmentation</em></li>
+<li><em>semantic search</em> ou recherche vectorielle</li>
+<li>(re)ranking</li>
+</ul>
+<p>Les articles proposés par ces <em>recommender systems</em> (RS) peuvent varier en fonction de la stratégie sous-jacente : quid de la reproductibilité et de l’explicabilité <span class="citation" data-cites="tayReproducibilityInterpretabilityAcademic2025">(<a href="#ref-tayReproducibilityInterpretabilityAcademic2025" role="doc-biblioref">Tay 2025</a>)</span> ?</p>
+</section>
+<section id="les-systèmes-de-recommandation-et-la-logique-déterministe" class="level2">
+<h2 class="anchored" data-anchor-id="les-systèmes-de-recommandation-et-la-logique-déterministe">Les systèmes de recommandation et la logique déterministe</h2>
+<p>Certains systèmes de recommandation reflètent une modélisation sémantique distributionnelle :</p>
+<blockquote class="blockquote">
+<p>You shall know a word by the company it keeps. — <span class="citation" data-cites="firthStudiesLinguisticAnalysis1962">Firth (<a href="#ref-firthStudiesLinguisticAnalysis1962" role="doc-biblioref">1962</a>)</span></p>
+</blockquote>
+<p>vs.&nbsp;</p>
+<blockquote class="blockquote">
+<p>Colorless green ideas sleep furiously — <span class="citation" data-cites="chomskySyntacticStructures1957">Chomsky (<a href="#ref-chomskySyntacticStructures1957" role="doc-biblioref">1957</a>)</span></p>
+</blockquote>
+<p>Dans le cadre d’une recherche d’information : faut-il chercher seulement ce qui est le plus probable ?</p>
+<p><strong>Conséquence : cristallistion d’un modèle sémantique induit d’une probabilité basée sur une fréquence d’occurrence dès la requête effectuée</strong> et plus seulement pour la recherche d’articles pertinents.</p>
+<p>La manière de requêter un moteur de recherche va déterminer les informations auxquelles nous avons accès et sur lesquelles nous basons nos recherches.</p>
+</section>
+</section>
+<section id="la-sérendipité-comme-alternative-épistémologique" class="level1">
+<h1>La sérendipité comme alternative épistémologique</h1>
+<section id="découvrabilité" class="level2">
+<h2 class="anchored" data-anchor-id="découvrabilité">Découvrabilité</h2>
+<p>L’innovation et la recherche dépendent fortement de notre capacité à effectuer de nouveaux liens sémantiques.</p>
+<p>Deux faces :</p>
+<ul>
+<li>trouvabilité : accéder à l’information que l’on cherche (côté de l’indexation documentaire)</li>
+<li>sérendipité : accéder de manière fortuite à ce qu’on ne sait pas ne pas savoir (côté utilisateur)</li>
+</ul>
+<p>Beaucoup étudié dans le contexte du e-commerce et la diffusion de contenus culturels sinon par les sciences de l’information et de la documentation.</p>
+</section>
+<section id="définition-de-la-sérendipité" class="level2">
+<h2 class="anchored" data-anchor-id="définition-de-la-sérendipité">Définition de la sérendipité</h2>
+<p>‘browsing’ est un processus a 4 dimensions <span class="citation" data-cites="riceResultsMotivatingThemes2001">(<a href="#ref-riceResultsMotivatingThemes2001" role="doc-biblioref">Rice, McCreadie, and Chang 2001</a>)</span> : 1. the act of scanning; 2. the presence or absence of purpose; 3. the specificity of search outcomes or goals; 4. and knowledge about the resource and object sought.</p>
+<p>La sérendipité est le processus et le résultat de ce ‘chance encounter’.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="model.png" class="img-fluid figure-img"></p>
+<figcaption>Modélisation de la sérendipité <span class="citation" data-cites="makriComingInformationSerendipitously2012">(<a href="#ref-makriComingInformationSerendipitously2012" role="doc-biblioref">Makri and Blandford 2012</a>)</span></figcaption>
+</figure>
+</div>
+<p>NB : dans ce modèle : dimension réflexive de la sérendipité par contraste avec le hasard.</p>
+</section>
+<section id="place-de-la-sérendipité-dans-la-science" class="level2">
+<h2 class="anchored" data-anchor-id="place-de-la-sérendipité-dans-la-science">Place de la sérendipité dans la science</h2>
+<p>Les approches exploratoires et sérendipitaires en recherche documentaire :</p>
+<ul>
+<li><p>exploitent la profusion pour générer des connexions inattendues <span class="citation" data-cites="batesDesignBrowsingBerrypicking1989 erdelezInformationEncounteringIts1999">(<a href="#ref-batesDesignBrowsingBerrypicking1989" role="doc-biblioref">Bates 1989</a>; <a href="#ref-erdelezInformationEncounteringIts1999" role="doc-biblioref">Sandra Erdelez 1999</a>)</span></p></li>
+<li><p>favorisent le décloisonement disciplinaire <span class="citation" data-cites="dumasprimbaultNaviguerDansSavoirs2023">(<a href="#ref-dumasprimbaultNaviguerDansSavoirs2023" role="doc-biblioref">Dumas Primbault 2023</a>)</span>.</p></li>
+</ul>
+</section>
+<section id="la-sérendipité-et-le-numérique" class="level2">
+<h2 class="anchored" data-anchor-id="la-sérendipité-et-le-numérique">La sérendipité et le numérique</h2>
+<p>L’exploration au coeur de l’expérience du numérique connecté :</p>
+<blockquote class="blockquote">
+<p>la force politique d’Internet (1969-2009) réside dans la prééminence donnée à une catégorie particulière d’activité : l’exploration. Internet s’est fondamentalement constitué sur le réaménagement de l’action autour de l’exploration : il a donné la prééminence à l’expérimentation sur l’intériorisation, aux tâtonnements incertains sur les apprentissages formels, au jeu et au défi sur l’examen scolaire. Il a structuré des communautés sceptiques, ouvertes et curieuses. — <span class="citation" data-cites="aurayTechnologiesLinformationRegime2011">(<a href="#ref-aurayTechnologiesLinformationRegime2011" role="doc-biblioref">Auray 2011</a>)</span></p>
+</blockquote>
+<p>vs.&nbsp;l’émergence de logiques algorithmiques limitantes :</p>
+<blockquote class="blockquote">
+<p>While it was felt that some element of control could be exercised to attract “chance encounters”, there was a perception that such encounters may really be manifestations of the hidden, but logical, influences of information gatekeepers – inherent in, for example, library classification schemes — <span class="citation" data-cites="fosterSerendipityInformationSeeking2003">(<a href="#ref-fosterSerendipityInformationSeeking2003" role="doc-biblioref">Foster and Ford 2003</a>)</span></p>
+</blockquote>
+<!-- Dumas Primbault : importance des disciplines pivots -->
+</section>
+</section>
+<section id="comment-réintégrer-une-recherche-exploratoire-explicable" class="level1">
+<h1>Comment réintégrer une recherche exploratoire explicable ?</h1>
+<section id="défis-de-la-sérendipité" class="level2">
+<h2 class="anchored" data-anchor-id="défis-de-la-sérendipité">Défis de la sérendipité</h2>
+<p>Reproductibilité : comment garder trace d’un parcours exploratoire? On garde en mémoire un nombre limité d’étapes qui mènent à une résolution <span class="citation" data-cites="erdelezInvestigationInformationEncountering2004">(<a href="#ref-erdelezInvestigationInformationEncountering2004" role="doc-biblioref">Sanda Erdelez 2004</a>)</span>.</p>
+<p>Évaluation : comment évaluer l’impact d’une trouvaille ? Et l’intérêt d’une nouvelle fonctionnalité de recherche <span class="citation" data-cites="pouyllauUtiliserIsidorescienceRegard2023 pouyllauDurabiliteRefactorisationInstruments2025">(<a href="#ref-pouyllauUtiliserIsidorescienceRegard2023" role="doc-biblioref">Pouyllau 2023</a>, <a href="#ref-pouyllauDurabiliteRefactorisationInstruments2025" role="doc-biblioref">2025</a>)</span> ?</p>
+<p>Design : comment expliciter la différence entre une recherche par mots-clés simple et une recherche assistée par une stratégie d’IA pour un.e utilisateur.ice sans connaissance particulière de ces enjeux ?</p>
+</section>
+<section id="questions-de-recherche" class="level2">
+<h2 class="anchored" data-anchor-id="questions-de-recherche">Questions de recherche</h2>
+<p>Comment concevoir un système de recommandation explicable qui :</p>
+<p>Favorise la sérendipité et l’exploration critique ?</p>
+<p>Compare IA symbolique et IA connexionniste ?</p>
+<p>Permette une visualisation réflexive du raisonnement algorithmique ?</p>
+</section>
+</section>
+<section id="proposition" class="level1">
+<h1>Proposition</h1>
+<section id="un-rs-hybride" class="level2">
+<h2 class="anchored" data-anchor-id="un-rs-hybride">Un RS hybride</h2>
+<p>Un RS qui vient s’ajouter aux moteurs de recherche de publications scientifiques et proposer une exploration de la littérature scientifique de façon explicable et non-déterministe, en comparant les recommandations basées sur :</p>
+<ul>
+<li>des ontologies symboliques (IEML)</li>
+<li>des modèles connexionnistes (LLM)</li>
+</ul>
+</section>
+<section id="cadre-théorique" class="level2">
+<h2 class="anchored" data-anchor-id="cadre-théorique">Cadre théorique</h2>
+<p>Positionnement :</p>
+<ul>
+<li>la sérendipité comme alternative épistémique et reprise d’une vision du web désengagé des discours de productivité</li>
+<li>à contre-courant des modèles dominants de pertinence et de ranking, de mise en avant des contenus, mais aussi des outils techniques d’où l’utilisation d’un langage hérité du Web Sémantique : IEML <span class="citation" data-cites="levySocialComputingReflexive2010">(<a href="#ref-levySocialComputingReflexive2010" role="doc-biblioref">Lévy 2010</a>)</span></li>
+<li>proposer un outil pour une litéracie du numérique et particulièrement une littératie critique de l’IA <span class="citation" data-cites="goodladEditorsIntroductionHumanities2023 vitali-rosatiManifestePourEtudes2025a">(<a href="#ref-goodladEditorsIntroductionHumanities2023" role="doc-biblioref">Goodlad 2023</a>; <a href="#ref-vitali-rosatiManifestePourEtudes2025a" role="doc-biblioref">Vitali-Rosati 2025</a>)</span> en se concentrant sur l’explicitation des stratégies de recherche d’information <span class="citation" data-cites="julienHowHighschoolStudents2009">(<a href="#ref-julienHowHighschoolStudents2009" role="doc-biblioref">Julien and Barker 2009</a>)</span>.</li>
+</ul>
+</section>
+<section id="ieml-comme-base-ontologique" class="level2">
+<h2 class="anchored" data-anchor-id="ieml-comme-base-ontologique">IEML comme base ontologique</h2>
+<p>Langage sémantique inventé par Pierre Lévy <span class="citation" data-cites="levySocialComputingReflexive2010">(<a href="#ref-levySocialComputingReflexive2010" role="doc-biblioref">Lévy 2010</a>)</span> :</p>
+<p>Vocabulaire contrôlé et non ambigu</p>
+<p>Chaque concept est décomposé selon 9 rôles sémantiques : <code>thème, qui, quoi, à qui, par quoi, quand, où, pourquoi, comment</code></p>
+<p>Interopérable et explicable qui permet une navigation non-linéaire dans les concepts</p>
+</section>
+<section id="méthodes-dimplémentation" class="level2">
+<h2 class="anchored" data-anchor-id="méthodes-dimplémentation">Méthodes d’implémentation</h2>
+<p>Parsing sémantique : via LLM + dictionnaire IEML (RAG)</p>
+<p>Recherche sémantique : embeddings pour la similarité</p>
+<p>Interface : JavaScript / HTML / API Isidore</p>
+<p>Tests : intégration Firefox puis Chrome</p>
+</section>
+<section id="travaux-connexes" class="level2">
+<h2 class="anchored" data-anchor-id="travaux-connexes">Travaux connexes</h2>
+<p>RS exploratoires :</p>
+<ul>
+<li>Bridger <span class="citation" data-cites="portenoyBurstingScientificFilter2022">(<a href="#ref-portenoyBurstingScientificFilter2022" role="doc-biblioref">Portenoy et al. 2022</a>)</span> relie des communautés scientifiques éloignées,</li>
+<li>STAK <span class="citation" data-cites="martinSTAKSerendipitousTool2017">(<a href="#ref-martinSTAKSerendipitousTool2017" role="doc-biblioref">Martin, Greenspan, and Quan-Haase 2017</a>)</span>, reconstitution des étagères de bibliothèque en VR</li>
+</ul>
+<p>Parsing sémantique : - échec des LLM à produire des AMR valides <span class="citation" data-cites="ettingerYouAreExpert2023">(<a href="#ref-ettingerYouAreExpert2023" role="doc-biblioref">Ettinger et al. 2023</a>)</span> - pas d’application d’IEML</p>
+<p>Recherche sémantique par embeddings : - VITALITY <span class="citation" data-cites="narechaniaVITALITYPromotingSerendipitous2022">(<a href="#ref-narechaniaVITALITYPromotingSerendipitous2022" role="doc-biblioref">Narechania et al. 2022</a>)</span> - Microsoft Academic Knowledge project <span class="citation" data-cites="farberMicrosoftAcademicKnowledge2019">(<a href="#ref-farberMicrosoftAcademicKnowledge2019" role="doc-biblioref">Färber 2019</a>)</span></p>
+</section>
+<section id="schéma-du-fonctionnement" class="level2">
+<h2 class="anchored" data-anchor-id="schéma-du-fonctionnement">Schéma du fonctionnement</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="recommendation_systems-1.png" class="img-fluid figure-img"></p>
+<figcaption>Processus de recommandation hybride</figcaption>
+</figure>
+</div>
+<p>Bleu = IEML</p>
+<p>Orange = LLM</p>
+<p>Vert = Actions utilisateur</p>
+<p>→ L’utilisateur explore, sélectionne, et compare les résultats des deux approches</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/visualisation.png" class="img-fluid figure-img"></p>
+<figcaption>Visualisation côte-à-côte des suggestions via les logs IEML et le ‘semantic search’ du LLM</figcaption>
+</figure>
+</div>
+<!-- ## Fonctionnalités clés 
+
+Extraction automatique de mots-clés depuis la page Isidore
+
+Identification des concepts présents dans IEML
+
+Traduction automatique des mots-clés manquants via LLM
+
+Navigation dans la grille sémantique IEML
+
+Comparaison des articles recommandés (IEML vs LLM) -->
+</section>
+<section id="défis-et-perspectives" class="level2">
+<h2 class="anchored" data-anchor-id="défis-et-perspectives">Défis et perspectives</h2>
+<ol type="1">
+<li>Traduction IEML:</li>
+</ol>
+<ul>
+<li>Avantage : flexibilité dans la définition, pas de “gold standard” : évaluation possible par des métriques sans référence (perplexité, distance cosinus)</li>
+<li>RAG sur le dictionnaire de ~3000 entrées IEML</li>
+<li>Évaluation humaine (Pierre Lévy)</li>
+</ul>
+<ol start="2" type="1">
+<li><p>Interaction avec les plateformes : API Isidore accessible, Google Scholar non garantie</p></li>
+<li><p>Conception UX/UI :</p></li>
+</ol>
+<ul>
+<li>“interface intuitive” vs.&nbsp;logique intempestive</li>
+<li>Équilibre entre documentation et liberté</li>
+</ul>
+<ol start="4" type="1">
+<li>Intérêt fondamental :</li>
+</ol>
+<ul>
+<li>Évaluation utilisateur : entretiens « think aloud » pour mesurer la valeur pédagogique</li>
+<li>Comment observer si l’outil déclenche de nouvelles associations sémantiques ?</li>
+</ul>
+</section>
+</section>
+<section id="démonstration" class="level1">
+<h1>Démonstration</h1>
+<section id="bibliographie" class="level2">
+<h2 class="anchored" data-anchor-id="bibliographie">Bibliographie</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-aurayTechnologiesLinformationRegime2011" class="csl-entry" role="listitem">
+Auray, N. 2011. <span>“<span>Les technologies de l’information et le r<span>é</span>gime exploratoire</span>.”</span>
+</div>
+<div id="ref-batesDesignBrowsingBerrypicking1989" class="csl-entry" role="listitem">
+Bates, Marcia J. 1989. <span>“The Design of Browsing and Berrypicking Techniques for the Online Search Interface.”</span> <em>Online Review</em> 13 (5): 407–24. <a href="https://doi.org/10.1108/eb024320">https://doi.org/10.1108/eb024320</a>.
+</div>
+<div id="ref-cardonDansLespritPageRank2013" class="csl-entry" role="listitem">
+Cardon, Dominique. 2013. <span>“Dans l’esprit Du <span>PageRank</span>: <span>Une</span> Enqu<span>ê</span>te Sur l’algorithme de <span>Google</span>.”</span> <em>R<span>é</span>seaux</em> n<span><span class="math inline">\(^\circ\)</span></span> 177 (1): 63–95. <a href="https://doi.org/10.3917/res.177.0063">https://doi.org/10.3917/res.177.0063</a>.
+</div>
+<div id="ref-chomskySyntacticStructures1957" class="csl-entry" role="listitem">
+Chomsky, Noam. 1957. <em>Syntactic <span>Structures</span></em>.
+</div>
+<div id="ref-desollapriceLittleScienceBig1963" class="csl-entry" role="listitem">
+de Solla Price, Derek John. 1963. <em>Little Science, Big Science</em>. George <span>B</span> 1962. New York: Columbia University Press.
+</div>
+<div id="ref-dumasprimbaultNaviguerDansSavoirs2023" class="csl-entry" role="listitem">
+Dumas Primbault, Simon. 2023. <span>“<span>Naviguer dans les savoirs <span>à</span> l’<span>è</span>re num<span>é</span>rique. Pour une ethnographie des pratiques informationnelles sur Gallica</span>.”</span> <em><span>É</span>tudes de communication. langages, information, m<span>é</span>diations</em>, no. 61 (December): 61–89. <a href="https://doi.org/10.4000/edc.16108">https://doi.org/10.4000/edc.16108</a>.
+</div>
+<div id="ref-erdelezInvestigationInformationEncountering2004" class="csl-entry" role="listitem">
+Erdelez, Sanda. 2004. <span>“Investigation of Information Encountering in the Controlled Research Environment.”</span> <em>Information Processing &amp; Management</em> 40 (6): 1013–25. <a href="https://doi.org/10.1016/j.ipm.2004.02.002">https://doi.org/10.1016/j.ipm.2004.02.002</a>.
+</div>
+<div id="ref-erdelezInformationEncounteringIts1999" class="csl-entry" role="listitem">
+Erdelez, Sandra. 1999. <span>“Information <span>Encountering</span>: <span>It</span>’s <span>More Than Just Bumping</span> into <span>Information</span>.”</span> <em>Bulletin of the American Society for Information Science and Technology</em> 25 (3): 26–29. <a href="https://doi.org/10.1002/bult.118">https://doi.org/10.1002/bult.118</a>.
+</div>
+<div id="ref-ettingerYouAreExpert2023" class="csl-entry" role="listitem">
+Ettinger, Allyson, Jena D. Hwang, Valentina Pyatkin, Chandra Bhagavatula, and Yejin Choi. 2023. <span>“"<span>You Are An Expert Linguistic Annotator</span>": <span>Limits</span> of <span>LLMs</span> as <span>Analyzers</span> of <span>Abstract Meaning Representation</span>.”</span> In. arXiv. <a href="https://doi.org/10.48550/ARXIV.2310.17793">https://doi.org/10.48550/ARXIV.2310.17793</a>.
+</div>
+<div id="ref-farberMicrosoftAcademicKnowledge2019" class="csl-entry" role="listitem">
+Färber, Michael. 2019. <span>“The <span>Microsoft Academic Knowledge Graph</span>: <span>A Linked Data Source</span> with 8 <span>Billion Triples</span> of <span>Scholarly Data</span>.”</span> In <em>The <span>Semantic Web</span> – <span>ISWC</span> 2019</em>, edited by Chiara Ghidini, Olaf Hartig, Maria Maleshkova, Vojtěch Svátek, Isabel Cruz, Aidan Hogan, Jie Song, Maxime Lefrançois, and Fabien Gandon, 113–29. Cham: Springer International Publishing. <a href="https://doi.org/10.1007/978-3-030-30796-7_8">https://doi.org/10.1007/978-3-030-30796-7_8</a>.
+</div>
+<div id="ref-firthStudiesLinguisticAnalysis1962" class="csl-entry" role="listitem">
+Firth, John Rupert. 1962. <em>Studies in Linguistic Analysis</em>. Repr. Special Volume of the <span>Philological</span> Society. Oxford: Blackwell.
+</div>
+<div id="ref-fosterSerendipityInformationSeeking2003" class="csl-entry" role="listitem">
+Foster, Allen, and Nigel Ford. 2003. <span>“Serendipity and Information Seeking: An Empirical Study.”</span> <em>Journal of Documentation</em> 59 (3): 321–40. <a href="https://doi.org/10.1108/00220410310472518">https://doi.org/10.1108/00220410310472518</a>.
+</div>
+<div id="ref-goodladEditorsIntroductionHumanities2023" class="csl-entry" role="listitem">
+Goodlad, Lauren M. E. 2023. <span>“Editor’s <span>Introduction</span>: <span>Humanities</span> in the <span>Loop</span>.”</span> <em>Critical AI</em> 1 (1-2). <a href="https://doi.org/10.1215/2834703X-10734016">https://doi.org/10.1215/2834703X-10734016</a>.
+</div>
+<div id="ref-julienHowHighschoolStudents2009" class="csl-entry" role="listitem">
+Julien, Heidi, and Susan Barker. 2009. <span>“How High-School Students Find and Evaluate Scientific Information: <span>A</span> Basis for Information Literacy Skills Development.”</span> <em>Library &amp; Information Science Research</em> 31 (1): 12–17. <a href="https://doi.org/10.1016/j.lisr.2008.10.008">https://doi.org/10.1016/j.lisr.2008.10.008</a>.
+</div>
+<div id="ref-kosterSerendipitousRecommendationBased2014" class="csl-entry" role="listitem">
+Koster, Andrew, Fernando Koch, and Yeun Bae Kim. 2014. <span>“Serendipitous <span>Recommendation Based</span> on <span>Big Context</span>.”</span> In <em>Advances in <span>Artificial Intelligence</span> – <span>IBERAMIA</span> 2014</em>, edited by Ana L. C. Bazzan and Karim Pichara, 319–30. Cham: Springer International Publishing. <a href="https://doi.org/10.1007/978-3-319-12027-0_26">https://doi.org/10.1007/978-3-319-12027-0_26</a>.
+</div>
+<div id="ref-levySocialComputingReflexive2010" class="csl-entry" role="listitem">
+Lévy, Pierre. 2010. <span>“From Social Computing to Reflexive Collective Intelligence: <span>The IEML</span> Research Program.”</span> <em>Information Sciences</em> 180 (1): 71–94. <a href="https://doi.org/10.1016/j.ins.2009.08.001">https://doi.org/10.1016/j.ins.2009.08.001</a>.
+</div>
+<div id="ref-makriComingInformationSerendipitously2012" class="csl-entry" role="listitem">
+Makri, Stephann, and Ann Blandford. 2012. <span>“Coming Across Information Serendipitously – <span>Part</span> 1: <span>A</span> Process Model.”</span> <em>Journal of Documentation</em> 68 (5): 684–705. <a href="https://doi.org/10.1108/00220411211256030">https://doi.org/10.1108/00220411211256030</a>.
+</div>
+<div id="ref-martinSTAKSerendipitousTool2017" class="csl-entry" role="listitem">
+Martin, Kim, Brian Greenspan, and Anabel Quan-Haase. 2017. <span>“<span>STAK</span> – <span>Serendipitous</span> Tool for Augmenting Knowledge: <span>A</span> Conceptual Tool for Bridging Digital and Physical Resources.”</span> <em>Digital Studies / Le Champ Num<span>é</span>rique</em> 6 (1). <a href="https://doi.org/10.16995/dscn.265">https://doi.org/10.16995/dscn.265</a>.
+</div>
+<div id="ref-mertonMatthewEffectScience1968" class="csl-entry" role="listitem">
+Merton, R. K. 1968. <span>“<a href="https://www.ncbi.nlm.nih.gov/pubmed/5634379">The <span>Matthew</span> Effect in Science. <span>The</span> Reward and Communication Systems of Science Are Considered</a>.”</span> <em>Science (New York, N.Y.)</em> 159 (3810): 56–63.
+</div>
+<div id="ref-narechaniaVITALITYPromotingSerendipitous2022" class="csl-entry" role="listitem">
+Narechania, Arpit, Alireza Karduni, Ryan Wesslen, and Emily Wall. 2022. <span>“<span>VITALITY</span>: <span>Promoting Serendipitous Discovery</span> of <span>Academic Literature</span> with <span>Transformers</span> &amp; <span>Visual Analytics</span>.”</span> <em>IEEE Transactions on Visualization and Computer Graphics</em> 28 (1): 486–96. <a href="https://doi.org/10.1109/TVCG.2021.3114820">https://doi.org/10.1109/TVCG.2021.3114820</a>.
+</div>
+<div id="ref-pariserFilterBubbleWhat2011" class="csl-entry" role="listitem">
+Pariser, Eli. 2011. <span>“The <span>Filter Bubble</span>: <span>What</span> the <span>Internet Is Hiding</span> from <span>You</span>.”</span> In.
+</div>
+<div id="ref-portenoyBurstingScientificFilter2022" class="csl-entry" role="listitem">
+Portenoy, Jason, Marissa Radensky, Jevin D West, Eric Horvitz, Daniel S Weld, and Tom Hope. 2022. <span>“Bursting <span>Scientific Filter Bubbles</span>: <span>Boosting Innovation</span> via <span>Novel Author Discovery</span>.”</span> <em>CHI Conference on Human Factors in Computing Systems</em>, April, 1–13. <a href="https://doi.org/10.1145/3491102.3501905">https://doi.org/10.1145/3491102.3501905</a>.
+</div>
+<div id="ref-pouyllauUtiliserIsidorescienceRegard2023" class="csl-entry" role="listitem">
+Pouyllau, Stéphane. 2023. <span>“<span>Utiliser isidore.science : un regard sur les usages d’un moteur de recherche acad<span>é</span>mique</span>.”</span> {Keynote}.
+</div>
+<div id="ref-pouyllauDurabiliteRefactorisationInstruments2025" class="csl-entry" role="listitem">
+———. 2025. <span>“<span>&lt;&lt; Durabilit<span>é</span> et refactorisation des instruments de la recherche en SHS : le cas d’isidore.science et le projet ISIDORE 2030 &gt;&gt;</span>.”</span> Montr<span>é</span>al.
+</div>
+<div id="ref-riceResultsMotivatingThemes2001" class="csl-entry" role="listitem">
+Rice, Ronald E., Maureen McCreadie, and Shan-Ju Chang. 2001. <span>“Results: <span>Motivating Themes</span> and <span>Patterns</span> of <span>Browsing</span>.”</span> In <em>Accessing and <span>Browsing Information</span> and <span>Communication</span></em>. The MIT Press. <a href="https://doi.org/10.7551/mitpress/1066.001.0001">https://doi.org/10.7551/mitpress/1066.001.0001</a>.
+</div>
+<div id="ref-tayReproducibilityInterpretabilityAcademic2025" class="csl-entry" role="listitem">
+Tay, Aaron. 2025. <span>“The Reproducibility and Interpretability of Academic <span>AI</span> Search Engines Like <span>Primo Research Assistant</span>, <span>Web</span> of <span>Science Research Assistant</span>, <span>Scopus AI</span> and More.”</span> Blog. <em>Aaron Tay’s Musings about Librarianship</em>.
+</div>
+<div id="ref-underwoodTheorizingResearchPractices2014" class="csl-entry" role="listitem">
+Underwood, Ted. 2014. <span>“Theorizing <span>Research Practices We Forgot</span> to <span>Theorize Twenty Years Ago</span>.”</span> <em>Representations</em> 127 (1): 64–72. <a href="https://doi.org/10.1525/rep.2014.127.1.64">https://doi.org/10.1525/rep.2014.127.1.64</a>.
+</div>
+<div id="ref-vitali-rosatiManifestePourEtudes2025a" class="csl-entry" role="listitem">
+Vitali-Rosati, Marcello. 2025. <span>“Manifeste Pour Des <span class="nocase"><span>É</span>tudes Critiques</span> de l’<span>Intelligence Artificielle</span>.”</span> <em>Culture Num<span>é</span>rique. Pour Une Philosophie Du Num<span>é</span>rique</em>.
+</div>
+</div>
+</section>
+</section>
+<section id="merci-pour-votre-attention" class="level1">
+<h1>Merci pour votre attention !</h1>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
