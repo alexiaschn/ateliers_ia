@@ -1,5 +1,5 @@
 ---
-title: Evaluation RAG with Ragas  
+title: Evaluating RAG with RAGAS  
 date: 2025-11-03
 author: 
     name: Alexia Schneider
