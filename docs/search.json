@@ -2034,7 +2034,7 @@
     "href": "slides/25-11-03_pres_RAGAS.html#authors",
     "title": "Evaluating RAG with RAGAS",
     "section": "Authors",
-    "text": "Authors\n\n\n\n\nExploding Gradients : private company that built RAGAS (open-source oriented)\nCardiffNLP : Schockaert: worked on EvoPrompt.\nAMPLYFI: private company for market insights"
+    "text": "Authors\n\n\n\n\nEs et al. (2025)\n\n\n\n\nExploding Gradients : private company that built RAGAS (open-source oriented)\nCardiffNLP : Schockaert: worked on EvoPrompt.\nAMPLYFI: private company for market insights"
   },
   {
     "objectID": "slides/25-11-03_pres_RAGAS.html#ragas-in-a-nutshell",
@@ -2132,6 +2132,6 @@
     "href": "slides/25-11-03_pres_RAGAS.html#references",
     "title": "Evaluating RAG with RAGAS",
     "section": "References",
-    "text": "References\n\n\n\n\nLewis, Patrick, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich Küttler, et al. 2021. “Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.” arXiv. https://doi.org/10.48550/arXiv.2005.11401.\n\n\nSaad-Falcon, Jon, Omar Khattab, Christopher Potts, and Matei Zaharia. 2024. “ARES: An Automated Evaluation Framework for Retrieval-Augmented Generation Systems.” In Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers), edited by Kevin Duh, Helena Gomez, and Steven Bethard, 338–54. Mexico City, Mexico: Association for Computational Linguistics. https://doi.org/10.18653/v1/2024.naacl-long.20.\n\n\nShankar, Shreya, and Hamel Husain. 2025. Application-Centric AI Evals for Engineers and Technical Product Managers.\n\n\nWeaviate. 2025. “Advanced RAG Techniques.” Weaviate Ebook."
+    "text": "References\n\n\n\n\nEs, Shahul, Jithin James, Luis Espinosa-Anke, and Steven Schockaert. 2025. “Ragas: Automated Evaluation of Retrieval Augmented Generation.” arXiv. https://doi.org/10.48550/arXiv.2309.15217.\n\n\nLewis, Patrick, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich Küttler, et al. 2021. “Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.” arXiv. https://doi.org/10.48550/arXiv.2005.11401.\n\n\nSaad-Falcon, Jon, Omar Khattab, Christopher Potts, and Matei Zaharia. 2024. “ARES: An Automated Evaluation Framework for Retrieval-Augmented Generation Systems.” In Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers), edited by Kevin Duh, Helena Gomez, and Steven Bethard, 338–54. Mexico City, Mexico: Association for Computational Linguistics. https://doi.org/10.18653/v1/2024.naacl-long.20.\n\n\nShankar, Shreya, and Hamel Husain. 2025. Application-Centric AI Evals for Engineers and Technical Product Managers.\n\n\nWeaviate. 2025. “Advanced RAG Techniques.” Weaviate Ebook."
   }
 ]

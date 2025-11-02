@@ -1,5 +1,5 @@
 ---
-title: Evaluating RAG with RAGAS  
+title: Evaluation RAG with Ragas  
 date: 2025-11-03
 author: 
     name: Alexia Schneider
@@ -11,7 +11,7 @@ format:
         # incremental: true
         scrollable: true
         slide-number: true
-bibliography: ../phd_udem.bib
+bibliography: ../../../phd_udem.bib
 link-citations: true
 colorlinks: true
 fig-cap-location: bottom
@@ -166,7 +166,7 @@ Submitted on **26 Sep 2023 (v1)**, last revised 28 Apr 2025 (this version, v2) o
 ## Authors 
 ::: {.figure}
 
-![@esRagasAutomatedEvaluation2025](img/ragas_paper.png)
+![](img/ragas_paper.png)
 :::
 
 - Exploding Gradients : private company that built RAGAS (open-source oriented)
