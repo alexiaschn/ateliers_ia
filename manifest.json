@@ -24,7 +24,7 @@
   "web_accessible_resources": ["data.csv"], 
   "browser_specific_settings": {
   "gecko": {
-    "id": "rs@ieml",
+    "id": "59f646f1-828b-48d2-94d0-a4726d531eee",
     "update_url": "https://github.com/alexiaschn/ateliers_ia/blob/site/manifest.json",
     "data_collection_permissions": {
       "required": ["searchTerms", "websiteActivity"]
