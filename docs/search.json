@@ -2161,5 +2161,68 @@
     "title": "Recommender System for Isidore based on IEML",
     "section": "References",
     "text": "References\n\n\n\n\nCardon, Dominique. 2013. “Dans l’esprit Du PageRank: Une Enquête Sur l’algorithme de Google.” Réseaux n\\(^\\circ\\) 177 (1): 63–95. https://doi.org/10.3917/res.177.0063.\n\n\nNielsen, Mathias Wullum, and Jens Peter Andersen. 2021. “Global Citation Inequality Is on the Rise.” Proceedings of the National Academy of Sciences 118 (7): e2012208118. https://doi.org/10.1073/pnas.2012208118.\n\n\nPariser, Eli. 2011. “The Filter Bubble: What the Internet Is Hiding from You.” In.\n\n\nTay, Aaron. 2025. “The Reproducibility and Interpretability of Academic AI Search Engines Like Primo Research Assistant, Web of Science Research Assistant, Scopus AI and More.” Blog. Aaron Tay’s Musings about Librarianship.\n\n\nUnderwood, Ted. 2014. “Theorizing Research Practices We Forgot to Theorize Twenty Years Ago.” Representations 127 (1): 64–72. https://doi.org/10.1525/rep.2014.127.1.64."
+  },
+  {
+    "objectID": "slides/pres_atelier_AutomatisationCorr_PleniereRevue30.html#la-révision-avant-lia",
+    "href": "slides/pres_atelier_AutomatisationCorr_PleniereRevue30.html#la-révision-avant-lia",
+    "title": "Automatiser la révision textuelle ? - Réunion plénière Revue3.0",
+    "section": "La révision avant l’IA",
+    "text": "La révision avant l’IA\n\nLa rectification, sur le plomb, des erreurs commises par le compositeur, ainsi que l’exécution des changements apportés par l’auteur à la composition du texte primitif sont connus sous la dénomination de correction. De, manière générale, ce mot s’emploie pour désigner toute modification, quelle, qu’elle soit : ajoutés, suppressions, transpositions, changements de texte, rectifications orthographiques, rappels de règles typographiques, etc. (du texte Brossard 1924--1934)\n\n\nUn savoir-faire qui nous vient du monde de l’imprimé\nPasser de la copie à l’ouvrage\napplication des règles typographiques + reproduction fidèle et entière du manuscrit\nun processus séquentiel (lecture → annotation → recomposition)\nun processus itératif (premières, secondes épreuves, tierces)\nun processus collectif (auteur.ice → correcteur.ice → auteur.ice → compositeur.ice)"
+  },
+  {
+    "objectID": "slides/pres_atelier_AutomatisationCorr_PleniereRevue30.html#histoire-de-la-correction-automatique",
+    "href": "slides/pres_atelier_AutomatisationCorr_PleniereRevue30.html#histoire-de-la-correction-automatique",
+    "title": "Automatiser la révision textuelle ? - Réunion plénière Revue3.0",
+    "section": "Histoire de la correction automatique",
+    "text": "Histoire de la correction automatique\nRévision = Grammar Error Correction, une tâche voisine de la Traduction Automatique : les technologies sous jacentes sont partagées\nL’évaluation de la GEC et de la TA fait écho aux processus d’évaluation propre à la correction par un humain.\nLes premiers correcteurs automatiques se sont concentrés sur la correction ortho-typographiques, mais les systèmes experts sont en réalité dépassés par la complexité de la langue naturelle.\nAvec le développement des approches inductives, on aperçoit un premier changement de paradigme depuis la fin des années 2000 : correction = reformulation et plus seulement ortho-typographie.\nAvec l’ancrage de nouvelles “pratiques discrètes” (Muller and Clavert 2021) de l’IA , on assiste à une nouvelle phase : la correction comme écriture mais aussi comme masquage de l’utilisation d’IA générative.\nLes directives des maisons d’édition sont souvent floues, mais énoncent que la correction fait partie des utilisations acceptées, mais où s’arrête la correction?\nVoir l’atelier IA sur la correction animés (Grometto and Schneider 2025)"
+  },
+  {
+    "objectID": "slides/pres_atelier_AutomatisationCorr_PleniereRevue30.html#homogénéisation-de-la-langue",
+    "href": "slides/pres_atelier_AutomatisationCorr_PleniereRevue30.html#homogénéisation-de-la-langue",
+    "title": "Automatiser la révision textuelle ? - Réunion plénière Revue3.0",
+    "section": "Homogénéisation de la langue:",
+    "text": "Homogénéisation de la langue:\n\nle LLM reflète des données d’entraînement mais aussi les phases de reinforcement learning qui l’oriente vers certains comportements standards porteurs de normes (ex: Français parisien) (Lodge 1993).\nS’il est possible de demander à un LLM de changer son comportement, il est ramené vers ses paramètres généraux : c’est “l’attraction par défaut” (Paschalidis 2025).\nLa portion croissante de données synthétiques dans les jeux d’entraînement de ses modèles renforce leurs biais (perte de diversité) et rends les réponses des modèles moins fiables (effondrement)."
+  },
+  {
+    "objectID": "slides/pres_atelier_AutomatisationCorr_PleniereRevue30.html#un-idéal-de-clarté-qui-finit-par-sauto-parodier-le-fameux-style-chatgpt",
+    "href": "slides/pres_atelier_AutomatisationCorr_PleniereRevue30.html#un-idéal-de-clarté-qui-finit-par-sauto-parodier-le-fameux-style-chatgpt",
+    "title": "Automatiser la révision textuelle ? - Réunion plénière Revue3.0",
+    "section": "Un idéal de clarté qui finit par s’auto-parodier (le fameux style chatgpt)",
+    "text": "Un idéal de clarté qui finit par s’auto-parodier (le fameux style chatgpt)\n\nWe show that while the core content of texts is retained when LLMs polish and rewrite texts, not only do they homogenize writing styles, but they also alter stylistic elements in a way that selectively amplifies certain dominant characteristics or biases while suppressing others - emphasizing conformity over individuality. By varying LLMs, prompts, classifiers, and contexts, we show that these trends are robust and consistent. (Sourati et al. 2025)"
+  },
+  {
+    "objectID": "slides/pres_atelier_AutomatisationCorr_PleniereRevue30.html#effet-nivelant-et-autorité-de-la-machine",
+    "href": "slides/pres_atelier_AutomatisationCorr_PleniereRevue30.html#effet-nivelant-et-autorité-de-la-machine",
+    "title": "Automatiser la révision textuelle ? - Réunion plénière Revue3.0",
+    "section": "Effet nivelant et autorité de la machine ?",
+    "text": "Effet nivelant et autorité de la machine ?\nLa délégation de la tâche de relecture et des tâches associées à la correction (traduction, mise en page) a un effet nivelant.\nLes moins bons traducteurs sont aidés par la TA mais les meilleurs traducteurs sont désavantagés par la TA. Effet limitant car tendance à se laisser influencer : réduction des intuitions de traduction et de la créativité traductionnelle. (Schumacher 2023)\nLa délégation cognitive et l’influence que ces machines ont sur nous individuellement n’est pas négligeable (voir Vicente and Matute (2023))."
+  },
+  {
+    "objectID": "slides/pres_atelier_AutomatisationCorr_PleniereRevue30.html#quelle-productivité",
+    "href": "slides/pres_atelier_AutomatisationCorr_PleniereRevue30.html#quelle-productivité",
+    "title": "Automatiser la révision textuelle ? - Réunion plénière Revue3.0",
+    "section": "Quelle productivité ?",
+    "text": "Quelle productivité ?\nLes outils incarnent une vision du monde centrée sur la productivité et la rapidité\nAssiste-t-on a une déprise tu texte et à une déprise du sens ? Existe-t-il un seuil, une limite, au-delà de laquelle le recours aux LLMs constitue une perte de maîtrise du texte ?\nLes promesses de gain de temps et de productivité cachent des enjeux économiques forts : on ne peut que rester méfiants tant face aux biais de ces outils qu’à notre propension à être influencé par ses outils."
+  },
+  {
+    "objectID": "slides/pres_atelier_AutomatisationCorr_PleniereRevue30.html#pour-en-savoir-plus",
+    "href": "slides/pres_atelier_AutomatisationCorr_PleniereRevue30.html#pour-en-savoir-plus",
+    "title": "Automatiser la révision textuelle ? - Réunion plénière Revue3.0",
+    "section": "Pour en savoir plus",
+    "text": "Pour en savoir plus\nVoir l’atelier IA sur la correction animé par (Grometto and Schneider 2025)"
+  },
+  {
+    "objectID": "slides/pres_atelier_AutomatisationCorr_PleniereRevue30.html#questions",
+    "href": "slides/pres_atelier_AutomatisationCorr_PleniereRevue30.html#questions",
+    "title": "Automatiser la révision textuelle ? - Réunion plénière Revue3.0",
+    "section": "Questions",
+    "text": "Questions\nQuels outils utilisez vous pour la correction des textes ?\nEst-ce que vous constatez un gain de temps ou est-ce qu’il faut relire le relecteur automatique aussi ?\nEst-ce que vous constatez que les corrections proposées ‘améliorent’ ou ‘amoindrissent’ la qualité du texte que vous comptez publier ?\nEst-ce que les fonctionnalités de ‘détection de textes générés par IA’ vous aident/aideraient dans vos travaux (enseignement, édition, peer review) ?"
+  },
+  {
+    "objectID": "slides/pres_atelier_AutomatisationCorr_PleniereRevue30.html#bibliographie",
+    "href": "slides/pres_atelier_AutomatisationCorr_PleniereRevue30.html#bibliographie",
+    "title": "Automatiser la révision textuelle ? - Réunion plénière Revue3.0",
+    "section": "Bibliographie",
+    "text": "Bibliographie\n\n\n\n\ndu texte Brossard, L. E. 1924--1934. Correcteur typographe. Les règles typographiques / L. -E. Brossard.\n\n\nGrometto, Clara, and Alexia Schneider. 2025. “[Debogue tes humanités] IA et la correction textuelle automatique : quels outils et quelles limites ?” NAKALA - https://nakala.fr (Huma-Num - CNRS). https://doi.org/10.34847/NKL.FD42J3FW.\n\n\nLodge, R. Anthony. 1993. French, from Dialect to Standard. London ; New York : Routledge.\n\n\nMuller, Caroline, and Frédéric Clavert. 2021. “De La Poussière à La Lumière Bleue: Émotions, Récits, Gestes de l’archive à l’ère Numérique.” Signata, no. 12 (May). https://doi.org/10.4000/signata.3136.\n\n\nPaschalidis, Aristotelis Ioannis. 2025. “Vers un langage sans relief ? L’impact de l’IA sur nos mots.” {UNESCO}.\n\n\nSchumacher, Perrine. 2023. “La post-édition de traduction automatique en contexte d’apprentissage.” PhD thesis, Liège: Universite de Liege.\n\n\nSourati, Zhivar, Farzan Karimi-Malekabadi, Meltem Ozcan, Colin McDaniel, Alireza Ziabari, Jackson Trager, Ala Tak, Meng Chen, Fred Morstatter, and Morteza Dehghani. 2025. “The Shrinking Landscape of Linguistic Diversity in the Age of Large Language Models.” https://arxiv.org/abs/2502.11266.\n\n\nVicente, Lucía, and Helena Matute. 2023. “Humans Inherit Artificial Intelligence Biases.” Scientific Reports 13 (1): 15737. https://doi.org/10.1038/s41598-023-42384-8."
   }
 ]
