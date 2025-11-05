@@ -25,7 +25,7 @@
   "browser_specific_settings": {
   "gecko": {
     "id": "rs@ieml",
-    "update_url": "https://alexiaschn.github.io/ateliers_ia/manifest.json",
+    "update_url": "https://github.com/alexiaschn/ateliers_ia/blob/site/manifest.json",
     "data_collection_permissions": {
       "required": ["searchTerms", "websiteActivity"]
     }
