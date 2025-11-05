@@ -2133,5 +2133,33 @@
     "title": "Evaluating RAG with RAGAS",
     "section": "References",
     "text": "References\n\n\n\n\nEs, Shahul, Jithin James, Luis Espinosa-Anke, and Steven Schockaert. 2025. “Ragas: Automated Evaluation of Retrieval Augmented Generation.” arXiv. https://doi.org/10.48550/arXiv.2309.15217.\n\n\nLewis, Patrick, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich Küttler, et al. 2021. “Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.” arXiv. https://doi.org/10.48550/arXiv.2005.11401.\n\n\nSaad-Falcon, Jon, Omar Khattab, Christopher Potts, and Matei Zaharia. 2024. “ARES: An Automated Evaluation Framework for Retrieval-Augmented Generation Systems.” In Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers), edited by Kevin Duh, Helena Gomez, and Steven Bethard, 338–54. Mexico City, Mexico: Association for Computational Linguistics. https://doi.org/10.18653/v1/2024.naacl-long.20.\n\n\nShankar, Shreya, and Hamel Husain. 2025. Application-Centric AI Evals for Engineers and Technical Product Managers.\n\n\nWeaviate. 2025. “Advanced RAG Techniques.” Weaviate Ebook."
+  },
+  {
+    "objectID": "slides/25-11-06_pres_midtermFinalProj.html#context",
+    "href": "slides/25-11-06_pres_midtermFinalProj.html#context",
+    "title": "Recommender System for Isidore based on IEML",
+    "section": "Context",
+    "text": "Context\n\nSearch engines for scientific literature.\nRecommender Systems (RS) based on :\n\nannotated keywords\nprevious user searches and articles read -&gt; filter bubbles (Pariser 2011; Underwood 2014)\ncitation count -&gt; citation concentration issue (Cardon 2013; Nielsen and Andersen 2021)\nsometimes opaque ‘IA assistant’ (Tay 2025)"
+  },
+  {
+    "objectID": "slides/25-11-06_pres_midtermFinalProj.html#questions-addressed-and-solution-proposed",
+    "href": "slides/25-11-06_pres_midtermFinalProj.html#questions-addressed-and-solution-proposed",
+    "title": "Recommender System for Isidore based on IEML",
+    "section": "Questions addressed and Solution proposed",
+    "text": "Questions addressed and Solution proposed\n\nWhat kind of RS could overcome these limits?\n\nsere ndipity (finding what you didn’t know you didn’t know)\nusing controlled vocabulary (Semantic Web langages)\n\nHow to increase literacy in RS AI agents?\n\nside by side comparison of search strategies"
+  },
+  {
+    "objectID": "slides/25-11-06_pres_midtermFinalProj.html#demo",
+    "href": "slides/25-11-06_pres_midtermFinalProj.html#demo",
+    "title": "Recommender System for Isidore based on IEML",
+    "section": "Demo",
+    "text": "Demo\nExample page"
+  },
+  {
+    "objectID": "slides/25-11-06_pres_midtermFinalProj.html#references",
+    "href": "slides/25-11-06_pres_midtermFinalProj.html#references",
+    "title": "Recommender System for Isidore based on IEML",
+    "section": "References",
+    "text": "References\n\n\n\n\nCardon, Dominique. 2013. “Dans l’esprit Du PageRank: Une Enquête Sur l’algorithme de Google.” Réseaux n\\(^\\circ\\) 177 (1): 63–95. https://doi.org/10.3917/res.177.0063.\n\n\nNielsen, Mathias Wullum, and Jens Peter Andersen. 2021. “Global Citation Inequality Is on the Rise.” Proceedings of the National Academy of Sciences 118 (7): e2012208118. https://doi.org/10.1073/pnas.2012208118.\n\n\nPariser, Eli. 2011. “The Filter Bubble: What the Internet Is Hiding from You.” In.\n\n\nTay, Aaron. 2025. “The Reproducibility and Interpretability of Academic AI Search Engines Like Primo Research Assistant, Web of Science Research Assistant, Scopus AI and More.” Blog. Aaron Tay’s Musings about Librarianship.\n\n\nUnderwood, Ted. 2014. “Theorizing Research Practices We Forgot to Theorize Twenty Years Ago.” Representations 127 (1): 64–72. https://doi.org/10.1525/rep.2014.127.1.64."
   }
 ]
