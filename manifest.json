@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "Recommender System for Isidore based on IEML",
+  "version": "1.0",
+  "description": "Article suggestion for Isidore based on IEML ontology navigation from document keyword. Used to compare list of related articles with LLM-augmented query",
+  "permissions": [  "storage",
+  "activeTab",
+  "scripting",
+  "https://together-proxy-alexiaschns-projects.vercel.app/*"
+  ],
+  "icons": {
+    "48": "icons/shuffle-48.png",
+    "128": "icons/shuffle-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://isidore.science/document/*"],
+      "js": ["script.js"]
+    }
+  ],
+  "browser_action": {
+    "default_title": "Recherche exploratoire"
+  },
+  "web_accessible_resources": ["data.csv"], 
+  "browser_specific_settings": {
+  "gecko": {
+    "id": "rs@ieml",
+    "update_url": "https://alexiaschn.github.io/ateliers_ia/manifest.json",
+    "data_collection_permissions": {
+      "required": ["searchTerms", "websiteActivity"]
+    }
+  }
+}
+}
