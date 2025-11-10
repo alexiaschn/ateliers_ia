@@ -2224,5 +2224,89 @@
     "title": "Automatiser la révision textuelle ? - Réunion plénière Revue3.0",
     "section": "Bibliographie",
     "text": "Bibliographie\n\n\n\n\ndu texte Brossard, L. E. 1924--1934. Correcteur typographe. Les règles typographiques / L. -E. Brossard.\n\n\nGrometto, Clara, and Alexia Schneider. 2025. “[Debogue tes humanités] IA et la correction textuelle automatique : quels outils et quelles limites ?” NAKALA - https://nakala.fr (Huma-Num - CNRS). https://doi.org/10.34847/NKL.FD42J3FW.\n\n\nLodge, R. Anthony. 1993. French, from Dialect to Standard. London ; New York : Routledge.\n\n\nMuller, Caroline, and Frédéric Clavert. 2021. “De La Poussière à La Lumière Bleue: Émotions, Récits, Gestes de l’archive à l’ère Numérique.” Signata, no. 12 (May). https://doi.org/10.4000/signata.3136.\n\n\nPaschalidis, Aristotelis Ioannis. 2025. “Vers un langage sans relief ? L’impact de l’IA sur nos mots.” {UNESCO}.\n\n\nSchumacher, Perrine. 2023. “La post-édition de traduction automatique en contexte d’apprentissage.” PhD thesis, Liège: Universite de Liege.\n\n\nSourati, Zhivar, Farzan Karimi-Malekabadi, Meltem Ozcan, Colin McDaniel, Alireza Ziabari, Jackson Trager, Ala Tak, Meng Chen, Fred Morstatter, and Morteza Dehghani. 2025. “The Shrinking Landscape of Linguistic Diversity in the Age of Large Language Models.” https://arxiv.org/abs/2502.11266.\n\n\nVicente, Lucía, and Helena Matute. 2023. “Humans Inherit Artificial Intelligence Biases.” Scientific Reports 13 (1): 15737. https://doi.org/10.1038/s41598-023-42384-8."
+  },
+  {
+    "objectID": "slides/presentationProjetIEML.html#plan",
+    "href": "slides/presentationProjetIEML.html#plan",
+    "title": "Projet IEML - Un système de recommandation basé sur différentes stratégies de recherche d’information exploratoire",
+    "section": "Plan",
+    "text": "Plan\nContexte et présentation du projet\n\nétat actuel des systèmes de RI et les RS :\n\nproblème de l’explicabilité\n\nSolution développée\n\nun RS hybride pour l’explicabilité"
+  },
+  {
+    "objectID": "slides/presentationProjetIEML.html#contexte-du-projet",
+    "href": "slides/presentationProjetIEML.html#contexte-du-projet",
+    "title": "Projet IEML - Un système de recommandation basé sur différentes stratégies de recherche d’information exploratoire",
+    "section": "Contexte du projet",
+    "text": "Contexte du projet\nLes moteurs de recherche et bases de données scientifiques :\n\nproposent des articles « similaires » sans expliquer les critères de rapprochement.\ns’appuient sur :\n\nle nombre de citations (Matthew’s effect) (de Solla Price 1963; Merton 1968),\ndes algorithmes de classement favorisant les articles déjà populaires (ranking) et les auteurs les plus cités (Cardon 2013).\nles intéractions précédentes des utilisateur.ice.s. (Koster, Koch, and Kim 2014)\n\n\nPage d’exemple sur Isidore"
+  },
+  {
+    "objectID": "slides/presentationProjetIEML.html#problématique",
+    "href": "slides/presentationProjetIEML.html#problématique",
+    "title": "Projet IEML - Un système de recommandation basé sur différentes stratégies de recherche d’information exploratoire",
+    "section": "Problématique",
+    "text": "Problématique\nCes logiques entraînent :\nUne concentration des citations et une perte de diversité scientifique.\nDes bulles de filtres (Pariser 2011) et un biais de confirmation dans la recherche (Underwood 2014)."
+  },
+  {
+    "objectID": "slides/presentationProjetIEML.html#les-ai-research-assistant",
+    "href": "slides/presentationProjetIEML.html#les-ai-research-assistant",
+    "title": "Projet IEML - Un système de recommandation basé sur différentes stratégies de recherche d’information exploratoire",
+    "section": "Les AI research assistant",
+    "text": "Les AI research assistant\nLes moteurs de recherche académiques développent des méthodes de RI basées sur l’IA :\n\nQuery augmentation\nsemantic search ou recherche vectorielle\n(re)ranking\n\nLes articles proposés par ces recommender systems (RS) peuvent varier en fonction de la stratégie sous-jacente : quid de la reproductibilité et de l’explicabilité (Tay 2025) ?"
+  },
+  {
+    "objectID": "slides/presentationProjetIEML.html#questions-de-recherche",
+    "href": "slides/presentationProjetIEML.html#questions-de-recherche",
+    "title": "Projet IEML - Un système de recommandation basé sur différentes stratégies de recherche d’information exploratoire",
+    "section": "Questions de recherche",
+    "text": "Questions de recherche\nComment concevoir un système de recommandation explicable qui :\nFavorise la sérendipité et l’exploration critique ?\nCompare IA symbolique et IA connexionniste ?\nPermette une visualisation réflexive du raisonnement algorithmique ?"
+  },
+  {
+    "objectID": "slides/presentationProjetIEML.html#un-rs-hybride",
+    "href": "slides/presentationProjetIEML.html#un-rs-hybride",
+    "title": "Projet IEML - Un système de recommandation basé sur différentes stratégies de recherche d’information exploratoire",
+    "section": "Un RS hybride",
+    "text": "Un RS hybride\nUn RS qui vient s’ajouter aux moteurs de recherche de publications scientifiques et proposer une exploration de la littérature scientifique de façon explicable et non-déterministe, en comparant les recommandations basées sur :\n\ndes ontologies symboliques (IEML)\ndes modèles connexionnistes (LLM)"
+  },
+  {
+    "objectID": "slides/presentationProjetIEML.html#objectif",
+    "href": "slides/presentationProjetIEML.html#objectif",
+    "title": "Projet IEML - Un système de recommandation basé sur différentes stratégies de recherche d’information exploratoire",
+    "section": "Objectif",
+    "text": "Objectif\nProduire un RS explicable qui valorise la recherche exploratoire de l’utilisateurice sans imposer une méthode.\nPermettre de décloisonner le jargon.\nProposer un outil pour une litéracie du numérique et particulièrement une littératie critique de l’IA (Goodlad 2023; Vitali-Rosati 2025) en se concentrant sur l’explicitation des stratégies de recherche d’information (Julien and Barker 2009)."
+  },
+  {
+    "objectID": "slides/presentationProjetIEML.html#ieml-comme-base-ontologique",
+    "href": "slides/presentationProjetIEML.html#ieml-comme-base-ontologique",
+    "title": "Projet IEML - Un système de recommandation basé sur différentes stratégies de recherche d’information exploratoire",
+    "section": "IEML comme base ontologique",
+    "text": "IEML comme base ontologique\nLangage sémantique de Pierre Lévy (Lévy 2010) :\nVocabulaire contrôlé et non ambigu\nChaque concept est décomposé selon 9 rôles sémantiques : thème, qui, quoi, à qui, par quoi, quand, où, pourquoi, comment\nInteropérable et explicable qui permet une navigation non-linéaire dans les concepts"
+  },
+  {
+    "objectID": "slides/presentationProjetIEML.html#méthodes-dimplémentation",
+    "href": "slides/presentationProjetIEML.html#méthodes-dimplémentation",
+    "title": "Projet IEML - Un système de recommandation basé sur différentes stratégies de recherche d’information exploratoire",
+    "section": "Méthodes d’implémentation",
+    "text": "Méthodes d’implémentation\nParsing sémantique : via LLM + dictionnaire IEML (RAG)\nRecherche sémantique : embeddings pour la similarité\nInterface : JavaScript / HTML / API Isidore\nTests : intégration Firefox puis Chrome"
+  },
+  {
+    "objectID": "slides/presentationProjetIEML.html#schéma-du-fonctionnement",
+    "href": "slides/presentationProjetIEML.html#schéma-du-fonctionnement",
+    "title": "Projet IEML - Un système de recommandation basé sur différentes stratégies de recherche d’information exploratoire",
+    "section": "Schéma du fonctionnement",
+    "text": "Schéma du fonctionnement\n\n\n\nProcessus de recommandation hybride\n\n\nBleu = IEML\nOrange = LLM\nVert = Actions utilisateur\n→ L’utilisateur explore, sélectionne, et compare les résultats des deux approches\n\n\n\nVisualisation côte-à-côte des suggestions via les logs IEML et le ‘semantic search’"
+  },
+  {
+    "objectID": "slides/presentationProjetIEML.html#défis-et-perspectives",
+    "href": "slides/presentationProjetIEML.html#défis-et-perspectives",
+    "title": "Projet IEML - Un système de recommandation basé sur différentes stratégies de recherche d’information exploratoire",
+    "section": "Défis et perspectives",
+    "text": "Défis et perspectives\n\nTraduction IEML:\n\n\nAvantage : flexibilité dans la définition, pas de “gold standard” : évaluation possible par des métriques sans référence (perplexité, distance cosinus)\nRAG sur le dictionnaire de ~3000 entrées IEML\nÉvaluation humaine (Pierre Lévy)\n\n\nInteraction avec les plateformes : API Isidore accessible, Google Scholar non garantie\nConception UX/UI\n\n\n“interface intuitive” vs. logique intempestive\nÉquilibre entre documentation et liberté\n\n\nIntérêt fondamental\n\n\nÉvaluation utilisateur : entretiens « think aloud » pour mesurer la valeur pédagogique\nComment observer si l’outil déclenche de nouvelles associations sémantiques ?"
+  },
+  {
+    "objectID": "slides/presentationProjetIEML.html#bibliographie",
+    "href": "slides/presentationProjetIEML.html#bibliographie",
+    "title": "Projet IEML - Un système de recommandation basé sur différentes stratégies de recherche d’information exploratoire",
+    "section": "Bibliographie",
+    "text": "Bibliographie\n\n\nCardon, Dominique. 2013. “Dans l’esprit Du PageRank: Une Enquête Sur l’algorithme de Google.” Réseaux n\\(^\\circ\\) 177 (1): 63–95. https://doi.org/10.3917/res.177.0063.\n\n\nde Solla Price, Derek John. 1963. Little Science, Big Science. George B 1962. New York: Columbia University Press.\n\n\nGoodlad, Lauren M. E. 2023. “Editor’s Introduction: Humanities in the Loop.” Critical AI 1 (1-2). https://doi.org/10.1215/2834703X-10734016.\n\n\nJulien, Heidi, and Susan Barker. 2009. “How High-School Students Find and Evaluate Scientific Information: A Basis for Information Literacy Skills Development.” Library & Information Science Research 31 (1): 12–17. https://doi.org/10.1016/j.lisr.2008.10.008.\n\n\nKoster, Andrew, Fernando Koch, and Yeun Bae Kim. 2014. “Serendipitous Recommendation Based on Big Context.” In Advances in Artificial Intelligence – IBERAMIA 2014, edited by Ana L. C. Bazzan and Karim Pichara, 319–30. Cham: Springer International Publishing. https://doi.org/10.1007/978-3-319-12027-0_26.\n\n\nLévy, Pierre. 2010. “From Social Computing to Reflexive Collective Intelligence: The IEML Research Program.” Information Sciences 180 (1): 71–94. https://doi.org/10.1016/j.ins.2009.08.001.\n\n\nMerton, R. K. 1968. “The Matthew Effect in Science. The Reward and Communication Systems of Science Are Considered.” Science (New York, N.Y.) 159 (3810): 56–63.\n\n\nPariser, Eli. 2011. “The Filter Bubble: What the Internet Is Hiding from You.” In.\n\n\nTay, Aaron. 2025. “The Reproducibility and Interpretability of Academic AI Search Engines Like Primo Research Assistant, Web of Science Research Assistant, Scopus AI and More.” Blog. Aaron Tay’s Musings about Librarianship.\n\n\nUnderwood, Ted. 2014. “Theorizing Research Practices We Forgot to Theorize Twenty Years Ago.” Representations 127 (1): 64–72. https://doi.org/10.1525/rep.2014.127.1.64.\n\n\nVitali-Rosati, Marcello. 2025. “Manifeste Pour Des Études Critiques de l’Intelligence Artificielle.” Culture Numérique. Pour Une Philosophie Du Numérique."
   }
 ]
