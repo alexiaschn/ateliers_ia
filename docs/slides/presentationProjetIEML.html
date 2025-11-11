@@ -11,7 +11,7 @@
 
   <meta name="author" content="Alexia Schneider alexia.schneider@umontreal.ca (UdeM)">
   <meta name="dcterms.date" content="2025-11-19">
-  <title>Projet IEML - Un système de recommandation basé sur différentes stratégies de recherche d’information exploratoire</title>
+  <title>pres_demorsieml</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -29,27 +29,7 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for citations */
-    div.csl-bib-body { }
-    div.csl-entry {
-      clear: both;
-      margin-bottom: 0em;
-    }
-    .hanging-indent div.csl-entry {
-      margin-left:2em;
-      text-indent:-2em;
-    }
-    div.csl-left-margin {
-      min-width:2em;
-      float:left;
-    }
-    div.csl-right-inline {
-      margin-left:2em;
-      padding-left:1em;
-    }
-    div.csl-indent {
-      margin-left: 2em;
-    }  </style>
+  </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-2f366650f320edcfcf53d73c80250a32.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -148,195 +128,60 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Projet IEML - Un système de recommandation basé sur différentes stratégies de recherche d’information exploratoire</h1>
 
-<div class="quarto-title-authors">
-<div class="quarto-title-author">
-<div class="quarto-title-author-name">
-Alexia Schneider <code>alexia.schneider@umontreal.ca</code> (UdeM) 
-</div>
-</div>
-</div>
+<section id="expérimentation-du-langage-artificiel-ieml-pour-la-recherche-darticles-scientifiques" class="slide level2">
+<h2>Expérimentation du langage artificiel IEML pour la recherche d’articles scientifiques</h2>
+<p>Statut: en cours</p>
+<p>Responsables: Alexia Schneider, Pierre Lévy</p>
+</section>
+<section class="slide level2">
 
-  <p class="date">2025-11-19</p>
-</section>
-<section id="plan" class="slide level2">
-<h2>Plan</h2>
-<p>Contexte et présentation du projet</p>
-<ul>
-<li>état actuel des systèmes de RI et les RS :
-<ul>
-<li>problème de l’explicabilité</li>
-</ul></li>
-<li>Solution développée
-<ul>
-<li>un RS hybride pour l’explicabilité</li>
-</ul></li>
-</ul>
-</section>
-<section id="contexte-du-projet" class="slide level2">
-<h2>Contexte du projet</h2>
+<h3 id="contexte">Contexte</h3>
 <p>Les moteurs de recherche et bases de données scientifiques :</p>
 <ul>
-<li>proposent des articles « similaires » sans expliquer les critères de rapprochement.</li>
-<li>s’appuient sur :
+<li><p>proposent des articles « similaires » sans expliciter les critères de rapprochement.</p></li>
+<li><p>s’appuient sur :</p>
 <ul>
-<li>le nombre de citations (Matthew’s effect) <span class="citation" data-cites="desollapriceLittleScienceBig1963 mertonMatthewEffectScience1968">(<a href="#/bibliographie" role="doc-biblioref" onclick="">de Solla Price 1963</a>; <a href="#/bibliographie" role="doc-biblioref" onclick="">Merton 1968</a>)</span>,</li>
-<li>des algorithmes de classement favorisant les articles déjà populaires (ranking) et les auteurs les plus cités <span class="citation" data-cites="cardonDansLespritPageRank2013">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Cardon 2013</a>)</span>.</li>
-<li>les intéractions précédentes des utilisateur.ice.s. <span class="citation" data-cites="kosterSerendipitousRecommendationBased2014">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Koster, Koch, and Kim 2014</a>)</span></li>
+<li>des algorithmes de classement favorisant les articles déjà populaires (ranking) et les auteurs les plus cités -&gt; concentration des citations (Matthew’s effect)</li>
+<li>les intéractions précédentes des utilisateur.ice.s. -&gt; <em>filter bubbles</em> et biais de confirmation.</li>
+<li>des <em>AI Assistant</em> parfois opaques.</li>
 </ul></li>
 </ul>
-<p><a href="https://isidore.science/document/20.500.13089/k0dm">Page d’exemple sur Isidore</a></p>
+<p>-&gt; perte de diversité scientifique, connaissances en silo disciplinaires.</p>
 </section>
-<section id="problématique" class="slide level2">
-<h2>Problématique</h2>
-<p>Ces logiques entraînent :</p>
-<p>Une concentration des citations et une perte de diversité scientifique.</p>
-<p>Des <strong>bulles de filtres</strong> <span class="citation" data-cites="pariserFilterBubbleWhat2011">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Pariser 2011</a>)</span> et un <strong>biais de confirmation</strong> dans la recherche <span class="citation" data-cites="underwoodTheorizingResearchPractices2014">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Underwood 2014</a>)</span>.</p>
-</section>
-<section id="les-ai-research-assistant" class="slide level2">
-<h2>Les AI research assistant</h2>
-<p>Les moteurs de recherche académiques développent des méthodes de RI basées sur l’IA :</p>
-<ul>
-<li><em>Query augmentation</em></li>
-<li><em>semantic search</em> ou recherche vectorielle</li>
-<li>(re)ranking</li>
-</ul>
-<p>Les articles proposés par ces <em>recommender systems</em> (RS) peuvent varier en fonction de la stratégie sous-jacente : quid de la reproductibilité et de l’explicabilité <span class="citation" data-cites="tayReproducibilityInterpretabilityAcademic2025">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Tay 2025</a>)</span> ?</p>
-</section>
-<section id="questions-de-recherche" class="slide level2">
-<h2>Questions de recherche</h2>
-<p>Comment concevoir un système de recommandation explicable qui :</p>
-<p>Favorise la sérendipité et l’exploration critique ?</p>
-<p>Compare IA symbolique et IA connexionniste ?</p>
-<p>Permette une visualisation réflexive du raisonnement algorithmique ?</p>
-</section>
-<section>
-<section id="proposition" class="title-slide slide level1 center">
-<h1>Proposition</h1>
+<section class="slide level2 scrollable">
 
-</section>
-<section id="un-rs-hybride" class="slide level2">
-<h2>Un RS hybride</h2>
-<p>Un RS qui vient s’ajouter aux moteurs de recherche de publications scientifiques et proposer une exploration de la littérature scientifique de façon explicable et non-déterministe, en comparant les recommandations basées sur :</p>
-<ul>
-<li>des ontologies symboliques (IEML)</li>
-<li>des modèles connexionnistes (LLM)</li>
-</ul>
-</section>
-<section id="objectif" class="slide level2">
-<h2>Objectif</h2>
-<p>Produire un RS explicable qui valorise la recherche exploratoire de l’utilisateurice sans imposer une méthode.</p>
-<p>Permettre de décloisonner le jargon.</p>
-<p>Proposer un outil pour une litéracie du numérique et particulièrement une littératie critique de l’IA <span class="citation" data-cites="goodladEditorsIntroductionHumanities2023 vitali-rosatiManifestePourEtudes2025a">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Goodlad 2023</a>; <a href="#/bibliographie" role="doc-biblioref" onclick="">Vitali-Rosati 2025</a>)</span> en se concentrant sur l’explicitation des stratégies de recherche d’information <span class="citation" data-cites="julienHowHighschoolStudents2009">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Julien and Barker 2009</a>)</span>.</p>
-</section>
-<section id="ieml-comme-base-ontologique" class="slide level2">
-<h2>IEML comme base ontologique</h2>
-<p>Langage sémantique de Pierre Lévy <span class="citation" data-cites="levySocialComputingReflexive2010">(<a href="#/bibliographie" role="doc-biblioref" onclick="">Lévy 2010</a>)</span> :</p>
-<p>Vocabulaire contrôlé et non ambigu</p>
-<p>Chaque concept est décomposé selon 9 rôles sémantiques : <code>thème, qui, quoi, à qui, par quoi, quand, où, pourquoi, comment</code></p>
-<p>Interopérable et explicable qui permet une navigation non-linéaire dans les concepts</p>
-</section></section>
-<section>
-<section id="démonstration" class="title-slide slide level1 center">
-<h1>Démonstration</h1>
-
-</section>
-<section id="méthodes-dimplémentation" class="slide level2">
-<h2>Méthodes d’implémentation</h2>
-<p>Parsing sémantique : via LLM + dictionnaire IEML (RAG)</p>
-<p>Recherche sémantique : embeddings pour la similarité</p>
-<p>Interface : JavaScript / HTML / API Isidore</p>
-<p>Tests : intégration Firefox puis Chrome</p>
-</section>
-<section id="schéma-du-fonctionnement" class="slide level2">
-<h2>Schéma du fonctionnement</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="recommendation_systems-1.png"></p>
-<figcaption>Processus de recommandation hybride</figcaption>
-</figure>
-</div>
-<p>Bleu = IEML</p>
-<p>Orange = LLM</p>
-<p>Vert = Actions utilisateur</p>
-<p>→ L’utilisateur explore, sélectionne, et compare les résultats des deux approches</p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="img/etape5_affichageArticles.png"></p>
-<figcaption>Visualisation côte-à-côte des suggestions via les logs IEML et le ‘semantic search’</figcaption>
-</figure>
-</div>
-</section>
-<section id="défis-et-perspectives" class="slide level2 scrollable">
-<h2>Défis et perspectives</h2>
+<h3 id="objectif-de-recherche">Objectif de recherche</h3>
+<p>Conception d’un système de recommandation explicable qui :</p>
 <ol type="1">
-<li>Traduction IEML:</li>
+<li>Favorise la sérendipité et l’exploration critique à partir d’un vocabulaire controllé et explicable.</li>
+<li>Compare IA symbolique et IA connexionniste : visualise le résultat de recherches d’articles avec et sans ‘IA’.</li>
 </ol>
-<ul>
-<li>Avantage : flexibilité dans la définition, pas de “gold standard” : évaluation possible par des métriques sans référence (perplexité, distance cosinus)</li>
-<li>RAG sur le dictionnaire de ~3000 entrées IEML</li>
-<li>Évaluation humaine (Pierre Lévy)</li>
-</ul>
-<ol start="2" type="1">
-<li><p>Interaction avec les plateformes : API Isidore accessible, Google Scholar non garantie</p></li>
-<li><p>Conception UX/UI</p></li>
-</ol>
-<ul>
-<li>“interface intuitive” vs.&nbsp;logique intempestive</li>
-<li>Équilibre entre documentation et liberté</li>
-</ul>
-<ol start="4" type="1">
-<li>Intérêt fondamental</li>
-</ol>
-<ul>
-<li>Évaluation utilisateur : entretiens « think aloud » pour mesurer la valeur pédagogique</li>
-<li>Comment observer si l’outil déclenche de nouvelles associations sémantiques ?</li>
-</ul>
 </section>
-<section id="bibliographie" class="slide level2 smaller scrollable">
-<h2>Bibliographie</h2>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-cardonDansLespritPageRank2013" class="csl-entry" role="listitem">
-Cardon, Dominique. 2013. <span>“Dans l’esprit Du <span>PageRank</span>: <span>Une</span> Enquête Sur l’algorithme de <span>Google</span>.”</span> <em>Réseaux</em> n<span><span class="math inline">\(^\circ\)</span></span> 177 (1): 63–95. <a href="https://doi.org/10.3917/res.177.0063">https://doi.org/10.3917/res.177.0063</a>.
-</div>
-<div id="ref-desollapriceLittleScienceBig1963" class="csl-entry" role="listitem">
-de Solla Price, Derek John. 1963. <em>Little Science, Big Science</em>. George <span>B</span> 1962. New York: Columbia University Press.
-</div>
-<div id="ref-goodladEditorsIntroductionHumanities2023" class="csl-entry" role="listitem">
-Goodlad, Lauren M. E. 2023. <span>“Editor’s <span>Introduction</span>: <span>Humanities</span> in the <span>Loop</span>.”</span> <em>Critical AI</em> 1 (1-2). <a href="https://doi.org/10.1215/2834703X-10734016">https://doi.org/10.1215/2834703X-10734016</a>.
-</div>
-<div id="ref-julienHowHighschoolStudents2009" class="csl-entry" role="listitem">
-Julien, Heidi, and Susan Barker. 2009. <span>“How High-School Students Find and Evaluate Scientific Information: <span>A</span> Basis for Information Literacy Skills Development.”</span> <em>Library &amp; Information Science Research</em> 31 (1): 12–17. <a href="https://doi.org/10.1016/j.lisr.2008.10.008">https://doi.org/10.1016/j.lisr.2008.10.008</a>.
-</div>
-<div id="ref-kosterSerendipitousRecommendationBased2014" class="csl-entry" role="listitem">
-Koster, Andrew, Fernando Koch, and Yeun Bae Kim. 2014. <span>“Serendipitous <span>Recommendation Based</span> on <span>Big Context</span>.”</span> In <em>Advances in <span>Artificial Intelligence</span> – <span>IBERAMIA</span> 2014</em>, edited by Ana L. C. Bazzan and Karim Pichara, 319–30. Cham: Springer International Publishing. <a href="https://doi.org/10.1007/978-3-319-12027-0_26">https://doi.org/10.1007/978-3-319-12027-0_26</a>.
-</div>
-<div id="ref-levySocialComputingReflexive2010" class="csl-entry" role="listitem">
-Lévy, Pierre. 2010. <span>“From Social Computing to Reflexive Collective Intelligence: <span>The IEML</span> Research Program.”</span> <em>Information Sciences</em> 180 (1): 71–94. <a href="https://doi.org/10.1016/j.ins.2009.08.001">https://doi.org/10.1016/j.ins.2009.08.001</a>.
-</div>
-<div id="ref-mertonMatthewEffectScience1968" class="csl-entry" role="listitem">
-Merton, R. K. 1968. <span>“<a href="https://www.ncbi.nlm.nih.gov/pubmed/5634379">The <span>Matthew</span> Effect in Science. <span>The</span> Reward and Communication Systems of Science Are Considered</a>.”</span> <em>Science (New York, N.Y.)</em> 159 (3810): 56–63.
-</div>
-<div id="ref-pariserFilterBubbleWhat2011" class="csl-entry" role="listitem">
-Pariser, Eli. 2011. <span>“The <span>Filter Bubble</span>: <span>What</span> the <span>Internet Is Hiding</span> from <span>You</span>.”</span> In.
-</div>
-<div id="ref-tayReproducibilityInterpretabilityAcademic2025" class="csl-entry" role="listitem">
-Tay, Aaron. 2025. <span>“The Reproducibility and Interpretability of Academic <span>AI</span> Search Engines Like <span>Primo Research Assistant</span>, <span>Web</span> of <span>Science Research Assistant</span>, <span>Scopus AI</span> and More.”</span> Blog. <em>Aaron Tay’s Musings about Librarianship</em>.
-</div>
-<div id="ref-underwoodTheorizingResearchPractices2014" class="csl-entry" role="listitem">
-Underwood, Ted. 2014. <span>“Theorizing <span>Research Practices We Forgot</span> to <span>Theorize Twenty Years Ago</span>.”</span> <em>Representations</em> 127 (1): 64–72. <a href="https://doi.org/10.1525/rep.2014.127.1.64">https://doi.org/10.1525/rep.2014.127.1.64</a>.
-</div>
-<div id="ref-vitali-rosatiManifestePourEtudes2025a" class="csl-entry" role="listitem">
-Vitali-Rosati, Marcello. 2025. <span>“Manifeste Pour Des <span>Études Critiques</span> de l’<span>Intelligence Artificielle</span>.”</span> <em>Culture Numérique. Pour Une Philosophie Du Numérique</em>.
-</div>
-</div>
-</section></section>
-<section>
-<section id="merci-pour-votre-attention" class="title-slide slide level1 center">
-<h1>Merci pour votre attention !</h1>
+<section class="slide level2">
 
+<h3 id="ieml-comme-base-ontologique">IEML comme base ontologique</h3>
+<p>Langage sémantique conçu par Pierre Lévy.</p>
+<p>Vocabulaire contrôlé et non ambigu</p>
+<p>Chaque concept est décomposé selon 9 rôles sémantiques : <code>thème ou process, qui, quoi, à qui, par quoi, quand, où, pourquoi, comment</code></p>
+</section>
+<section class="slide level2 scrollable">
+
+<h3 id="installation-de-lextension-sur-firefox">Installation de l’extension sur Firefox</h3>
+<ol type="1">
+<li><p>Télécharger le document depuis https://github.com/alexiaschn/ateliers_ia/blob/rs-ieml/rs_ieml-1.1.xpi : “Download raw file”.</p></li>
+<li><p>Dans la barre du navigateur entrer <code>about:addons</code>.</p></li>
+<li><p>Dans les paramètres : “Installer un module depuis un fichier”</p></li>
+<li><p>Accepter l’installation de “Recommender System for Isisore based on IEML”.</p></li>
+</ol>
+</section>
+<section class="slide level2">
+
+<h3 id="perspectives">Perspectives</h3>
+<ul>
+<li>Retours utilisateurices : amélioration de l’interface</li>
+<li>Analyse des logs : étude de potentiels parcours exploratoires,</li>
+</ul>
 </section>
 <section class="slide level2">
 
@@ -359,7 +204,7 @@ Vitali-Rosati, Marcello. 2025. <span>“Manifeste Pour Des <span>Études Critiqu
 
 
 
-<img data-src="img/etape5_affichageArticles.png" class="r-stretch"></section></section>
+<img data-src="img/etape5_affichageArticles.png" class="r-stretch"></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">

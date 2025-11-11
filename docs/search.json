@@ -2305,8 +2305,15 @@
   {
     "objectID": "slides/presentationProjetIEML.html#bibliographie",
     "href": "slides/presentationProjetIEML.html#bibliographie",
-    "title": "Projet IEML - Un système de recommandation basé sur différentes stratégies de recherche d’information exploratoire",
+    "title": "",
     "section": "Bibliographie",
-    "text": "Bibliographie\n\n\nCardon, Dominique. 2013. “Dans l’esprit Du PageRank: Une Enquête Sur l’algorithme de Google.” Réseaux n\\(^\\circ\\) 177 (1): 63–95. https://doi.org/10.3917/res.177.0063.\n\n\nde Solla Price, Derek John. 1963. Little Science, Big Science. George B 1962. New York: Columbia University Press.\n\n\nGoodlad, Lauren M. E. 2023. “Editor’s Introduction: Humanities in the Loop.” Critical AI 1 (1-2). https://doi.org/10.1215/2834703X-10734016.\n\n\nJulien, Heidi, and Susan Barker. 2009. “How High-School Students Find and Evaluate Scientific Information: A Basis for Information Literacy Skills Development.” Library & Information Science Research 31 (1): 12–17. https://doi.org/10.1016/j.lisr.2008.10.008.\n\n\nKoster, Andrew, Fernando Koch, and Yeun Bae Kim. 2014. “Serendipitous Recommendation Based on Big Context.” In Advances in Artificial Intelligence – IBERAMIA 2014, edited by Ana L. C. Bazzan and Karim Pichara, 319–30. Cham: Springer International Publishing. https://doi.org/10.1007/978-3-319-12027-0_26.\n\n\nLévy, Pierre. 2010. “From Social Computing to Reflexive Collective Intelligence: The IEML Research Program.” Information Sciences 180 (1): 71–94. https://doi.org/10.1016/j.ins.2009.08.001.\n\n\nMerton, R. K. 1968. “The Matthew Effect in Science. The Reward and Communication Systems of Science Are Considered.” Science (New York, N.Y.) 159 (3810): 56–63.\n\n\nPariser, Eli. 2011. “The Filter Bubble: What the Internet Is Hiding from You.” In.\n\n\nTay, Aaron. 2025. “The Reproducibility and Interpretability of Academic AI Search Engines Like Primo Research Assistant, Web of Science Research Assistant, Scopus AI and More.” Blog. Aaron Tay’s Musings about Librarianship.\n\n\nUnderwood, Ted. 2014. “Theorizing Research Practices We Forgot to Theorize Twenty Years Ago.” Representations 127 (1): 64–72. https://doi.org/10.1525/rep.2014.127.1.64.\n\n\nVitali-Rosati, Marcello. 2025. “Manifeste Pour Des Études Critiques de l’Intelligence Artificielle.” Culture Numérique. Pour Une Philosophie Du Numérique."
+    "text": "Bibliographie"
+  },
+  {
+    "objectID": "slides/presentationProjetIEML.html#expérimentation-du-langage-artificiel-ieml-pour-la-recherche-darticles-scientifiques",
+    "href": "slides/presentationProjetIEML.html#expérimentation-du-langage-artificiel-ieml-pour-la-recherche-darticles-scientifiques",
+    "title": "",
+    "section": "Expérimentation du langage artificiel IEML pour la recherche d’articles scientifiques",
+    "text": "Expérimentation du langage artificiel IEML pour la recherche d’articles scientifiques\nStatut: en cours\nResponsables: Alexia Schneider, Pierre Lévy"
   }
 ]
