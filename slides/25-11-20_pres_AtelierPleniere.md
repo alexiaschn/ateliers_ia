@@ -28,11 +28,15 @@ Une tension entre deux tâches qui prennent place dans deux espace-temps différ
 
 ## Changement de paradigme
 
-## Une question de système de valeurs (CG)
+## Une question de système de valeurs
 
+- Traitement de texte / outils de révision ➝ recherche de productivité
+- On constate donc un changement dans dans les pratiques et les usages qui suivent ou sont suivies, on sait pas trop par l'évolution des outils
+- *Quelle valeur on accorde au travail du texte ?* 
+- *Un gain de temps ?* 
+- *La rédaction académique : qu'implique la déprise du texte ? une déprise du sens ? Est-ce que l'idée est vraiment détachée de la forme ?*
 
 # Risques et limites à l'utilisation de LLM pour la correction 
-
 
 ## Homogénéisation de la langue
 
