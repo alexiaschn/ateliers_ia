@@ -1,5 +1,5 @@
 ---
-title: Automatiser la révision textuelle ? - Réunion plénière Revue3.0
+title: Automatiser la révision textuelle ? 
 date: 2025-11-20
 author: Clara Grometto, Alexia Schneider
 link-citations: true
@@ -16,7 +16,6 @@ format:
       # show-slide-number: print
       output-file: "pres_atelier_AutomatisationCorr_PleniereRevue30.html"
 ---
-
 ## *Révision ?* : une question de définition
 
 Avant de savoir quel outil utiliser, il faut se demander ce qu'on veut faire
@@ -27,6 +26,21 @@ Une tension entre deux tâches qui prennent place dans deux espace-temps différ
 - les pratiques de brouillonnages individuelles
 
 ## Changement de paradigme
+
+_Grammar Error Correction_: tâche de Traitement Automatique de la Langue Naturelle, proche de la Traduction Automatique. 
+
+- Correction évaluée à partir d'un _gold standard_ (phrase incorrecte v. phrase corrigée idéale)
+- Complexité du système proportionnelle à la grammaire. 
+
+Évolution de la correction automatique:
+
+::: {.incremental}
+
+1. Correction ortho-typographique 
+2. Reformulation
+3. Masquer l'utilisation d'une IA pour la génération de texte
+
+:::
 
 ## Une question de système de valeurs
 
@@ -45,6 +59,54 @@ Une tension entre deux tâches qui prennent place dans deux espace-temps différ
 1. le LLM reflète des données d'entraînement mais aussi les phases de _reinforcement learning_ qui l'oriente vers certains comportements standards porteurs de normes (ex: Français parisien) [@lodgeFrenchDialectStandard1993].
 2. S'il est possible de demander à un LLM de changer son comportement, il est ramené vers ses paramètres généraux : c'est "l'attraction par défaut" [@paschalidisVersLangageSans2025]. 
 3. La portion croissante de données synthétiques dans les jeux d'entraînement de ses modèles renforce leurs biais (perte de diversité) et rends les réponses des modèles moins fiables (effondrement). 
+
+---
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+![Première génération](img/face_generation0.png)
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+
+![Après plusieurs générations](img/face_generation4.png)
+
+:::
+
+::::
+
+## Hypercorrection ?
+
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+
+![Exemple d'une correction sémantique automatique](img/hypercorrection.png)
+
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="45%"}
+
+![Respect de la correction ortho-typo (_opt out_)](img/not_hypercorrection)
+
+:::
+
+::::
+
 
 ##  Un idéal de clarté qui finit par s’auto-parodier (le fameux *style chatgpt*) (CG)
 
