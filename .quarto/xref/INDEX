@@ -1,0 +1,75 @@
+{
+  "sept11/intro.md": {
+    "introAtelierIA.html": "b21a8838",
+    "intro.html": "11d2fb62"
+  },
+  "intro.md": {
+    "introAtelierIA.html": "fddff12d",
+    "intro.html": "df3731f7"
+  },
+  "about.md": {
+    "about.html": "cbbdf81d"
+  },
+  "archiv/docs/index.md": {
+    "index.html": "f222a73e"
+  },
+  "archiv/docs/pages/intro.md": {
+    "intro.html": "fbd83248"
+  },
+  "25-07_programme_ateliersIA2526.md": {
+    "25-07_programme_ateliersIA2526.html": "e9607a28"
+  },
+  "25-10-09_correctionAtelierIA.md": {
+    "25-10-09_correctionAtelierIA.html": "dc0867c1"
+  },
+  "index.md": {
+    "index.html": "484cecf5"
+  },
+  "ressources.md": {
+    "ressources.html": "40ac0321"
+  },
+  "oct09/25-10-09_correctionAtelierIA.md": {
+    "25-10-09_correctionAtelierIA.html": "9fb1fb4f"
+  },
+  "seances/intro.md": {
+    "intro.html": "baac22a0"
+  },
+  "seances/25-10-09_correctionAtelierIA.md": {
+    "25-10-09_correctionAtelierIA.html": "75534203",
+    "atelier2-correction-auto.html": "8cab12ba",
+    "correction.html": "bbe68444"
+  },
+  "seances/seance-01-intro-ia.md": {
+    "intro2.html": "b1797fb0",
+    "intro.html": "c3bc1935",
+    "seance-01-intro-ia.html": "1e4737ee"
+  },
+  "seances/extra.md": {
+    "extra.html": "eed27685"
+  },
+  "seances/diaposClaraainserer.md": {
+    "diaposClaraainserer.html": "8ee9de9f"
+  },
+  "25-10-15_presCirce/25-10-15_pres_demoRS.md": {
+    "25-10-15_pres_demoRS.html": "b0313353",
+    "presentationCirce.html": "82786d1c"
+  },
+  "slides/25-10-15_pres_demoRS.md": {
+    "presentationCirce.html": "44f7183a"
+  },
+  "slides/25-11-03_pres_RAGAS.md": {
+    "25-11-03_pres_RAGAS.html": "e14fcbb2"
+  },
+  "slides/25-11-06_pres_midtermFinalProj.md": {
+    "25-11-06_pres_midtermFinalProj.html": "92083391"
+  },
+  "slides/25--11-20_pres_AtelierAutomatisationCorrection.md": {
+    "pres_atelier_AutomatisationCorr_PleniereRevue30.html": "eddb873d"
+  },
+  "slides/25-11-20_pres_AtelierPleniere.md": {
+    "pres_atelier_AutomatisationCorr_PleniereRevue30.html": "ae2fb067"
+  },
+  "slides/25-11-19_pres_demoRSIEML.md": {
+    "presentationProjetIEML.html": "4107b49f"
+  }
+}
