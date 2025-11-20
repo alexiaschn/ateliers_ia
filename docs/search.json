@@ -2186,9 +2186,9 @@
   {
     "objectID": "slides/pres_atelier_AutomatisationCorr_PleniereRevue30.html#un-idéal-de-clarté-qui-finit-par-sauto-parodier-le-fameux-style-chatgpt",
     "href": "slides/pres_atelier_AutomatisationCorr_PleniereRevue30.html#un-idéal-de-clarté-qui-finit-par-sauto-parodier-le-fameux-style-chatgpt",
-    "title": "Automatiser la révision textuelle ? - Réunion plénière Revue3.0",
+    "title": "Automatiser la révision textuelle ?",
     "section": "Un idéal de clarté qui finit par s’auto-parodier (le fameux style chatgpt)",
-    "text": "Un idéal de clarté qui finit par s’auto-parodier (le fameux style chatgpt)\n\nWe show that while the core content of texts is retained when LLMs polish and rewrite texts, not only do they homogenize writing styles, but they also alter stylistic elements in a way that selectively amplifies certain dominant characteristics or biases while suppressing others - emphasizing conformity over individuality. By varying LLMs, prompts, classifiers, and contexts, we show that these trends are robust and consistent. (Sourati et al. 2025)"
+    "text": "Un idéal de clarté qui finit par s’auto-parodier (le fameux style chatgpt)\n\nWe show that while the core content of texts is retained when LLMs polish and rewrite texts, not only do they homogenize writing styles, but they also alter stylistic elements in a way that selectively amplifies certain dominant characteristics or biases while suppressing others - emphasizing conformity over individuality. By varying LLMs, prompts, classifiers, and contexts, we show that these trends are robust and consistent. (Sourati et al. 2025)\n\nSi une formulation est fortement présente dans le corpus d’entraînement est-ce que c’est nécessairement la meilleure ? L’approche par défaut vaut-elle pour tous les contextes ?\nIl y a des contextes dans lesquels la langue se doit d’être normée : contexte académique."
   },
   {
     "objectID": "slides/pres_atelier_AutomatisationCorr_PleniereRevue30.html#effet-nivelant-et-autorité-de-la-machine",
@@ -2363,6 +2363,6 @@
     "href": "slides/pres_atelier_AutomatisationCorr_PleniereRevue30.html#hypercorrection",
     "title": "Automatiser la révision textuelle ?",
     "section": "Hypercorrection ?",
-    "text": "Hypercorrection ?\n\n\n\n\nExemple d’une correction sémantique automatique\n\n\n\n\n\n\n\n\nRespect de la correction ortho-typo (opt out)"
+    "text": "Hypercorrection ?\n\n\nUne correction “sémantique” automatique\n\n\n\n\n\nRespect de la correction ortho-typo en _opt out)"
   }
 ]

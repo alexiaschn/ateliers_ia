@@ -86,29 +86,15 @@ _Grammar Error Correction_: tâche de Traitement Automatique de la Langue Nature
 ## Hypercorrection ?
 
 
-:::: {.columns}
-
-::: {.column width="45%"}
 
 
-![Exemple d'une correction sémantique automatique](img/hypercorrection.png)
+![Une correction "sémantique" automatique](img/hypercorrection.png)
 
-:::
-
-::: {.column width="5%"}
-
-:::
-
-::: {.column width="45%"}
-
-![Respect de la correction ortho-typo (_opt out_)](img/not_hypercorrection)
-
-:::
-
-::::
+![Respect de la correction ortho-typo en _opt out)](img/not_hypercorrection)
 
 
-##  Un idéal de clarté qui finit par s’auto-parodier (le fameux *style chatgpt*) (CG)
+
+##  Un idéal de clarté qui finit par s’auto-parodier (le fameux *style chatgpt*) 
 
 > We show that while the core content of texts is retained when LLMs polish and rewrite texts, **not only do they homogenize writing styles, but they also alter stylistic elements in a way that selectively amplifies certain dominant characteristics or biases while suppressing others - emphasizing conformity over individuality**. By varying LLMs, prompts, classifiers, and contexts, we show that these trends are robust and consistent. 
 [@sourati2025shrinkinglandscapelinguisticdiversity]
