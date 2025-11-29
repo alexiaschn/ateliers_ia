@@ -2364,5 +2364,68 @@
     "title": "Automatiser la révision textuelle ?",
     "section": "Hypercorrection ?",
     "text": "Hypercorrection ?\n\n\nUne correction “sémantique” automatique\n\n\n\n\n\nRespect de la correction ortho-typo en _opt out)"
+  },
+  {
+    "objectID": "slides/25-12-04_presFinal.html#backup-demo-video",
+    "href": "slides/25-12-04_presFinal.html#backup-demo-video",
+    "title": "IEML-RS",
+    "section": "Backup demo video",
+    "text": "Backup demo video\n\n\nVideo\nDemonstration without sound"
+  },
+  {
+    "objectID": "slides/25-12-04_presFinal.html#examples-of-expected-translation",
+    "href": "slides/25-12-04_presFinal.html#examples-of-expected-translation",
+    "title": "IEML-RS",
+    "section": "Examples of expected translation",
+    "text": "Examples of expected translation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nword to translate\ntheme or root\nwho\nwhat\nto whom\nby what means\nwhen\nwhere\nwhy\nhow\n\n\n\n\nespace numérique\ntechnique numérique\n-\nespace\n-\n-\n-\n-\n-\n-\n\n\nchanteur\njouer ou chanter une mélodie\npersonne\n-\n-\n*par le moyen de voix\n-\n-\n-\n\n\n\n\nTranslation can only use the IEML dictionnary containing (~3,000 concepts)."
+  },
+  {
+    "objectID": "slides/25-12-04_presFinal.html#retrieval",
+    "href": "slides/25-12-04_presFinal.html#retrieval",
+    "title": "IEML-RS",
+    "section": "Retrieval",
+    "text": "Retrieval\nDataset: 50 words translated with 70 dictionnary entries.\nEvaluation: 1 point for each word in ground truth retrieved.\n\n\n\nstrategy\nscore\n\n\n\n\nTF-iDF\n15\n\n\nCosine similarity\n25\n\n\nHybrid (TF-iDF + Embeddings)\n23"
+  },
+  {
+    "objectID": "slides/25-12-04_presFinal.html#rag-pipeline",
+    "href": "slides/25-12-04_presFinal.html#rag-pipeline",
+    "title": "IEML-RS",
+    "section": "RAG pipeline",
+    "text": "RAG pipeline\nDataset:\nfull: 410 words translated\n\ntrain (examples for fewshot): 50 words\ntest (evaluation): 360 words\n\nModels:\n\nMeta-Llama-3-70B-Instruct-Turbo\nGemma-3n-E4B-it,\nGPT-oss-20B"
+  },
+  {
+    "objectID": "slides/25-12-04_presFinal.html#rag-evaluation",
+    "href": "slides/25-12-04_presFinal.html#rag-evaluation",
+    "title": "IEML-RS",
+    "section": "RAG evaluation",
+    "text": "RAG evaluation\nExamples of LLM-translated content (rag-llama-fewshot)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nword translted\ntheme or root\nwho\nwhat\nto whom\nby what means\nwhen\nwhere\nwhy\nhow\n\n\n\n\nespace numérique\nespace\ncyberespace\ntous\npar internet et les réseaux sociaux\n-\nvirtuellement\nmonétiser et partager des informations\n\n\n\n\nchanteur\nmusique\nchanteur\ninterprétant une chanson\nà un public\npar sa voix\n-\n-\npour exprimer une émotion\nen utilisant des métadonnées-chanson"
+  },
+  {
+    "objectID": "slides/25-12-04_presFinal.html#user-study",
+    "href": "slides/25-12-04_presFinal.html#user-study",
+    "title": "IEML-RS",
+    "section": "User Study",
+    "text": "User Study\n6 users (PhD students in DH). Demonstration then 10 min of observation then 15 min interview.\n\nuser-friendliness,\nusefulness,\nkeyword navigation,\ntranslation into IEML,\narticle search and panel comparison."
+  },
+  {
+    "objectID": "slides/25-12-04_presFinal.html#user-study-results",
+    "href": "slides/25-12-04_presFinal.html#user-study-results",
+    "title": "IEML-RS",
+    "section": "User study results",
+    "text": "User study results\n\nuser-friendliness : confusion about the use of the LLM-translated keywords, most improvement suggested depend on direct integration within the search engine (latency, more detailed info on the article, distinction between ‘query building’ and ‘article search’ functions)\nusefulness varies depending on user research practices. Ranges from : not useful for those interested in network and contextual IR, useful for combining complex and precise queries for those who frequently go through the same searches, useful for comparing lists and triage of articles for those who want to go across disciplines.\ntranslation of mixed quality encourages user-agency and dialogical and collaborative work with LLMs in semantic space."
+  },
+  {
+    "objectID": "slides/25-12-04_presFinal.html#translation-prompt",
+    "href": "slides/25-12-04_presFinal.html#translation-prompt",
+    "title": "IEML-RS",
+    "section": "Translation prompt",
+    "text": "Translation prompt\nTu es un expert en sémantique. Tu dois décomposer sémantiquement le mot-clé \"${keyword}\" à partir des 9 valeurs suivantes :\n'thème, qui, quoi, à qui, par quoi, quand, où, pourquoi, comment'\n## Exemples\n${examples}\n\n## Mots du dictionnaire \nTu dois utiliser les mots ci-dessous pour définir le mot-clé \"${keyword}\":\n${context}\n\nTa réponse prendra la forme d'un CSV à 9 colonnes, les entêtes de colonnes sont: \n'thème, qui, quoi, à qui, par quoi, quand, où, pourquoi, comment'\nIl n'est pas nécessaire de remplir tous les champs. Un champs peut rester vide entre deux virgules, comme dans les exemples. \nRépond uniquement avec une ligne CSV finale, sans explication."
+  },
+  {
+    "objectID": "slides/25-12-04_presFinal.html#query-augmentation-prompt",
+    "href": "slides/25-12-04_presFinal.html#query-augmentation-prompt",
+    "title": "IEML-RS",
+    "section": "Query augmentation prompt",
+    "text": "Query augmentation prompt\nProduit 10 variants de la requête booléenne suivante \"${keywords}\". Combine les requêtes proposées à l'aide de l'opérateur OU comme dans l'exemple : Mots-clés:  \"impact of climate change on biodiversity\". Réponse: \"\n(climate change biodiversity impact) OU (effects of climate change on ecosystems) OU (biodiversity loss due to climate change) OU (climate change species extinction) OU (impact of global warming on wildlife) OU (effects of climate change on ecosystems and species diversity) OU (how climate change impacts wildlife and biodiversity) OR (climate change consequences for biological diversity) OU (relationship between climate change and loss of biodiversity) OU (climate change threats to flora and fauna diversity) OU (impact of climate change on biodiversity)\nC'est à ton tour avec \"${keywords}\". Répond uniquement avec la requête sans donner d'explication."
   }
 ]
