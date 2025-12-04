@@ -141,15 +141,6 @@ Alexia Schneider
 
   <p class="date">2025-04-12</p>
 </section>
-<section id="backup-demo-video" class="slide level2">
-<h2>Backup demo video</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><video data-src="img/demo_ieml-rs.mp4" controls=""><a href="img/demo_ieml-rs.mp4">Video</a></video></p>
-<figcaption>Demonstration without sound</figcaption>
-</figure>
-</div>
-</section>
 <section class="slide level2">
 
 
@@ -157,25 +148,27 @@ Alexia Schneider
 <section class="slide level2">
 
 
-<img data-src="img/1phase.png" class="r-stretch quarto-figure-center"><p class="caption">Initialisation of the plugin</p><ul>
-<li>Database of translated keywords: Cloudflare bucket</li>
-</ul>
+<img data-src="img/1phase.png" class="r-stretch quarto-figure-center"><p class="caption">Initialisation of the plugin</p><div style="font-size: 12px;">
+<p>Database of translated keywords: Cloudflare bucket</p>
+</div>
 </section>
 <section class="slide level2">
 
 
-<img data-src="img/2phase.png" class="r-stretch quarto-figure-center"><p class="caption">Building a Query from Iterative Keyword Exploration</p><ul>
+<img data-src="img/2phase.png" class="r-stretch quarto-figure-center"><p class="caption">Building a Query from Iterative Keyword Exploration</p><div style="font-size: 12px;">
+<ul>
 <li>Database of translated keywords: Cloudflare bucket</li>
 <li>Database of dictionnary words (embeddings) : Supabase</li>
 <li>Together AI proxy: Cloudflare worker</li>
 </ul>
+</div>
 </section>
 <section class="slide level2">
 
 
-<img data-src="img/3phase.png" class="r-stretch quarto-figure-center"><p class="caption">Searching Related Articles from User-Selected Concepts</p><ul>
-<li>API handler (Isidore, CrossRef): Cloudflare worker</li>
-</ul>
+<img data-src="img/3phase.png" class="r-stretch quarto-figure-center"><p class="caption">Searching Related Articles from User-Selected Concepts</p><div style="font-size: 12px;">
+<p>API handler (Isidore, CrossRef): Cloudflare worker</p>
+</div>
 </section>
 <section>
 <section id="evaluation" class="title-slide slide level1 center">
@@ -184,66 +177,9 @@ Alexia Schneider
 </section>
 <section id="examples-of-expected-translation" class="slide level2">
 <h2>Examples of expected translation</h2>
-<table class="caption-top" style="width:100%;">
-<colgroup>
-<col style="width: 10%">
-<col style="width: 10%">
-<col style="width: 10%">
-<col style="width: 10%">
-<col style="width: 10%">
-<col style="width: 10%">
-<col style="width: 10%">
-<col style="width: 10%">
-<col style="width: 10%">
-<col style="width: 10%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>word to translate</th>
-<th>theme or root</th>
-<th>who</th>
-<th>what</th>
-<th>to whom</th>
-<th>by what means</th>
-<th>when</th>
-<th>where</th>
-<th>why</th>
-<th>how</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>espace numérique</strong></td>
-<td>technique numérique</td>
-<td>-</td>
-<td>espace</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td><strong>chanteur</strong></td>
-<td>jouer ou chanter une mélodie</td>
-<td>personne</td>
-<td>-</td>
-<td>-</td>
-<td>*par le moyen de voix</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>Translation can only use the IEML dictionnary containing (~3,000 concepts).</p>
+
+<img data-src="img/iemlgrid.png" width="1500" class="r-stretch quarto-figure-center"><p class="caption">IEML grid for “éditorialisation”</p><p>Note: Translation can only use the IEML dictionnary containing (~3,000 entries).</p>
 </section>
-<section class="slide level2">
-
-
-<img data-src="img/iemlgrid.png" width="1500" class="r-stretch quarto-figure-center"><p class="caption">IEML grid for “éditorialisation”</p></section>
 <section id="retrieval" class="slide level2">
 <h2>Retrieval</h2>
 <p>Dataset: <strong>50 words translated with 70 dictionnary entries</strong>.</p>
@@ -342,10 +278,7 @@ Alexia Schneider
 </tr>
 </tbody>
 </table>
-<p>Context (dictionnary entries) only marginally improve performance.</p>
-</section>
-<section class="slide level2">
-
+<p>Context (i.e.&nbsp;dictionnary entries) only marginally improve performance.</p>
 </section></section>
 <section>
 <section id="qualitative-evaluation" class="title-slide slide level1 center">
@@ -354,64 +287,8 @@ Alexia Schneider
 </section>
 <section id="rag-evaluation" class="slide level2">
 <h2>RAG evaluation</h2>
-<p>Examples of LLM-translated content (rag-llama-fewshot)</p>
-<table class="caption-top" style="width:100%;">
-<colgroup>
-<col style="width: 10%">
-<col style="width: 10%">
-<col style="width: 10%">
-<col style="width: 10%">
-<col style="width: 10%">
-<col style="width: 10%">
-<col style="width: 10%">
-<col style="width: 10%">
-<col style="width: 10%">
-<col style="width: 10%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>word translted</th>
-<th>theme or root</th>
-<th>who</th>
-<th>what</th>
-<th>to whom</th>
-<th>by what means</th>
-<th>when</th>
-<th>where</th>
-<th>why</th>
-<th>how</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>espace numérique</strong></td>
-<td>espace</td>
-<td>cyberespace</td>
-<td>tous</td>
-<td>par internet et les réseaux sociaux</td>
-<td>-</td>
-<td>virtuellement</td>
-<td>monétiser et partager des informations</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>chanteur</strong></td>
-<td>musique</td>
-<td>chanteur</td>
-<td>interprétant une chanson</td>
-<td>à un public</td>
-<td>par sa voix</td>
-<td>-</td>
-<td>-</td>
-<td>pour exprimer une émotion</td>
-<td>en utilisant des métadonnées-chanson</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="slide level2">
-
+<p>Reminder of the expected translation.</p>
+<div style="font-size: 20px;">
 <table class="caption-top" style="width:100%;">
 <colgroup>
 <col style="width: 10%">
@@ -466,10 +343,12 @@ Alexia Schneider
 </tr>
 </tbody>
 </table>
+</div>
 </section>
 <section class="slide level2">
 
 <p>Examples of LLM-translated content (rag-llama-fewshot)</p>
+<div style="font-size: 20px;">
 <table class="caption-top" style="width:100%;">
 <colgroup>
 <col style="width: 10%">
@@ -485,7 +364,7 @@ Alexia Schneider
 </colgroup>
 <thead>
 <tr class="header">
-<th>word translted</th>
+<th>word translated</th>
 <th>theme or root</th>
 <th>who</th>
 <th>what</th>
@@ -524,11 +403,14 @@ Alexia Schneider
 </tr>
 </tbody>
 </table>
+</div>
+<div>
 <ul>
-<li>tend to fill the grid</li>
-<li>do not stick to given dictionnary entries</li>
-<li>do not respect the grammar</li>
+<li class="fragment">tends to fill the grid</li>
+<li class="fragment">do not stick to given dictionnary entries</li>
+<li class="fragment">do not respect the grammar</li>
 </ul>
+</div>
 </section>
 <section id="user-study" class="slide level2">
 <h2>User Study</h2>
@@ -541,12 +423,21 @@ Alexia Schneider
 <li>article search and panel comparison.</li>
 </ul>
 </section>
-<section id="user-study-results" class="slide level2">
-<h2>User study results</h2>
+<section id="user-study-results-limits-and-perspectives" class="slide level2">
+<h2>User study results: limits and perspectives</h2>
 <ul>
-<li>user-friendliness : confusion about the use of the LLM-translated keywords, most improvement suggested depend on direct integration within the search engine (latency, more detailed info on the article, distinction between ‘query building’ and ‘article search’ functions)</li>
-<li>usefulness varies depending on user research practices. Ranges from : not useful for those interested in network and contextual IR, useful for combining complex and precise queries for those who frequently go through the same searches, useful for comparing lists and triage of articles for those who want to go across disciplines.</li>
-<li>translation of mixed quality encourages user-agency and dialogical and collaborative work with LLMs in semantic space.</li>
+<li>user-friendliness :
+<ul>
+<li>confusion about the integration of the concepts into the query</li>
+<li>automatic translation &amp; validation: initial hurdle (limited database)</li>
+<li><strong>direct integration to host search engine</strong>: main improvements (latency, more detailed info on the article, distinction between ‘query building’ and ‘article search’ functions)</li>
+</ul></li>
+<li>usefulness:
+<ul>
+<li>reveals strong disparities in user research practices (etwork and contextual IR vs.&nbsp;keyword search)</li>
+<li>strength: comparative panels,</li>
+<li>translation of mixed quality encourages <strong>user-agency and dialogical and collaborative work with LLMs</strong></li>
+</ul></li>
 </ul>
 </section></section>
 <section>
@@ -575,6 +466,16 @@ Répond uniquement avec une ligne CSV finale, sans explication.</code></pre>
 <pre><code>Produit 10 variants de la requête booléenne suivante "${keywords}". Combine les requêtes proposées à l'aide de l'opérateur OU comme dans l'exemple : Mots-clés:  "impact of climate change on biodiversity". Réponse: "
 (climate change biodiversity impact) OU (effects of climate change on ecosystems) OU (biodiversity loss due to climate change) OU (climate change species extinction) OU (impact of global warming on wildlife) OU (effects of climate change on ecosystems and species diversity) OU (how climate change impacts wildlife and biodiversity) OR (climate change consequences for biological diversity) OU (relationship between climate change and loss of biodiversity) OU (climate change threats to flora and fauna diversity) OU (impact of climate change on biodiversity)
 C'est à ton tour avec "${keywords}". Répond uniquement avec la requête sans donner d'explication.</code></pre>
+</section>
+<section class="slide level2">
+
+<!-- ## Backup demo video -->
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><video data-src="img/demo_ieml-rs.mp4" controls=""><a href="img/demo_ieml-rs.mp4">Video</a></video></p>
+<figcaption>Demonstration without sound</figcaption>
+</figure>
+</div>
 </section></section>
 <section>
 <section id="screenshots" class="title-slide slide level1 center">

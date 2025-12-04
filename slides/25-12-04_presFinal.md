@@ -9,12 +9,7 @@ format:
         smaller: true
         scrollable: true
 ---
-## Backup demo video
 
-
-![Demonstration without sound](img/demo_ieml-rs.mp4)
-
----
 
 ![Diagram of IEML-RS](img/rs.png){width=500%}
 
@@ -22,21 +17,27 @@ format:
 
 ![Initialisation of the plugin](img/1phase.png)
 
-- Database of translated keywords: Cloudflare bucket
+<div style="font-size: 12px;">
+Database of translated keywords: Cloudflare bucket
+</div>
 
 ---
 
 ![Building a Query from Iterative Keyword Exploration](img/2phase.png)
 
+<div style="font-size: 12px;">
 - Database of translated keywords: Cloudflare bucket
 - Database of dictionnary words (embeddings) : Supabase
 - Together AI proxy: Cloudflare worker
+</div>
 
 ---
 
 ![Searching Related Articles from User-Selected Concepts](img/3phase.png)
 
-- API handler (Isidore, CrossRef): Cloudflare worker
+<div style="font-size: 12px;">
+API handler (Isidore, CrossRef): Cloudflare worker
+</div>
 
 
 
@@ -44,17 +45,12 @@ format:
 
 ## Examples of expected translation
 
-word to translate|theme or root|who|what|to whom|by what means|when|where|why|how
----|---|---|---|---|---|---|---|---|---
-**espace numérique**|technique numérique|-|espace|-|-|-|-|-|-|
-**chanteur**|jouer ou chanter une mélodie|personne|-|-|*par le moyen de voix|-|-|-|
-
-Translation can only use the IEML dictionnary containing (~3,000 concepts). 
-
-
----
 
 ![IEML grid for "éditorialisation"](img/iemlgrid.png){width="1500px"}
+
+Note: Translation can only use the IEML dictionnary containing (~3,000 entries). 
+
+
 
 ---
 
@@ -97,40 +93,43 @@ llama_zeroshot|0.0129|0.514|0.263
 gemma_zeroshot|0.0160|0.479|0.248
 openai_zeroshot|0.016|0.493|0.254
 
-Context (dictionnary entries) only marginally improve performance. 
+Context (i.e. dictionnary entries) only marginally improve performance. 
 
----
+
 
 # Qualitative evaluation
 
 ## RAG evaluation
 
-Examples of LLM-translated content (rag-llama-fewshot)
+Reminder of the expected translation. 
 
-word translted|theme or root|who|what|to whom|by what means|when|where|why|how
----|---|---|---|---|---|---|---|---|---
-**espace numérique**|espace|cyberespace|tous|par internet et les réseaux sociaux|-|virtuellement|monétiser et partager des informations
-**chanteur**|musique|chanteur|interprétant une chanson|à un public|par sa voix|-|-|pour exprimer une émotion|en utilisant des métadonnées-chanson
-
----
-
+<div style="font-size: 20px;">
 word to translate|theme or root|who|what|to whom|by what means|when|where|why|how
 ---|---|---|---|---|---|---|---|---|---
 **espace numérique**|technique numérique|-|espace|-|-|-|-|-|-|
 **chanteur**|jouer ou chanter une mélodie|personne|-|-|*par le moyen de voix|-|-|-|
+</div>
+
 
 ----
 
 Examples of LLM-translated content (rag-llama-fewshot)
 
-word translted|theme or root|who|what|to whom|by what means|when|where|why|how
+<div style="font-size: 20px;">
+word translated|theme or root|who|what|to whom|by what means|when|where|why|how
 ---|---|---|---|---|---|---|---|---|---
 **espace numérique**|espace|cyberespace|tous|par internet et les réseaux sociaux|-|virtuellement|monétiser et partager des informations
 **chanteur**|musique|chanteur|interprétant une chanson|à un public|par sa voix|-|-|pour exprimer une émotion|en utilisant des métadonnées-chanson
 
-- tend to fill the grid
+</div>
+
+::: {.incremental}
+
+- tends to fill the grid
 - do not stick to given dictionnary entries
 - do not respect the grammar
+:::
+
 
 ## User Study
 
@@ -143,11 +142,17 @@ word translted|theme or root|who|what|to whom|by what means|when|where|why|how
 - article search and panel comparison.  
 
 
-## User study results
+## User study results: limits and perspectives
 
-- user-friendliness : confusion about the use of the LLM-translated keywords, most improvement suggested depend on direct integration within the search engine (latency, more detailed info on the article, distinction between 'query building' and 'article search' functions)
-- usefulness varies depending on user research practices. Ranges from : not useful for those interested in network and contextual IR, useful for combining complex and precise queries for those who frequently go through the same searches, useful for comparing lists and triage of articles for those who want to go across disciplines.
-- translation of mixed quality encourages user-agency and dialogical and collaborative work with LLMs in semantic space. 
+- user-friendliness :
+    - confusion about the integration of the concepts into the query
+    - automatic translation & validation: initial hurdle (limited database)
+    - **direct integration to host search engine**: main improvements (latency, more detailed info on the article, distinction between 'query building' and 'article search' functions)
+- usefulness:
+    - reveals strong disparities in user research practices (etwork and contextual IR vs. keyword search)
+    - strength: comparative panels, 
+    - translation of mixed quality encourages **user-agency and dialogical and collaborative work with LLMs**
+
 
 # Prompts
 
@@ -178,6 +183,13 @@ Produit 10 variants de la requête booléenne suivante "${keywords}". Combine le
 (climate change biodiversity impact) OU (effects of climate change on ecosystems) OU (biodiversity loss due to climate change) OU (climate change species extinction) OU (impact of global warming on wildlife) OU (effects of climate change on ecosystems and species diversity) OU (how climate change impacts wildlife and biodiversity) OR (climate change consequences for biological diversity) OU (relationship between climate change and loss of biodiversity) OU (climate change threats to flora and fauna diversity) OU (impact of climate change on biodiversity)
 C'est à ton tour avec "${keywords}". Répond uniquement avec la requête sans donner d'explication.
 ```
+---
+
+<!-- ## Backup demo video -->
+
+
+![Demonstration without sound](img/demo_ieml-rs.mp4)
+
 
 # Screenshots
 
