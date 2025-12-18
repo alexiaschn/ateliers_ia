@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>FRA6730: Le comte et la communiste </title>
+   
+   <style> 
+   /* basic structure */
+    body {
+        font-family: sans-serif;
+        background: black;
+        overflow-x: auto;
+        overflow-y: auto;
+    }
+
+    #welcome {
+        font-family: monospace;
+        font-style: italic;
+
+    }
+
+    .toolbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #fff;
+            padding: 12px 20px;
+            border-bottom: 1px solid #ddd;
+            z-index: 1000;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+    #status {
+        margin-left: auto;
+        font-size: 12px;
+        color: #666;
+    }
+
+    #canvas {
+        margin-top: 70px; /* sinon les colonnes passent sous la toolbar */
+        display: grid;
+        grid-template-columns: 1fr auto;
+        /* grid-template-columns: minmax(500px, 1fr) 350px; */
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        /* align-items: start; */
+    }
+    @media (max-width: 900px) {
+    #canvas {
+        grid-template-columns: 1fr;
+    }
+
+    #rules-container {
+        order: 2;
+    }
+}
+
+
+
+/* button style diff for secondary = functionality */
+    .btn {
+        position: relative;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+        transition: all 0.2s;
+        background: #f0f0f0;
+        color: #333;
+        border: 1px solid #ddd;
+    }
+    /* tooltip on hover needs .btn position relative */
+    .btn-secondary::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        top: 120%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: white;
+        color: black;
+        padding: 6px 10px;
+        font-size: 12px;
+        white-space: nowrap;
+        border-radius: 2px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.15s ease;
+    }
+    .btn-secondary:hover::after {
+        opacity: 1;
+    }
+    .btn-secondary {
+        background:aquamarine;
+        color: black;
+
+    }
+
+    .btn:hover {
+        background: #e0e0e0;
+
+    }
+
+/* écrans et commandes de jeu */
+    #playthrough-container {
+        display: grid;
+        /* gap: 1rem; */
+        justify-content: center;
+    }
+
+    .screen {
+        white-space: pre-wrap;
+        font-family: monospace;
+        background: #010000;
+        color: #ffffff;
+        padding: 2rem;
+        border:1px solid aquamarine
+    }
+
+    #command {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 1rem;
+        font-family: sans-serif;
+        color: white;
+        border:1px solid aquamarine;
+        padding: 10px;
+    }
+
+    .command-section {
+        font-family: monospace;
+
+    }
+    #current-command {
+        text-align: center;
+    }
+    #next-command {
+        text-align: right;
+    }
+    #prev-command {
+        text-align: left;
+    }
+    
+
+/* affichage des règles */
+
+    #rules-container {
+        color: white;
+        padding: 10px 10px 10px;
+        max-height: 500px;
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+    #close-rules {
+        cursor: pointer;
+        font-size: 18px;
+        float: right;
+        position: relative;
+        top: 5px;
+        right: 20px;
+        color: white;
+        border: none;
+        box-shadow: none;
+        font-weight: bolder;
+        background: none;
+        outline: none;
+        width: 10px;
+}
+
+    h3 {
+        font-weight: bold;
+
+    }
+
+    .rules {
+        white-space: pre; /* preserve les sauts de ligne et tabulation */ 
+        display: block;
+    }
+    .comments {
+        color: green;
+        font: italic;
+    }
+    
+    .modifiable {
+    cursor: pointer;
+    color: white;
+    }
+
+    .modifiable:hover {
+        color: aquamarine;
+    }
+
+    .rule-highlight {
+        background-color: rgba(255, 255, 0, 0.35);
+        border-left: 4px solid gold;
+        padding-left: 6px;
+        transition: background-color 0.6s ease;
+    }
+
+
+    
+
+/* pages d'explication */
+
+        .init-page {
+            color: white;
+            position: relative;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .init-content {
+            white-space: pre-line;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .quote {
+            font-style: italic;
+            margin-inline-start: 10%;
+        }
+
+        #skipBtn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        #nextBtn {
+            position: absolute;
+            top: 60px;
+            left: 20px;
+        }
+
+        #prevBtn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+/* Bibliographie */
+        #sources {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(240, 240, 240, 0.9);
+            color: black;
+            border: 3px solid aquamarine;
+            max-width: 800px;
+            max-height: 80vh;
+            margin: auto;
+            width: 90%;
+            flex-direction: column;
+            border-radius: 0.5%;
+
+        }
+        #sources-content {
+            font-family: monospace;
+            margin: auto;
+            padding: 10px;
+            overflow-y: auto;
+            margin-top: 20px;
+            line-height: 3;
+        }
+
+        #sources-content a {
+            color:black;
+;
+        }
+        #close-sources {
+            cursor: pointer;
+            font-size: 18px;
+            float: right;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            color: black;
+            border: none;
+            box-shadow: none;
+            font-weight: bolder;
+            background: none;
+            outline: none;
+            width: 10px;
+            }
+
+        
+    </style>
+</head>
+<body>
+
+    <script>
+        let data;
+        let playing = false;
+        let currentIndex = 0;
+        let initPages;
+        let currentInitPage = 0;
+        let rules;
+        const roomNames = {}; 
+
+
+// ***************************************************
+// ***************** PREFACE  *****************
+// ***************************************************
+        let DEV_MODE = false;
+        window.addEventListener("DOMContentLoaded", async () => {
+
+            if (DEV_MODE) {
+                await skip();
+                visualiseRules();
+                nextCommand();
+                nextCommand();
+                nextCommand();
+
+                document.addEventListener("click", e => {
+                    console.log("Clicked:", e.target);
+                });
+
+            } else {
+                showInitPage();
+            }
+        });
+
+        async function showInitPage() {
+            await fetch("initPages.json").then(response => response.json()).then(json => {initPages = json;}).catch(err => console.error("Error loading initial pages:", err));
+            const initPage = document.createElement('div');
+            initPage.className = 'init-page';
+            initPage.innerHTML = `
+                <div class="init-content">
+                    <h1 id="init-title"></h1>
+                    <button id="skipBtn" class="btn" onclick="skip()">Passer l'intro</button>
+                    <div id="init-text"></div>
+                    <div class="init-controls">
+                        <button class="btn" id="prevBtn" type="button" onclick="prevInitPage()">Retour</button>
+                        <button class="btn" id="nextBtn" type="button" onclick="nextInitPage()"></button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(initPage);
+            renderInitPage();
+        }
+
+        function renderInitPage() {
+            
+            const page = initPages[currentInitPage];
+
+            document.getElementById('init-title').textContent = page.title;
+            document.getElementById('init-text').innerHTML = page.content;
+            document.getElementById('nextBtn').textContent = page.button;
+
+            // Hide "Retour" on first page
+            document.getElementById('prevBtn').style.visibility =
+                currentInitPage === 0 ? 'hidden' : 'visible';
+        }
+
+        function nextInitPage() {
+            if (currentInitPage < initPages.length - 1) {
+                currentInitPage++;
+                renderInitPage();
+            } else {
+                document.querySelector('.init-page').remove();
+                loadFrame();
+                loadData();
+            }
+        }
+
+        function prevInitPage() {
+            if (currentInitPage > 0) {
+                currentInitPage--;
+                renderInitPage();
+            }
+        }
+
+        async function skip() {
+            if (document.querySelector('.init-page')) {
+            document.querySelector('.init-page').remove();
+            }
+            await loadFrame();
+            await loadData();
+        }
+// ***************************************************
+// ***************** INIT MAIN DISPLAY *****************
+// ***************************************************
+
+// ***************** CHARGEMENT STRUCTURE BASIQUE *****************
+
+        async function loadFrame() {
+            const toolbar = document.createElement('div');
+            toolbar.className = 'toolbar';
+            toolbar.innerHTML = `
+        <button class="btn" data-tooltip="Voir liste des références" onclick="showSources()">Bibliographie</button>
+        <button class="btn btn-secondary" id="playBtn" data-tooltip="Visualiser une séquence de jeu" onclick="playthrough()"> ▶ </button>
+        <button class="btn btn-secondary" onclick="visualiseRules()" data-tooltip="Dévoiler et modifier les règles du jeu en Inform7">✄</button>
+        <div id="welcome">Édition du jeu : Le comte et la communiste</div>
+        <div id="status"></div>`;
+            document.body.appendChild(toolbar);
+            const canvas = document.createElement('div');
+            canvas.id = 'canvas';
+            canvas.innerHTML = `
+            <div id='playthrough-container'>
+                <div class="screen">
+                </div>
+                <div id="command">
+                    <div id="prev-command" class="command-section"></div>
+                    <div id="current-command" class="command-section"></div>
+                    <div id="next-command" class="command-section"></div>
+                </div>
+            </div>`
+            document.body.appendChild(canvas);
+        }
+
+        async function loadData() {
+            try {
+                const response = await fetch("jeu.json");
+                data = await response.json();
+
+                currentIndex = 0; 
+                displayScreenCommand();
+                updateStatus("initialisation de la visualisation");
+            } catch (err) {
+                console.error("Error loading initial JSON:", err);
+            }
+        }
+
+        function updateStatus(message) {
+            document.getElementById('status').textContent = message;
+        }
+
+        function showSources() {
+            if (document.querySelector('#sources')) return;
+
+            const sources = document.createElement('div');
+            sources.id = 'sources';
+
+            sources.innerHTML = `
+                <button id="close-sources">✕</button><div id="sources-content">
+                    &emsp; <a href="https://doi.org/10.1093/comjnl/27.2.97">Knuth, D. E. 1984. “Literate Programming.” The Computer Journal 27 (2): 97–111.</a><br>
+                    &emsp; <a href="https://doi.org/10.1145/361604.361612">Knuth, Donald E. 1974. “Computer Programming as an Art.” Communications of the ACM 17 (12): 667–73.</a><br>
+                    &emsp; <a href="https://doi.org/10.1145/800197.806036">Nelson, T. H. 1965. “Complex Information Processing: A File Structure for the Complex, the Changing and the Indeterminate.” In Proceedings of the 1965 20th National Conference on-, 84–100. Cleveland, Ohio, United States: ACM Press.</a><br>
+                    &emsp; <a href="https://doi.org/10.4324/9781315577227">Pierazzo, Elena. 2016. Digital Scholarly Editing: Theories, Models and Methods. London:Routledge.</a><br>
+                    &emsp; <a href="https://doi.org/10.1093/llc/6.1.34">Sperberg-McQueen, C. M. 1991. “Text in the Electronic Age: Textual Study and Text Encoding, with Examples from Medieval Texts.” Literary and Linguistic Computing 6 (1): 34–46.</a><br>
+                    &emsp; <a href="https://worrydream.com/ExplorableExplanations/">Victor, Bret. 2011. “Explorable Explanations.”</a>
+                        </div>`
+                document.body.appendChild(sources);
+            console.log(sources.textContent);
+
+                // close btn
+                document.getElementById('close-sources').addEventListener('click', () =>
+            {
+                sources.remove();
+            });
+        }
+// ***************** FONCTION PLAYTHROUGH *****************
+        let duration = 2000;
+
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        async function playthrough() {
+            const btn = document.getElementById("playBtn");
+            btn.textContent = playing ? "⏸" : "▶";
+
+            if (playing) {
+                // ⏸ pause
+                playing = false;
+                btn.textContent = "▶";
+                updateStatus("paused");
+                return;
+            }
+            playing = true;
+            btn.textContent = "⏸";
+            while (playing && currentIndex < data.length) {
+
+                resetMainScreen();              // on nettoie juste avant d’afficher
+                displayScreenCommand();
+
+                currentIndex++;
+                await sleep(duration);
+            }
+
+            if (currentIndex >= data.length) {
+                playing = false;
+                currentIndex = 0;               // reset seulement à la fin
+                btn.textContent = "▶";
+                updateStatus(`playthrough done ${data.length}`);
+            }
+        }
+
+        function displayScreenCommand() {
+            const screen = document.querySelector(".screen");
+            const command = document.getElementById("command");
+            const val = data[currentIndex];
+            updateStatus(`showing ${val.id}`);
+
+            screen.id = val.id;
+            screen.innerHTML = val.ecran;
+
+            if (currentIndex > 0) {
+                const prev = document.getElementById("prev-command");
+                prev.innerHTML = `
+                        <button class="btn btn-secondary" data-tooltip="Revenir une étape en arrière" id="prev-command-btn">↩</button>
+                        Commande précédente: ${data[currentIndex - 1].commande}
+                `;
+            }
+
+            const currentCommand = document.getElementById('current-command');
+            currentCommand.innerHTML = `<span class="commandline">COMMANDE > ${val.commande}</span>
+            `;
+
+            if (currentIndex < data.length - 1) {
+                const nextCommandEl = document.getElementById('next-command');
+                nextCommandEl.innerHTML = ` Commande suivante: ${data[currentIndex + 1].commande}
+                        <button class="btn btn-secondary" data-tooltip="Aller une étape en avant" id="next-command-btn">↪</button>
+                `;
+            }
+            document.getElementById("prev-command-btn")?.addEventListener("click", prevCommand);
+            document.getElementById("next-command-btn")?.addEventListener("click", nextCommand);
+            attachModifiables();
+            
+        }
+        function nextCommand() {
+            if (currentIndex < data.length - 1) {
+                currentIndex++;
+                displayScreenCommand();
+            }
+        }
+
+        function prevCommand() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                displayScreenCommand();
+            }
+        }
+
+
+        function resetMainScreen() {
+            const currentCommand = data[currentIndex]?.commande;
+            document.querySelector('.screen').innerHTML = '';
+            document.querySelectorAll('.command-section').forEach(el => el.innerHTML = '');
+        }
+
+
+// ********************************************************************
+// ***************** SHOW AND CHANGE INFORM7 RULES *****************
+// ********************************************************************
+        function visualiseRules() {
+            if (document.getElementById('rules-container')) return;
+
+            const canvas = document.getElementById('canvas');
+            // x de fermeture
+            canvas.insertAdjacentHTML(
+                'afterbegin',
+                `<div id="rules-container">
+                    <button id="close-rules">✕</button>
+                    <div id="rules-content"></div>
+                </div>`
+            );
+            // ajout des règles en HTML
+            fetch("regles2.html")
+                .then(res => res.text())
+                .then(rules => {
+                    document.getElementById("rules-content").innerHTML = rules;
+
+                });
+
+            document
+                .getElementById('close-rules')
+                .addEventListener('click', () => {
+                    document.getElementById('rules-container').remove();
+                });
+        }
+
+
+
+        function attachModifiables() {
+            document.addEventListener("click", e => {
+                const modifiable = e.target.closest(".modifiable");
+                if (!modifiable) return;
+
+                setTimeout(() => {
+                    handleHotspot(
+                        modifiable.dataset.type,
+                        modifiable.dataset.target
+                    );
+                }, 250);
+
+            });
+
+
+                // changement des noms des pièces si modifiés
+                const screen = document.querySelector(".screen");
+
+                Object.keys(roomNames).forEach(target => {
+                    const modifiables = screen.querySelectorAll(
+                        `.modifiable[data-target="${target}"]`
+                    );
+                    modifiables.forEach(mod => {
+                        mod.textContent = roomNames[target];
+                    });
+                });
+
+
+            document.addEventListener("dblclick", e => {
+                const el = e.target.closest(".modifiable, .rules");
+                if (!el) return;
+
+                const type = el.dataset.type;
+                const target = el.dataset.target || el.id;
+
+                if (!target) return;
+                if (type === 'room') {
+                changeRoomName(type, target);
+                }
+            });
+
+        }
+        function changeRoomName(type, target) {
+            const ruleRoom = document.getElementById(target);
+            const modifiables = document.querySelectorAll(`.modifiable[data-target="${target}"]`);
+            console.log(modifiables);
+            const input = document.createElement("input");
+            input.type = "text";
+            input.value = ruleRoom.textContent.trim();
+            input.style.minWidth = "150px";
+
+            // Remplacer le texte par l'input
+            ruleRoom.textContent = "";
+            ruleRoom.appendChild(input);
+            input.focus();
+
+  
+
+            input.addEventListener("blur", () => {
+                const newName = input.value.trim() || ruleRoom.textContent;
+                ruleRoom.textContent = newName;
+                modifiables.forEach(mod => mod.textContent = newName);
+                 // stockage de l'information
+                roomNames[target] = newName;
+            });
+
+            input.addEventListener("keydown", e => {
+                if (e.key === "Enter") input.blur();
+            });
+           
+
+        }
+
+
+
+        function handleHotspot(type, target) {
+            switch (type) {
+                case "room":
+                    goToRule(target);
+                    break;
+                default:
+                    console.warn("Unknown hotspot type:", type);
+            }
+        }
+
+        function goToRule(id) {
+            const rule = document.querySelector(
+                `#rules-container #${id}`
+            );
+
+            if (rule) {
+                rule.scrollIntoView({ behavior: "smooth" });
+                highlightRule(rule);
+            }
+        }
+
+        function highlightRule(rule) {
+            // Retirer un éventuel ancien surlignage
+            document
+                .querySelectorAll("#rules-container .rule-highlight")
+                .forEach(el => el.classList.remove("rule-highlight"));
+
+            // Ajouter le surlignage
+            rule.classList.add("rule-highlight");
+
+            // Optionnel : enlever après quelques secondes
+            setTimeout(() => {
+                rule.classList.remove("rule-highlight");
+            }, 2500);
+        }
+
+
+
+
+    </script>
+</body>
+</html>
