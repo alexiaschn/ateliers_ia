@@ -225,8 +225,9 @@
         }
 
         .quote {
-            font-style: italic;
-            margin-inline-start: 10%;
+            font-family: monospace;
+            /* margin-inline-start: 10%; */
+            white-space: pre-line;
         }
 
         #skipBtn {
@@ -246,6 +247,7 @@
             top: 20px;
             left: 20px;
         }
+
 
 /* Bibliographie */
         #sources {
@@ -606,7 +608,7 @@
                         `.modifiable[data-target="${target}"]`
                     );
                     modifiables.forEach(mod => {
-                        mod.textContent = roomNames[target];
+                        mod.textContent = roomNames[target].toUpperCase();
                     });
                 });
 
@@ -643,10 +645,10 @@
 
             input.addEventListener("blur", () => {
                 const newName = input.value.trim() || ruleRoom.textContent;
-                ruleRoom.textContent = newName;
+                ruleRoom.textContent = newName.toUpperCase();
                 modifiables.forEach(mod => mod.textContent = newName);
                  // stockage de l'information
-                roomNames[target] = newName;
+                roomNames[target] = newName.toUpperCase();
             });
 
             input.addEventListener("keydown", e => {
