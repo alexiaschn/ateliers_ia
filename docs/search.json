@@ -2664,7 +2664,7 @@
     "href": "seances/ri.html#présentation-et-objectif-des-ateliers",
     "title": "Atelier IA - Recherche d’information et synthèse des sources",
     "section": "Présentation et objectif des ateliers",
-    "text": "Présentation et objectif des ateliers\nFormat : 4 séances de 2heures, sans inscription, participation libre (à justifier pour le certificat des Humanités Numériques)\n1h à 1h30 de théorie + 30 minutes à 1h d’échanges.\nObjectifs de la série d’atelier :\n\nComprendre les fondamentaux de l’IA et de son histoire\nObtenir des notions critiques sur le fonctionnement profond des outils\nCerner les enjeux actuels sur des thématiques qui affectent la recherche et l’enseignement"
+    "text": "Présentation et objectif des ateliers\nFormat : 4 séances de 2heures, sans inscription, participation libre (à justifier pour le certificat des Humanités Numériques)\nObjectifs de la série d’atelier :\n\nComprendre les fondamentaux de l’IA et de son histoire\nObtenir des notions critiques sur le fonctionnement profond des outils\nCerner les enjeux actuels sur des thématiques qui affectent la recherche et l’enseignement"
   },
   {
     "objectID": "seances/ri.html#certificat-canadien-en-humanités-numériques",
@@ -2678,14 +2678,14 @@
     "href": "seances/ri.html#quest-ce-que-lia",
     "title": "Atelier IA - Recherche d’information et synthèse des sources",
     "section": "Qu’est ce que l’IA ?",
-    "text": "Qu’est ce que l’IA ?\nDes programmes informatiques que nous estimons à la hauteur de l’intelligence humaine ? Le développement des technologies fait évoluer cette définition de l’intelligence non seulement artificielle mais aussi humaine.\n‘IA’ depuis 5 ans, a remplacé le ‘numérique’ des années 2010, et le ‘cyberespace’ des années 1990 et 2000.(Vitali-Rosati 2025).\nDéfinition pratique pour ces ateliers: “un programme informatique qui effectue une prédiction.” ## Rappels de l’introduction\n\nLes programmes d’IA réfèrent à des processus algorithmiques variés et pas seulement à des chatbots type ChatGPT.\nL’IA n’est pas une nouvelle discipline (terme de 1956 lors de la Dartmouth Summer Research Project on Artificial Intelligence par Marvin Minsky et John McCarthy).\nL’article Computing Machinery and Intelligence de Turing (1950) a orienté la discipline vers un modèle ‘chatbot’. \nLes ‘saisons de l’IA’ suivent des phases d’approbation publique et de désintérêt pour le terme et les technologies associées.\nCe qu’on fait entrer dans la catégorie d’“intelligent” a changé : le calcul savant est-il moins intelligent que le bavardage ?"
+    "text": "Qu’est ce que l’IA ?\nDes programmes informatiques que nous estimons à la hauteur de l’intelligence humaine ? Le développement des technologies fait évoluer cette définition de l’intelligence non seulement artificielle mais aussi humaine.\n‘IA’ depuis 5 ans, a remplacé le ‘numérique’ des années 2010, et le ‘cyberespace’ des années 1990 et 2000.(Vitali-Rosati 2025).\nDéfinition pratique pour ces ateliers: “un programme informatique qui effectue une prédiction.”"
   },
   {
     "objectID": "seances/ri.html#rappels-historiques-sur-lia",
     "href": "seances/ri.html#rappels-historiques-sur-lia",
     "title": "Atelier IA - Recherche d’information et synthèse des sources",
     "section": "Rappels historiques sur l’IA",
-    "text": "Rappels historiques sur l’IA\n\nDeux grandes approches en IA : une approche déductive (IA symbolique, système expert) vs. approche inductive (IA connexionniste, modèle de langue basé sur des plongements de mots ou embeddings = vecteurs).\nUn système expert peut être aussi complexe et énergivore qu’un LLM.\nUn LLM (large language model) est la modélisation sous forme de vecteurs de chaque élément d’un grand corpus (token ~mot) par rapport à cet ensemble.\n\n\n\n\nPlongements lexicaux ou word embeddings\n\n\n\n\n\nComparaison de vecteurs dans un espace à deux dimensions\n\n\n\n\n\nClassification avec algorithme K-Nearest-Neighbor d’une troisième phrase"
+    "text": "Rappels historiques sur l’IA\n\nDeux grandes approches en IA : une approche déductive (IA symbolique, système expert) vs. approche inductive (IA connexionniste, modèle de langue basé sur des plongements de mots ou embeddings = vecteurs).\nUn LLM (large language model) est la modélisation sous forme de vecteurs de chaque élément d’un très grand corpus (token ~mot) par rapport à cet ensemble.\nUn système expert peut être aussi complexe et énergivore qu’un LLM.\n\n\n\n\nPlongements lexicaux ou word embeddings\n\n\n\n\n\nComparaison de vecteurs dans un espace à deux dimensions\n\n\n\n\n\nClassification avec algorithme K-Nearest-Neighbor d’une troisième phrase"
   },
   {
     "objectID": "seances/ri.html#les-llms-en-contexte",
@@ -2706,7 +2706,7 @@
     "href": "seances/ri.html#exemple-de-système-dia-complexe-les-agents",
     "title": "Atelier IA - Recherche d’information et synthèse des sources",
     "section": "Exemple de système d’IA complexe: les agents",
-    "text": "Exemple de système d’IA complexe: les agents\n\nun agent est une série d’appels à un LLM : l’agent est ce qui permet d’enchaîner input et output jusqu’à complétion d’une tâche.\n\nAutrement dit, un agent est une “IA” qui se répond à elle-même.\nOn parlera de système agentique quand plusieurs agents interagissent.\nDemonstration d’un système agentic: assistant à l’exploration et la création de note sur un tableau interactif."
+    "text": "Exemple de système d’IA complexe: les agents\nUn agent est une série d’appels à un LLM : l’agent est ce qui permet d’enchaîner input et output jusqu’à complétion d’une tâche. Le résultat de ces interactions peut ne pas être une réponse en langue naturelle ex: activation d’une fonction.\nAutrement dit, un agent est une “IA” qui se répond à elle-même.\nOn parlera de système agentique quand plusieurs agents interagissent.\nDémonstration d’un agent : assistant à l’exploration et la création de note sur un tableau interactif de Arawjo (2026)"
   },
   {
     "objectID": "seances/ri.html#définitions-hypée-des-ia-agentiques",
@@ -2727,7 +2727,7 @@
     "href": "seances/ri.html#applications-de-chat-actuelles",
     "title": "Atelier IA - Recherche d’information et synthèse des sources",
     "section": "Applications de chat actuelles",
-    "text": "Applications de chat actuelles\nChatGPT et consort sont des applications qui utilisent un LLM (la représentation figée de la langue en vecteurs) pour faire de la prédiction de tokens (génération). Depuis GPT-3.5 et sa sortie publique en décembre 2022, l’application ChatGPT ne se contente pas d’envoyer seul le prompt de l’utilisateur pour interroger le LLM: dans le prompt global, on trouve un ensemble d’instructions préliminaires (le system prompt) et d’informations complémentaires comme l’historique des échanges (chat history).\nDepuis décembre 2024, la fonction search permet de lancer une requête sur internet =&gt; RAG"
+    "text": "Applications de chat actuelles\nDepuis GPT-3.5 et sa sortie publique en décembre 2022, l’application ChatGPT ne se contente pas d’envoyer seul le prompt de l’utilisateur pour interroger le LLM: dans le prompt global, on trouve un ensemble d’instructions préliminaires (le system prompt) et d’informations complémentaires comme l’historique des échanges (chat history).\nDepuis décembre 2024, le Model Context Protocol (MCP) permet l’intégration modulaire de l’interface de chat à d’autres fonctionalités.\n\n\n\nLe MCP1\n\n\nExemple : la fonction search =&gt; RAG\nsource: https://modelcontextprotocol.io/docs/getting-started/intro"
   },
   {
     "objectID": "seances/ri.html#retrieval-augmented-generation",
@@ -2741,14 +2741,14 @@
     "href": "seances/ri.html#rag-en-bref",
     "title": "Atelier IA - Recherche d’information et synthèse des sources",
     "section": "RAG en bref",
-    "text": "RAG en bref\nRequête d’une base de données1 avec des vieilles méthodes de Recherche d’Information éprouvées (TF-iDF ou similarité cosinus) + intégration des morceaux extraits au prompt. Le LLM effectue une synthèse\nou d’un moteur de recherche"
+    "text": "RAG en bref\nRequête d’une base de données1 avec des méthodes de Recherche d’Information (TF-iDF ou similarité cosinus) + intégration des morceaux extraits au prompt. Le LLM effectue une synthèse. Ex: NotebookLM\nou d’un moteur de recherche"
   },
   {
     "objectID": "seances/ri.html#points-dattention-sur-le-rag",
     "href": "seances/ri.html#points-dattention-sur-le-rag",
     "title": "Atelier IA - Recherche d’information et synthèse des sources",
     "section": "Points d’attention sur le RAG",
-    "text": "Points d’attention sur le RAG\n\nJeux de données externes peut aussi être biaisé,\nAjout de couches d’interprétation,\nDissémination de l’information: l’information se trouve dans plusieurs chunks\nAngles morts: information importante dans un chunk non extrait"
+    "text": "Points d’attention sur le RAG\n\nJeux de données externes peut aussi être biaisé,\nAjout de couches d’interprétation,\nDissémination de l’information quand l’information se trouve dans plusieurs chunks,\nAngles morts quand l’information importante est dans un chunk non extrait."
   },
   {
     "objectID": "seances/ri.html#chatgpt",
@@ -2776,21 +2776,21 @@
     "href": "seances/ri.html#expansion-de-requête",
     "title": "Atelier IA - Recherche d’information et synthèse des sources",
     "section": "Expansion de requête",
-    "text": "Expansion de requête\n\nMéthodes sans IA : thésaurus, ontologies\nQuery expansion avec un LLM: “Écrit 10 variants de la requête suivantes”"
+    "text": "Expansion de requête\n\nMéthodes sans IA : thésaurus, ontologies.\nQuery expansion avec un LLM: “Écrit 10 variants de la requête suivantes”"
   },
   {
     "objectID": "seances/ri.html#méthodes-de-recherche-dinformation",
     "href": "seances/ri.html#méthodes-de-recherche-dinformation",
     "title": "Atelier IA - Recherche d’information et synthèse des sources",
     "section": "Méthodes de Recherche d’information",
-    "text": "Méthodes de Recherche d’information\n\nMéthodes classiques (non IA ?):\n\nrecherche booléenne: ET/OU\nrecherche par caractère1 : ‘citation’ retourne ‘The decrease in uncited articles and its effect on the concentration of citations’\nrecherche lexicale: TF-iDF et BM25 -&gt; correspondance d’un terme par rapportaa à sa présence dans le corpus. \n\nRecherche sémantique (semantic search/dense retrieval) utilisation des plongements lexicaux de modèles types encodeur (BERT) ou décodeur (e.g. GPT) lors de la recherche: représentation vectorielle de la requête et de l’entièreté de la base de données -&gt; mesure de similarité cosinus.\n\n-&gt; Impact sur la manière de requêter: 1. par mot-clé, 2. ‘en langue naturelle’.\net regex!"
+    "text": "Méthodes de Recherche d’information\n\nMéthodes classiques (non IA ?):\n\nrecherche exacte1 avec opérateurs booléens: ex: ‘citation’ retourne ‘The decrease in uncited articles and its effect on the concentration of citations’\nrecherche lexicale statistique: TF-iDF (term frequency inverse document frequency) et BM25 -&gt; ranking de la recherche terme par rapport à sa présence dans le corpus.\nex: SemanticScholar, Isidore\n\nRecherche sémantique (semantic search/dense retrieval) utilisation des plongements lexicaux de modèles types encodeur (BERT) ou décodeur (e.g. GPT) lors de la recherche: représentation vectorielle de la requête et de l’entièreté de la base de données -&gt; mesure de similarité cosinus.\n\nex: fonction “Semantic Results” de JSTOR\n\nRecherche hybride (hybrid search): mélange de 1. et 2. (pas forcément 50/50).\n\n-&gt; Impact sur la manière de requêter: 1. par mot-clé, 2. ‘en langue naturelle’.\nou regex!"
   },
   {
     "objectID": "seances/ri.html#reranking",
     "href": "seances/ri.html#reranking",
     "title": "Atelier IA - Recherche d’information et synthèse des sources",
     "section": "Reranking",
-    "text": "Reranking\nPossiblement du ML classique ou un algorithme sur mesure (ex: semantic Scholar ’emphasize )"
+    "text": "Reranking\nClassement des articles présentés selon un critère de pertinence par rapport à la requête.\n\nML classique (entraînement d’un modèle au classement)\nComparaison de vecteurs (requête/titre de l’article): score = proximité. ex: Primo search assistant1\nÉvaluation par un LLM type ‘gen AI’ : prompt de classement ou catégorisation de pertinence. Fournissent les explications: Ex: Asta\n\nSource: https://knowledge.exlibrisgroup.com/Primo/Product_Documentation/020Primo_VE/Primo_VE_(English)/015_Getting_Started_with_Primo_Research_Assistant"
   },
   {
     "objectID": "seances/ri.html#enrichissement-de-résultats",
@@ -2811,7 +2811,7 @@
     "href": "seances/ri.html#overview-par-aaron-tay",
     "title": "Atelier IA - Recherche d’information et synthèse des sources",
     "section": "Overview par Aaron Tay",
-    "text": "Overview par Aaron Tay\n\nSynthèse des outils d’IA (Tay 2025)"
+    "text": "Overview par Aaron Tay\n\nSynthèse des outils d’IA (Tay 2025)Pour suivre ces questions, suivre Aaron Tay : https://aarontay.substack.com/"
   },
   {
     "objectID": "seances/ri.html#annonces",
@@ -2825,6 +2825,118 @@
     "href": "seances/ri.html#références",
     "title": "Atelier IA - Recherche d’information et synthèse des sources",
     "section": "Références",
-    "text": "Références\n\n\n\n\nAFP. 2025. “AFP and Mistral AI Announce Global Partnership to Enhance AI Responses with Reliable News Content AFP.com.”\n\n\nBigendako, Brice, and Eugene Syriani. 2026. “Modeling a Tool for Conducting Systematic Reviews Iteratively.” In 6th International Conference on Model-Driven Engineering and Software Development, 552–59.\n\n\nIrwin, Michael, and Yiwen Xu. 2025. “GenAI Vs. Agentic AI: What Developers Need to Know.” Docker.\n\n\nLewis, Patrick, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich Küttler, et al. 2021. “Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.” arXiv. https://doi.org/10.48550/arXiv.2005.11401.\n\n\nOpenAI. 2024. “Introducing ChatGPT Search.” OpenAI Blog.\n\n\nTay, Aaron. 2025. “What Do We Actually Mean by \"AI-Powered Search\"?” Substack Newsletter. Aaron Tay’s Musings about Librarianship.\n\n\nTuring, A. M. 1950. “Computing Machinery and Intelligence.” Mind LIX (236): 433–60. https://doi.org/10.1093/mind/LIX.236.433.\n\n\nVitali-Rosati, Marcello. 2025. “Manifeste Pour Des Études Critiques de l’Intelligence Artificielle.” Culture Numérique. Pour Une Philosophie Du Numérique."
+    "text": "Références\n\n\n\n\nAFP. 2025. “AFP and Mistral AI Announce Global Partnership to Enhance AI Responses with Reliable News Content AFP.com.”\n\n\nArawjo, Ian. 2026. “Ianarawjo/Splat.”\n\n\nDash, Anil. 2025. “ChatGPT’s Atlas: The Browser That’s Anti-Web - Anil Dash.” Anil Dash’s Blog.\n\n\nIrwin, Michael, and Yiwen Xu. 2025. “GenAI Vs. Agentic AI: What Developers Need to Know.” Docker.\n\n\nKlee, Miles. 2025. “AI Is Inventing Academic Papers That Don’t Exist – And They’re Being Cited in Real Journals.” Rolling Stone.\n\n\nLewis, Patrick, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich Küttler, et al. 2021. “Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.” arXiv. https://doi.org/10.48550/arXiv.2005.11401.\n\n\nOpenAI. 2024. “Introducing ChatGPT Search.” OpenAI Blog.\n\n\nTay, Aaron. 2025. “What Do We Actually Mean by \"AI-Powered Search\"?” Substack Newsletter. Aaron Tay’s Musings about Librarianship.\n\n\nTuring, A. M. 1950. “Computing Machinery and Intelligence.” Mind LIX (236): 433–60. https://doi.org/10.1093/mind/LIX.236.433.\n\n\nVitali-Rosati, Marcello. 2025. “Manifeste Pour Des Études Critiques de l’Intelligence Artificielle.” Culture Numérique. Pour Une Philosophie Du Numérique."
+  },
+  {
+    "objectID": "seances/ri.html#rappels-de-lintroduction",
+    "href": "seances/ri.html#rappels-de-lintroduction",
+    "title": "Atelier IA - Recherche d’information et synthèse des sources",
+    "section": "Rappels de l’introduction",
+    "text": "Rappels de l’introduction\n\nLes programmes d’IA réfèrent à des processus algorithmiques variés et pas seulement à des chatbots type ChatGPT.\nL’IA n’est pas une nouvelle discipline (terme de 1956 lors de la Dartmouth Summer Research Project on Artificial Intelligence par Marvin Minsky et John McCarthy).\nL’article Computing Machinery and Intelligence de Turing (1950) a orienté la discipline vers la création de chatbots. \nLes ‘saisons de l’IA’ suivent des phases d’approbation publique et de désintérêt pour le terme et les technologies associées.\nCe qu’on fait entrer dans la catégorie d’“intelligent” a changé : le calcul savant est-il moins intelligent que le bavardage ?"
+  },
+  {
+    "objectID": "seances/ri.html#rappel-sur-les-llms",
+    "href": "seances/ri.html#rappel-sur-les-llms",
+    "title": "Atelier IA - Recherche d’information et synthèse des sources",
+    "section": "Rappel sur les LLMs",
+    "text": "Rappel sur les LLMs\n\nChatbots type ChatGPT, Mistral, Gemini, Claude etc. = application qui utilise un LLM (la représentation figée de la langue en vecteurs) pour faire de la prédiction de tokens (génération).\n\nAbsence de référent ou de règle : probabilité pure -&gt; plausible et convaincant.\nLes hallucinations =/= anomalies\nLes outils reflètent les intérêts et la vision du monde de ceux qui les concoivent: correcteurs orthographiques et grammaticaux incarnent une vision du monde centrée sur la productivité et la rapidité.\nExploitation des capacités inductives d’un LLM ne dépend pas d’une interface en langue naturelle. Ex : classification avec de l’apprentissage machine (machine learning)."
+  },
+  {
+    "objectID": "seances/ri.html#exemple-chatgpt",
+    "href": "seances/ri.html#exemple-chatgpt",
+    "title": "Atelier IA - Recherche d’information et synthèse des sources",
+    "section": "Exemple: ChatGPT",
+    "text": "Exemple: ChatGPT\n\nWe collaborated extensively with the news industry and carefully listened to feedback from our global publisher partners, including Associated Press, Axel Springer, Condé Nast, Dotdash Meredith, Financial Times, GEDI, Hearst, Le Monde, News Corp, Prisa (El País), Reuters, The Atlantic, Time, and Vox Media. Any website or publisher can choose to appear⁠(opens in a new window) in ChatGPT search. If you’d like to share feedback, please email us at publishers-feedback@openai.com⁠. — OpenAI (2024)\n\n\nReformulation de l’entrée utilisateur en une ou plusieurs requêtes\nRequêtes envoyées à Bing et Shopify1 et sur leur base de données interne (médias partenaires).\nRe-ranking ?\nRéponse généré depuis le prompt contenant les informations extraites (+ system prompt, chat history etc.)\n\n-&gt; Atlas, un navigateur avec chatGPT comme “moteur de recherche” par défaut. Dash (2025) parle d’un navigateur ‘anti-web’:\n\nne retourne pas de réponse sur le web.\nbasé sur une interprétation de l’intention utilisateur vs. GUI\nautorise OpenAI à lire toutes les données lues et entrées dans le navigateur : “The idea is that ChatGPT will be your agent, but in reality you are ChatGPT’s agent”\n\n\nBy keeping the ChatGPT sidebar open while you browse, and giving it permission to look over your shoulder, OpenAI can suddenly access all kinds of things on the internet that they could never get to on their own.\n\nhttps://help.openai.com/en/articles/9237897-chatgpt-search#h_e40ba06c5b"
+  },
+  {
+    "objectID": "seances/ri.html#exemple-le-chat-de-mistral",
+    "href": "seances/ri.html#exemple-le-chat-de-mistral",
+    "title": "Atelier IA - Recherche d’information et synthèse des sources",
+    "section": "Exemple: Le Chat de Mistral",
+    "text": "Exemple: Le Chat de Mistral\nPartenariat avec l’AFP depuis janvier 2025 (AFP 2025). Opacité quant à la méthode de recherche d’information sur internet1.\nhttps://docs.mistral.ai/agents/tools/built-in/websearch"
+  },
+  {
+    "objectID": "seances/ri.html#liste-non-exhaustive",
+    "href": "seances/ri.html#liste-non-exhaustive",
+    "title": "Atelier IA - Recherche d’information et synthèse des sources",
+    "section": "Liste non exhaustive",
+    "text": "Liste non exhaustive\n\nGoogle Scholar Labs\nSemanticScholar\nJSTOR\nPrimo Research Assistant (spécialisé bibliothèque)\nWeb of Science Research Assistant\nScopus AI\nAsta\nscite.ai\nundermind.ai\nreLIS de l’Udem : Bigendako and Syriani (2026)\n\nQu’est-ce qu’on entend par IA dans ce cas ?\n5 à 6 couches d’intervention possible !"
+  },
+  {
+    "objectID": "seances/ri.html#création-de-métadonnées",
+    "href": "seances/ri.html#création-de-métadonnées",
+    "title": "Atelier IA - Recherche d’information et synthèse des sources",
+    "section": "Création de métadonnées",
+    "text": "Création de métadonnées\nDésambiguisation, keywords, classification de topics, abstract. (OpenAlex, Isidore? -&gt; ML pour attribution de sujets reliés)."
+  },
+  {
+    "objectID": "seances/ri.html#enrichissement-de-la-liste-de-résultats",
+    "href": "seances/ri.html#enrichissement-de-la-liste-de-résultats",
+    "title": "Atelier IA - Recherche d’information et synthèse des sources",
+    "section": "Enrichissement de la liste de résultats",
+    "text": "Enrichissement de la liste de résultats\n\nGoogle Scholar Labs donne une explication de la présence de l’article dans la liste de résultat"
+  },
+  {
+    "objectID": "seances/ri.html#synthèse-des-articles-ou-assistant-de-revue-de-littérature",
+    "href": "seances/ri.html#synthèse-des-articles-ou-assistant-de-revue-de-littérature",
+    "title": "Atelier IA - Recherche d’information et synthèse des sources",
+    "section": "Synthèse des articles ou assistant de revue de littérature",
+    "text": "Synthèse des articles ou assistant de revue de littérature\nSynthèse des articles extraits pour répondre à une question en langue naturelle =&gt; RAG.\n\nRAG simple: Elicit, SciSpace (source: Semantic Scolar, Open Alex), fonction TLDR de Semantic Scholar.\nDeep research : Agentic AI, spécialisation de plusieurs agents, retourne un rapport complet en quelques minutes. Fonctionalités spécialisés Ex: Consensus fonctionalité “Study Snapchot”."
+  },
+  {
+    "objectID": "seances/ri.html#limites-des-outils-de-synthèse",
+    "href": "seances/ri.html#limites-des-outils-de-synthèse",
+    "title": "Atelier IA - Recherche d’information et synthèse des sources",
+    "section": "Limites des outils de synthèse",
+    "text": "Limites des outils de synthèse\n\nQuelles bases de données ?\nBasé sur métadonnées seulement (abstract)\nPeut inventer des sources pour répondre à une question (-&gt; citogenesis phénomène qui précède les LLM et les lit review assistants.)\n\n\nThe AI-generated things get propagated into other real things, so students see them cited in real things and assume they’re real, and get confused as to why they lose points for using fake sources when other real sources use them (Klee 2025)"
+  },
+  {
+    "objectID": "seances/ri.html#reranking-suite",
+    "href": "seances/ri.html#reranking-suite",
+    "title": "Atelier IA - Recherche d’information et synthèse des sources",
+    "section": "Reranking (suite)",
+    "text": "Reranking (suite)\n\nAjout de critères externes Ex: semantic Scholar, “highly-cited papers”"
+  },
+  {
+    "objectID": "seances/ri.html#prochains-ateliers-débogue",
+    "href": "seances/ri.html#prochains-ateliers-débogue",
+    "title": "Atelier IA - Recherche d’information et synthèse des sources",
+    "section": "Prochains ateliers débogue",
+    "text": "Prochains ateliers débogue\nLe matériel informatique : trésor ou ordure ? 29 janvier, même heure même lieu\n\nRester à la fine pointe de la technologie, ça coûte cher. Mais est-ce même utile ? Est-ce que ça se fait de seulement remplacer la batterie de son ordinateur, ou un disque pour rendre sa machine plus rapide ? C’est souvent plus facile qu’on le pense ! Avec cette démo, on vous aide à garder votre machine plus longtemps, et votre argent dans vos poches !\n\nDocumentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS 12 mars, même heure même lieu"
+  },
+  {
+    "objectID": "seances/ri.html#rappels-histoire-de-la-discipline",
+    "href": "seances/ri.html#rappels-histoire-de-la-discipline",
+    "title": "Atelier IA - Recherche d’information et synthèse des sources",
+    "section": "Rappels : histoire de la discipline",
+    "text": "Rappels : histoire de la discipline\n\nL’IA n’est pas une nouvelle discipline (terme de 1956 lors de la Dartmouth Summer Research Project on Artificial Intelligence par Marvin Minsky et John McCarthy).\nL’article Computing Machinery and Intelligence de Turing (1950) a orienté la discipline vers la création de chatbots.\nLes ‘saisons de l’IA’ suivent des phases d’approbation publique et de désintérêt pour le terme et les technologies associées.\nChangement de paradigmes actuels : de l’outil qui assiste à l’outil qui produit à l’outil qui trompe (correction orthotypo -&gt; reformulation -&gt; génération -&gt; masquage de son utilisation).\nCe qu’on fait entrer dans la catégorie d’“intelligent” a changé : le calcul savant est-il moins intelligent que le bavardage ?"
+  },
+  {
+    "objectID": "seances/ri.html#rappels-ia-symbolique-ia-connexionniste",
+    "href": "seances/ri.html#rappels-ia-symbolique-ia-connexionniste",
+    "title": "Atelier IA - Recherche d’information et synthèse des sources",
+    "section": "Rappels : IA symbolique / IA connexionniste",
+    "text": "Rappels : IA symbolique / IA connexionniste\n\nDeux grandes approches en IA : une approche déductive (IA symbolique, système expert) vs. approche inductive (IA connexionniste, modèle de langue basé sur des plongements de mots ou embeddings = vecteurs).\nUn LLM (large language model) est la modélisation sous forme de vecteurs de chaque élément d’un très grand corpus (token ~mot) par rapport à cet ensemble.\nUn système expert peut être aussi complexe et énergivore qu’un LLM.\n\n\n\n\nPlongements lexicaux ou word embeddings\n\n\n\n\n\nComparaison de vecteurs dans un espace à deux dimensions\n\n\n\n\n\nClassification avec algorithme K-Nearest-Neighbor d’une troisième phrase"
+  },
+  {
+    "objectID": "seances/ri.html#définition-hypée-des-ia-agentiques",
+    "href": "seances/ri.html#définition-hypée-des-ia-agentiques",
+    "title": "Atelier IA - Recherche d’information et synthèse des sources",
+    "section": "Définition hypée des IA agentiques",
+    "text": "Définition hypée des IA agentiques\n\nDescription des IA agentiques par Docker (Irwin and Xu 2025)"
+  },
+  {
+    "objectID": "seances/ri.html#description-pas-hypée-de-lagent-conversationnel-de-la-démo",
+    "href": "seances/ri.html#description-pas-hypée-de-lagent-conversationnel-de-la-démo",
+    "title": "Atelier IA - Recherche d’information et synthèse des sources",
+    "section": "Description pas hypée de l’agent conversationnel de la démo",
+    "text": "Description pas hypée de l’agent conversationnel de la démo"
+  },
+  {
+    "objectID": "seances/ri.html#qui-quoi",
+    "href": "seances/ri.html#qui-quoi",
+    "title": "Atelier IA - Recherche d’information et synthèse des sources",
+    "section": "Qui ? quoi ?",
+    "text": "Qui ? quoi ?\n\nGoogle Scholar\nSemanticScholar\nJSTOR\nPrimo Research Assistant (spécialisé bibliothèque)\nWeb of Science Research Assistant\nScopus AI\nAsta\nscite.ai\nundermind.ai \n\nQu’est-ce qu’on entend par IA dans ce cas ?\n5 à 6 niveaux d’intervention possible !"
   }
 ]

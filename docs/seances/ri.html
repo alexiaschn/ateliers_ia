@@ -177,7 +177,6 @@ ouvrir splat1 à  tools pour montrer les fonctions  -->
 <section id="présentation-et-objectif-des-ateliers" class="slide level2">
 <h2>Présentation et objectif des ateliers</h2>
 <p>Format : 4 séances de 2heures, sans inscription, participation libre (à justifier pour le certificat des Humanités Numériques)</p>
-<p>1h à 1h30 de théorie + 30 minutes à 1h d’échanges.</p>
 <p>Objectifs de la série d’atelier :</p>
 <ul>
 <li>Comprendre les fondamentaux de l’IA et de son histoire</li>
@@ -205,21 +204,24 @@ ouvrir splat1 à  tools pour montrer les fonctions  -->
 <h2>Qu’est ce que l’IA ?</h2>
 <p>Des programmes informatiques que nous estimons à la hauteur de l’intelligence humaine ? Le développement des technologies fait évoluer cette définition de l’<em>intelligence</em> non seulement <em>artificielle</em> mais aussi <em>humaine</em>.</p>
 <p>‘IA’ depuis 5 ans, a remplacé le ‘numérique’ des années 2010, et le ‘cyberespace’ des années 1990 et 2000.<span class="citation" data-cites="vitali-rosatiManifestePourEtudes2025a">(<a href="#/références" role="doc-biblioref" onclick="">Vitali-Rosati 2025</a>)</span>.</p>
-<p>Définition pratique pour ces ateliers: “un programme informatique qui effectue une prédiction.” ## Rappels de l’introduction</p>
+<p>Définition pratique pour ces ateliers: “un programme informatique qui effectue une prédiction.”</p>
+</section>
+<section id="rappels-histoire-de-la-discipline" class="slide level2">
+<h2>Rappels : histoire de la discipline</h2>
 <ul>
-<li>Les programmes d’IA réfèrent à des processus algorithmiques variés et pas seulement à des chatbots type ChatGPT.</li>
 <li>L’IA n’est pas une nouvelle discipline (terme de 1956 lors de la Dartmouth Summer Research Project on Artificial Intelligence par Marvin Minsky et John McCarthy).</li>
-<li>L’article <em>Computing Machinery and Intelligence</em> de <span class="citation" data-cites="turingComputingMachineryIntelligence1950">Turing (<a href="#/références" role="doc-biblioref" onclick="">1950</a>)</span> a orienté la discipline vers un modèle ‘chatbot’. <!-- ici expliquer Turing :  l'article Computing machinery intelligence a orienté la discipline vers une définition étroite de l'intelligence humaine comme intelligence sociale, ou capacité à feindre un échange social comme preuve d'humanité --></li>
+<li>L’article <em>Computing Machinery and Intelligence</em> de <span class="citation" data-cites="turingComputingMachineryIntelligence1950">Turing (<a href="#/références" role="doc-biblioref" onclick="">1950</a>)</span> a orienté la discipline vers la création de chatbots.</li>
 <li>Les ‘saisons de l’IA’ suivent des phases d’approbation publique et de désintérêt pour le terme et les technologies associées.</li>
+<li>Changement de paradigmes actuels : de l’outil qui assiste à l’outil qui produit à l’outil qui trompe (correction orthotypo -&gt; reformulation -&gt; génération -&gt; masquage de son utilisation).</li>
 <li>Ce qu’on fait entrer dans la catégorie d’“intelligent” a changé : le calcul savant est-il moins intelligent que le bavardage ?</li>
 </ul>
 </section>
-<section id="rappels-historiques-sur-lia" class="slide level2">
-<h2>Rappels historiques sur l’IA</h2>
+<section id="rappels-ia-symbolique-ia-connexionniste" class="slide level2">
+<h2>Rappels : IA symbolique / IA connexionniste</h2>
 <ul>
 <li>Deux grandes approches en IA : une approche déductive (IA symbolique, système expert) vs.&nbsp;approche inductive (IA connexionniste, modèle de langue basé sur des plongements de mots ou <em>embeddings</em> = vecteurs).</li>
+<li>Un LLM (<em>large language model</em>) est la modélisation sous forme de vecteurs de chaque élément d’un très grand corpus (<em>token</em> ~mot) par rapport à cet ensemble.</li>
 <li>Un système expert peut être aussi complexe et énergivore qu’un LLM.</li>
-<li>Un LLM (<em>large language model</em>) est la modélisation sous forme de vecteurs de chaque élément d’un grand corpus (<em>token</em> ~mot) par rapport à cet ensemble.</li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -240,16 +242,15 @@ ouvrir splat1 à  tools pour montrer les fonctions  -->
 </figure>
 </div>
 </section>
-<section id="les-llms-en-contexte" class="slide level2">
-<h2>Les LLMs en contexte</h2>
+<section id="rappel-sur-les-llms" class="slide level2">
+<h2>Rappel sur les LLMs</h2>
 <ul>
-<li>Pour les LLMs, la ‘compréhension’ du monde n’est basée sur aucun référent ou aucune règle définie : <strong>les réponses sont probabilistes</strong>, elles sont donc plausibles et convaincantes parce qu’elles donnent plus de chance à des tournures de phrases courantes dans leur jeu d’entraînement.</li>
-<li>Les hallucinations ne sont pas des anomalies, ce sont des erreurs que l’on qualifie a posteriori comme telle.</li>
-<li>Après l’apprentissage de son corpus d’entrainement, une étape de <em>reinforcement learning</em> donne une saveur ou personnalité à un modèle.</li>
-<li>Les LLMs reflètent les intérêts économiques des concepteurices des applications qui les intègrent : nature ‘sycophantique’ avérée.</li>
-<li>On peut influencer le calcul de probabilité d’un modèle (température, top-k, seed) et donc sa personnalité (déterministe vs.&nbsp;créatif).</li>
-<li>On peut aussi ‘orienter’ le comportement d’un modèle avec un <em>system prompt</em> sans modifier les embeddings ou l’algorithme de prédiction.</li>
-<li>Chatbots = interfaces en langue naturelle : l’exploitation des capacités inductives d’un LLMs ne nécessite pas de passer par une telle interface. Ex : classification avec de l’apprentissage machine (<em>machine learning</em>).</li>
+<li>Chatbots type ChatGPT, Mistral, Gemini, Claude etc. = application qui utilise un LLM (la représentation figée de la langue en vecteurs) pour faire de la prédiction de tokens (génération).<br>
+</li>
+<li>Absence de référent ou de règle : probabilité pure -&gt; plausible et convaincant.</li>
+<li>Les hallucinations =/= anomalies</li>
+<li>Les outils reflètent les intérêts et la vision du monde de ceux qui les concoivent: correcteurs orthographiques et grammaticaux incarnent une vision du monde centrée sur la productivité et la rapidité.</li>
+<li>Exploitation des capacités inductives d’un LLM ne dépend pas d’une interface en langue naturelle. Ex : classification avec de l’apprentissage machine (<em>machine learning</em>).</li>
 </ul>
 </section></section>
 <section>
@@ -271,27 +272,32 @@ ouvrir splat1 à  tools pour montrer les fonctions  -->
 </section>
 <section id="exemple-de-système-dia-complexe-les-agents" class="slide level2">
 <h2>Exemple de système d’IA complexe: les agents</h2>
-<ul>
-<li>un agent est une série d’appels à un LLM : l’agent est ce qui permet d’enchaîner input et output jusqu’à complétion d’une tâche.</li>
-</ul>
+<p>Un agent est une série d’appels à un LLM : l’agent est ce qui permet d’enchaîner <em>input</em> et <em>output</em> jusqu’à complétion d’une tâche. Le résultat de ces interactions peut ne pas être une réponse en langue naturelle ex: activation d’une fonction.</p>
 <p>Autrement dit, <strong>un agent est une “IA” qui se répond à elle-même.</strong></p>
 <p>On parlera de système agentique quand plusieurs agents interagissent.</p>
-<p>Demonstration d’un système agentic: assistant à l’exploration et la création de note sur un tableau interactif.</p>
+<p>Démonstration d’un agent : assistant à l’exploration et la création de note sur un tableau interactif de <span class="citation" data-cites="arawjoIanarawjoSplat2026">Arawjo (<a href="#/références" role="doc-biblioref" onclick="">2026</a>)</span></p>
 <!-- idée: - performativité du langage : la réponse du modèle devient action (tool call) -->
 </section>
-<section id="définitions-hypée-des-ia-agentiques" class="slide level2">
-<h2>Définitions hypée des IA agentiques</h2>
+<section id="définition-hypée-des-ia-agentiques" class="slide level2">
+<h2>Définition hypée des IA agentiques</h2>
 
 <img data-src="img/genai_v_agenticai.png" class="r-stretch quarto-figure-center"><p class="caption">Description des IA agentiques par Docker <span class="citation" data-cites="irwinGenAIVsAgentic2025">(<a href="#/références" role="doc-biblioref" onclick="">Irwin and Xu 2025</a>)</span></p></section>
-<section id="schéma-de-lagent-conversationnel-de-la-démo" class="slide level2">
-<h2>Schéma de l’agent conversationnel de la démo</h2>
+<section id="description-pas-hypée-de-lagent-conversationnel-de-la-démo" class="slide level2">
+<h2>Description pas hypée de l’agent conversationnel de la démo</h2>
 
-<img data-src="img/AgentIA.png" class="r-stretch quarto-figure-center"><p class="caption">Diagramme du fonctionnement d’un “système agentique” à un seul agent (en franglais)</p></section>
-<section id="applications-de-chat-actuelles" class="slide level2">
+<img data-src="img/AgentIA.png" class="r-stretch"></section>
+<section id="applications-de-chat-actuelles" class="slide level2 scrollable">
 <h2>Applications de chat actuelles</h2>
-<p>ChatGPT et consort sont des applications qui utilisent un LLM (la représentation figée de la langue en vecteurs) pour faire de la prédiction de tokens (génération). Depuis GPT-3.5 et sa sortie publique en décembre 2022, l’application ChatGPT ne se contente pas d’envoyer seul le prompt de l’utilisateur pour interroger le LLM: dans le prompt global, on trouve un ensemble d’instructions préliminaires (le <em>system prompt</em>) et d’informations complémentaires comme l’historique des échanges (<em>chat history</em>).</p>
-<p>Depuis décembre 2024, la fonction <em>search</em> permet de lancer une requête sur internet =&gt; <strong>RAG</strong></p>
-</section></section>
+<p>Depuis GPT-3.5 et sa sortie publique en décembre 2022, l’application ChatGPT ne se contente pas d’envoyer seul le prompt de l’utilisateur pour interroger le LLM: dans le prompt global, on trouve un ensemble d’instructions préliminaires (le <em>system prompt</em>) et d’informations complémentaires comme l’historique des échanges (<em>chat history</em>).</p>
+<p>Depuis décembre 2024, le Model Context Protocol (MCP) permet l’intégration modulaire de l’interface de chat à d’autres fonctionalités.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/mcp.png"></p>
+<figcaption>Le MCP<sup>1</sup></figcaption>
+</figure>
+</div>
+<p>Exemple : la fonction <em>search</em> =&gt; <strong>RAG</strong></p>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>source: https://modelcontextprotocol.io/docs/getting-started/intro</p></li></ol></aside></section></section>
 <section>
 <section id="recherche-dinformation-et-synthèse-des-sources" class="title-slide slide level1 center">
 <h1>Recherche d’information et synthèse des sources</h1>
@@ -313,24 +319,24 @@ ouvrir splat1 à  tools pour montrer les fonctions  -->
 <img data-src="img/rag.png" class="r-stretch quarto-figure-center"><p class="caption">Superbe diagramme d’un RAG</p></section>
 <section id="rag-en-bref" class="slide level2 scrollable">
 <h2>RAG en bref</h2>
-<p>Requête d’une base de données<sup>1</sup> avec des vieilles méthodes de Recherche d’Information éprouvées (TF-iDF ou similarité cosinus) + intégration des morceaux extraits au prompt. Le LLM effectue une synthèse</p>
-<aside><ol class="aside-footnotes"><li id="fn1"><p>ou d’un moteur de recherche</p></li></ol></aside></section>
+<p>Requête d’une base de données<sup>1</sup> avec des méthodes de Recherche d’Information (TF-iDF ou similarité cosinus) + intégration des morceaux extraits au prompt. Le LLM effectue une synthèse. Ex: NotebookLM</p>
+<aside><ol class="aside-footnotes"><li id="fn2"><p>ou d’un moteur de recherche</p></li></ol></aside></section>
 <section id="points-dattention-sur-le-rag" class="slide level2">
 <h2>Points d’attention sur le RAG</h2>
 <ul>
 <li>Jeux de données externes peut aussi être biaisé,</li>
 <li>Ajout de couches d’interprétation,</li>
-<li>Dissémination de l’information: l’information se trouve dans plusieurs chunks</li>
-<li>Angles morts: information importante dans un chunk non extrait</li>
+<li>Dissémination de l’information quand l’information se trouve dans plusieurs chunks,</li>
+<li>Angles morts quand l’information importante est dans un chunk non extrait.</li>
 </ul>
 </section></section>
 <section>
-<section id="rag-des-applications-généralistes" class="title-slide slide level1 center">
-<h1>RAG des applications généralistes</h1>
+<section id="rag-des-applications-de-chat-généralistes" class="title-slide slide level1 center">
+<h1>RAG des applications de chat généralistes</h1>
 
 </section>
-<section id="chatgpt" class="slide level2 scrollable">
-<h2>ChatGPT</h2>
+<section id="exemple-chatgpt" class="slide level2 scrollable">
+<h2>Exemple: ChatGPT</h2>
 <blockquote>
 <p>We collaborated extensively with the news industry and carefully listened to feedback from our global publisher partners, including Associated Press, Axel Springer, Condé Nast, Dotdash Meredith, Financial Times, GEDI, Hearst, Le Monde, News Corp, Prisa (El País), Reuters, The Atlantic, Time, and Vox Media. Any website or publisher can choose to appear⁠(opens in a new window) in ChatGPT search. If you’d like to share feedback, please email us at publishers-feedback@openai.com⁠. — <span class="citation" data-cites="openaiIntroducingChatGPTSearch2024">OpenAI (<a href="#/références" role="doc-biblioref" onclick="">2024</a>)</span></p>
 </blockquote>
@@ -340,36 +346,49 @@ ouvrir splat1 à  tools pour montrer les fonctions  -->
 <li>Re-ranking ?</li>
 <li>Réponse généré depuis le prompt contenant les informations extraites (+ system prompt, chat history etc.)</li>
 </ol>
-<aside><ol class="aside-footnotes"><li id="fn2"><p>https://help.openai.com/en/articles/9237897-chatgpt-search#h_e40ba06c5b</p></li></ol></aside></section>
-<section id="le-chat-de-mistral" class="slide level2 scrollable">
-<h2>Le Chat de Mistral</h2>
-<p>Partenariat avec l’AFP depuis janvier 2025 <span class="citation" data-cites="afpAFPMistralAI2025">(<a href="#/références" role="doc-biblioref" onclick="">AFP 2025</a>)</span>. Opacité quant à la méthode de recherche d’information sur internet<sup>1</sup></p>
-<aside><ol class="aside-footnotes"><li id="fn3"><p>https://docs.mistral.ai/agents/tools/built-in/websearch</p></li></ol></aside></section></section>
+<p>-&gt; Atlas, un navigateur avec chatGPT comme “moteur de recherche” par défaut. <span class="citation" data-cites="dashChatGPTsAtlasBrowser2025">Dash (<a href="#/références" role="doc-biblioref" onclick="">2025</a>)</span> parle d’un navigateur ‘anti-web’:</p>
+<ul>
+<li>ne retourne pas de réponse sur le web.</li>
+<li>basé sur une interprétation de l’intention utilisateur vs.&nbsp;GUI</li>
+<li>autorise OpenAI à lire toutes les données lues et entrées dans le navigateur : “The idea is that ChatGPT will be your agent, but in reality you are ChatGPT’s agent”</li>
+</ul>
+<blockquote>
+<p>By keeping the ChatGPT sidebar open while you browse, and giving it permission to look over your shoulder, OpenAI can suddenly access all kinds of things on the internet that they could never get to on their own.</p>
+</blockquote>
+<aside><ol class="aside-footnotes"><li id="fn3"><p>https://help.openai.com/en/articles/9237897-chatgpt-search#h_e40ba06c5b</p></li></ol></aside></section>
+<section id="exemple-le-chat-de-mistral" class="slide level2 scrollable">
+<h2>Exemple: Le Chat de Mistral</h2>
+<p>Partenariat avec l’AFP depuis janvier 2025 <span class="citation" data-cites="afpAFPMistralAI2025">(<a href="#/références" role="doc-biblioref" onclick="">AFP 2025</a>)</span>. Opacité quant à la méthode de recherche d’information sur internet<sup>1</sup>.</p>
+<aside><ol class="aside-footnotes"><li id="fn4"><p>https://docs.mistral.ai/agents/tools/built-in/websearch</p></li></ol></aside></section></section>
 <section>
-<section id="assistants-de-recherche-ai-ou-ai-powered-search-engine" class="title-slide slide level1 center">
-<h1>Assistants de recherche AI ou <em>AI-powered search engine</em></h1>
+<section id="assistants-de-recherche-ai" class="title-slide slide level1 center">
+<h1>Assistants de recherche AI</h1>
 
 </section>
-<section id="intro" class="slide level2">
-<h2>Intro</h2>
-<p>Foisonnement d’assistants de recherche, ou de lit review assistants.</p>
+<section id="qui-quoi" class="slide level2">
+<h2>Qui ? quoi ?</h2>
 <ul>
-<li>Google Scholar Labs (décembre 25)</li>
+<li>Google Scholar</li>
 <li>SemanticScholar</li>
 <li>JSTOR</li>
 <li>Primo Research Assistant (spécialisé bibliothèque)</li>
 <li>Web of Science Research Assistant</li>
 <li>Scopus AI</li>
+<li>Asta</li>
 <li>scite.ai</li>
-<li>undermind.ai</li>
-<li>reLIS de l’Udem : <span class="citation" data-cites="bigendakoModelingToolConducting2026">Bigendako and Syriani (<a href="#/références" role="doc-biblioref" onclick="">2026</a>)</span></li>
+<li>undermind.ai <!-- - reLIS de l'Udem : @bigendakoModelingToolConducting2026 --></li>
 </ul>
 <p>Qu’est-ce qu’on entend par IA dans ce cas ?</p>
+<p>5 à 6 niveaux d’intervention possible !</p>
+</section>
+<section id="création-de-métadonnées" class="slide level2">
+<h2>Création de métadonnées</h2>
+<p>Désambiguisation, keywords, classification de topics, abstract. (OpenAlex, Isidore? -&gt; ML pour attribution de sujets reliés).</p>
 </section>
 <section id="expansion-de-requête" class="slide level2 scrollable">
 <h2>Expansion de requête</h2>
 <ol type="1">
-<li><p>Méthodes sans IA : thésaurus, ontologies</p></li>
+<li><p>Méthodes sans IA : thésaurus, ontologies.</p></li>
 <li><p><em>Query expansion</em> avec un LLM: “Écrit 10 variants de la requête suivantes”</p></li>
 </ol>
 </section>
@@ -378,44 +397,82 @@ ouvrir splat1 à  tools pour montrer les fonctions  -->
 <ol type="1">
 <li>Méthodes classiques (non IA ?):
 <ul>
-<li>recherche booléenne: ET/OU</li>
-<li>recherche par caractère<sup>1</sup> : ‘<strong>citation</strong>’ retourne ‘The decrease in uncited articles and its effect on the concentration of <strong>citation</strong>s’</li>
-<li>recherche lexicale: TF-iDF et BM25 -&gt; correspondance d’un terme par rapportaa à sa présence dans le corpus. <!-- explique mieux --></li>
+<li>recherche exacte<sup>1</sup> avec opérateurs booléens: ex: ‘<strong>citation</strong>’ retourne ‘The decrease in uncited articles and its effect on the concentration of <strong>citation</strong>s’</li>
+<li>recherche lexicale statistique: TF-iDF (<em>term frequency inverse document frequency</em>) et BM25 -&gt; ranking de la recherche terme par rapport à sa présence dans le corpus.</li>
+<li>ex: SemanticScholar, Isidore</li>
 </ul></li>
-<li>Recherche sémantique (<em>semantic search</em>/<em>dense retrieval</em>) utilisation des plongements lexicaux de modèles types encodeur (BERT) ou décodeur (e.g.&nbsp;GPT) lors de la recherche: représentation vectorielle de la requête et de l’entièreté de la base de données -&gt; mesure de similarité cosinus.</li>
+<li>Recherche sémantique (<em>semantic search</em>/<em>dense retrieval</em>) utilisation des plongements lexicaux de modèles types encodeur (BERT) ou décodeur (e.g.&nbsp;GPT) lors de la recherche: représentation vectorielle de la requête et de l’entièreté de la base de données -&gt; mesure de similarité cosinus.
+<ul>
+<li>ex: fonction “Semantic Results” de JSTOR</li>
+</ul></li>
+<li>Recherche hybride (<em>hybrid search</em>): mélange de 1. et 2. (pas forcément 50/50).</li>
 </ol>
 <p>-&gt; Impact sur la manière de requêter: 1. par mot-clé, 2. ‘en langue naturelle’.</p>
-<aside><ol class="aside-footnotes"><li id="fn4"><p>et regex!</p></li></ol></aside></section>
-<section id="reranking" class="slide level2">
+<aside><ol class="aside-footnotes"><li id="fn5"><p>ou regex!</p></li></ol></aside></section>
+<section id="reranking" class="slide level2 scrollable">
 <h2>Reranking</h2>
-<p>Possiblement du ML classique ou un algorithme sur mesure (ex: semantic Scholar ’emphasize )</p>
-</section>
-<section id="enrichissement-de-résultats" class="slide level2">
-<h2>Enrichissement de résultats</h2>
-<p>Ex: Google Scholar Labs</p>
+<p>Classement des articles présentés selon un critère de pertinence par rapport à la requête.</p>
+<ol type="1">
+<li><p>ML classique (entraînement d’un modèle au classement)</p></li>
+<li><p>Comparaison de vecteurs (requête/titre de l’article): score = proximité. ex: Primo search assistant<sup>1</sup></p></li>
+<li><p>Évaluation par un LLM type ‘gen AI’ : prompt de classement ou catégorisation de pertinence. Fournissent les explications: Ex: Asta</p></li>
+</ol>
+<aside><ol class="aside-footnotes"><li id="fn6"><p>Source: https://knowledge.exlibrisgroup.com/Primo/Product_Documentation/020Primo_VE/Primo_VE_(English)/015_Getting_Started_with_Primo_Research_Assistant</p></li></ol></aside></section>
+<section class="slide level2">
 
-<img data-src="img/googlescholarlabs.png" class="r-stretch quarto-figure-center"><p class="caption">Google Scholar Labs</p></section>
-<section id="synthèse-des-articles" class="slide level2">
-<h2>Synthèse des articles</h2>
-<p><em>Deep research</em> : revue de littérature complète à partir de plusieurs itérations (IA agentique)</p>
-<p>ex: undermind.ai</p>
+
+<img data-src="img/asta.png" class="r-stretch quarto-figure-center"><p class="caption">Asta présente la justification de la catégorie de pertinence</p></section>
+<section id="reranking-suite" class="slide level2 scrollable">
+<h2>Reranking (suite)</h2>
+<ol start="4" type="1">
+<li>Ajout de critères externes Ex: semantic Scholar, “highly-cited papers”</li>
+</ol>
+</section>
+<section id="enrichissement-de-la-liste-de-résultats" class="slide level2">
+<h2>Enrichissement de la liste de résultats</h2>
+
+<img data-src="img/googlescholarlabs.png" class="r-stretch quarto-figure-center"><p class="caption">Google Scholar Labs donne une explication de la présence de l’article dans la liste de résultat</p></section>
+<section id="synthèse-des-articles-ou-assistant-de-revue-de-littérature" class="slide level2 scrollable">
+<h2>Synthèse des articles ou assistant de revue de littérature</h2>
+<p>Synthèse des articles extraits pour répondre à une question en langue naturelle =&gt; RAG.</p>
+<ol type="1">
+<li><p>RAG simple: Elicit, SciSpace (source: Semantic Scolar, Open Alex), fonction TLDR de Semantic Scholar.</p></li>
+<li><p><em>Deep research</em> : Agentic AI, spécialisation de plusieurs agents, retourne un rapport complet en quelques minutes. Fonctionalités spécialisés Ex: Consensus fonctionalité “Study Snapchot”.</p></li>
+</ol>
+</section>
+<section class="slide level2">
+
 
 <img data-src="img/undermindai.png" class="r-stretch quarto-figure-center"><p class="caption">Undermind.ai</p><p><a href="https://app.undermind.ai/report/96d1ce264f5b976eac434514d16e2529a99968d6928b225d57859617b14beca1">source</a></p>
+</section>
+<section id="limites-des-outils-de-synthèse" class="slide level2">
+<h2>Limites des outils de synthèse</h2>
+<ul>
+<li>Quelles bases de données ?</li>
+<li>Basé sur métadonnées seulement (abstract)</li>
+<li>Peut inventer des sources pour répondre à une question (-&gt; <em>citogenesis</em> phénomène qui précède les LLM et les <em>lit review assistants</em>.)</li>
+</ul>
+<blockquote>
+<p>The AI-generated things get propagated into other real things, so students see them cited in real things and assume they’re real, and get confused as to why they lose points for using fake sources when other real sources use them <span class="citation" data-cites="kleeAIInventingAcademic2025">(<a href="#/références" role="doc-biblioref" onclick="">Klee 2025</a>)</span></p>
+</blockquote>
 </section>
 <section id="overview-par-aaron-tay" class="slide level2">
 <h2>Overview par Aaron Tay</h2>
 
-<img data-src="img/Tay_synthese_researchAssistant.png" class="r-stretch quarto-figure-center"><p class="caption">Synthèse des outils d’IA <span class="citation" data-cites="tayWhatWeActually2025">(<a href="#/références" role="doc-biblioref" onclick="">Tay 2025</a>)</span></p></section></section>
+<img data-src="img/Tay_synthese_researchAssistant.png" class="r-stretch quarto-figure-center"><p class="caption">Synthèse des outils d’IA <span class="citation" data-cites="tayWhatWeActually2025">(<a href="#/références" role="doc-biblioref" onclick="">Tay 2025</a>)</span></p><p>Pour suivre ces questions, suivre Aaron Tay : <a href="https://aarontay.substack.com/">https://aarontay.substack.com/</a></p>
+</section></section>
 <section>
-<section id="discussion" class="title-slide slide level1 center">
-<h1>Discussion</h1>
+<section id="échanges-et-questions" class="title-slide slide level1 center">
+<h1>Échanges et questions</h1>
 
 </section>
-<section id="annonces" class="slide level2">
-<h2>Annonces</h2>
-<p>Prochains ateliers débogue:</p>
-<p><strong>Le matériel informatique : trésor ou ordure ?</strong> &gt; <strong>29 janvier, même heure même lieu</strong> &gt; Rester à la fine pointe de la technologie, ça coûte cher. Mais est-ce même utile ? Est-ce que ça se fait de seulement remplacer la batterie de son ordinateur, ou un disque pour rendre sa machine plus rapide ? C’est souvent plus facile qu’on le pense ! Avec cette démo, on vous aide à garder votre machine plus longtemps, et votre argent dans vos poches !</p>
-<p><strong>Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS</strong> &gt;<strong>12 mars, même heure même lieu</strong></p>
+<section id="prochains-ateliers-débogue" class="slide level2">
+<h2>Prochains ateliers débogue</h2>
+<p><strong>Le matériel informatique : trésor ou ordure ?</strong> <strong>29 janvier, même heure même lieu</strong></p>
+<blockquote>
+<p>Rester à la fine pointe de la technologie, ça coûte cher. Mais est-ce même utile ? Est-ce que ça se fait de seulement remplacer la batterie de son ordinateur, ou un disque pour rendre sa machine plus rapide ? C’est souvent plus facile qu’on le pense ! Avec cette démo, on vous aide à garder votre machine plus longtemps, et votre argent dans vos poches !</p>
+</blockquote>
+<p><strong>Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS</strong> <strong>12 mars, même heure même lieu</strong></p>
 </section>
 <section id="références" class="slide level2 smaller scrollable">
 <h2>Références</h2>
@@ -425,11 +482,17 @@ ouvrir splat1 à  tools pour montrer les fonctions  -->
 <div id="ref-afpAFPMistralAI2025" class="csl-entry" role="listitem">
 AFP. 2025. <span>“<span>AFP</span> and <span>Mistral AI</span> Announce Global Partnership to Enhance <span>AI</span> Responses with Reliable News Content <span>AFP</span>.com.”</span>
 </div>
-<div id="ref-bigendakoModelingToolConducting2026" class="csl-entry" role="listitem">
-Bigendako, Brice, and Eugene Syriani. 2026. <span>“Modeling a <span>Tool</span> for <span>Conducting Systematic Reviews Iteratively</span>.”</span> In <em>6th <span>International Conference</span> on <span>Model-Driven Engineering</span> and <span>Software Development</span></em>, 552–59.
+<div id="ref-arawjoIanarawjoSplat2026" class="csl-entry" role="listitem">
+Arawjo, Ian. 2026. <span>“Ianarawjo/Splat.”</span>
+</div>
+<div id="ref-dashChatGPTsAtlasBrowser2025" class="csl-entry" role="listitem">
+Dash, Anil. 2025. <span>“<span>ChatGPT</span>’s <span>Atlas</span>: <span>The Browser That</span>’s <span>Anti-Web</span> - <span>Anil Dash</span>.”</span> <em>Anil Dash’s Blog</em>.
 </div>
 <div id="ref-irwinGenAIVsAgentic2025" class="csl-entry" role="listitem">
 Irwin, Michael, and Yiwen Xu. 2025. <span>“<span>GenAI</span> Vs. <span>Agentic AI</span>: <span>What Developers Need</span> to <span>Know</span>.”</span> <em>Docker</em>.
+</div>
+<div id="ref-kleeAIInventingAcademic2025" class="csl-entry" role="listitem">
+Klee, Miles. 2025. <span>“<span>AI Is Inventing Academic Papers That Don</span>’t <span>Exist</span> – <span>And They</span>’re <span>Being Cited</span> in <span>Real Journals</span>.”</span> <em>Rolling Stone</em>.
 </div>
 <div id="ref-lewisRetrievalAugmentedGenerationKnowledgeIntensive2021" class="csl-entry" role="listitem">
 Lewis, Patrick, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich Küttler, et al. 2021. <span>“Retrieval-<span>Augmented Generation</span> for <span>Knowledge-Intensive NLP Tasks</span>.”</span> arXiv. <a href="https://doi.org/10.48550/arXiv.2005.11401">https://doi.org/10.48550/arXiv.2005.11401</a>.
