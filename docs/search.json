@@ -2938,5 +2938,229 @@
     "title": "Atelier IA - Recherche d’information et synthèse des sources",
     "section": "Qui ? quoi ?",
     "text": "Qui ? quoi ?\n\nGoogle Scholar\nSemanticScholar\nJSTOR\nPrimo Research Assistant (spécialisé bibliothèque)\nWeb of Science Research Assistant\nScopus AI\nAsta\nscite.ai\nundermind.ai \n\nQu’est-ce qu’on entend par IA dans ce cas ?\n5 à 6 niveaux d’intervention possible !"
+  },
+  {
+    "objectID": "seances/preconisationIA.html#présentation-et-objectif-des-ateliers",
+    "href": "seances/preconisationIA.html#présentation-et-objectif-des-ateliers",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Présentation et objectif des ateliers",
+    "text": "Présentation et objectif des ateliers\nFormat : 4 séances de 2heures, sans inscription, participation libre (à justifier pour le certificat des Humanités Numériques)\nObjectifs de la série d’atelier :\n\nComprendre les fondamentaux de l’IA et de son histoire\nObtenir des notions critiques sur le fonctionnement profond des outils\nCerner les enjeux actuels sur des thématiques qui affectent la recherche et l’enseignement"
+  },
+  {
+    "objectID": "seances/preconisationIA.html#certificat-canadien-en-humanités-numériques",
+    "href": "seances/preconisationIA.html#certificat-canadien-en-humanités-numériques",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Certificat canadien en Humanités Numériques",
+    "text": "Certificat canadien en Humanités Numériques\n\n\n\nCertificat canadien en HN\n\n\n \nInformation sur le certificat"
+  },
+  {
+    "objectID": "seances/preconisationIA.html#quest-ce-que-lia",
+    "href": "seances/preconisationIA.html#quest-ce-que-lia",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Qu’est ce que l’IA ?",
+    "text": "Qu’est ce que l’IA ?\nDes programmes informatiques que nous estimons à la hauteur de l’intelligence humaine ? Le développement des technologies fait évoluer cette définition de l’intelligence non seulement artificielle mais aussi humaine.\n‘IA’ depuis 5 ans, a remplacé le ‘numérique’ des années 2010, et le ‘cyberespace’ des années 1990 et 2000.(Vitali-Rosati 2025).\nDéfinition pratique pour ces ateliers: “un programme informatique qui effectue une prédiction.”"
+  },
+  {
+    "objectID": "seances/preconisationIA.html#rappels-histoire-de-la-discipline",
+    "href": "seances/preconisationIA.html#rappels-histoire-de-la-discipline",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Rappels : histoire de la discipline",
+    "text": "Rappels : histoire de la discipline\n\nL’IA n’est pas une nouvelle discipline (terme de 1956 lors de la Dartmouth Summer Research Project on Artificial Intelligence par Marvin Minsky et John McCarthy).\nL’article Computing Machinery and Intelligence de Turing (1950) a orienté la discipline vers la création de chatbots.\nLes ‘saisons de l’IA’ suivent des phases d’approbation publique et de désintérêt pour le terme et les technologies associées.\nChangement de paradigmes actuels : de l’outil qui assiste à l’outil qui produit à l’outil qui trompe (correction orthotypo -&gt; reformulation -&gt; génération -&gt; masquage de son utilisation).\nCe qu’on fait entrer dans la catégorie d’“intelligent” a changé : le calcul savant est-il moins intelligent que le bavardage ?"
+  },
+  {
+    "objectID": "seances/preconisationIA.html#rappels-ia-symbolique-ia-connexionniste",
+    "href": "seances/preconisationIA.html#rappels-ia-symbolique-ia-connexionniste",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Rappels : IA symbolique / IA connexionniste",
+    "text": "Rappels : IA symbolique / IA connexionniste\n\nDeux grandes approches en IA : une approche déductive (IA symbolique, système expert) vs. approche inductive (IA connexionniste, modèle de langue basé sur des plongements de mots ou embeddings = vecteurs).\nUn LLM (large language model) est la modélisation sous forme de vecteurs de chaque élément d’un très grand corpus (token ~mot) par rapport à cet ensemble.\nUn système expert peut être aussi complexe et énergivore qu’un LLM.\n\n\n\n\nPlongements lexicaux ou word embeddings\n\n\n\n\n\nComparaison de vecteurs dans un espace à deux dimensions\n\n\n\n\n\nClassification avec algorithme K-Nearest-Neighbor d’une troisième phrase"
+  },
+  {
+    "objectID": "seances/preconisationIA.html#rappel-sur-les-llms",
+    "href": "seances/preconisationIA.html#rappel-sur-les-llms",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Rappel sur les LLMs",
+    "text": "Rappel sur les LLMs\n\nChatbots type ChatGPT, Mistral, Gemini, Claude etc. = application qui utilise un LLM (la représentation figée de la langue en vecteurs) pour faire de la prédiction de tokens (génération).\n\nAbsence de référent ou de règle : probabilité pure -&gt; plausible et convaincant.\nLes hallucinations =/= anomalies\nLes outils reflètent les intérêts et la vision du monde de ceux qui les concoivent: correcteurs orthographiques et grammaticaux incarnent une vision du monde centrée sur la productivité et la rapidité.\nExploitation des capacités inductives d’un LLM ne dépend pas d’une interface en langue naturelle. Ex : classification avec de l’apprentissage machine (machine learning)."
+  },
+  {
+    "objectID": "seances/preconisationIA.html#shadow-ai",
+    "href": "seances/preconisationIA.html#shadow-ai",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Shadow AI",
+    "text": "Shadow AI\nShadow IA: Adoption et utilisation de l’IA dite générative sans approbation ou validation des personnes en charge.\n\nShadow AI is the unsanctioned use of any artificial intelligence (AI) tool or application by employees or end users without the formal approval or oversight of the information technology (IT) department. — Source: https://www.ibm.com/think/topics/shadow-ai\n\n\nStatistique Canada indique que ces outils sont surtout utilisés pour l’analyse textuelle (35,7 %), l’analyse de données (26,4 %) et le déploiement d’agents conversationnels, comme les robots de clavardage (24,8 %). — Source: https://theconversation.com/pres-de-80-des-travailleurs-canadiens-utilisent-lia-sans-cadre-institutionnel-251668"
+  },
+  {
+    "objectID": "seances/preconisationIA.html#pratiques-discrètes-du-numérique",
+    "href": "seances/preconisationIA.html#pratiques-discrètes-du-numérique",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "“Pratiques discrètes du numérique”",
+    "text": "“Pratiques discrètes du numérique”\nF. Clavert et C. Muller : avec le numérique certaines pratiques ne sont pas ou plus documentées (comment nous arrivons à une information, comment nous organisons nos données localement etc.) (Muller 2025)"
+  },
+  {
+    "objectID": "seances/preconisationIA.html#quelles-nouvelles-pratiques-dans-la-recherche",
+    "href": "seances/preconisationIA.html#quelles-nouvelles-pratiques-dans-la-recherche",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Quelles nouvelles pratiques dans la recherche ?",
+    "text": "Quelles nouvelles pratiques dans la recherche ?\n\n\nproduction et examinuation d’un corpus : pipeline décomposée, traçable en partie (scrapping, nettoyage, OCR/HTR, nettoyage et structuration de la donnée, analyse)\n\nnumérisation et nettoyage des données simultanément (Chagué 2026)\nproduction des questions de recherche et analyse simultanée, nouveau ?\n\ncorrection, reformulation : relecture humaine (imprimer son texte)\n\ncorrection experte\nreformulation\ncacher l’utilisation de l’IA générative, nouveau ?\n\ndemande de subvention:\n\nne pas créditer son assistant de recherche\nne pas créditer ChatGPT, nouveau ?\n\névaluation par les pairs:\n\npas de commentaire\n“Voici l’évaluation de la proposition d’article :”, nouveau ?"
+  },
+  {
+    "objectID": "seances/preconisationIA.html#nouveauté-ou-exacerbation",
+    "href": "seances/preconisationIA.html#nouveauté-ou-exacerbation",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Nouveauté ou exacerbation ?",
+    "text": "Nouveauté ou exacerbation ?\nPourquoi cet outil nous bouleverse et qu’est-ce que cet outil bouleverse ? - remise en question de la superiorité humaine ?\nCerner son positionnement idéologique et narratif."
+  },
+  {
+    "objectID": "seances/preconisationIA.html#un-discours-marketing",
+    "href": "seances/preconisationIA.html#un-discours-marketing",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Un discours marketing ?",
+    "text": "Un discours marketing ?\nDiscours utilitariste : l’IA c’est merveilleux, ne pensez plus.\n\nWe built Cluely so you never have to think alone again. It sees your screen. Hears your audio. Feeds you answers in real time. While others guess — you’re already right.\n\n\n\nDiscours hyper niche :\n\ntoday, soc 2 is done before your ai girlfriend breaks up with you. it’s done in delve.\n\nÉconomie de l’attention:\nDonald Boat et Donald Trump sont dans le même bateau:\n\nHe’d generated a brutally simplified miniature of the entire VC economy. People were giving him stuff for no reason except that Altman had already done it, and they didn’t want to be left out of the trend. — Kriss (2025)\n\n“Intelligence Artificielle” terme inventé pour une demande de subvention.\nLes discours de l’IA sont au coeur d’une économie de la promesse."
+  },
+  {
+    "objectID": "seances/preconisationIA.html#quel-discours-tout-court",
+    "href": "seances/preconisationIA.html#quel-discours-tout-court",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Quel discours tout court ?",
+    "text": "Quel discours tout court ?\nDiscours spéculatifs : “rationalistes” de Scott Alexander, catastrophisme de Yoshua Bengio, accélérationisme de la Big Tech etc.\nvs. discours “critique” ?"
+  },
+  {
+    "objectID": "seances/preconisationIA.html#benbouzidquatrenuancesregulation2022-4-arènes-normatives",
+    "href": "seances/preconisationIA.html#benbouzidquatrenuancesregulation2022-4-arènes-normatives",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Benbouzid, Meneceur, and Smuha (2022) : 4 arènes normatives",
+    "text": "Benbouzid, Meneceur, and Smuha (2022) : 4 arènes normatives\n\nposture transhumaniste et spéculative\nl’auto-responsabilisation des chercheurs développant une science régulatoire\nla critique des effets néfastes des systèmes d’IA sur les droits fondamentaux\nrégulations du marché"
+  },
+  {
+    "objectID": "seances/preconisationIA.html#fergusondarwinprometheetaylor2026-les-figures-narratives-construction-du-discours-sur-lia",
+    "href": "seances/preconisationIA.html#fergusondarwinprometheetaylor2026-les-figures-narratives-construction-du-discours-sur-lia",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Ferguson (2026) : Les figures narratives : construction du discours sur l’IA",
+    "text": "Ferguson (2026) : Les figures narratives : construction du discours sur l’IA\nReprenant Benbouzid et Cardon : orientation des discours selon 2 axes: - Axe horizontal : agentivité des systèmes d’IA. Du techno-centrisme à la technologie comme construction sociale. - Axe vertical : capital - travail. De l’accumulation du capital à la transformation du travail.\n\nposture Darwinienne : Ne faites pas d’études supérieure,\nposture promothéenne : l’IA est une création\nnarratif taylorien : l’IA est une manière de gagner en contrôle et pas en productivité.\nnarratif Habernassienne : co-construction des systèmes d’IA\n\n\nSituation des discours sur l’IA"
+  },
+  {
+    "objectID": "seances/preconisationIA.html#posture-darwinienne",
+    "href": "seances/preconisationIA.html#posture-darwinienne",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Posture darwinienne",
+    "text": "Posture darwinienne\nMise en concurrence entre l’humain et l’IA. L’humain doit renforcer ses compétences propres. Avec une forme d’agnostisme social et objectivité dans l’impact de l’IA sur le travail.\n\neffet stylisation du discours sur l’IA Darwin"
+  },
+  {
+    "objectID": "seances/preconisationIA.html#posture-promothéenne",
+    "href": "seances/preconisationIA.html#posture-promothéenne",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Posture promothéenne",
+    "text": "Posture promothéenne\n“renaissance”, les cyborgs, les centaures, les hybridations avec la machine promettent à l’humain des capacités sur-humaines, une libération.\n\ndiscours promethéen"
+  },
+  {
+    "objectID": "seances/preconisationIA.html#posture-taylorienne",
+    "href": "seances/preconisationIA.html#posture-taylorienne",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Posture taylorienne",
+    "text": "Posture taylorienne\nL’IA est une manière de gagner en contrôle et pas en productivité. Rationalisation scientifique, mise à distance critique. Lecture de l’IA dans une continuité. Ex: les diapos précédentes\n\ndiscours taylorien"
+  },
+  {
+    "objectID": "seances/preconisationIA.html#posture-habernassienne",
+    "href": "seances/preconisationIA.html#posture-habernassienne",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Posture habernassienne",
+    "text": "Posture habernassienne\nCo-construction des système d’IA : ex : prise de décision collective etc. L’IA comme choix d’organisation à justifier, comme objet controversé. Paradigme émergent et pas encore dominant. Le cadrage est celui du : il y a un bon discours sur l’IA.\n\ndiscours habernassien"
+  },
+  {
+    "objectID": "seances/preconisationIA.html#situation-personnnelle",
+    "href": "seances/preconisationIA.html#situation-personnnelle",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Situation personnnelle",
+    "text": "Situation personnnelle\nNarratif darwinien: - inévitabilité de l’IA - mise en concurrence des humains entre eux renforcé par les IA\nNarratif prométhéen: - …\nNarratif taylorien : - l’IA ne fait qu’exacerber les structures de contrôle,\nNarratif habernassien: - (Schäfer and Mäkelä 2025) se baser sur le breakage, repair, renew framework de Jackson (2014) : importance des guidelines pour la literatie numérique mais aussi importance du dialogue avec les média grand public pour entrer dans une logique de réparation, de mise en évidence des dégâts, et actuellement, une phase de “renouveau” au sens où la démocratie peut entrer en coopération avec la technologie. - sensibilisation, formation. s"
+  },
+  {
+    "objectID": "seances/preconisationIA.html#multiplication-des-chartes-et-cadres-éthiques",
+    "href": "seances/preconisationIA.html#multiplication-des-chartes-et-cadres-éthiques",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Multiplication des chartes et cadres éthiques",
+    "text": "Multiplication des chartes et cadres éthiques\n(Benbouzid and Cardon 2022) : principalisme : &gt; les cadres moraux théoriques sont produits de manière déductive à partir de principes abstraits, puis appliqués aux pratiques. Il est reproché au principalisme de ne pas prendre suffisamment en compte les particularités de ces algorithmes et le contexte de leur mise en oeuvre.\n\ncommunautés voire disciplines : Fair Machine Learning (Fair ML) et Explainable AI (XAI)"
+  },
+  {
+    "objectID": "seances/preconisationIA.html#institutionnalisation",
+    "href": "seances/preconisationIA.html#institutionnalisation",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "“Institutionnalisation”",
+    "text": "“Institutionnalisation”\n\nPour une institutionnalisation efficace de l’IAG, nous proposons trois points complémentaires. - L’élaboration de politiques d’utilisation explicites, communiquées et régulièrement mises à jour, permet de clarifier les frontières entre usages autorisés et proscrits. - La formation et la sensibilisation constituent des leviers essentiels : les employés doivent développer non seulement des compétences techniques en matière de rédactique, mais également une compréhension profonde des enjeux organisationnels, éthiques et de sécurité. - Le choix et la mise en place d’outils d’IAG approuvés et sécurisés, notamment alignés sur les besoins de l’entreprise et sur la loi. Comme le souligne KPMG, les organisations avant-gardistes « transforment l’utilisation non autorisée de l’IA en un avantage stratégique et en un moteur d’innovation » (traduction libre). — Agbon and Nguegang (2026)"
+  },
+  {
+    "objectID": "seances/preconisationIA.html#organisations-supra-nationales",
+    "href": "seances/preconisationIA.html#organisations-supra-nationales",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Organisations supra-nationales",
+    "text": "Organisations supra-nationales\nEx: Parlement européen, Assemblée parlementaire du Conseil de l’Europe, l’agence européenne des droits fondamentaux (FRA), l’Organisation pour la Sécurité et la Coopération en Europe (OSCE), le Partenariat Mondial pour l’Intelligence Artificiel (PMIA), la Banque Mondiale ou l’Organisation Mondiale de la Santé (OMS).\n\nRapports\n\nPuis lois ex: Artificial Intelligence Act de juin 2024. (“Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 Laying down Harmonised Rules on Artificial Intelligence and Amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act) (Text with EEA Relevance)” 2024)"
+  },
+  {
+    "objectID": "seances/preconisationIA.html#le-gouvernement-canadien",
+    "href": "seances/preconisationIA.html#le-gouvernement-canadien",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Le gouvernement canadien",
+    "text": "Le gouvernement canadien\nLéglislation : Artificial Intelligence and Data Act (2022-2024)\nControversé car jugé insuffisant dans les mesures de protection du public et des employés. Rejeté en 2024.\nCode de conduite volontaire visant un développement et une gestion responsables des systèmes d’IA générative avancés, 2023.\n-&gt; Responsabilisation des individus et entreprises sur la base du volontariat, quelle efficacité face aux grandes entreprises ?\nGuide sur l’utilisation de l’IA générative\nCanada: Canada, S. du C. du T. du. (2024, mai 30). Guide sur l’utilisation de l’intelligence artificielle générative. https://www.canada.ca/fr/gouvernement/systeme/gouvernement-numerique/innovations-gouvernementales-numeriques/utilisation-responsable-ai/guide-utilisation-intelligence-artificielle-generative.html\n-&gt; à destination des institutions fédérales\nTypologie des usages à risque:\nLes risques liés à l’utilisation de ces outils dépendent de ce à quoi ils serviront et des mesures d’atténuation en place.\n\nExemples d’utilisations à faible risque :\n\n    rédiger un courriel pour inviter des collègues à une activité de renforcement de l’esprit d’équipe;\n    réviser l’ébauche d’un document qui fera l’objet d’examens et d’approbations supplémentaires.\n\nExemples d’utilisations à risque plus élevé (comme les utilisations dans la prestation de services) :\n\n    déployer un outil (par exemple, un robot conversationnel) à l’intention du public;\n    produire un résumé des renseignements d’un client.\nPrincipes PRETES:\n\nPertinente\nResponsable\nÉquitable\nTransparente\nÉclairée\nSécurisée\n\n\nPratiques exemplaires pour tous les utilisateurs de l’IA générative dans les institutions fédérales - Indiquer clairement que vous avez utilisé l’IA générative pour élaborer du contenu. - Ne pas considérer le contenu généré comme faisant autorité. Vérifier l’exactitude des faits et du contexte, par exemple en les comparant à des renseignements provenant de sources fiables ou en demandant à un collègue ayant de l’expertise d’examiner la réponse. - Vérifier les renseignements personnels créés à l’aide de l’IA générative afin de veiller à ce qu’ils soient exacts, à jour et complets. - Évaluer l’incidence des résultats inexacts. Ne pas utiliser l’IA générative lorsque l’exactitude des faits ou l’intégrité des données est nécessaire. - S’efforcer de comprendre la qualité et la source des données d’apprentissage. - Penser à votre capacité à relever les contenus inexacts avant d’utiliser l’IA générative. Ne pas l’utiliser si vous ne pouvez pas confirmer la qualité du contenu. - Apprendre à créer des messages-guides efficaces et à fournir un retour d’information pour affiner les résultats afin de limiter la production de contenu inexact. - N’utilisez pas d’outils d’IA générative comme moteurs de recherche à moins que des sources soient fournies pour que vous puissiez vérifier le contenu.\n\nCanada (2024)\nConseil consultatif en matière d’intelligence artificielle\nDepuis 2019.\nOrientation du conseil à l’été 2025: &gt; les membres du Conseil ont souligné l’intérêt de réutiliser les outils au code source ouvert, de mesurer l’impact de l’IA et de déployer à l’échelle du gouvernement les applications qui ont fait leurs preuves afin d’éviter de réinventer la roue. Ils ont également suggéré que le gouvernement aurait tout intérêt à renforcer sa collaboration avec le secteur privé pour mettre en œuvre la stratégie, mais que cela nécessiterait le retrait de certains obstacles, tels que la complexité des règles d’approvisionnement.\n\n« L’IA pour la prospérité », qui met l’accent sur l’adoption, l’intersection entre l’IA et l’énergie, et l’inclusion numérique.\n\n(Conseil consultatif en matière d’intelligence artificielle 2025)\nStratégie pancanadienne en matière d’IA\n3 pilliers : - Commercialisation (appui aux instituts nationaux comme le MILA) - Normes - Talents et recherche (via CIFAR)"
+  },
+  {
+    "objectID": "seances/preconisationIA.html#les-entreprises",
+    "href": "seances/preconisationIA.html#les-entreprises",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Les entreprises",
+    "text": "Les entreprises\nDubber, Pasquale, and Das (2020) : - un écart entre la preuve de concept, le prototype et le déploiement de grande échelle -&gt; - possibilité de régulation de l’infrastructure industrielle vs. régulation des services permis par cette infrastructure (ex: banque, compagnies aériennes) - modèles alternatifs comme Wikipédia peuvent (grâce à l’anonymat) limiter les incitatifs à l’autopromo.\n\nguardrail failures are features not bugs: they are created by the incentives built into the algorithm.\n\nEx: les “phantom requests” sur über, sans possibilité de recours, baissent les notes des chauffeur.se.s qui perdent leurs bonus. über se défend en maintenant le discours du ‘bug’.\n\nThe pairing of the algorithms and guardrails tempts companies to engage in regulatory arbitrage, providing a requirement for external action. — Dubber, Pasquale, and Das (2020)\n\n-&gt; risques d’ingérences politiques accru avec l’invisibilisation et l’adoption massive de systèmes d’IA propriétaires."
+  },
+  {
+    "objectID": "seances/preconisationIA.html#universités",
+    "href": "seances/preconisationIA.html#universités",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Universités",
+    "text": "Universités\nUdem\n\nUne boîte à outils et des formations : https://boite-outils.bib.umontreal.ca/trouver-evaluer/iag\nUn propos fort et répété:\n\n\nIl est important de consulter les plans de cours pour vérifier si l’utilisation des outils d’IAg est permise et les modalités d’utilisation qui sont acceptées. Sans autorisation explicite, ces outils sont réputés interdits.\n\nUniversité de Liège\nUsages permis: - assistant linguistique - assistant de recherche d’information\n\nIl va de soi que votre université vous encourage par ailleurs à exploiter l’IA, dans votre sphère personnelle, pour accompagner votre étude et consolider votre maitrise des matières !\n\nUsages proscrits: &gt;Présenter la production d’une IA comme la sienne propre ou celle d’un condisciple car ce faisant: &gt; - vous vous appropriez malhonnêtement le travail d’autrui ou vous ignorez les sources vraies qui ont conduit au résultat présenté. &gt; - vous développez une forme de paresse intellectuelle &gt; - vous empêchez l’enseignant d’évaluer correctement les connaissances, compétences, attitudes que le travail est censé refléter.\nUniversité de Liège (2023)"
+  },
+  {
+    "objectID": "seances/preconisationIA.html#éditeurs",
+    "href": "seances/preconisationIA.html#éditeurs",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Éditeurs",
+    "text": "Éditeurs\nSpringer s.d. et Elsevier depuis septembre 2025 distinguent une utilisation par les auteur.ice.s et une utilisation par les évaluateur.ice.s.\n\nUne utilisation autorisée pour la correction plus ou moins mineure du texte, sans définition claire entre correction et édition.\n\n\n“AI assisted copy editing” as AI-assisted improvements to human-generated texts for readability and style, and to ensure that the texts are free of errors in grammar, spelling, punctuation and tone. These AI-assisted improvements may include wording and formatting changes to the texts, but do not include generative editorial work and autonomous content creation. In all cases, there must be human accountability for the final version of the text and agreement from the authors that the edits reflect their original work. — Springer\n\n\nUne attribution autoriale qui reste strictement humaine\n\n\nAuthors preparing a manuscript for an Elsevier journal can use AI Tools to support them. However, these tools must never be used as a substitute for human critical thinking, expertise and evaluation. AI Tools should always be applied with human oversight and control. — Elsevier\n\n\nInterdiction totale pour l’aide à l’évaluation :\n\n\nReviewers should not upload a submitted manuscript or any part of it into a generative AI tool as this may violate the authors’ confidentiality and proprietary rights and, where the paper contains personally identifiable information, may breach data privacy rights.\n\n\nThis confidentiality requirement extends to the peer review report, as it may contain confidential information about the manuscript and/or the authors. For this reason, reviewers should not upload their peer review report into an AI tool, even if it is just for the purpose of improving language and readability."
+  },
+  {
+    "objectID": "seances/preconisationIA.html#question-épineuse-de-lattribution-autoriale",
+    "href": "seances/preconisationIA.html#question-épineuse-de-lattribution-autoriale",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Question épineuse de l’attribution autoriale",
+    "text": "Question épineuse de l’attribution autoriale\nPositionnement clair du Committee on publication Ethics (COPE)(Committee on Publication Ethics 2024) : &gt; AI tools cannot be listed as an author of a paper.\n\nAuthors should not list AI Tools as an author or co-author, nor cite AI Tools as an author. Authorship implies responsibilities and tasks that can only be attributed to and performed by humans — Elsevier\n\nvs. une nouvelle pratique : ex Generative Pre-trained Transformer and Zhavoronkov (2022) : a modifié la liste de co-auteur pour mentionner seulement Zhavoronkov."
+  },
+  {
+    "objectID": "seances/preconisationIA.html#citer-lia",
+    "href": "seances/preconisationIA.html#citer-lia",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Citer l’IA",
+    "text": "Citer l’IA\nGuidelines de la MLA, Chicago et APA pour citer l’utilisation de l’IA.\nGorraiz (2025) : rappelle la notion fondamentale de “invisible college” des premières sociétés savantes. Selon lui, utilisation de moins en moins invisibilisée des IA, ce qui contredit le discours actuel du “Shadow AI”.\n\nrecherche menée sur corpus WoS et Scopus jusqu’à oct. 2024 avec recherche de “openAi, ChatGPT et Perplexity”.\n12 articles listent un des 3 termes comme co-auteur.\napparition dans la bibliographie et dans les remerciements :\n\non cite plus souvent “openAI” que “ChatGPT”\n816 citations bibliographiques, soit comme auteur, soit comme source (ex: Anonyme, 2024).\nObservation du type de citation par discipline montre les divergence de perception de l’IA :\n\n\n\nThe predominance of citations listing AI as an author in Computer Science and Social Sciences suggests that AI is becoming an active contributor to content generation within these fields. On the other hand, the trend of citing AI more frequently as a source in Environmental Science and Earth and Planetary Sciences indicates that AI’s role in these disciplines is more focused on data analysis rather than content creation. This variation in citation practices across disciplines highlights AI’s evolving role. Some fields seem to lean toward acknowledging AI as a source of information, while others are increasingly embracing AI as a formal co-author."
+  },
+  {
+    "objectID": "seances/preconisationIA.html#citer-lia-limites",
+    "href": "seances/preconisationIA.html#citer-lia-limites",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Citer l’IA : limites",
+    "text": "Citer l’IA : limites\nGorraiz (2025) : - subvertion du principe de la citation qui est une reconnaissance du travail d’un collègue “sur les épaules d’un géant” - contradiction avec l’interdiction de reconnaissance de l’autorialité des IA. - suggère plutôt de se servir des remerciements - aucune assurance que les auteur.ice.s suivent les exigences de transparence des revues etc."
+  },
+  {
+    "objectID": "seances/preconisationIA.html#préconisations-de-certain.e.s-individus",
+    "href": "seances/preconisationIA.html#préconisations-de-certain.e.s-individus",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Préconisations de certain.e.s individus",
+    "text": "Préconisations de certain.e.s individus"
+  },
+  {
+    "objectID": "seances/preconisationIA.html#section",
+    "href": "seances/preconisationIA.html#section",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "",
+    "text": "Agbon, Gildas, and Harold Nguegang. 2026. “Près de 80 % des travailleurs canadiens utilisent l’IA sans cadre institutionnel.” La Conversation Canada. http://theconversation.com/pres-de-80-des-travailleurs-canadiens-utilisent-lia-sans-cadre-institutionnel-251668. https://doi.org/10.64628/AAP.9rpsv37nk.\n\n\nBenbouzid, Bilel, and Dominique Cardon. 2022. “Contrôler les IA.” Réseaux 232233 (2): 9–26. https://doi.org/10.3917/res.232.0009.\n\n\nBenbouzid, Bilel, Yannick Meneceur, and Nathalie Alisa Smuha. 2022. “Quatre nuances de régulation de l’intelligence artificielle:Une cartographie des conflits de définition.” Réseaux 232233 (2): 29–64. https://doi.org/10.3917/res.232.0029.\n\n\nCanada, Secrétariat du Conseil du Trésor du. 2024. “Guide sur l’utilisation de l’intelligence artificielle générative.” https://www.canada.ca/fr/gouvernement/systeme/gouvernement-numerique/innovations-gouvernementales-numeriques/utilisation-responsable-ai/guide-utilisation-intelligence-artificielle-generative.html.\n\n\nChagué, Alix. 2026. “Différents Outils, Même Tâche ? Reflexions Sur Les Solutions Techniques de La Transcription Automatique.” Pr\\'esentation Longue. Université de Montréal.\n\n\nCommittee on Publication Ethics. 2024. “Authorship and AI Tools.” Committee on Publication Ethics. https://doi.org/10.24318/cCVRZBms.\n\n\nConseil consultatif en matière d’intelligence artificielle. 2025. “Résumés de réunion : Conseil consultatif en matière d’intelligence artificielle.” https://ised-isde.canada.ca/site/conseil-consultatif-intelligence-artificielle/fr/resume-reunions; Innovation, Sciences et Développement économique Canada.\n\n\nDubber, Markus Dirk, Frank Pasquale, and Sunit Das. 2020. The Oxford Handbook of Ethics of AI. Oxford University Press.\n\n\nFerguson, Yann. 2026. “Darwin, Prométhée, Taylor et Habermas : quelle IA au travail ?” {S\\'eminaire}. hybride.\n\n\nGenerative Pre-trained Transformer, ChatGPT, and Alex Zhavoronkov. 2022. “Rapamycin in the Context of Pascal’s Wager: Generative Pre-Trained Transformer Perspective.” Oncoscience 9 (December): 82–84. https://doi.org/10.18632/oncoscience.571.\n\n\nGorraiz, Juan. 2025. “Acknowledging the New Invisible Colleague: Addressing the Recognition of Open AI Contributions in in Scientific Publishing.” Journal of Informetrics 19 (2): 101642. https://doi.org/10.1016/j.joi.2025.101642.\n\n\nJackson, Steven J. 2014. “Rethinking Repair.” In Media Technologies, edited by Tarleton Gillespie, Pablo J. Boczkowski, and Kirsten A. Foot, 221–40. The MIT Press. https://doi.org/10.7551/mitpress/9780262525374.003.0011.\n\n\nKriss, Sam. 2025. “Child’s Play: Tech’s New Generation and the End of Thinking.” Harper’s Magazine.\n\n\nMuller, Caroline. 2025. “&lt;&lt; Des Territoires de l’histoire ? A La Recherche Des Pratiques Numériques Discrètes &gt;&gt;.” Université de Montréal.\n\n\n“Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 Laying down Harmonised Rules on Artificial Intelligence and Amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act) (Text with EEA Relevance).” 2024.\n\n\nSchäfer, Mirko Tobias, and Pekka Mäkelä. 2025. “Repairing AI: How Breakages of Algorithmic Systems Reveal Repair Efforts and Possibilities for Renewal.” Critical AI 3 (2). https://doi.org/10.1215/2834703X-12095964.\n\n\nTuring, A. M. 1950. “Computing Machinery and Intelligence.” Mind LIX (236): 433–60. https://doi.org/10.1093/mind/LIX.236.433.\n\n\nUniversité de Liège. 2023. “Charte ULiège d’utilisation des intelligences artificielles génératives dans les travaux universitaires.” https://www.student.uliege.be/cms/c_19230399/fr/faq-student-charte-uliege-d-utilisation-des-intelligences-artificielles-generatives-dans-les-travaux-universitaires.\n\n\nVitali-Rosati, Marcello. 2025. “Manifeste Pour Des Études Critiques de l’Intelligence Artificielle.” Culture Numérique. Pour Une Philosophie Du Numérique."
+  },
+  {
+    "objectID": "seances/preconisationIA.html#bibliographie",
+    "href": "seances/preconisationIA.html#bibliographie",
+    "title": "Atelier IA - Documentation des nouvelles pratiques liées à l’utilisation de l’IA : préconisations pour les SHS",
+    "section": "Bibliographie",
+    "text": "Bibliographie\n\n\n\n\nAgbon, Gildas, and Harold Nguegang. 2026. “Près de 80 % des travailleurs canadiens utilisent l’IA sans cadre institutionnel.” La Conversation Canada. http://theconversation.com/pres-de-80-des-travailleurs-canadiens-utilisent-lia-sans-cadre-institutionnel-251668. https://doi.org/10.64628/AAP.9rpsv37nk.\n\n\nBenbouzid, Bilel, and Dominique Cardon. 2022. “Contrôler les IA.” Réseaux 232233 (2): 9–26. https://doi.org/10.3917/res.232.0009.\n\n\nBenbouzid, Bilel, Yannick Meneceur, and Nathalie Alisa Smuha. 2022. “Quatre nuances de régulation de l’intelligence artificielle:Une cartographie des conflits de définition.” Réseaux 232233 (2): 29–64. https://doi.org/10.3917/res.232.0029.\n\n\nCanada, Secrétariat du Conseil du Trésor du. 2024. “Guide sur l’utilisation de l’intelligence artificielle générative.” https://www.canada.ca/fr/gouvernement/systeme/gouvernement-numerique/innovations-gouvernementales-numeriques/utilisation-responsable-ai/guide-utilisation-intelligence-artificielle-generative.html.\n\n\nChagué, Alix. 2026. “Différents Outils, Même Tâche ? Reflexions Sur Les Solutions Techniques de La Transcription Automatique.” Pr\\'esentation Longue. Université de Montréal.\n\n\nCommittee on Publication Ethics. 2024. “Authorship and AI Tools.” Committee on Publication Ethics. https://doi.org/10.24318/cCVRZBms.\n\n\nConseil consultatif en matière d’intelligence artificielle. 2025. “Résumés de réunion : Conseil consultatif en matière d’intelligence artificielle.” https://ised-isde.canada.ca/site/conseil-consultatif-intelligence-artificielle/fr/resume-reunions; Innovation, Sciences et Développement économique Canada.\n\n\nDubber, Markus Dirk, Frank Pasquale, and Sunit Das. 2020. The Oxford Handbook of Ethics of AI. Oxford University Press.\n\n\nFerguson, Yann. 2026. “Darwin, Prométhée, Taylor et Habermas : quelle IA au travail ?” {S\\'eminaire}. hybride.\n\n\nGenerative Pre-trained Transformer, ChatGPT, and Alex Zhavoronkov. 2022. “Rapamycin in the Context of Pascal’s Wager: Generative Pre-Trained Transformer Perspective.” Oncoscience 9 (December): 82–84. https://doi.org/10.18632/oncoscience.571.\n\n\nGorraiz, Juan. 2025. “Acknowledging the New Invisible Colleague: Addressing the Recognition of Open AI Contributions in in Scientific Publishing.” Journal of Informetrics 19 (2): 101642. https://doi.org/10.1016/j.joi.2025.101642.\n\n\nJackson, Steven J. 2014. “Rethinking Repair.” In Media Technologies, edited by Tarleton Gillespie, Pablo J. Boczkowski, and Kirsten A. Foot, 221–40. The MIT Press. https://doi.org/10.7551/mitpress/9780262525374.003.0011.\n\n\nKriss, Sam. 2025. “Child’s Play: Tech’s New Generation and the End of Thinking.” Harper’s Magazine.\n\n\nMuller, Caroline. 2025. “&lt;&lt; Des Territoires de l’histoire ? A La Recherche Des Pratiques Numériques Discrètes &gt;&gt;.” Université de Montréal.\n\n\n“Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 Laying down Harmonised Rules on Artificial Intelligence and Amending Regulations (EC) No 300/2008, (EU) No 167/2013, (EU) No 168/2013, (EU) 2018/858, (EU) 2018/1139 and (EU) 2019/2144 and Directives 2014/90/EU, (EU) 2016/797 and (EU) 2020/1828 (Artificial Intelligence Act) (Text with EEA Relevance).” 2024.\n\n\nSchäfer, Mirko Tobias, and Pekka Mäkelä. 2025. “Repairing AI: How Breakages of Algorithmic Systems Reveal Repair Efforts and Possibilities for Renewal.” Critical AI 3 (2). https://doi.org/10.1215/2834703X-12095964.\n\n\nTuring, A. M. 1950. “Computing Machinery and Intelligence.” Mind LIX (236): 433–60. https://doi.org/10.1093/mind/LIX.236.433.\n\n\nUniversité de Liège. 2023. “Charte ULiège d’utilisation des intelligences artificielles génératives dans les travaux universitaires.” https://www.student.uliege.be/cms/c_19230399/fr/faq-student-charte-uliege-d-utilisation-des-intelligences-artificielles-generatives-dans-les-travaux-universitaires.\n\n\nVitali-Rosati, Marcello. 2025. “Manifeste Pour Des Études Critiques de l’Intelligence Artificielle.” Culture Numérique. Pour Une Philosophie Du Numérique."
   }
 ]
