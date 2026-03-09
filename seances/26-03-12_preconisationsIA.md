@@ -31,8 +31,8 @@ footer: "Alexia Schneider - Debogue tes humanités 2026"
 - Constat sur les nouvelles utilisations de l'IA
 - Typologie des discours sur l'IA
 - Positionnement des institutions
-- l'IA auteur ? 
-
+- L'IA auteur ? 
+- Alternatives épistémiques 
 
 ## Présentation et objectif des ateliers 
 
@@ -258,27 +258,39 @@ Narratif taylorien :
 Narratif habernassien: 
 - [@schaferRepairingAIHow2025] se baser sur le breakage, repair, renew framework de @jacksonRethinkingRepair2014 : importance des guidelines pour la literatie numérique mais aussi importance du dialogue avec les média grand public pour entrer dans une logique de réparation, de mise en évidence des dégâts, et actuellement, une phase de "renouveau" au sens où la démocratie peut entrer en coopération avec la technologie.
 - sensibilisation, formation.
-s
 
 
 # Où vous situez-vous ?
  
 # Positionnement et préconisations des institutions
 
-## Multiplication des chartes et cadres éthiques
+## _AI fairness_
+
+Anticipation des risques = prolifération des chartes et rapports. 
+
+Une trentaine de définitions actuellement 
+
+
+Communautés voire disciplines : Fair Machine Learning (Fair ML) et Explainable AI (XAI)
+
 
 [@benbouzidControlerIA2022] : **principalisme** :
 > les cadres moraux théoriques sont produits de manière déductive à partir de principes abstraits, puis appliqués aux pratiques. Il est reproché au principalisme de ne pas prendre suffisamment en compte les particularités de ces algorithmes et le contexte de leur mise en oeuvre.
 
-- communautés voire disciplines : Fair Machine Learning (Fair ML) et Explainable AI (XAI)
+Crenshaw : traiter différemment des choses ou groupes de population différentes peut mener à des inégalités et discriminations de la même manière que traiter tout le monde indifféremment. 
+
+**Le discours des chartes invisibilise le besoin de prendre en compte la diversité de pdv situé : une éthicisation des impacts de l'IA par des outils gestionnaires et techniques.** [@marquesPenserDiscriminationsLere2026]
+
 
 ## "Institutionnalisation"
 
 > Pour une institutionnalisation efficace de l’IAG, nous proposons trois points complémentaires.
 > -  L’élaboration de politiques d’utilisation explicites, communiquées et régulièrement mises à jour, permet de clarifier les frontières entre usages autorisés et proscrits.
 > - La formation et la sensibilisation constituent des leviers essentiels : les employés doivent développer non seulement des compétences techniques en matière de rédactique, mais également une compréhension profonde des enjeux organisationnels, éthiques et de sécurité.
-> - Le choix et la mise en place d’outils d’IAG approuvés et sécurisés, notamment alignés sur les besoins de l’entreprise et sur la loi. Comme le souligne KPMG, les organisations avant-gardistes « transforment l’utilisation non autorisée de l’IA en un avantage stratégique et en un moteur d’innovation » (traduction libre).
+> - **Le choix et la mise en place d’outils d’IAG approuvés et sécurisés, notamment alignés sur les besoins de l’entreprise et sur la loi**. Comme le souligne KPMG, les organisations avant-gardistes « transforment l’utilisation non autorisée de l’IA en un avantage stratégique et en un moteur d’innovation » (traduction libre).
 > --- @agbonPres80Travailleurs2026
+
+Est-ce que la justice sociale définie le techno-langage ou est-ce l'inverse ?  
 
 
 ## Organisations supra-nationales 
@@ -476,6 +488,23 @@ Guidelines de la MLA, Chicago et APA pour citer l'utilisation de l'IA.
 - suggère plutôt de se servir des remerciements
 - aucune assurance que les auteur.ice.s suivent les exigences de transparence des revues etc.
 
-<!-- # Quelques projets avec une utilisation réflechies de l'IA -->
+# Quelles alternatives épistémiques pour les SIA ? 
+
+
+@marquesPenserDiscriminationsLere2026 : des SIA "avec" et non "pour".
+- [Masakhane]("https://www.masakhane.io/) : traduction automatique des langues africaines.
+- [Código Não Binário]("https://codigonaobinario.org/")
+
+
+Perspective DH : 
+
+> « Can we conceive of models of interface that are genuine instruments for research? That are not merely queries within pre-set data that search and sort according to an immutable agenda? How can we imagine an interface that allows content modeling, intellectual argument, rhetorical engagement? » 
+> --- [@druckerPerformativeMaterialityTheoretical2013]
+
+_Provotype_ [@boerProvotypesParticipatoryInnovation2012]
+
+Les Études critiques de l'IA : 
+- comprendre les algorithmes
+- cerner l'impact sociétal et les discours sur l'IA
 
 ## Bibliographie
