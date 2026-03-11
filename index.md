@@ -39,6 +39,6 @@ On vous a sûrement déjà dit que pour limiter les erreurs des IA génératives
 
 -> [Alexia Schneider](mailto:alexia.schneider@umontreal.ca) 
 
-Séance 4 : **jeudi 12 mars 2026 15:30**  [Documentation des nouvelles pratiques liées à l'utilisation de l'IA : préconisations pour les SHS ](https://alexiaschn.github.io/ateliers_ia/seances/synthese.html)
+Séance 4 : **jeudi 12 mars 2026 15:30**  [Documentation des nouvelles pratiques liées à l'utilisation de l'IA : préconisations pour les SHS ](https://alexiaschn.github.io/ateliers_ia/seances/preconisationIA.html)
 
-Voilà maintenant quelques années que l'IA est devenue monnaie courante et l'heure est désormais à la pérénisation des guides d'utilisation et des limites définies par les institutions de recherche et d'enseignement. Cet atelier présente les lignes directrices adoptées par les institutions en SHS ainsi que les méthodes de documentation existantes de ces nouvelles pratiques de rédaction, de correction et de recherche d'information. 
+Voilà maintenant quelques années que l'IA est devenue monnaie courante et l'heure est désormais à la pérénisation des guides d'utilisation et des limites définies par les institutions de recherche et d'enseignement. Cet atelier présente les lignes directrices adoptées par les institutions en SHS afin d'aider à situer leurs positionnements narratifs et idéologiques. 
